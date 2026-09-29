@@ -1,0 +1,27 @@
+REPARO TC-06 / ZVRT - v2
+
+Causa encontrada:
+O reparo anterior adicionou as imagens no nível geral do JSON, mas o HTML recarrega
+a execução ativa a partir de:
+
+switchVariants -> Si -> directions -> forward -> evidence
+
+Por isso elas continuavam invisíveis.
+
+Agora foram religadas também nesse bloco:
+- TC-06_Si_Capacitor_C1_VC1_V_01.png
+- TC-06_Si_Chave_Q1_VDS_V_01.png
+- TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01.png
+- TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01_anotada.png
+
+Verificação final:
+- Imagens físicas sem referência no JSON: 0
+- Referências do JSON sem arquivo físico: 0
+
+Substitua:
+1) campanha.json na raiz de Testes_TCC
+2) TC-06_Soft-switching_300_W_alteracao_de_L\dados.json
+
+Depois, no HTML:
+- clique em "Recarregar da pasta", ou
+- feche e abra o notebook novamente.

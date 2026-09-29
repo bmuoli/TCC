@@ -1,0 +1,272 @@
+{
+  "version": 18,
+  "snapshotAt": "2026-09-11T19:39:41.636Z",
+  "testCase": {
+    "id": "TC-01",
+    "title": "Hard-switching · carga reduzida · Si",
+    "goal": "Referência dissipativa abaixo da potência nominal com MOSFET de silício.",
+    "switchType": "MOSFET Si",
+    "status": "planned",
+    "freq": "",
+    "duty": "",
+    "vin": "",
+    "vout": "",
+    "pin": "",
+    "pout": "",
+    "iout": "",
+    "waveform": "",
+    "notes": "",
+    "acceptance": "",
+    "simulationEnabled": false,
+    "simulationFile": null,
+    "simulationImages": [],
+    "trash": [],
+    "enableForward": true,
+    "enableReverse": true,
+    "activeDirection": "forward",
+    "directions": {
+      "forward": {
+        "freq": "",
+        "duty": "",
+        "vin": "",
+        "vout": "",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      },
+      "reverse": {
+        "freq": "",
+        "duty": "",
+        "vin": "50",
+        "vout": "30",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      }
+    },
+    "enableSi": true,
+    "enableSiC": false,
+    "activeSwitchVariant": "Si",
+    "switchVariants": {
+      "Si": {
+        "switches": [
+          {
+            "part": "",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "",
+            "duty": "",
+            "vin": "",
+            "vout": "",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      },
+      "SiC": {
+        "switches": [
+          {
+            "part": "",
+            "technology": "SiC",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "",
+            "technology": "SiC",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "",
+            "duty": "",
+            "vin": "",
+            "vout": "",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      }
+    },
+    "inductorCount": 2,
+    "capacitorCount": 1,
+    "switchCount": 2,
+    "inductors": [
+      {
+        "value": "",
+        "unit": "µH",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      },
+      {
+        "value": "",
+        "unit": "µH",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      }
+    ],
+    "capacitors": [
+      {
+        "value": "",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      }
+    ],
+    "switches": [
+      {
+        "part": "",
+        "technology": "Si",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": true,
+        "collectIGS": false
+      },
+      {
+        "part": "",
+        "technology": "Si",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": true,
+        "collectIGS": false
+      }
+    ],
+    "evidence": [],
+    "setupName": "",
+    "updatedAt": "2026-09-11T19:39:39.062Z"
+  }
+}

@@ -1,0 +1,532 @@
+{
+  "version": 18,
+  "snapshotAt": "2026-09-11T14:36:02.625Z",
+  "testCase": {
+    "id": "TC-04",
+    "title": "Hard-switching · 300 W · SiC",
+    "goal": "Operação nominal dissipativa em 300 W com SiC MOSFET.",
+    "switchType": "SiC MOSFET",
+    "status": "planned",
+    "freq": "100",
+    "duty": "58",
+    "vin": "36",
+    "vout": "",
+    "pin": "358",
+    "pout": "",
+    "iout": "",
+    "waveform": "",
+    "notes": "",
+    "acceptance": "",
+    "simulationEnabled": false,
+    "simulationFile": null,
+    "simulationImages": [],
+    "enableForward": true,
+    "enableReverse": true,
+    "activeDirection": "forward",
+    "directions": {
+      "forward": {
+        "freq": "100",
+        "duty": "58",
+        "vin": "36",
+        "vout": "",
+        "pin": "358",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [
+          {
+            "subject": "Chave Q1",
+            "type": "Termica",
+            "signal": "",
+            "originalName": "clipboard.jpg",
+            "fileName": "TC-04_SiC_Chave_Q1_Termica_01.jpg",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_01.jpg",
+            "savedAt": "2026-09-11T14:35:41.002Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Termica",
+            "signal": "",
+            "originalName": "clipboard.jpg",
+            "fileName": "TC-04_SiC_Chave_Q1_Termica_01_1.jpg",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_01_1.jpg",
+            "savedAt": "2026-09-11T14:35:42.240Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Termica",
+            "signal": "",
+            "originalName": "clipboard.jpg",
+            "fileName": "TC-04_SiC_Chave_Q1_Termica-Panoramica_01.jpg",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica-Panoramica_01.jpg",
+            "savedAt": "2026-09-11T14:35:43.690Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Termica",
+            "signal": "",
+            "originalName": "clipboard.jpg",
+            "fileName": "TC-04_SiC_Chave_Q1_Termica-Panoramica_01_1.jpg",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica-Panoramica_01_1.jpg",
+            "savedAt": "2026-09-11T14:35:44.982Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Termica",
+            "signal": "",
+            "originalName": "clipboard.jpg",
+            "fileName": "TC-04_SiC_Chave_Q1_Termica_03-Resistores_Gate.jpg",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_03-Resistores_Gate.jpg",
+            "savedAt": "2026-09-11T14:35:46.394Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Termica",
+            "signal": "",
+            "originalName": "clipboard.jpg",
+            "fileName": "TC-04_SiC_Chave_Q1_Termica_03-Resistores_Gate_1.jpg",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_03-Resistores_Gate_1.jpg",
+            "savedAt": "2026-09-11T14:35:47.661Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signal": "Tensão VDS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Geral_01.png",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Geral_01.png",
+            "savedAt": "2026-09-11T14:35:49.166Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signal": "Tensão VDS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Geral_01_1.png",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Geral_01_1.png",
+            "savedAt": "2026-09-11T14:35:50.290Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signal": "Tensão VDS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_01.png",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_01.png",
+            "savedAt": "2026-09-11T14:35:51.897Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signal": "Tensão VDS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_01_1.png",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_01_1.png",
+            "savedAt": "2026-09-11T14:35:52.916Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signal": "Tensão VGS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VGS_V_01.png",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VGS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VGS_V_01.png",
+            "savedAt": "2026-09-11T14:35:54.543Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signal": "Tensão VGS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VGS_V_01_1.png",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VGS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VGS_V_01_1.png",
+            "savedAt": "2026-09-11T14:35:55.511Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signal": "Corrente IDS (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Corrente_IDS_A_01.png",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Corrente_IDS_A/TC-04_SiC_Chave_Q1_Forma_de_onda_Corrente_IDS_A_01.png",
+            "savedAt": "2026-09-11T14:35:57.242Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signal": "Corrente IDS (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Corrente_IDS_A_01_1.png",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Corrente_IDS_A/TC-04_SiC_Chave_Q1_Forma_de_onda_Corrente_IDS_A_01_1.png",
+            "savedAt": "2026-09-11T14:35:58.116Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signal": "Tensão VDS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_03.png",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_03.png",
+            "savedAt": "2026-09-11T14:35:59.935Z"
+          },
+          {
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signal": "Tensão VDS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_03_1.png",
+            "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_03_1.png",
+            "savedAt": "2026-09-11T14:36:00.723Z"
+          }
+        ],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": true,
+          "vgs": true,
+          "ids": true,
+          "tempCase": false
+        }
+      },
+      "reverse": {
+        "freq": "",
+        "duty": "",
+        "vin": "50",
+        "vout": "30",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      }
+    },
+    "enableSi": false,
+    "enableSiC": true,
+    "activeSwitchVariant": "SiC",
+    "switchVariants": {
+      "SiC": {
+        "switches": [
+          {
+            "part": "",
+            "technology": "SiC",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "",
+            "technology": "SiC",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "100",
+            "duty": "58",
+            "vin": "36",
+            "vout": "",
+            "pin": "358",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": true,
+              "vgs": true,
+              "ids": true,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      },
+      "Si": {
+        "switches": [
+          {
+            "part": "",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "",
+            "duty": "",
+            "vin": "",
+            "vout": "",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      }
+    },
+    "inductorCount": 0,
+    "capacitorCount": 0,
+    "switchCount": 2,
+    "inductors": [],
+    "capacitors": [],
+    "switches": [
+      {
+        "part": "",
+        "technology": "SiC",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": true,
+        "collectIGS": false
+      },
+      {
+        "part": "",
+        "technology": "SiC",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": true,
+        "collectIGS": false
+      }
+    ],
+    "evidence": [
+      {
+        "subject": "Chave Q1",
+        "type": "Termica",
+        "signal": "",
+        "originalName": "clipboard.jpg",
+        "fileName": "TC-04_SiC_Chave_Q1_Termica_01.jpg",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_01.jpg",
+        "savedAt": "2026-09-11T14:35:41.002Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Termica",
+        "signal": "",
+        "originalName": "clipboard.jpg",
+        "fileName": "TC-04_SiC_Chave_Q1_Termica_01_1.jpg",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_01_1.jpg",
+        "savedAt": "2026-09-11T14:35:42.240Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Termica",
+        "signal": "",
+        "originalName": "clipboard.jpg",
+        "fileName": "TC-04_SiC_Chave_Q1_Termica-Panoramica_01.jpg",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica-Panoramica_01.jpg",
+        "savedAt": "2026-09-11T14:35:43.690Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Termica",
+        "signal": "",
+        "originalName": "clipboard.jpg",
+        "fileName": "TC-04_SiC_Chave_Q1_Termica-Panoramica_01_1.jpg",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica-Panoramica_01_1.jpg",
+        "savedAt": "2026-09-11T14:35:44.982Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Termica",
+        "signal": "",
+        "originalName": "clipboard.jpg",
+        "fileName": "TC-04_SiC_Chave_Q1_Termica_03-Resistores_Gate.jpg",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_03-Resistores_Gate.jpg",
+        "savedAt": "2026-09-11T14:35:46.394Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Termica",
+        "signal": "",
+        "originalName": "clipboard.jpg",
+        "fileName": "TC-04_SiC_Chave_Q1_Termica_03-Resistores_Gate_1.jpg",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_03-Resistores_Gate_1.jpg",
+        "savedAt": "2026-09-11T14:35:47.661Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signal": "Tensão VDS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Geral_01.png",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Geral_01.png",
+        "savedAt": "2026-09-11T14:35:49.166Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signal": "Tensão VDS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Geral_01_1.png",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Geral_01_1.png",
+        "savedAt": "2026-09-11T14:35:50.290Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signal": "Tensão VDS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_01.png",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_01.png",
+        "savedAt": "2026-09-11T14:35:51.897Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signal": "Tensão VDS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_01_1.png",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_01_1.png",
+        "savedAt": "2026-09-11T14:35:52.916Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signal": "Tensão VGS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VGS_V_01.png",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VGS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VGS_V_01.png",
+        "savedAt": "2026-09-11T14:35:54.543Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signal": "Tensão VGS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VGS_V_01_1.png",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VGS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VGS_V_01_1.png",
+        "savedAt": "2026-09-11T14:35:55.511Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signal": "Corrente IDS (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Corrente_IDS_A_01.png",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Corrente_IDS_A/TC-04_SiC_Chave_Q1_Forma_de_onda_Corrente_IDS_A_01.png",
+        "savedAt": "2026-09-11T14:35:57.242Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signal": "Corrente IDS (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Corrente_IDS_A_01_1.png",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Corrente_IDS_A/TC-04_SiC_Chave_Q1_Forma_de_onda_Corrente_IDS_A_01_1.png",
+        "savedAt": "2026-09-11T14:35:58.116Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signal": "Tensão VDS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_03.png",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_03.png",
+        "savedAt": "2026-09-11T14:35:59.935Z"
+      },
+      {
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signal": "Tensão VDS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_03_1.png",
+        "relativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_03_1.png",
+        "savedAt": "2026-09-11T14:36:00.723Z"
+      }
+    ],
+    "setupName": "",
+    "updatedAt": "2026-09-11T14:36:00.724Z"
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "id": "TC-08",
+  "title": "Célula auxiliar · baixa potência",
+  "goal": "Comparar perdas de comutação e perdas adicionais de condução em baixa potência.",
+  "switchType": "Si",
+  "status": "planned",
+  "freq": "100",
+  "duty": "52",
+  "vin": "12,7 ",
+  "vout": "16,9 ",
+  "pin": "",
+  "pout": "",
+  "iout": "",
+  "waveform": "",
+  "notes": "",
+  "acceptance": "",
+  "simulationEnabled": false,
+  "simulationFile": null,
+  "simulationImages": [],
+  "trash": [],
+  "enableForward": true,
+  "enableReverse": false,
+  "activeDirection": "forward",
+  "directions": {
+    "forward": {
+      "freq": "100",
+      "duty": "52",
+      "vin": "12,7 ",
+      "vout": "16,9 ",
+      "pin": "",
+      "pout": "",
+      "iout": "",
+      "waveform": "",
+      "notes": "",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [],
+      "trash": [],
+      "executionDone": false,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    },
+    "reverse": {
+      "freq": "",
+      "duty": "",
+      "vin": "50",
+      "vout": "30",
+      "pin": "",
+      "pout": "",
+      "iout": "",
+      "waveform": "",
+      "notes": "",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [],
+      "trash": [],
+      "executionDone": false,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    }
+  },
+  "enableSi": true,
+  "enableSiC": false,
+  "activeSwitchVariant": "Si",
+  "switchVariants": {
+    "Si": {
+      "switches": [
+        {
+          "part": "IRFP4768PbF",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "IRFP4768PbF",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "IRF3415",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "IRF3415",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "100",
+          "duty": "52",
+          "vin": "12,7 ",
+          "vout": "16,9 ",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    },
+    "SiC": {
+      "switches": [
+        {
+          "part": "",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "",
+          "duty": "",
+          "vin": "",
+          "vout": "",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    }
+  },
+  "inductorCount": 3,
+  "capacitorCount": 1,
+  "switchCount": 4,
+  "inductors": [
+    {
+      "value": "50",
+      "unit": "µH",
+      "notes": "",
+      "collectI": true,
+      "collectV": true
+    },
+    {
+      "value": "75",
+      "unit": "µH",
+      "notes": "",
+      "collectI": true,
+      "collectV": true
+    },
+    {
+      "value": "2",
+      "unit": "µH",
+      "notes": "",
+      "collectI": true,
+      "collectV": false
+    }
+  ],
+  "capacitors": [
+    {
+      "value": "",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    }
+  ],
+  "switches": [
+    {
+      "part": "IRFP4768PbF",
+      "technology": "Si",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    },
+    {
+      "part": "IRFP4768PbF",
+      "technology": "Si",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    },
+    {
+      "part": "IRF3415",
+      "technology": "Si",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    },
+    {
+      "part": "IRF3415",
+      "technology": "Si",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    }
+  ],
+  "evidence": [],
+  "setupName": "",
+  "displayTitle": "Célula auxiliar · baixa resistência",
+  "folderName": "TC-08_Celula_auxiliar_baixa_potencia",
+  "updatedAt": "2026-09-29T15:44:32.928Z"
+}

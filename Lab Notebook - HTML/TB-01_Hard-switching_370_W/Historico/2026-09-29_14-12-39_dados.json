@@ -1,0 +1,276 @@
+{
+  "version": 18,
+  "snapshotAt": "2026-09-29T17:12:39.140Z",
+  "testCase": {
+    "id": "TB-01",
+    "title": "Hard-switching · 370 W · cópia",
+    "goal": "Operação nominal dissipativa em 300 W.",
+    "switchType": "MOSFET Si",
+    "status": "done",
+    "freq": "100",
+    "duty": "58",
+    "vin": "36",
+    "vout": "43.1",
+    "pin": "347,2",
+    "pout": "304,0",
+    "iout": "9.61",
+    "waveform": "",
+    "notes": "Dead time configurado: 3%\nDead time por intervalo: 0,3 µs (300 ns)\n\nRazão cíclica nominal Q1: 59%\n\nRazão cíclica nominal Q2: 41%\n\n\nCarga resistiva: 6,9 Ω\nTopologia: Ćuk síncrono\n\nO circuito apresentou rendimento inicial máximo próximo de 91%, com redução progressiva à medida que a temperatura dos semicondutores aumentava. Em ensaio prolongado, a chave principal atingiu aproximadamente 120 °C. Próximo desse ponto, a taxa de elevação da temperatura aparentemente diminuiu; entretanto, o teste foi interrompido antes que fosse possível confirmar a estabilização térmica. O comportamento observado evidencia correlação entre aumento da temperatura e redução do rendimento, sem que, neste estágio, seja possível atribuir a degradação a um mecanismo específico de perdas.",
+    "acceptance": "",
+    "simulationEnabled": false,
+    "simulationFile": null,
+    "simulationImages": [],
+    "trash": [],
+    "enableForward": true,
+    "enableReverse": false,
+    "activeDirection": "forward",
+    "directions": {
+      "forward": {
+        "freq": "100",
+        "duty": "58",
+        "vin": "36",
+        "vout": "43.1",
+        "pin": "347,2",
+        "pout": "304,0",
+        "iout": "9.61",
+        "waveform": "",
+        "notes": "Dead time configurado: 3%\nDead time por intervalo: 0,3 µs (300 ns)\n\nRazão cíclica nominal Q1: 59%\n\nRazão cíclica nominal Q2: 41%\n\n\nCarga resistiva: 6,9 Ω\nTopologia: Ćuk síncrono\n\nO circuito apresentou rendimento inicial máximo próximo de 91%, com redução progressiva à medida que a temperatura dos semicondutores aumentava. Em ensaio prolongado, a chave principal atingiu aproximadamente 120 °C. Próximo desse ponto, a taxa de elevação da temperatura aparentemente diminuiu; entretanto, o teste foi interrompido antes que fosse possível confirmar a estabilização térmica. O comportamento observado evidencia correlação entre aumento da temperatura e redução do rendimento, sem que, neste estágio, seja possível atribuir a degradação a um mecanismo específico de perdas.",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      },
+      "reverse": {
+        "freq": "",
+        "duty": "",
+        "vin": "50",
+        "vout": "30",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      }
+    },
+    "enableSi": true,
+    "enableSiC": true,
+    "activeSwitchVariant": "SiC",
+    "switchVariants": {
+      "SiC": {
+        "switches": [
+          {
+            "part": "UJ3C065030K3S",
+            "technology": "SiC",
+            "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "UJ3C065030K3S",
+            "technology": "SiC",
+            "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "100",
+            "duty": "58",
+            "vin": "36",
+            "vout": "43.1",
+            "pin": "347,2",
+            "pout": "304,0",
+            "iout": "9.61",
+            "waveform": "",
+            "notes": "Dead time configurado: 3%\nDead time por intervalo: 0,3 µs (300 ns)\n\nRazão cíclica nominal Q1: 59%\n\nRazão cíclica nominal Q2: 41%\n\n\nCarga resistiva: 6,9 Ω\nTopologia: Ćuk síncrono\n\nO circuito apresentou rendimento inicial máximo próximo de 91%, com redução progressiva à medida que a temperatura dos semicondutores aumentava. Em ensaio prolongado, a chave principal atingiu aproximadamente 120 °C. Próximo desse ponto, a taxa de elevação da temperatura aparentemente diminuiu; entretanto, o teste foi interrompido antes que fosse possível confirmar a estabilização térmica. O comportamento observado evidencia correlação entre aumento da temperatura e redução do rendimento, sem que, neste estágio, seja possível atribuir a degradação a um mecanismo específico de perdas.",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      },
+      "Si": {
+        "switches": [
+          {
+            "part": "Si · IRFP4768PbF",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "Si · IRFP4768PbF",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "100",
+            "duty": "58",
+            "vin": "34",
+            "vout": "46",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      }
+    },
+    "inductorCount": 2,
+    "capacitorCount": 1,
+    "switchCount": 2,
+    "inductors": [
+      {
+        "value": "50",
+        "unit": "µH",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      },
+      {
+        "value": "70",
+        "unit": "µH",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      }
+    ],
+    "capacitors": [
+      {
+        "value": "5",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      }
+    ],
+    "switches": [
+      {
+        "part": "UJ3C065030K3S",
+        "technology": "SiC",
+        "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": true,
+        "collectIGS": false
+      },
+      {
+        "part": "UJ3C065030K3S",
+        "technology": "SiC",
+        "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": false,
+        "collectIGS": false
+      }
+    ],
+    "evidence": [],
+    "displayId": "TB-01",
+    "displayTitle": "Hard-switching · 370 W ",
+    "displayGoal": "Operação nominal dissipativa em 300 W.",
+    "setupName": "Conversor Buck",
+    "folderName": "TB-01_Hard-switching_370_W",
+    "updatedAt": "2026-09-29T17:12:36.569Z"
+  }
+}

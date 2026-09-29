@@ -1,0 +1,318 @@
+{
+  "version": 18,
+  "snapshotAt": "2026-09-11T18:57:47.799Z",
+  "testCase": {
+    "id": "TC-04.02",
+    "title": "Hard-switching · 300 W · SiC · variação de frequência",
+    "goal": "Repetir o TC-04 alterando somente a frequência de comutação, mantendo as demais condições do ensaio.",
+    "switchType": "SiC MOSFET",
+    "status": "planned",
+    "freq": "100",
+    "duty": "58",
+    "vin": "36",
+    "vout": "",
+    "pin": "",
+    "pout": "",
+    "iout": "",
+    "waveform": "O ensaio foi realizado com a frequência de chaveamento reduzida de 100 kHz para 50 kHz, mantendo-se o mesmo princípio de operação do conversor. As formas de onda permaneceram estáveis, porém observou-se aumento significativo da ondulação de corrente, comportamento esperado devido à redução da frequência de chaveamento para os mesmos valores de indutância. Não foi observada melhora evidente no comportamento global do conversor em relação aos ensaios realizados a 100 kHz.",
+    "notes": "A redução da frequência de chaveamento para 50 kHz não resultou em melhora perceptível do rendimento ou do comportamento térmico do conversor. Dessa forma, os resultados não indicam que as perdas de comutação sejam, isoladamente, responsáveis pelas perdas elevadas observadas nos ensaios a 100 kHz. Entretanto, essa comparação não permite excluir as perdas de comutação, pois a redução da frequência também aumenta a ondulação e os valores de pico das correntes nos elementos magnéticos e semicondutores, podendo elevar outras parcelas de perda.\n\nNa captura deste ensaio foram observados aproximadamente \\(V_{in}=35{,}5\\text{ V}\\), \\(I_{in}=10{,}3\\text{ A}\\), \\(V_{out}=46{,}0\\text{ V}\\) e \\(I_{out}=7{,}06\\text{ A}\\). Os valores de tensão e corrente apresentados pelo osciloscópio devem ser utilizados apenas como referência do ponto de operação, uma vez que a determinação precisa do rendimento deve ser realizada a partir da potência ativa medida pelo analisador de potência\n\n\nCONFIGURAÇÃO DO ENSAIO\n\nFrequência de chaveamento: 50 kHz\nPeríodo de chaveamento: 20 µs\nRazão cíclica principal: 58%\nCarga resistiva: 6,9 Ω\n\nVin ≈ 35,5 V RMS\nIin ≈ 10,3 A RMS\nVout ≈ 46,0 V RMS\nIout ≈ 7,06 A RMS",
+    "acceptance": "",
+    "simulationEnabled": false,
+    "simulationFile": null,
+    "simulationImages": [],
+    "trash": [],
+    "enableForward": true,
+    "enableReverse": true,
+    "activeDirection": "forward",
+    "directions": {
+      "forward": {
+        "freq": "100",
+        "duty": "58",
+        "vin": "36",
+        "vout": "",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "O ensaio foi realizado com a frequência de chaveamento reduzida de 100 kHz para 50 kHz, mantendo-se o mesmo princípio de operação do conversor. As formas de onda permaneceram estáveis, porém observou-se aumento significativo da ondulação de corrente, comportamento esperado devido à redução da frequência de chaveamento para os mesmos valores de indutância. Não foi observada melhora evidente no comportamento global do conversor em relação aos ensaios realizados a 100 kHz.",
+        "notes": "A redução da frequência de chaveamento para 50 kHz não resultou em melhora perceptível do rendimento ou do comportamento térmico do conversor. Dessa forma, os resultados não indicam que as perdas de comutação sejam, isoladamente, responsáveis pelas perdas elevadas observadas nos ensaios a 100 kHz. Entretanto, essa comparação não permite excluir as perdas de comutação, pois a redução da frequência também aumenta a ondulação e os valores de pico das correntes nos elementos magnéticos e semicondutores, podendo elevar outras parcelas de perda.\n\nNa captura deste ensaio foram observados aproximadamente \\(V_{in}=35{,}5\\text{ V}\\), \\(I_{in}=10{,}3\\text{ A}\\), \\(V_{out}=46{,}0\\text{ V}\\) e \\(I_{out}=7{,}06\\text{ A}\\). Os valores de tensão e corrente apresentados pelo osciloscópio devem ser utilizados apenas como referência do ponto de operação, uma vez que a determinação precisa do rendimento deve ser realizada a partir da potência ativa medida pelo analisador de potência\n\n\nCONFIGURAÇÃO DO ENSAIO\n\nFrequência de chaveamento: 50 kHz\nPeríodo de chaveamento: 20 µs\nRazão cíclica principal: 58%\nCarga resistiva: 6,9 Ω\n\nVin ≈ 35,5 V RMS\nIin ≈ 10,3 A RMS\nVout ≈ 46,0 V RMS\nIout ≈ 7,06 A RMS",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [
+          {
+            "subject": "Entrada",
+            "type": "Forma de onda",
+            "signal": "Geral (V + I)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-04.02_SiC_Entrada_Geral_VI_01.png",
+            "relativePath": "TC-04.02_Hard-switching_300_W_SiC_variacao_de_frequencia/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-04.02_SiC_Entrada_Geral_VI_01.png",
+            "sha256": "b13b3f7756e4a619206528b0ff44dab7127bca09dd7bb6b397742e252b1b5446",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-11T18:38:46.117Z"
+          }
+        ],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      },
+      "reverse": {
+        "freq": "",
+        "duty": "",
+        "vin": "50",
+        "vout": "30",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      }
+    },
+    "enableSi": false,
+    "enableSiC": true,
+    "activeSwitchVariant": "SiC",
+    "switchVariants": {
+      "SiC": {
+        "switches": [
+          {
+            "part": "UJ3C065030K3S",
+            "technology": "SiC",
+            "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "UJ3C065030K3S",
+            "technology": "SiC",
+            "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "100",
+            "duty": "58",
+            "vin": "36",
+            "vout": "",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "O ensaio foi realizado com a frequência de chaveamento reduzida de 100 kHz para 50 kHz, mantendo-se o mesmo princípio de operação do conversor. As formas de onda permaneceram estáveis, porém observou-se aumento significativo da ondulação de corrente, comportamento esperado devido à redução da frequência de chaveamento para os mesmos valores de indutância. Não foi observada melhora evidente no comportamento global do conversor em relação aos ensaios realizados a 100 kHz.",
+            "notes": "A redução da frequência de chaveamento para 50 kHz não resultou em melhora perceptível do rendimento ou do comportamento térmico do conversor. Dessa forma, os resultados não indicam que as perdas de comutação sejam, isoladamente, responsáveis pelas perdas elevadas observadas nos ensaios a 100 kHz. Entretanto, essa comparação não permite excluir as perdas de comutação, pois a redução da frequência também aumenta a ondulação e os valores de pico das correntes nos elementos magnéticos e semicondutores, podendo elevar outras parcelas de perda.\n\nNa captura deste ensaio foram observados aproximadamente \\(V_{in}=35{,}5\\text{ V}\\), \\(I_{in}=10{,}3\\text{ A}\\), \\(V_{out}=46{,}0\\text{ V}\\) e \\(I_{out}=7{,}06\\text{ A}\\). Os valores de tensão e corrente apresentados pelo osciloscópio devem ser utilizados apenas como referência do ponto de operação, uma vez que a determinação precisa do rendimento deve ser realizada a partir da potência ativa medida pelo analisador de potência\n\n\nCONFIGURAÇÃO DO ENSAIO\n\nFrequência de chaveamento: 50 kHz\nPeríodo de chaveamento: 20 µs\nRazão cíclica principal: 58%\nCarga resistiva: 6,9 Ω\n\nVin ≈ 35,5 V RMS\nIin ≈ 10,3 A RMS\nVout ≈ 46,0 V RMS\nIout ≈ 7,06 A RMS",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [
+              {
+                "subject": "Entrada",
+                "type": "Forma de onda",
+                "signal": "Geral (V + I)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-04.02_SiC_Entrada_Geral_VI_01.png",
+                "relativePath": "TC-04.02_Hard-switching_300_W_SiC_variacao_de_frequencia/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-04.02_SiC_Entrada_Geral_VI_01.png",
+                "sha256": "b13b3f7756e4a619206528b0ff44dab7127bca09dd7bb6b397742e252b1b5446",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-11T18:38:46.117Z"
+              }
+            ],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      },
+      "Si": {
+        "switches": [
+          {
+            "part": "",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "",
+            "duty": "",
+            "vin": "",
+            "vout": "",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      }
+    },
+    "inductorCount": 2,
+    "capacitorCount": 2,
+    "switchCount": 2,
+    "inductors": [
+      {
+        "value": "50",
+        "unit": "µH",
+        "notes": "",
+        "collectI": true,
+        "collectV": true
+      },
+      {
+        "value": "75",
+        "unit": "µH",
+        "notes": "",
+        "collectI": true,
+        "collectV": true
+      }
+    ],
+    "capacitors": [
+      {
+        "value": "5",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      },
+      {
+        "value": "4.75",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      }
+    ],
+    "switches": [
+      {
+        "part": "UJ3C065030K3S",
+        "technology": "SiC",
+        "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": true,
+        "collectIGS": false
+      },
+      {
+        "part": "UJ3C065030K3S",
+        "technology": "SiC",
+        "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": false,
+        "collectIGS": false
+      }
+    ],
+    "evidence": [
+      {
+        "subject": "Entrada",
+        "type": "Forma de onda",
+        "signal": "Geral (V + I)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-04.02_SiC_Entrada_Geral_VI_01.png",
+        "relativePath": "TC-04.02_Hard-switching_300_W_SiC_variacao_de_frequencia/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-04.02_SiC_Entrada_Geral_VI_01.png",
+        "sha256": "b13b3f7756e4a619206528b0ff44dab7127bca09dd7bb6b397742e252b1b5446",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-11T18:38:46.117Z"
+      }
+    ],
+    "setupName": "",
+    "updatedAt": "2026-09-11T18:57:45.084Z"
+  }
+}

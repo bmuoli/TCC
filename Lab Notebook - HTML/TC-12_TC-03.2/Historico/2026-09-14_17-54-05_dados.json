@@ -1,0 +1,337 @@
+{
+  "version": 18,
+  "snapshotAt": "2026-09-14T20:54:05.219Z",
+  "testCase": {
+    "id": "TC-12",
+    "title": "TC-03.2",
+    "goal": "Variação de Frequencia",
+    "switchType": "MOSFET Si",
+    "status": "running",
+    "freq": "50",
+    "duty": "58",
+    "vin": "34",
+    "vout": "46",
+    "pin": "360,4",
+    "pout": "325,7",
+    "iout": "7,05",
+    "waveform": "",
+    "notes": "",
+    "acceptance": "",
+    "simulationEnabled": false,
+    "simulationFile": null,
+    "simulationImages": [],
+    "trash": [],
+    "enableForward": true,
+    "enableReverse": false,
+    "activeDirection": "forward",
+    "directions": {
+      "forward": {
+        "freq": "50",
+        "duty": "58",
+        "vin": "34",
+        "vout": "46",
+        "pin": "360,4",
+        "pout": "325,7",
+        "iout": "7,05",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [
+          {
+            "subject": "Entrada",
+            "type": "Forma de onda",
+            "signal": "Geral (V + I)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-12_Si_Entrada_e_Saida_Geral_VI_01.png",
+            "relativePath": "TC-12_TC-03.2/Teste_Pratico/Direto/Si/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-12_Si_Entrada_e_Saida_Geral_VI_01.png",
+            "sha256": "42f34173ae4e41471569b4edeb10f702e765cf0bd732411834eab2a1521e5984",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-14T20:53:00.320Z",
+            "renamedAt": "2026-09-14T20:53:16.775Z"
+          }
+        ],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      },
+      "reverse": {
+        "freq": "",
+        "duty": "",
+        "vin": "50",
+        "vout": "30",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      }
+    },
+    "enableSi": true,
+    "enableSiC": true,
+    "activeSwitchVariant": "Si",
+    "switchVariants": {
+      "Si": {
+        "switches": [
+          {
+            "part": "Si · IRFP4768PbF",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "Si · IRFP4768PbF",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "50",
+            "duty": "58",
+            "vin": "34",
+            "vout": "46",
+            "pin": "360,4",
+            "pout": "325,7",
+            "iout": "7,05",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [
+              {
+                "subject": "Entrada",
+                "type": "Forma de onda",
+                "signal": "Geral (V + I)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-12_Si_Entrada_e_Saida_Geral_VI_01.png",
+                "relativePath": "TC-12_TC-03.2/Teste_Pratico/Direto/Si/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-12_Si_Entrada_e_Saida_Geral_VI_01.png",
+                "sha256": "42f34173ae4e41471569b4edeb10f702e765cf0bd732411834eab2a1521e5984",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-14T20:53:00.320Z",
+                "renamedAt": "2026-09-14T20:53:16.775Z"
+              }
+            ],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      },
+      "SiC": {
+        "switches": [
+          {
+            "part": "UJ3C065030K3S",
+            "technology": "SiC",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "UJ3C065030K3S",
+            "technology": "SiC",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "50",
+            "duty": "58",
+            "vin": "34.2",
+            "vout": "44.9",
+            "pin": "333,5",
+            "pout": "294,5",
+            "iout": "6,56",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [
+              {
+                "subject": "Entrada",
+                "type": "Forma de onda",
+                "signal": "Geral (V + I)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-12_SiC_Entrada_Geral_VI_01.png",
+                "relativePath": "TC-12_TC-03.2/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-12_SiC_Entrada_Geral_VI_01.png",
+                "sha256": "8612d9a0823fae8bbf283e16b016fff62a7e81dce2907cbd2269e5b27c5abe29",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-14T15:21:55.096Z"
+              }
+            ],
+            "trash": [],
+            "executionDone": true,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      }
+    },
+    "inductorCount": 2,
+    "capacitorCount": 2,
+    "switchCount": 2,
+    "inductors": [
+      {
+        "value": "25",
+        "unit": "µH",
+        "notes": "",
+        "collectI": true,
+        "collectV": true
+      },
+      {
+        "value": "35",
+        "unit": "µH",
+        "notes": "",
+        "collectI": true,
+        "collectV": true
+      }
+    ],
+    "capacitors": [
+      {
+        "value": "5",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": true
+      },
+      {
+        "value": "4.75",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      }
+    ],
+    "switches": [
+      {
+        "part": "Si · IRFP4768PbF",
+        "technology": "Si",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": true,
+        "collectIGS": false
+      },
+      {
+        "part": "Si · IRFP4768PbF",
+        "technology": "Si",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": true,
+        "collectIGS": false
+      }
+    ],
+    "evidence": [
+      {
+        "subject": "Entrada",
+        "type": "Forma de onda",
+        "signal": "Geral (V + I)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-12_Si_Entrada_e_Saida_Geral_VI_01.png",
+        "relativePath": "TC-12_TC-03.2/Teste_Pratico/Direto/Si/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-12_Si_Entrada_e_Saida_Geral_VI_01.png",
+        "sha256": "42f34173ae4e41471569b4edeb10f702e765cf0bd732411834eab2a1521e5984",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-14T20:53:00.320Z",
+        "renamedAt": "2026-09-14T20:53:16.775Z"
+      }
+    ],
+    "setupName": "",
+    "displayId": "TC-03.2",
+    "displayTitle": "Hard-switching · 300 W · Troca de indutores - variação de frequência",
+    "displayGoal": "Repetir o TC-03 alterando somente a frequência de comutação, mantendo as demais condições do ensaio.",
+    "updatedAt": "2026-09-14T20:54:02.666Z"
+  }
+}

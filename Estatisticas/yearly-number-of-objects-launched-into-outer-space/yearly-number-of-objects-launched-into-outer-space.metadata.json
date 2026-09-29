@@ -1,0 +1,48 @@
+{
+  "chart": {
+    "title": "Annual number of objects launched into space",
+    "subtitle": "This includes satellites, probes, landers, crewed spacecrafts, and space station flight elements launched into Earth orbit or beyond.",
+    "note": "Where they differ, launch attributions are based on the commissioning country, not the country conducting the operations.",
+    "citation": "United Nations Office for Outer Space Affairs (2025)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/yearly-number-of-objects-launched-into-outer-space?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "World",
+      "United States",
+      "China",
+      "United Kingdom",
+      "France",
+      "Russia",
+      "India",
+      "Japan",
+      "European Space Agency",
+      "Germany"
+    ]
+  },
+  "columns": {
+    "Annual number of objects launched into outer space": {
+      "titleShort": "Annual number of objects launched into outer space",
+      "titleLong": "Annual number of objects launched into outer space",
+      "descriptionShort": "Annual number of satellites, probes, landers, crewed spacecrafts, and space station flight elements, launched into Earth orbit or beyond.",
+      "descriptionKey": [
+        "Objects are defined here as satellites, probes, landers, crewed spacecrafts, and space station flight elements launched into Earth orbit or beyond.",
+        "This data is based on national registers of launches submitted to the UN by participating nations. According to UN estimates, the data captures around 88% of all objects launched.",
+        "When an object is marked by the source as launched by a country on behalf of another one, the launch is attributed to the latter country.",
+        "When a launch is made jointly by several countries, it is recorded in each of these countries' time series but only once in the 'World' series."
+      ],
+      "descriptionProcessing": "- We scrape the data from the source by iterating through all objects in the online index.\n- We harmonize the names of countries. When an object is marked by the source as launched by a country on behalf of another one, we attribute the launch to the latter country.\n- We aggregate launches by country and year. When a launch is made jointly by several countries, it is recorded in each of these countries' time series.\n- We calculate the total number of launches globally. This is available as 'World' in the data. When a launch is made jointly by several countries, it is only recorded once in the 'World' series.\n- We also calculate the cumulative number of launches over time.",
+      "shortUnit": "",
+      "unit": "objects",
+      "timespan": "1957-2024",
+      "type": "Integer",
+      "owidVariableId": 1014830,
+      "shortName": "annual_launches",
+      "lastUpdated": "2025-03-04",
+      "nextUpdate": "2026-03-04",
+      "citationShort": "United Nations Office for Outer Space Affairs (2025) – with major processing by Our World in Data",
+      "citationLong": "United Nations Office for Outer Space Affairs (2025) – with major processing by Our World in Data. “Annual number of objects launched into outer space – UNOOSA” [dataset]. United Nations Office for Outer Space Affairs, “Online Index of Objects Launched into Outer Space” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1014830.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-05-02",
+  "activeFilters": {}
+}

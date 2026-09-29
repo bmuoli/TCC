@@ -1,0 +1,275 @@
+{
+  "id": "TC-10",
+  "title": "Multifásico · indutores acoplados",
+  "goal": "Comparar magnéticos independentes com alternativas de acoplamento e integração.",
+  "switchType": "SiC MOSFET",
+  "status": "done",
+  "freq": "",
+  "duty": "",
+  "vin": "",
+  "vout": "",
+  "pin": "",
+  "pout": "",
+  "iout": "",
+  "waveform": "",
+  "notes": "",
+  "acceptance": "",
+  "simulationEnabled": false,
+  "simulationFile": null,
+  "simulationImages": [],
+  "trash": [],
+  "enableForward": true,
+  "enableReverse": false,
+  "activeDirection": "forward",
+  "directions": {
+    "forward": {
+      "freq": "",
+      "duty": "",
+      "vin": "",
+      "vout": "",
+      "pin": "",
+      "pout": "",
+      "iout": "",
+      "waveform": "",
+      "notes": "",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [],
+      "trash": [],
+      "executionDone": false,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    },
+    "reverse": {
+      "freq": "",
+      "duty": "",
+      "vin": "50",
+      "vout": "30",
+      "pin": "",
+      "pout": "",
+      "iout": "",
+      "waveform": "",
+      "notes": "",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [],
+      "trash": [],
+      "executionDone": false,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    }
+  },
+  "enableSi": true,
+  "enableSiC": false,
+  "activeSwitchVariant": "Si",
+  "switchVariants": {
+    "SiC": {
+      "switches": [
+        {
+          "part": "UJ3C065030K3S",
+          "technology": "SiC",
+          "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": true,
+          "collectIGS": false
+        },
+        {
+          "part": "UJ3C065030K3S",
+          "technology": "SiC",
+          "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "100",
+          "duty": "58",
+          "vin": "36",
+          "vout": "",
+          "pin": "350,6",
+          "pout": "320,2",
+          "iout": "7,18",
+          "waveform": "",
+          "notes": "Dead time configurado: 5%\nDead time por intervalo: 0,5 µs (500 ns)\n\nRazão cíclica nominal Q1: 59%\nRazão cíclica efetiva Q1: 49%\n\nRazão cíclica nominal Q2: 41%\nRazão cíclica efetiva estimada Q2: 31%\n\nCarga resistiva: 6,9 Ω\nTopologia: Ćuk síncrono\n\nO circuito apresentou rendimento inicial máximo próximo de 91%, com redução progressiva à medida que a temperatura dos semicondutores aumentava. Em ensaio prolongado, a chave principal atingiu aproximadamente 120 °C. Próximo desse ponto, a taxa de elevação da temperatura aparentemente diminuiu; entretanto, o teste foi interrompido antes que fosse possível confirmar a estabilização térmica. O comportamento observado evidencia correlação entre aumento da temperatura e redução do rendimento, sem que, neste estágio, seja possível atribuir a degradação a um mecanismo específico de perdas.",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "100",
+          "duty": "58",
+          "vin": "36",
+          "vout": "",
+          "pin": "350,6",
+          "pout": "320,2",
+          "iout": "7,18",
+          "waveform": "",
+          "notes": "Dead time configurado: 5%\nDead time por intervalo: 0,5 µs (500 ns)\n\nRazão cíclica nominal Q1: 59%\nRazão cíclica efetiva Q1: 49%\n\nRazão cíclica nominal Q2: 41%\nRazão cíclica efetiva estimada Q2: 31%\n\nCarga resistiva: 6,9 Ω\nTopologia: Ćuk síncrono\n\nO circuito apresentou rendimento inicial máximo próximo de 91%, com redução progressiva à medida que a temperatura dos semicondutores aumentava. Em ensaio prolongado, a chave principal atingiu aproximadamente 120 °C. Próximo desse ponto, a taxa de elevação da temperatura aparentemente diminuiu; entretanto, o teste foi interrompido antes que fosse possível confirmar a estabilização térmica. O comportamento observado evidencia correlação entre aumento da temperatura e redução do rendimento, sem que, neste estágio, seja possível atribuir a degradação a um mecanismo específico de perdas.",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    },
+    "Si": {
+      "switches": [
+        {
+          "part": "",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "",
+          "duty": "",
+          "vin": "",
+          "vout": "",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    }
+  },
+  "inductorCount": 2,
+  "capacitorCount": 2,
+  "switchCount": 2,
+  "inductors": [
+    {
+      "value": "50",
+      "unit": "µH",
+      "notes": "",
+      "collectI": true,
+      "collectV": true
+    },
+    {
+      "value": "75",
+      "unit": "µH",
+      "notes": "",
+      "collectI": true,
+      "collectV": true
+    }
+  ],
+  "capacitors": [
+    {
+      "value": "5",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    },
+    {
+      "value": "",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    }
+  ],
+  "switches": [
+    {
+      "part": "",
+      "technology": "Si",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    },
+    {
+      "part": "",
+      "technology": "Si",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    }
+  ],
+  "evidence": [],
+  "setupName": "Conversor CUK - Dissipativo - SIC",
+  "updatedAt": "2026-09-14T21:16:31.871Z"
+}

@@ -1,0 +1,1295 @@
+{
+  "version": 18,
+  "snapshotAt": "2026-09-29T15:07:25.666Z",
+  "testCase": {
+    "id": "TC-07",
+    "title": "Célula auxiliar · 300 W",
+    "goal": "Demonstrar comutação suave nominal por meio da célula auxiliar.",
+    "switchType": "",
+    "status": "planned",
+    "freq": "",
+    "duty": "",
+    "vin": "",
+    "vout": "",
+    "pin": "",
+    "pout": "",
+    "iout": "",
+    "waveform": "",
+    "notes": "",
+    "acceptance": "",
+    "simulationEnabled": false,
+    "simulationFile": null,
+    "simulationImages": [],
+    "trash": [
+      {
+        "subjects": [
+          "Saida",
+          "Entrada"
+        ],
+        "subject": "Saída + Entrada",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Saida",
+            "signal": "Tensão de saída (V)"
+          },
+          {
+            "subject": "Saida",
+            "signal": "Corrente de saída (A)"
+          },
+          {
+            "subject": "Entrada",
+            "signal": "Tensão de entrada (V)"
+          },
+          {
+            "subject": "Entrada",
+            "signal": "Corrente de entrada (A)"
+          }
+        ],
+        "signal": "Vout (V) + Iout (A) + Vin (V) + Iin (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-07_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+        "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Saida_Entrada/Forma_de_onda/Vout_V_Iout_A_Vin_V_Iin_A/TC-07_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+        "sha256": "c860e1229d013d6da22249594bd3008986da61770442ee3d4c9be3972e713fd0",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-29T14:12:12.737Z",
+        "hadAnnotations": false,
+        "restoredAt": "2026-09-29T14:20:45.310Z",
+        "thermalView": "",
+        "imageNote": "",
+        "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Saida_Entrada/Forma_de_onda/Vout_V_e_Iout_A_e_Vin_V_e_Iin_A/TC-07_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+        "trashedAt": "2026-09-29T14:36:04.553Z",
+        "fileMissing": false
+      },
+      {
+        "subjects": [
+          "Chave Q1"
+        ],
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Chave Q1",
+            "signal": "Tensão VDS (V)"
+          },
+          {
+            "subject": "Chave Q1",
+            "signal": "Tensão VGS (V)"
+          }
+        ],
+        "signal": "VDS (V) + VGS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+        "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Chave_Q1/Forma_de_onda/VDS_V_VGS_V/TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+        "sha256": "20550a4976bc602d5f9dd0f494b73cc835eaf07322785f19f5bf997d50b92e22",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-29T14:20:26.876Z",
+        "hadAnnotations": false,
+        "restoredAt": "2026-09-29T14:20:37.252Z",
+        "thermalView": "",
+        "imageNote": "",
+        "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+        "trashedAt": "2026-09-29T14:40:19.365Z",
+        "fileMissing": false
+      },
+      {
+        "subjects": [
+          "Entrada",
+          "Saida"
+        ],
+        "subject": "Entrada + Saída",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Entrada",
+            "signal": "Tensão de entrada (V)"
+          },
+          {
+            "subject": "Entrada",
+            "signal": "Corrente de entrada (A)"
+          },
+          {
+            "subject": "Saida",
+            "signal": "Tensão de saída (V)"
+          },
+          {
+            "subject": "Saida",
+            "signal": "Corrente de saída (A)"
+          }
+        ],
+        "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+        "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Entrada_Saida/Forma_de_onda/Vin_V_Iin_A_Vout_V_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+        "sha256": "ed085e7f2094f3b20bb1c0513dc52bb8056ffef30399dc72bd8b02a04ce8710c",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-29T14:28:24.412Z",
+        "thermalView": "",
+        "imageNote": "",
+        "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+        "trashedAt": "2026-09-29T14:40:27.660Z",
+        "fileMissing": false,
+        "hadAnnotations": false
+      },
+      {
+        "subjects": [
+          "Entrada",
+          "Saida"
+        ],
+        "subject": "Entrada + Saída",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Entrada",
+            "signal": "Tensão de entrada (V)"
+          },
+          {
+            "subject": "Entrada",
+            "signal": "Corrente de entrada (A)"
+          },
+          {
+            "subject": "Saida",
+            "signal": "Tensão de saída (V)"
+          },
+          {
+            "subject": "Saida",
+            "signal": "Corrente de saída (A)"
+          }
+        ],
+        "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+        "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Entrada_Saida/Forma_de_onda/Vin_V_Iin_A_Vout_V_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+        "sha256": "741d9c867758e9bb7fa0084dd79fa52d50019dd2cb6f594cfc2feedb3c542709",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-29T14:36:10.901Z",
+        "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+        "trashedAt": "2026-09-29T14:40:28.439Z",
+        "fileMissing": false,
+        "hadAnnotations": false
+      },
+      {
+        "subjects": [
+          "Entrada",
+          "Saida"
+        ],
+        "subject": "Entrada + Saída",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Entrada",
+            "signal": "Tensão de entrada (V)"
+          },
+          {
+            "subject": "Entrada",
+            "signal": "Corrente de entrada (A)"
+          },
+          {
+            "subject": "Saida",
+            "signal": "Tensão de saída (V)"
+          },
+          {
+            "subject": "Saida",
+            "signal": "Corrente de saída (A)"
+          }
+        ],
+        "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+        "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Entrada_Saida/Forma_de_onda/Vin_V_Iin_A_Vout_V_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02_1.png",
+        "sha256": "9a45239aadaaeb358c60bd1a1dda3dc66c66b773b61b6d10f18a8dc6315e0407",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-29T14:57:29.207Z",
+        "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+        "trashedAt": "2026-09-29T14:57:36.042Z",
+        "fileMissing": false,
+        "hadAnnotations": false
+      },
+      {
+        "subjects": [
+          "Entrada",
+          "Saida"
+        ],
+        "subject": "Entrada + Saída",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Entrada",
+            "signal": "Tensão de entrada (V)"
+          },
+          {
+            "subject": "Entrada",
+            "signal": "Corrente de entrada (A)"
+          },
+          {
+            "subject": "Saida",
+            "signal": "Tensão de saída (V)"
+          },
+          {
+            "subject": "Saida",
+            "signal": "Corrente de saída (A)"
+          }
+        ],
+        "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+        "relativePath": "",
+        "sha256": "741d9c867758e9bb7fa0084dd79fa52d50019dd2cb6f594cfc2feedb3c542709",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-29T14:36:10.901Z",
+        "thermalView": "",
+        "imageNote": "",
+        "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+        "trashedAt": "2026-09-29T14:57:42.761Z",
+        "fileMissing": true,
+        "hadAnnotations": false
+      }
+    ],
+    "enableForward": true,
+    "enableReverse": false,
+    "activeDirection": "forward",
+    "directions": {
+      "forward": {
+        "freq": "",
+        "duty": "",
+        "vin": "",
+        "vout": "",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [
+          {
+            "subjects": [
+              "Entrada",
+              "Saida"
+            ],
+            "subject": "Entrada + Saída",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Entrada",
+                "signal": "Tensão de entrada (V)"
+              },
+              {
+                "subject": "Entrada",
+                "signal": "Corrente de entrada (A)"
+              },
+              {
+                "subject": "Saida",
+                "signal": "Tensão de saída (V)"
+              },
+              {
+                "subject": "Saida",
+                "signal": "Corrente de saída (A)"
+              }
+            ],
+            "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+            "relativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+            "sha256": "9a45239aadaaeb358c60bd1a1dda3dc66c66b773b61b6d10f18a8dc6315e0407",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-29T14:57:49.035Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Chave Q1"
+            ],
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Chave Q1",
+                "signal": "Tensão VDS (V)"
+              },
+              {
+                "subject": "Chave Q1",
+                "signal": "Tensão VGS (V)"
+              }
+            ],
+            "signal": "VDS (V) + VGS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01_1.png",
+            "relativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01_1.png",
+            "sha256": "60588f1ab03582da87b86b3b272912d0756857a5a780d3b1c1d5eac190d70376",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-29T14:58:00.658Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Indutor L3",
+              "Chave Q3"
+            ],
+            "subject": "Indutor L3 + Chave Q3",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Indutor L3",
+                "signal": "Corrente (A)"
+              },
+              {
+                "subject": "Chave Q3",
+                "signal": "Tensão VDS (V)"
+              }
+            ],
+            "signal": "IL3 (A) + Q3 VDS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-07_Si_Indutor_L3_Chave_Q3_IL3_A_e_Q3_VDS_V_01.png",
+            "relativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Indutor_L3_Chave_Q3/Forma_de_onda/IL3_A_e_Q3_VDS_V/TC-07_Si_Indutor_L3_Chave_Q3_IL3_A_e_Q3_VDS_V_01.png",
+            "sha256": "7fcb47ea2a339b30bba2baad2fb1ba39388b7a575b4fa83dcc836d44397486cc",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-29T15:06:49.768Z"
+          }
+        ],
+        "trash": [
+          {
+            "subjects": [
+              "Saida",
+              "Entrada"
+            ],
+            "subject": "Saída + Entrada",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Saida",
+                "signal": "Tensão de saída (V)"
+              },
+              {
+                "subject": "Saida",
+                "signal": "Corrente de saída (A)"
+              },
+              {
+                "subject": "Entrada",
+                "signal": "Tensão de entrada (V)"
+              },
+              {
+                "subject": "Entrada",
+                "signal": "Corrente de entrada (A)"
+              }
+            ],
+            "signal": "Vout (V) + Iout (A) + Vin (V) + Iin (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-07_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+            "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Saida_Entrada/Forma_de_onda/Vout_V_Iout_A_Vin_V_Iin_A/TC-07_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+            "sha256": "c860e1229d013d6da22249594bd3008986da61770442ee3d4c9be3972e713fd0",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-29T14:12:12.737Z",
+            "hadAnnotations": false,
+            "restoredAt": "2026-09-29T14:20:45.310Z",
+            "thermalView": "",
+            "imageNote": "",
+            "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Saida_Entrada/Forma_de_onda/Vout_V_e_Iout_A_e_Vin_V_e_Iin_A/TC-07_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+            "trashedAt": "2026-09-29T14:36:04.553Z",
+            "fileMissing": false
+          },
+          {
+            "subjects": [
+              "Chave Q1"
+            ],
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Chave Q1",
+                "signal": "Tensão VDS (V)"
+              },
+              {
+                "subject": "Chave Q1",
+                "signal": "Tensão VGS (V)"
+              }
+            ],
+            "signal": "VDS (V) + VGS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+            "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Chave_Q1/Forma_de_onda/VDS_V_VGS_V/TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+            "sha256": "20550a4976bc602d5f9dd0f494b73cc835eaf07322785f19f5bf997d50b92e22",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-29T14:20:26.876Z",
+            "hadAnnotations": false,
+            "restoredAt": "2026-09-29T14:20:37.252Z",
+            "thermalView": "",
+            "imageNote": "",
+            "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+            "trashedAt": "2026-09-29T14:40:19.365Z",
+            "fileMissing": false
+          },
+          {
+            "subjects": [
+              "Entrada",
+              "Saida"
+            ],
+            "subject": "Entrada + Saída",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Entrada",
+                "signal": "Tensão de entrada (V)"
+              },
+              {
+                "subject": "Entrada",
+                "signal": "Corrente de entrada (A)"
+              },
+              {
+                "subject": "Saida",
+                "signal": "Tensão de saída (V)"
+              },
+              {
+                "subject": "Saida",
+                "signal": "Corrente de saída (A)"
+              }
+            ],
+            "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+            "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Entrada_Saida/Forma_de_onda/Vin_V_Iin_A_Vout_V_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+            "sha256": "ed085e7f2094f3b20bb1c0513dc52bb8056ffef30399dc72bd8b02a04ce8710c",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-29T14:28:24.412Z",
+            "thermalView": "",
+            "imageNote": "",
+            "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+            "trashedAt": "2026-09-29T14:40:27.660Z",
+            "fileMissing": false,
+            "hadAnnotations": false
+          },
+          {
+            "subjects": [
+              "Entrada",
+              "Saida"
+            ],
+            "subject": "Entrada + Saída",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Entrada",
+                "signal": "Tensão de entrada (V)"
+              },
+              {
+                "subject": "Entrada",
+                "signal": "Corrente de entrada (A)"
+              },
+              {
+                "subject": "Saida",
+                "signal": "Tensão de saída (V)"
+              },
+              {
+                "subject": "Saida",
+                "signal": "Corrente de saída (A)"
+              }
+            ],
+            "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+            "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Entrada_Saida/Forma_de_onda/Vin_V_Iin_A_Vout_V_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+            "sha256": "741d9c867758e9bb7fa0084dd79fa52d50019dd2cb6f594cfc2feedb3c542709",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-29T14:36:10.901Z",
+            "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+            "trashedAt": "2026-09-29T14:40:28.439Z",
+            "fileMissing": false,
+            "hadAnnotations": false
+          },
+          {
+            "subjects": [
+              "Entrada",
+              "Saida"
+            ],
+            "subject": "Entrada + Saída",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Entrada",
+                "signal": "Tensão de entrada (V)"
+              },
+              {
+                "subject": "Entrada",
+                "signal": "Corrente de entrada (A)"
+              },
+              {
+                "subject": "Saida",
+                "signal": "Tensão de saída (V)"
+              },
+              {
+                "subject": "Saida",
+                "signal": "Corrente de saída (A)"
+              }
+            ],
+            "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+            "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Entrada_Saida/Forma_de_onda/Vin_V_Iin_A_Vout_V_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02_1.png",
+            "sha256": "9a45239aadaaeb358c60bd1a1dda3dc66c66b773b61b6d10f18a8dc6315e0407",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-29T14:57:29.207Z",
+            "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+            "trashedAt": "2026-09-29T14:57:36.042Z",
+            "fileMissing": false,
+            "hadAnnotations": false
+          },
+          {
+            "subjects": [
+              "Entrada",
+              "Saida"
+            ],
+            "subject": "Entrada + Saída",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Entrada",
+                "signal": "Tensão de entrada (V)"
+              },
+              {
+                "subject": "Entrada",
+                "signal": "Corrente de entrada (A)"
+              },
+              {
+                "subject": "Saida",
+                "signal": "Tensão de saída (V)"
+              },
+              {
+                "subject": "Saida",
+                "signal": "Corrente de saída (A)"
+              }
+            ],
+            "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+            "relativePath": "",
+            "sha256": "741d9c867758e9bb7fa0084dd79fa52d50019dd2cb6f594cfc2feedb3c542709",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-29T14:36:10.901Z",
+            "thermalView": "",
+            "imageNote": "",
+            "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+            "trashedAt": "2026-09-29T14:57:42.761Z",
+            "fileMissing": true,
+            "hadAnnotations": false
+          }
+        ],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      },
+      "reverse": {
+        "freq": "",
+        "duty": "",
+        "vin": "50",
+        "vout": "30",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      }
+    },
+    "enableSi": true,
+    "enableSiC": false,
+    "activeSwitchVariant": "Si",
+    "switchVariants": {
+      "Si": {
+        "switches": [
+          {
+            "part": "IRFP4768PbF",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          },
+          {
+            "part": "IRFP4768PbF",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          },
+          {
+            "part": "IRF3415",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          },
+          {
+            "part": "IRF3415",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "",
+            "duty": "",
+            "vin": "",
+            "vout": "",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [
+              {
+                "subjects": [
+                  "Entrada",
+                  "Saida"
+                ],
+                "subject": "Entrada + Saída",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Entrada",
+                    "signal": "Tensão de entrada (V)"
+                  },
+                  {
+                    "subject": "Entrada",
+                    "signal": "Corrente de entrada (A)"
+                  },
+                  {
+                    "subject": "Saida",
+                    "signal": "Tensão de saída (V)"
+                  },
+                  {
+                    "subject": "Saida",
+                    "signal": "Corrente de saída (A)"
+                  }
+                ],
+                "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+                "relativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+                "sha256": "9a45239aadaaeb358c60bd1a1dda3dc66c66b773b61b6d10f18a8dc6315e0407",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-29T14:57:49.035Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Chave Q1"
+                ],
+                "subject": "Chave Q1",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Tensão VDS (V)"
+                  },
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Tensão VGS (V)"
+                  }
+                ],
+                "signal": "VDS (V) + VGS (V)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01_1.png",
+                "relativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01_1.png",
+                "sha256": "60588f1ab03582da87b86b3b272912d0756857a5a780d3b1c1d5eac190d70376",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-29T14:58:00.658Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Indutor L3",
+                  "Chave Q3"
+                ],
+                "subject": "Indutor L3 + Chave Q3",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Indutor L3",
+                    "signal": "Corrente (A)"
+                  },
+                  {
+                    "subject": "Chave Q3",
+                    "signal": "Tensão VDS (V)"
+                  }
+                ],
+                "signal": "IL3 (A) + Q3 VDS (V)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-07_Si_Indutor_L3_Chave_Q3_IL3_A_e_Q3_VDS_V_01.png",
+                "relativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Indutor_L3_Chave_Q3/Forma_de_onda/IL3_A_e_Q3_VDS_V/TC-07_Si_Indutor_L3_Chave_Q3_IL3_A_e_Q3_VDS_V_01.png",
+                "sha256": "7fcb47ea2a339b30bba2baad2fb1ba39388b7a575b4fa83dcc836d44397486cc",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-29T15:06:49.768Z"
+              }
+            ],
+            "trash": [
+              {
+                "subjects": [
+                  "Saida",
+                  "Entrada"
+                ],
+                "subject": "Saída + Entrada",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Saida",
+                    "signal": "Tensão de saída (V)"
+                  },
+                  {
+                    "subject": "Saida",
+                    "signal": "Corrente de saída (A)"
+                  },
+                  {
+                    "subject": "Entrada",
+                    "signal": "Tensão de entrada (V)"
+                  },
+                  {
+                    "subject": "Entrada",
+                    "signal": "Corrente de entrada (A)"
+                  }
+                ],
+                "signal": "Vout (V) + Iout (A) + Vin (V) + Iin (A)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-07_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+                "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Saida_Entrada/Forma_de_onda/Vout_V_Iout_A_Vin_V_Iin_A/TC-07_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+                "sha256": "c860e1229d013d6da22249594bd3008986da61770442ee3d4c9be3972e713fd0",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-29T14:12:12.737Z",
+                "hadAnnotations": false,
+                "restoredAt": "2026-09-29T14:20:45.310Z",
+                "thermalView": "",
+                "imageNote": "",
+                "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Saida_Entrada/Forma_de_onda/Vout_V_e_Iout_A_e_Vin_V_e_Iin_A/TC-07_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+                "trashedAt": "2026-09-29T14:36:04.553Z",
+                "fileMissing": false
+              },
+              {
+                "subjects": [
+                  "Chave Q1"
+                ],
+                "subject": "Chave Q1",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Tensão VDS (V)"
+                  },
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Tensão VGS (V)"
+                  }
+                ],
+                "signal": "VDS (V) + VGS (V)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+                "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Chave_Q1/Forma_de_onda/VDS_V_VGS_V/TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+                "sha256": "20550a4976bc602d5f9dd0f494b73cc835eaf07322785f19f5bf997d50b92e22",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-29T14:20:26.876Z",
+                "hadAnnotations": false,
+                "restoredAt": "2026-09-29T14:20:37.252Z",
+                "thermalView": "",
+                "imageNote": "",
+                "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+                "trashedAt": "2026-09-29T14:40:19.365Z",
+                "fileMissing": false
+              },
+              {
+                "subjects": [
+                  "Entrada",
+                  "Saida"
+                ],
+                "subject": "Entrada + Saída",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Entrada",
+                    "signal": "Tensão de entrada (V)"
+                  },
+                  {
+                    "subject": "Entrada",
+                    "signal": "Corrente de entrada (A)"
+                  },
+                  {
+                    "subject": "Saida",
+                    "signal": "Tensão de saída (V)"
+                  },
+                  {
+                    "subject": "Saida",
+                    "signal": "Corrente de saída (A)"
+                  }
+                ],
+                "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+                "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Entrada_Saida/Forma_de_onda/Vin_V_Iin_A_Vout_V_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+                "sha256": "ed085e7f2094f3b20bb1c0513dc52bb8056ffef30399dc72bd8b02a04ce8710c",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-29T14:28:24.412Z",
+                "thermalView": "",
+                "imageNote": "",
+                "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+                "trashedAt": "2026-09-29T14:40:27.660Z",
+                "fileMissing": false,
+                "hadAnnotations": false
+              },
+              {
+                "subjects": [
+                  "Entrada",
+                  "Saida"
+                ],
+                "subject": "Entrada + Saída",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Entrada",
+                    "signal": "Tensão de entrada (V)"
+                  },
+                  {
+                    "subject": "Entrada",
+                    "signal": "Corrente de entrada (A)"
+                  },
+                  {
+                    "subject": "Saida",
+                    "signal": "Tensão de saída (V)"
+                  },
+                  {
+                    "subject": "Saida",
+                    "signal": "Corrente de saída (A)"
+                  }
+                ],
+                "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+                "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Entrada_Saida/Forma_de_onda/Vin_V_Iin_A_Vout_V_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+                "sha256": "741d9c867758e9bb7fa0084dd79fa52d50019dd2cb6f594cfc2feedb3c542709",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-29T14:36:10.901Z",
+                "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+                "trashedAt": "2026-09-29T14:40:28.439Z",
+                "fileMissing": false,
+                "hadAnnotations": false
+              },
+              {
+                "subjects": [
+                  "Entrada",
+                  "Saida"
+                ],
+                "subject": "Entrada + Saída",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Entrada",
+                    "signal": "Tensão de entrada (V)"
+                  },
+                  {
+                    "subject": "Entrada",
+                    "signal": "Corrente de entrada (A)"
+                  },
+                  {
+                    "subject": "Saida",
+                    "signal": "Tensão de saída (V)"
+                  },
+                  {
+                    "subject": "Saida",
+                    "signal": "Corrente de saída (A)"
+                  }
+                ],
+                "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+                "relativePath": "TC-07_Celula_auxiliar_350_W/Lixeira/Teste_Pratico/Direto/Si/Entrada_Saida/Forma_de_onda/Vin_V_Iin_A_Vout_V_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02_1.png",
+                "sha256": "9a45239aadaaeb358c60bd1a1dda3dc66c66b773b61b6d10f18a8dc6315e0407",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-29T14:57:29.207Z",
+                "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+                "trashedAt": "2026-09-29T14:57:36.042Z",
+                "fileMissing": false,
+                "hadAnnotations": false
+              },
+              {
+                "subjects": [
+                  "Entrada",
+                  "Saida"
+                ],
+                "subject": "Entrada + Saída",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Entrada",
+                    "signal": "Tensão de entrada (V)"
+                  },
+                  {
+                    "subject": "Entrada",
+                    "signal": "Corrente de entrada (A)"
+                  },
+                  {
+                    "subject": "Saida",
+                    "signal": "Tensão de saída (V)"
+                  },
+                  {
+                    "subject": "Saida",
+                    "signal": "Corrente de saída (A)"
+                  }
+                ],
+                "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+                "relativePath": "",
+                "sha256": "741d9c867758e9bb7fa0084dd79fa52d50019dd2cb6f594cfc2feedb3c542709",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-29T14:36:10.901Z",
+                "thermalView": "",
+                "imageNote": "",
+                "originalRelativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_02.png",
+                "trashedAt": "2026-09-29T14:57:42.761Z",
+                "fileMissing": true,
+                "hadAnnotations": false
+              }
+            ],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      },
+      "SiC": {
+        "switches": [
+          {
+            "part": "",
+            "technology": "SiC",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          },
+          {
+            "part": "",
+            "technology": "SiC",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          },
+          {
+            "part": "",
+            "technology": "SiC",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          },
+          {
+            "part": "",
+            "technology": "SiC",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "",
+            "duty": "",
+            "vin": "",
+            "vout": "",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      }
+    },
+    "inductorCount": 3,
+    "capacitorCount": 1,
+    "switchCount": 4,
+    "inductors": [
+      {
+        "value": "50",
+        "unit": "µH",
+        "notes": "",
+        "collectI": true,
+        "collectV": true
+      },
+      {
+        "value": "75",
+        "unit": "µH",
+        "notes": "",
+        "collectI": true,
+        "collectV": true
+      },
+      {
+        "value": "2",
+        "unit": "µH",
+        "notes": "",
+        "collectI": true,
+        "collectV": false
+      }
+    ],
+    "capacitors": [
+      {
+        "value": "",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      }
+    ],
+    "switches": [
+      {
+        "part": "IRFP4768PbF",
+        "technology": "Si",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": false,
+        "collectIGS": false
+      },
+      {
+        "part": "IRFP4768PbF",
+        "technology": "Si",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": false,
+        "collectIGS": false
+      },
+      {
+        "part": "IRF3415",
+        "technology": "Si",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": false,
+        "collectIGS": false
+      },
+      {
+        "part": "IRF3415",
+        "technology": "Si",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": false,
+        "collectIGS": false
+      }
+    ],
+    "evidence": [
+      {
+        "subjects": [
+          "Entrada",
+          "Saida"
+        ],
+        "subject": "Entrada + Saída",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Entrada",
+            "signal": "Tensão de entrada (V)"
+          },
+          {
+            "subject": "Entrada",
+            "signal": "Corrente de entrada (A)"
+          },
+          {
+            "subject": "Saida",
+            "signal": "Tensão de saída (V)"
+          },
+          {
+            "subject": "Saida",
+            "signal": "Corrente de saída (A)"
+          }
+        ],
+        "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+        "relativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-07_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+        "sha256": "9a45239aadaaeb358c60bd1a1dda3dc66c66b773b61b6d10f18a8dc6315e0407",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-29T14:57:49.035Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Chave Q1"
+        ],
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Chave Q1",
+            "signal": "Tensão VDS (V)"
+          },
+          {
+            "subject": "Chave Q1",
+            "signal": "Tensão VGS (V)"
+          }
+        ],
+        "signal": "VDS (V) + VGS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01_1.png",
+        "relativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TC-07_Si_Chave_Q1_VDS_V_e_VGS_V_01_1.png",
+        "sha256": "60588f1ab03582da87b86b3b272912d0756857a5a780d3b1c1d5eac190d70376",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-29T14:58:00.658Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Indutor L3",
+          "Chave Q3"
+        ],
+        "subject": "Indutor L3 + Chave Q3",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Indutor L3",
+            "signal": "Corrente (A)"
+          },
+          {
+            "subject": "Chave Q3",
+            "signal": "Tensão VDS (V)"
+          }
+        ],
+        "signal": "IL3 (A) + Q3 VDS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-07_Si_Indutor_L3_Chave_Q3_IL3_A_e_Q3_VDS_V_01.png",
+        "relativePath": "TC-07_Celula_auxiliar_350_W/Teste_Pratico/Direto/Si/Evidencias/Indutor_L3_Chave_Q3/Forma_de_onda/IL3_A_e_Q3_VDS_V/TC-07_Si_Indutor_L3_Chave_Q3_IL3_A_e_Q3_VDS_V_01.png",
+        "sha256": "7fcb47ea2a339b30bba2baad2fb1ba39388b7a575b4fa83dcc836d44397486cc",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-29T15:06:49.768Z"
+      }
+    ],
+    "setupName": "",
+    "displayTitle": "Célula auxiliar · 350 W",
+    "folderName": "TC-07_Celula_auxiliar_350_W",
+    "updatedAt": "2026-09-29T15:07:23.100Z"
+  }
+}

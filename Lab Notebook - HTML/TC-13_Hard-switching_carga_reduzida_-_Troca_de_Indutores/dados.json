@@ -1,0 +1,276 @@
+{
+  "id": "TC-13",
+  "title": "Hard-switching · carga reduzida - Troca de Indutores",
+  "goal": "Hard-switching · com carga reduzida - Indutores de 700W (25u e 35U)",
+  "switchType": "SiC MOSFET",
+  "status": "done",
+  "freq": "",
+  "duty": "",
+  "vin": "",
+  "vout": "",
+  "pin": "",
+  "pout": "",
+  "iout": "",
+  "waveform": "",
+  "notes": "",
+  "acceptance": "",
+  "simulationEnabled": false,
+  "simulationFile": null,
+  "simulationImages": [],
+  "trash": [],
+  "enableForward": true,
+  "enableReverse": false,
+  "activeDirection": "forward",
+  "directions": {
+    "forward": {
+      "freq": "",
+      "duty": "",
+      "vin": "",
+      "vout": "",
+      "pin": "",
+      "pout": "",
+      "iout": "",
+      "waveform": "",
+      "notes": "",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [],
+      "trash": [],
+      "executionDone": false,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    },
+    "reverse": {
+      "freq": "",
+      "duty": "",
+      "vin": "50",
+      "vout": "30",
+      "pin": "",
+      "pout": "",
+      "iout": "",
+      "waveform": "",
+      "notes": "",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [],
+      "trash": [],
+      "executionDone": false,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    }
+  },
+  "enableSi": true,
+  "enableSiC": false,
+  "activeSwitchVariant": "Si",
+  "switchVariants": {
+    "Si": {
+      "switches": [
+        {
+          "part": "",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "",
+          "duty": "",
+          "vin": "",
+          "vout": "",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    },
+    "SiC": {
+      "switches": [
+        {
+          "part": "",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "",
+          "duty": "",
+          "vin": "",
+          "vout": "",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    }
+  },
+  "inductorCount": 2,
+  "capacitorCount": 2,
+  "switchCount": 2,
+  "inductors": [
+    {
+      "value": "50",
+      "unit": "µH",
+      "notes": "",
+      "collectI": true,
+      "collectV": true
+    },
+    {
+      "value": "75",
+      "unit": "µH",
+      "notes": "",
+      "collectI": true,
+      "collectV": true
+    }
+  ],
+  "capacitors": [
+    {
+      "value": "5",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    },
+    {
+      "value": "",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    }
+  ],
+  "switches": [
+    {
+      "part": "",
+      "technology": "Si",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    },
+    {
+      "part": "",
+      "technology": "Si",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    }
+  ],
+  "evidence": [],
+  "setupName": "Conversor CUK - Dissipativo - SIC",
+  "displayId": "TC-10",
+  "updatedAt": "2026-09-14T21:22:46.882Z"
+}

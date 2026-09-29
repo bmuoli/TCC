@@ -1,0 +1,481 @@
+{
+  "id": "TC-01.03",
+  "title": "Hard-switching · 300 W · CargaFixa",
+  "goal": "Operação nominal dissipativa em 300 W.",
+  "switchType": "MOSFET Si",
+  "status": "done",
+  "freq": "100",
+  "duty": "58",
+  "vin": "38,5",
+  "vout": "50,1",
+  "pin": "363,8",
+  "pout": "370,2",
+  "iout": "7,39",
+  "waveform": "",
+  "notes": "Carga resistiva fixa: ≈ 6,9 Ω, obtida pela associação em paralelo de resistores de 100 Ω.\nA carga foi fixada para melhorar a correlação entre os resultados experimentais e de simulação e permitir a verificação da potência de saída a partir da resistência equivalente.\n\nVin = 38,5 V | Iin = 10,5 A\nVout = 50,1 V | Iout = 7,39 A\n\nPin ≈ 404,3 W\nPout (Vout·Iout) ≈ 370,2 W\nPout (Vout²/R) ≈ 363,8 W\nη ≈ 91,6% pela medição V·I\nη ≈ 90,0% pela carga resistiva\n\nMaior rendimento obtido experimentalmente nesta configuração.",
+  "acceptance": "",
+  "simulationEnabled": false,
+  "simulationFile": null,
+  "simulationImages": [],
+  "trash": [
+    {
+      "subject": "Entrada",
+      "type": "Forma de onda",
+      "signal": "Tensão de entrada (V)",
+      "originalName": "clipboard.png",
+      "fileName": "TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+      "relativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Lixeira/Teste_Pratico/Direto/SiC/Entrada/Forma_de_onda/Tensao_de_entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+      "sha256": "3fafb84bd88c50616ce26905f6c11e56731ba5053dd23c920f36f4fbf67a8e01",
+      "reportInclude": true,
+      "reportCaption": "",
+      "savedAt": "2026-09-25T15:12:48.434Z",
+      "originalRelativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Tensao_Entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+      "trashedAt": "2026-09-25T15:13:52.574Z",
+      "fileMissing": false,
+      "hadAnnotations": false,
+      "thermalView": ""
+    },
+    {
+      "subject": "Entrada",
+      "type": "Forma de onda",
+      "signal": "Tensão de entrada (V)",
+      "originalName": "clipboard.png",
+      "fileName": "TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+      "relativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Lixeira/Teste_Pratico/Direto/SiC/Entrada/Forma_de_onda/Tensao_de_entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01_1.png",
+      "sha256": "3fafb84bd88c50616ce26905f6c11e56731ba5053dd23c920f36f4fbf67a8e01",
+      "reportInclude": true,
+      "reportCaption": "",
+      "savedAt": "2026-09-25T15:12:48.434Z",
+      "originalRelativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Tensao_Entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+      "trashedAt": "2026-09-25T15:13:53.453Z",
+      "fileMissing": false,
+      "hadAnnotations": false,
+      "thermalView": ""
+    },
+    {
+      "subject": "Entrada",
+      "type": "Forma de onda",
+      "signal": "Tensão de entrada (V)",
+      "originalName": "clipboard.png",
+      "fileName": "TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+      "relativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Lixeira/Teste_Pratico/Direto/SiC/Entrada/Forma_de_onda/Tensao_de_entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01_2.png",
+      "sha256": "f8c9d3d688bc439e712921e65732a9955c550b75b67c1ba8729bbd3e77e06d52",
+      "reportInclude": true,
+      "reportCaption": "",
+      "savedAt": "2026-09-25T15:14:11.225Z",
+      "originalRelativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Tensao_Entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+      "trashedAt": "2026-09-25T15:20:12.535Z",
+      "fileMissing": false,
+      "hadAnnotations": false,
+      "thermalView": ""
+    }
+  ],
+  "enableForward": true,
+  "enableReverse": false,
+  "activeDirection": "forward",
+  "directions": {
+    "forward": {
+      "freq": "100",
+      "duty": "58",
+      "vin": "38,5",
+      "vout": "50,1",
+      "pin": "363,8",
+      "pout": "370,2",
+      "iout": "7,39",
+      "waveform": "",
+      "notes": "Carga resistiva fixa: ≈ 6,9 Ω, obtida pela associação em paralelo de resistores de 100 Ω.\nA carga foi fixada para melhorar a correlação entre os resultados experimentais e de simulação e permitir a verificação da potência de saída a partir da resistência equivalente.\n\nVin = 38,5 V | Iin = 10,5 A\nVout = 50,1 V | Iout = 7,39 A\n\nPin ≈ 404,3 W\nPout (Vout·Iout) ≈ 370,2 W\nPout (Vout²/R) ≈ 363,8 W\nη ≈ 91,6% pela medição V·I\nη ≈ 90,0% pela carga resistiva\n\nMaior rendimento obtido experimentalmente nesta configuração.",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [
+        {
+          "subject": "Entrada",
+          "type": "Forma de onda",
+          "signal": "Geral (V + I)",
+          "originalName": "clipboard.png",
+          "fileName": "TC-01.03_SiC_Entrada_Geral_VI_01.png",
+          "relativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-01.03_SiC_Entrada_Geral_VI_01.png",
+          "sha256": "97f1e610213f91efcdbd25377607ecc61fbb81f018045f9f2acb243a89176560",
+          "reportInclude": true,
+          "reportCaption": "",
+          "savedAt": "2026-09-25T16:10:14.579Z",
+          "subjects": [
+            "Entrada"
+          ],
+          "signalSelections": [],
+          "thermalView": ""
+        }
+      ],
+      "trash": [
+        {
+          "subject": "Entrada",
+          "type": "Forma de onda",
+          "signal": "Tensão de entrada (V)",
+          "originalName": "clipboard.png",
+          "fileName": "TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+          "relativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Lixeira/Teste_Pratico/Direto/SiC/Entrada/Forma_de_onda/Tensao_de_entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+          "sha256": "3fafb84bd88c50616ce26905f6c11e56731ba5053dd23c920f36f4fbf67a8e01",
+          "reportInclude": true,
+          "reportCaption": "",
+          "savedAt": "2026-09-25T15:12:48.434Z",
+          "originalRelativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Tensao_Entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+          "trashedAt": "2026-09-25T15:13:52.574Z",
+          "fileMissing": false,
+          "hadAnnotations": false,
+          "thermalView": ""
+        },
+        {
+          "subject": "Entrada",
+          "type": "Forma de onda",
+          "signal": "Tensão de entrada (V)",
+          "originalName": "clipboard.png",
+          "fileName": "TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+          "relativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Lixeira/Teste_Pratico/Direto/SiC/Entrada/Forma_de_onda/Tensao_de_entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01_1.png",
+          "sha256": "3fafb84bd88c50616ce26905f6c11e56731ba5053dd23c920f36f4fbf67a8e01",
+          "reportInclude": true,
+          "reportCaption": "",
+          "savedAt": "2026-09-25T15:12:48.434Z",
+          "originalRelativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Tensao_Entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+          "trashedAt": "2026-09-25T15:13:53.453Z",
+          "fileMissing": false,
+          "hadAnnotations": false,
+          "thermalView": ""
+        },
+        {
+          "subject": "Entrada",
+          "type": "Forma de onda",
+          "signal": "Tensão de entrada (V)",
+          "originalName": "clipboard.png",
+          "fileName": "TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+          "relativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Lixeira/Teste_Pratico/Direto/SiC/Entrada/Forma_de_onda/Tensao_de_entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01_2.png",
+          "sha256": "f8c9d3d688bc439e712921e65732a9955c550b75b67c1ba8729bbd3e77e06d52",
+          "reportInclude": true,
+          "reportCaption": "",
+          "savedAt": "2026-09-25T15:14:11.225Z",
+          "originalRelativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Tensao_Entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+          "trashedAt": "2026-09-25T15:20:12.535Z",
+          "fileMissing": false,
+          "hadAnnotations": false,
+          "thermalView": ""
+        }
+      ],
+      "executionDone": true,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    },
+    "reverse": {
+      "freq": "",
+      "duty": "",
+      "vin": "50",
+      "vout": "30",
+      "pin": "",
+      "pout": "",
+      "iout": "",
+      "waveform": "",
+      "notes": "",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [],
+      "trash": [],
+      "executionDone": false,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    }
+  },
+  "enableSi": false,
+  "enableSiC": true,
+  "activeSwitchVariant": "SiC",
+  "switchVariants": {
+    "SiC": {
+      "switches": [
+        {
+          "part": "UJ3C065030K3S",
+          "technology": "SiC",
+          "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": true,
+          "collectIGS": false
+        },
+        {
+          "part": "UJ3C065030K3S",
+          "technology": "SiC",
+          "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "100",
+          "duty": "58",
+          "vin": "38,5",
+          "vout": "50,1",
+          "pin": "363,8",
+          "pout": "370,2",
+          "iout": "7,39",
+          "waveform": "",
+          "notes": "Carga resistiva fixa: ≈ 6,9 Ω, obtida pela associação em paralelo de resistores de 100 Ω.\nA carga foi fixada para melhorar a correlação entre os resultados experimentais e de simulação e permitir a verificação da potência de saída a partir da resistência equivalente.\n\nVin = 38,5 V | Iin = 10,5 A\nVout = 50,1 V | Iout = 7,39 A\n\nPin ≈ 404,3 W\nPout (Vout·Iout) ≈ 370,2 W\nPout (Vout²/R) ≈ 363,8 W\nη ≈ 91,6% pela medição V·I\nη ≈ 90,0% pela carga resistiva\n\nMaior rendimento obtido experimentalmente nesta configuração.",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [
+            {
+              "subject": "Entrada",
+              "type": "Forma de onda",
+              "signal": "Geral (V + I)",
+              "originalName": "clipboard.png",
+              "fileName": "TC-01.03_SiC_Entrada_Geral_VI_01.png",
+              "relativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-01.03_SiC_Entrada_Geral_VI_01.png",
+              "sha256": "97f1e610213f91efcdbd25377607ecc61fbb81f018045f9f2acb243a89176560",
+              "reportInclude": true,
+              "reportCaption": "",
+              "savedAt": "2026-09-25T16:10:14.579Z",
+              "subjects": [
+                "Entrada"
+              ],
+              "signalSelections": [],
+              "thermalView": ""
+            }
+          ],
+          "trash": [
+            {
+              "subject": "Entrada",
+              "type": "Forma de onda",
+              "signal": "Tensão de entrada (V)",
+              "originalName": "clipboard.png",
+              "fileName": "TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+              "relativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Lixeira/Teste_Pratico/Direto/SiC/Entrada/Forma_de_onda/Tensao_de_entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+              "sha256": "3fafb84bd88c50616ce26905f6c11e56731ba5053dd23c920f36f4fbf67a8e01",
+              "reportInclude": true,
+              "reportCaption": "",
+              "savedAt": "2026-09-25T15:12:48.434Z",
+              "originalRelativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Tensao_Entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+              "trashedAt": "2026-09-25T15:13:52.574Z",
+              "fileMissing": false,
+              "hadAnnotations": false,
+              "thermalView": ""
+            },
+            {
+              "subject": "Entrada",
+              "type": "Forma de onda",
+              "signal": "Tensão de entrada (V)",
+              "originalName": "clipboard.png",
+              "fileName": "TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+              "relativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Lixeira/Teste_Pratico/Direto/SiC/Entrada/Forma_de_onda/Tensao_de_entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01_1.png",
+              "sha256": "3fafb84bd88c50616ce26905f6c11e56731ba5053dd23c920f36f4fbf67a8e01",
+              "reportInclude": true,
+              "reportCaption": "",
+              "savedAt": "2026-09-25T15:12:48.434Z",
+              "originalRelativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Tensao_Entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+              "trashedAt": "2026-09-25T15:13:53.453Z",
+              "fileMissing": false,
+              "hadAnnotations": false,
+              "thermalView": ""
+            },
+            {
+              "subject": "Entrada",
+              "type": "Forma de onda",
+              "signal": "Tensão de entrada (V)",
+              "originalName": "clipboard.png",
+              "fileName": "TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+              "relativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Lixeira/Teste_Pratico/Direto/SiC/Entrada/Forma_de_onda/Tensao_de_entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01_2.png",
+              "sha256": "f8c9d3d688bc439e712921e65732a9955c550b75b67c1ba8729bbd3e77e06d52",
+              "reportInclude": true,
+              "reportCaption": "",
+              "savedAt": "2026-09-25T15:14:11.225Z",
+              "originalRelativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Tensao_Entrada_V/TC-01.03_SiC_Entrada_Tensao_Entrada_V_01.png",
+              "trashedAt": "2026-09-25T15:20:12.535Z",
+              "fileMissing": false,
+              "hadAnnotations": false,
+              "thermalView": ""
+            }
+          ],
+          "executionDone": true,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    },
+    "Si": {
+      "switches": [
+        {
+          "part": "Si · IRFP4768PbF",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": true,
+          "collectIGS": false
+        },
+        {
+          "part": "Si · IRFP4768PbF",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": true,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "100",
+          "duty": "58",
+          "vin": "34",
+          "vout": "46",
+          "pin": "360,4",
+          "pout": "308,9",
+          "iout": "6,73",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    }
+  },
+  "inductorCount": 2,
+  "capacitorCount": 1,
+  "switchCount": 2,
+  "inductors": [
+    {
+      "value": "50",
+      "unit": "µH",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    },
+    {
+      "value": "70",
+      "unit": "µH",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    }
+  ],
+  "capacitors": [
+    {
+      "value": "5",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    }
+  ],
+  "switches": [
+    {
+      "part": "UJ3C065030K3S",
+      "technology": "SiC",
+      "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": true,
+      "collectIGS": false
+    },
+    {
+      "part": "UJ3C065030K3S",
+      "technology": "SiC",
+      "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    }
+  ],
+  "evidence": [
+    {
+      "subject": "Entrada",
+      "type": "Forma de onda",
+      "signal": "Geral (V + I)",
+      "originalName": "clipboard.png",
+      "fileName": "TC-01.03_SiC_Entrada_Geral_VI_01.png",
+      "relativePath": "TC-01.03_Hard-switching_300_W_CargaFixa/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-01.03_SiC_Entrada_Geral_VI_01.png",
+      "sha256": "97f1e610213f91efcdbd25377607ecc61fbb81f018045f9f2acb243a89176560",
+      "reportInclude": true,
+      "reportCaption": "",
+      "savedAt": "2026-09-25T16:10:14.579Z",
+      "subjects": [
+        "Entrada"
+      ],
+      "signalSelections": [],
+      "thermalView": ""
+    }
+  ],
+  "displayId": "TC-01.03",
+  "displayTitle": "Hard-switching · 350 W · CargaFixa",
+  "displayGoal": "Operação nominal dissipativa em 300 W.",
+  "setupName": "",
+  "updatedAt": "2026-09-29T00:22:10.591Z"
+}

@@ -1,0 +1,281 @@
+{
+  "version": 18,
+  "snapshotAt": "2026-09-29T17:10:27.671Z",
+  "testCase": {
+    "id": "TC-09",
+    "title": "Multifásico · até 700 W",
+    "goal": "Validar duas fases, compartilhamento de potência e potência total próxima de 700 W.",
+    "switchType": "SiC MOSFET",
+    "status": "done",
+    "freq": "",
+    "duty": "",
+    "vin": "",
+    "vout": "",
+    "pin": "",
+    "pout": "",
+    "iout": "",
+    "waveform": "",
+    "notes": "",
+    "acceptance": "",
+    "simulationEnabled": false,
+    "simulationFile": null,
+    "simulationImages": [],
+    "trash": [],
+    "enableForward": true,
+    "enableReverse": false,
+    "activeDirection": "forward",
+    "directions": {
+      "forward": {
+        "freq": "",
+        "duty": "",
+        "vin": "",
+        "vout": "",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      },
+      "reverse": {
+        "freq": "",
+        "duty": "",
+        "vin": "50",
+        "vout": "30",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      }
+    },
+    "enableSi": false,
+    "enableSiC": true,
+    "activeSwitchVariant": "SiC",
+    "switchVariants": {
+      "SiC": {
+        "switches": [
+          {
+            "part": "",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          },
+          {
+            "part": "",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "",
+            "duty": "",
+            "vin": "",
+            "vout": "",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      },
+      "Si": {
+        "switches": [
+          {
+            "part": "",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          },
+          {
+            "part": "",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "",
+            "duty": "",
+            "vin": "",
+            "vout": "",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      }
+    },
+    "inductorCount": 2,
+    "capacitorCount": 2,
+    "switchCount": 2,
+    "inductors": [
+      {
+        "value": "50",
+        "unit": "µH",
+        "notes": "",
+        "collectI": true,
+        "collectV": true
+      },
+      {
+        "value": "75",
+        "unit": "µH",
+        "notes": "",
+        "collectI": true,
+        "collectV": true
+      }
+    ],
+    "capacitors": [
+      {
+        "value": "5",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      },
+      {
+        "value": "",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      }
+    ],
+    "switches": [
+      {
+        "part": "",
+        "technology": "Si",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": false,
+        "collectIGS": false
+      },
+      {
+        "part": "",
+        "technology": "Si",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": false,
+        "collectIGS": false
+      }
+    ],
+    "evidence": [],
+    "setupName": "Conversor CUK - Dissipativo - SIC",
+    "folderName": "TB-05_Multifasico_ate_700_W",
+    "displayId": "TB-05",
+    "updatedAt": "2026-09-29T17:10:25.108Z"
+  }
+}

@@ -1,0 +1,607 @@
+{
+  "version": 18,
+  "snapshotAt": "2026-09-29T00:07:08.115Z",
+  "testCase": {
+    "id": "TC-06",
+    "title": "Soft-switching · 300 W · alteração de L",
+    "goal": "Demonstrar comutação suave em potência nominal mediante alteração dos indutores.",
+    "switchType": "MOSFET Si",
+    "status": "planned",
+    "freq": "76",
+    "duty": "58",
+    "vin": "28,4 ",
+    "vout": "46,8 ",
+    "pin": "355,0 ",
+    "pout": "315,4 ",
+    "iout": "6,74 ",
+    "waveform": "",
+    "notes": "Frequência de comutação: 76 kHz\nDuty cycle: 58%\nDead time: 3%\n\nIndutor de entrada: 7,5 µH\nIndutor de saída: 10 µH\n\nVin = 28,4 V | Iin = 12,5 A\nVout = 46,8 V | Iout = 6,74 A\n\nPin ≈ 355,0 W\nPout ≈ 315,4 W\nη ≈ 88,9%\n\nA redução das indutâncias aumentou a ondulação da corrente, permitindo o cruzamento por zero da corrente do indutor.\n\nA análise simultânea de VDS e VGS mostra que VDS é reduzida para próximo de zero antes do acionamento da chave, caracterizando operação com ZVS no ponto ensaiado.\n\nDurante o dead time, a corrente encontra caminho pelo diodo intrínseco da chave, contribuindo para a transição ressonante e para o estabelecimento da condição de tensão nula antes do turn-on.",
+    "acceptance": "",
+    "simulationEnabled": false,
+    "simulationFile": null,
+    "simulationImages": [],
+    "trash": [],
+    "enableForward": true,
+    "enableReverse": false,
+    "activeDirection": "forward",
+    "directions": {
+      "forward": {
+        "freq": "76",
+        "duty": "58",
+        "vin": "28,4 ",
+        "vout": "46,8 ",
+        "pin": "355,0 ",
+        "pout": "315,4 ",
+        "iout": "6,74 ",
+        "waveform": "",
+        "notes": "Frequência de comutação: 76 kHz\nDuty cycle: 58%\nDead time: 3%\n\nIndutor de entrada: 7,5 µH\nIndutor de saída: 10 µH\n\nVin = 28,4 V | Iin = 12,5 A\nVout = 46,8 V | Iout = 6,74 A\n\nPin ≈ 355,0 W\nPout ≈ 315,4 W\nη ≈ 88,9%\n\nA redução das indutâncias aumentou a ondulação da corrente, permitindo o cruzamento por zero da corrente do indutor.\n\nA análise simultânea de VDS e VGS mostra que VDS é reduzida para próximo de zero antes do acionamento da chave, caracterizando operação com ZVS no ponto ensaiado.\n\nDurante o dead time, a corrente encontra caminho pelo diodo intrínseco da chave, contribuindo para a transição ressonante e para o estabelecimento da condição de tensão nula antes do turn-on.",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [
+          {
+            "subjects": [
+              "Saida",
+              "Entrada"
+            ],
+            "subject": "Saída + Entrada",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Saida",
+                "signal": "Tensão de saída (V)"
+              },
+              {
+                "subject": "Saida",
+                "signal": "Corrente de saída (A)"
+              },
+              {
+                "subject": "Entrada",
+                "signal": "Tensão de entrada (V)"
+              },
+              {
+                "subject": "Entrada",
+                "signal": "Corrente de entrada (A)"
+              }
+            ],
+            "signal": "Vout (V) + Iout (A) + Vin (V) + Iin (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-06_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+            "relativePath": "TC-06_Soft-switching_300_W_alteracao_de_L/Teste_Pratico/Direto/Si/Evidencias/Saida_Entrada/Forma_de_onda/Vout_V_e_Iout_A_e_Vin_V_e_Iin_A/TC-06_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+            "sha256": "abda0e592273643b348e5734d00e318eb989a2c3902439668fa1e2188900f4d0",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-28T23:53:34.124Z",
+            "thermalView": ""
+          },
+          {
+            "subjects": [
+              "Chave Q1"
+            ],
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Chave Q1",
+                "signal": "Tensão VDS (V)"
+              },
+              {
+                "subject": "Chave Q1",
+                "signal": "Tensão VGS (V)"
+              }
+            ],
+            "signal": "VDS (V) + VGS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+            "relativePath": "TC-06_Soft-switching_300_W_alteracao_de_L/Teste_Pratico/Direto/Si/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+            "sha256": "30b58cfcac6ab23300b70b267bb2f58270cdd7634fda8be5bd4b72d192e6af16",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-29T00:03:46.024Z",
+            "annotatedFileName": "TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01_anotada.png",
+            "annotatedRelativePath": "TC-06_Soft-switching_300_W_alteracao_de_L/Teste_Pratico/Direto/Si/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01_anotada.png",
+            "annotationShapes": [
+              {
+                "type": "rect",
+                "x": 437.5,
+                "y": 132.4375,
+                "w": 85,
+                "h": 259,
+                "color": "#ff3b30",
+                "size": 4
+              },
+              {
+                "type": "text",
+                "x": 531.5,
+                "y": 87.4375,
+                "text": "Comutação Suave",
+                "color": "#ff3b30",
+                "size": 4
+              },
+              {
+                "type": "arrow",
+                "x1": 477.5,
+                "y1": 131.4375,
+                "x2": 523.5,
+                "y2": 106.4375,
+                "color": "#ff3b30",
+                "size": 4
+              },
+              {
+                "type": "text",
+                "x": 641.5,
+                "y": 141.4375,
+                "text": "VGS",
+                "color": "#1818ff",
+                "size": 4
+              },
+              {
+                "type": "text",
+                "x": 255.5,
+                "y": 141.4375,
+                "text": "VDS",
+                "color": "#a500a5",
+                "size": 4
+              }
+            ],
+            "annotationUpdatedAt": "2026-09-29T00:06:44.033Z",
+            "thermalView": ""
+          }
+        ],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      },
+      "reverse": {
+        "freq": "",
+        "duty": "",
+        "vin": "50",
+        "vout": "30",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      }
+    },
+    "enableSi": true,
+    "enableSiC": false,
+    "activeSwitchVariant": "Si",
+    "switchVariants": {
+      "Si": {
+        "switches": [
+          {
+            "part": "IRFP4768PbF",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          },
+          {
+            "part": "IRFP4768PbF",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "76",
+            "duty": "58",
+            "vin": "28,4 ",
+            "vout": "46,8 ",
+            "pin": "355,0 ",
+            "pout": "315,4 ",
+            "iout": "6,74 ",
+            "waveform": "",
+            "notes": "Frequência de comutação: 76 kHz\nDuty cycle: 58%\nDead time: 3%\n\nIndutor de entrada: 7,5 µH\nIndutor de saída: 10 µH\n\nVin = 28,4 V | Iin = 12,5 A\nVout = 46,8 V | Iout = 6,74 A\n\nPin ≈ 355,0 W\nPout ≈ 315,4 W\nη ≈ 88,9%\n\nA redução das indutâncias aumentou a ondulação da corrente, permitindo o cruzamento por zero da corrente do indutor.\n\nA análise simultânea de VDS e VGS mostra que VDS é reduzida para próximo de zero antes do acionamento da chave, caracterizando operação com ZVS no ponto ensaiado.\n\nDurante o dead time, a corrente encontra caminho pelo diodo intrínseco da chave, contribuindo para a transição ressonante e para o estabelecimento da condição de tensão nula antes do turn-on.",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [
+              {
+                "subjects": [
+                  "Saida",
+                  "Entrada"
+                ],
+                "subject": "Saída + Entrada",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Saida",
+                    "signal": "Tensão de saída (V)"
+                  },
+                  {
+                    "subject": "Saida",
+                    "signal": "Corrente de saída (A)"
+                  },
+                  {
+                    "subject": "Entrada",
+                    "signal": "Tensão de entrada (V)"
+                  },
+                  {
+                    "subject": "Entrada",
+                    "signal": "Corrente de entrada (A)"
+                  }
+                ],
+                "signal": "Vout (V) + Iout (A) + Vin (V) + Iin (A)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-06_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+                "relativePath": "TC-06_Soft-switching_300_W_alteracao_de_L/Teste_Pratico/Direto/Si/Evidencias/Saida_Entrada/Forma_de_onda/Vout_V_e_Iout_A_e_Vin_V_e_Iin_A/TC-06_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+                "sha256": "abda0e592273643b348e5734d00e318eb989a2c3902439668fa1e2188900f4d0",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-28T23:53:34.124Z",
+                "thermalView": ""
+              },
+              {
+                "subjects": [
+                  "Chave Q1"
+                ],
+                "subject": "Chave Q1",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Tensão VDS (V)"
+                  },
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Tensão VGS (V)"
+                  }
+                ],
+                "signal": "VDS (V) + VGS (V)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+                "relativePath": "TC-06_Soft-switching_300_W_alteracao_de_L/Teste_Pratico/Direto/Si/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+                "sha256": "30b58cfcac6ab23300b70b267bb2f58270cdd7634fda8be5bd4b72d192e6af16",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-29T00:03:46.024Z",
+                "annotatedFileName": "TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01_anotada.png",
+                "annotatedRelativePath": "TC-06_Soft-switching_300_W_alteracao_de_L/Teste_Pratico/Direto/Si/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01_anotada.png",
+                "annotationShapes": [
+                  {
+                    "type": "rect",
+                    "x": 437.5,
+                    "y": 132.4375,
+                    "w": 85,
+                    "h": 259,
+                    "color": "#ff3b30",
+                    "size": 4
+                  },
+                  {
+                    "type": "text",
+                    "x": 531.5,
+                    "y": 87.4375,
+                    "text": "Comutação Suave",
+                    "color": "#ff3b30",
+                    "size": 4
+                  },
+                  {
+                    "type": "arrow",
+                    "x1": 477.5,
+                    "y1": 131.4375,
+                    "x2": 523.5,
+                    "y2": 106.4375,
+                    "color": "#ff3b30",
+                    "size": 4
+                  },
+                  {
+                    "type": "text",
+                    "x": 641.5,
+                    "y": 141.4375,
+                    "text": "VGS",
+                    "color": "#1818ff",
+                    "size": 4
+                  },
+                  {
+                    "type": "text",
+                    "x": 255.5,
+                    "y": 141.4375,
+                    "text": "VDS",
+                    "color": "#a500a5",
+                    "size": 4
+                  }
+                ],
+                "annotationUpdatedAt": "2026-09-29T00:06:44.033Z",
+                "thermalView": ""
+              }
+            ],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      },
+      "SiC": {
+        "switches": [
+          {
+            "part": "",
+            "technology": "SiC",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "",
+            "technology": "SiC",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "100",
+            "duty": "58",
+            "vin": "55,2 ",
+            "vout": "75,8 ",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      }
+    },
+    "inductorCount": 2,
+    "capacitorCount": 2,
+    "switchCount": 2,
+    "inductors": [
+      {
+        "value": "7,5",
+        "unit": "µH",
+        "notes": "",
+        "collectI": true,
+        "collectV": true
+      },
+      {
+        "value": "10",
+        "unit": "µH",
+        "notes": "",
+        "collectI": true,
+        "collectV": true
+      }
+    ],
+    "capacitors": [
+      {
+        "value": "5",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": true
+      },
+      {
+        "value": "4.75",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      }
+    ],
+    "switches": [
+      {
+        "part": "IRFP4768PbF",
+        "technology": "Si",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": false,
+        "collectIGS": false
+      },
+      {
+        "part": "IRFP4768PbF",
+        "technology": "Si",
+        "notes": "",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": false,
+        "collectIGS": false
+      }
+    ],
+    "evidence": [
+      {
+        "subjects": [
+          "Saida",
+          "Entrada"
+        ],
+        "subject": "Saída + Entrada",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Saida",
+            "signal": "Tensão de saída (V)"
+          },
+          {
+            "subject": "Saida",
+            "signal": "Corrente de saída (A)"
+          },
+          {
+            "subject": "Entrada",
+            "signal": "Tensão de entrada (V)"
+          },
+          {
+            "subject": "Entrada",
+            "signal": "Corrente de entrada (A)"
+          }
+        ],
+        "signal": "Vout (V) + Iout (A) + Vin (V) + Iin (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-06_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+        "relativePath": "TC-06_Soft-switching_300_W_alteracao_de_L/Teste_Pratico/Direto/Si/Evidencias/Saida_Entrada/Forma_de_onda/Vout_V_e_Iout_A_e_Vin_V_e_Iin_A/TC-06_Si_Saida_Entrada_Vout_V_e_Iout_A_e_Vin_V_e_Iin_A_01.png",
+        "sha256": "abda0e592273643b348e5734d00e318eb989a2c3902439668fa1e2188900f4d0",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-28T23:53:34.124Z",
+        "thermalView": ""
+      },
+      {
+        "subjects": [
+          "Chave Q1"
+        ],
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Chave Q1",
+            "signal": "Tensão VDS (V)"
+          },
+          {
+            "subject": "Chave Q1",
+            "signal": "Tensão VGS (V)"
+          }
+        ],
+        "signal": "VDS (V) + VGS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+        "relativePath": "TC-06_Soft-switching_300_W_alteracao_de_L/Teste_Pratico/Direto/Si/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01.png",
+        "sha256": "30b58cfcac6ab23300b70b267bb2f58270cdd7634fda8be5bd4b72d192e6af16",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-29T00:03:46.024Z",
+        "annotatedFileName": "TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01_anotada.png",
+        "annotatedRelativePath": "TC-06_Soft-switching_300_W_alteracao_de_L/Teste_Pratico/Direto/Si/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TC-06_Si_Chave_Q1_VDS_V_e_VGS_V_01_anotada.png",
+        "annotationShapes": [
+          {
+            "type": "rect",
+            "x": 437.5,
+            "y": 132.4375,
+            "w": 85,
+            "h": 259,
+            "color": "#ff3b30",
+            "size": 4
+          },
+          {
+            "type": "text",
+            "x": 531.5,
+            "y": 87.4375,
+            "text": "Comutação Suave",
+            "color": "#ff3b30",
+            "size": 4
+          },
+          {
+            "type": "arrow",
+            "x1": 477.5,
+            "y1": 131.4375,
+            "x2": 523.5,
+            "y2": 106.4375,
+            "color": "#ff3b30",
+            "size": 4
+          },
+          {
+            "type": "text",
+            "x": 641.5,
+            "y": 141.4375,
+            "text": "VGS",
+            "color": "#1818ff",
+            "size": 4
+          },
+          {
+            "type": "text",
+            "x": 255.5,
+            "y": 141.4375,
+            "text": "VDS",
+            "color": "#a500a5",
+            "size": 4
+          }
+        ],
+        "annotationUpdatedAt": "2026-09-29T00:06:44.033Z",
+        "thermalView": ""
+      }
+    ],
+    "setupName": "",
+    "displayTitle": "Soft-switching · 350 W · ZVRT",
+    "updatedAt": "2026-09-29T00:07:05.474Z"
+  }
+}

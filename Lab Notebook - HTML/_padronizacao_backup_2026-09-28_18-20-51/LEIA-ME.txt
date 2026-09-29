@@ -1,0 +1,2 @@
+Imagens apenas renomeadas (sem conversao). JSON_originais guarda os JSON anteriores. Historico e demais arquivos nao foram alterados.
+Use renomeacoes_aplicadas.csv para conferir a lista exata.

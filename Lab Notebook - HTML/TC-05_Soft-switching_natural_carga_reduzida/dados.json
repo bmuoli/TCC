@@ -1,0 +1,245 @@
+{
+  "id": "TC-05",
+  "title": "Soft-switching natural · carga reduzida",
+  "goal": "Demonstrar a condição de comutação suave obtida naturalmente pela redução da potência de saída.",
+  "switchType": "SiC MOSFET",
+  "status": "planned",
+  "freq": "",
+  "duty": "",
+  "vin": "",
+  "vout": "",
+  "pin": "",
+  "pout": "",
+  "iout": "",
+  "waveform": "",
+  "notes": "",
+  "acceptance": "",
+  "simulationEnabled": false,
+  "simulationFile": null,
+  "simulationImages": [],
+  "trash": [],
+  "enableForward": true,
+  "enableReverse": false,
+  "activeDirection": "forward",
+  "directions": {
+    "forward": {
+      "freq": "",
+      "duty": "",
+      "vin": "",
+      "vout": "",
+      "pin": "",
+      "pout": "",
+      "iout": "",
+      "waveform": "",
+      "notes": "",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [],
+      "trash": [],
+      "executionDone": false,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    },
+    "reverse": {
+      "freq": "",
+      "duty": "",
+      "vin": "50",
+      "vout": "30",
+      "pin": "",
+      "pout": "",
+      "iout": "",
+      "waveform": "",
+      "notes": "",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [],
+      "trash": [],
+      "executionDone": false,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    }
+  },
+  "enableSi": true,
+  "enableSiC": false,
+  "activeSwitchVariant": "Si",
+  "switchVariants": {
+    "Si": {
+      "switches": [
+        {
+          "part": "",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": true,
+          "collectIGS": false
+        },
+        {
+          "part": "",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": true,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "",
+          "duty": "",
+          "vin": "",
+          "vout": "",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    },
+    "SiC": {
+      "switches": [
+        {
+          "part": "",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": true,
+          "collectIGS": false
+        },
+        {
+          "part": "",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "100",
+          "duty": "58",
+          "vin": "36",
+          "vout": "",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    }
+  },
+  "inductorCount": 0,
+  "capacitorCount": 0,
+  "switchCount": 2,
+  "inductors": [],
+  "capacitors": [],
+  "switches": [
+    {
+      "part": "",
+      "technology": "Si",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": true,
+      "collectIGS": false
+    },
+    {
+      "part": "",
+      "technology": "Si",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": true,
+      "collectIGS": false
+    }
+  ],
+  "evidence": [],
+  "setupName": "",
+  "updatedAt": "2026-09-28T23:49:40.575Z"
+}

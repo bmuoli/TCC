@@ -1,0 +1,389 @@
+{
+  "id": "TC-02",
+  "title": "Hard-switching · carga reduzida · SiC",
+  "goal": "Comparação em carga reduzida alterando apenas a tecnologia do semicondutor.",
+  "switchType": "MOSFET Si",
+  "status": "done",
+  "freq": "50",
+  "duty": "58",
+  "vin": "57,4",
+  "vout": "84,6",
+  "pin": "353,6 ",
+  "pout": "346,9 ",
+  "iout": "4,10 ",
+  "waveform": "",
+  "notes": "Ensaio realizado com redução da frequência de comutação de 100 kHz para 50 kHz, mantendo os demais parâmetros de operação.\n\nFrequência de comutação: 50 kHz\nDuty cycle: 58%\nDead time: 3%\n\nVin = 57,4 V | Iin = 6,16 A\nVout = 84,6 V | Iout = 4,10 A\n\nPin ≈ 353,6 W\nPout ≈ 346,9 W\nη ≈ 98,1%\n\nA redução da frequência de comutação resultou em aumento do rendimento, indicando redução da contribuição das perdas associadas à comutação.",
+  "acceptance": "",
+  "simulationEnabled": false,
+  "simulationFile": null,
+  "simulationImages": [],
+  "trash": [],
+  "enableForward": true,
+  "enableReverse": false,
+  "activeDirection": "forward",
+  "directions": {
+    "forward": {
+      "freq": "50",
+      "duty": "58",
+      "vin": "57,4",
+      "vout": "84,6",
+      "pin": "353,6 ",
+      "pout": "346,9 ",
+      "iout": "4,10 ",
+      "waveform": "",
+      "notes": "Ensaio realizado com redução da frequência de comutação de 100 kHz para 50 kHz, mantendo os demais parâmetros de operação.\n\nFrequência de comutação: 50 kHz\nDuty cycle: 58%\nDead time: 3%\n\nVin = 57,4 V | Iin = 6,16 A\nVout = 84,6 V | Iout = 4,10 A\n\nPin ≈ 353,6 W\nPout ≈ 346,9 W\nη ≈ 98,1%\n\nA redução da frequência de comutação resultou em aumento do rendimento, indicando redução da contribuição das perdas associadas à comutação.",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [
+        {
+          "subjects": [
+            "Entrada",
+            "Saida"
+          ],
+          "subject": "Entrada + Saída",
+          "type": "Forma de onda",
+          "signalSelections": [
+            {
+              "subject": "Entrada",
+              "signal": "Tensão de entrada (V)"
+            },
+            {
+              "subject": "Entrada",
+              "signal": "Corrente de entrada (A)"
+            },
+            {
+              "subject": "Saida",
+              "signal": "Tensão de saída (V)"
+            },
+            {
+              "subject": "Saida",
+              "signal": "Corrente de saída (A)"
+            }
+          ],
+          "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+          "originalName": "clipboard.png",
+          "fileName": "TC-02_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+          "relativePath": "TC-02_Hard-switching_carga_reduzida_SiC/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-02_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+          "sha256": "ee7cccd3af4640f3a9324054c0592124d1cbbc02969060f1457889d9cc004f13",
+          "reportInclude": true,
+          "reportCaption": "",
+          "savedAt": "2026-09-28T22:01:58.208Z",
+          "thermalView": "",
+          "imageNote": ""
+        }
+      ],
+      "trash": [],
+      "executionDone": true,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    },
+    "reverse": {
+      "freq": "",
+      "duty": "",
+      "vin": "50",
+      "vout": "30",
+      "pin": "",
+      "pout": "",
+      "iout": "",
+      "waveform": "",
+      "notes": "",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [],
+      "trash": [],
+      "executionDone": false,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    }
+  },
+  "enableSi": true,
+  "enableSiC": false,
+  "activeSwitchVariant": "Si",
+  "switchVariants": {
+    "SiC": {
+      "switches": [
+        {
+          "part": "",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": true,
+          "collectIGS": false
+        },
+        {
+          "part": "",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": true,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "100",
+          "duty": "58",
+          "vin": "55,2 ",
+          "vout": "75,8 ",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    },
+    "Si": {
+      "switches": [
+        {
+          "part": "IRFP4768PbF",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "IRFP4768PbF",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "50",
+          "duty": "58",
+          "vin": "57,4",
+          "vout": "84,6",
+          "pin": "353,6 ",
+          "pout": "346,9 ",
+          "iout": "4,10 ",
+          "waveform": "",
+          "notes": "Ensaio realizado com redução da frequência de comutação de 100 kHz para 50 kHz, mantendo os demais parâmetros de operação.\n\nFrequência de comutação: 50 kHz\nDuty cycle: 58%\nDead time: 3%\n\nVin = 57,4 V | Iin = 6,16 A\nVout = 84,6 V | Iout = 4,10 A\n\nPin ≈ 353,6 W\nPout ≈ 346,9 W\nη ≈ 98,1%\n\nA redução da frequência de comutação resultou em aumento do rendimento, indicando redução da contribuição das perdas associadas à comutação.",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [
+            {
+              "subjects": [
+                "Entrada",
+                "Saida"
+              ],
+              "subject": "Entrada + Saída",
+              "type": "Forma de onda",
+              "signalSelections": [
+                {
+                  "subject": "Entrada",
+                  "signal": "Tensão de entrada (V)"
+                },
+                {
+                  "subject": "Entrada",
+                  "signal": "Corrente de entrada (A)"
+                },
+                {
+                  "subject": "Saida",
+                  "signal": "Tensão de saída (V)"
+                },
+                {
+                  "subject": "Saida",
+                  "signal": "Corrente de saída (A)"
+                }
+              ],
+              "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+              "originalName": "clipboard.png",
+              "fileName": "TC-02_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+              "relativePath": "TC-02_Hard-switching_carga_reduzida_SiC/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-02_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+              "sha256": "ee7cccd3af4640f3a9324054c0592124d1cbbc02969060f1457889d9cc004f13",
+              "reportInclude": true,
+              "reportCaption": "",
+              "savedAt": "2026-09-28T22:01:58.208Z",
+              "thermalView": "",
+              "imageNote": ""
+            }
+          ],
+          "trash": [],
+          "executionDone": true,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    }
+  },
+  "inductorCount": 2,
+  "capacitorCount": 2,
+  "switchCount": 2,
+  "inductors": [
+    {
+      "value": "50",
+      "unit": "µH",
+      "notes": "",
+      "collectI": true,
+      "collectV": true
+    },
+    {
+      "value": "70",
+      "unit": "µH",
+      "notes": "",
+      "collectI": true,
+      "collectV": true
+    }
+  ],
+  "capacitors": [
+    {
+      "value": "5",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": true
+    },
+    {
+      "value": "4.75",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    }
+  ],
+  "switches": [
+    {
+      "part": "IRFP4768PbF",
+      "technology": "Si",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    },
+    {
+      "part": "IRFP4768PbF",
+      "technology": "Si",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    }
+  ],
+  "evidence": [
+    {
+      "subjects": [
+        "Entrada",
+        "Saida"
+      ],
+      "subject": "Entrada + Saída",
+      "type": "Forma de onda",
+      "signalSelections": [
+        {
+          "subject": "Entrada",
+          "signal": "Tensão de entrada (V)"
+        },
+        {
+          "subject": "Entrada",
+          "signal": "Corrente de entrada (A)"
+        },
+        {
+          "subject": "Saida",
+          "signal": "Tensão de saída (V)"
+        },
+        {
+          "subject": "Saida",
+          "signal": "Corrente de saída (A)"
+        }
+      ],
+      "signal": "Vin (V) + Iin (A) + Vout (V) + Iout (A)",
+      "originalName": "clipboard.png",
+      "fileName": "TC-02_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+      "relativePath": "TC-02_Hard-switching_carga_reduzida_SiC/Teste_Pratico/Direto/Si/Evidencias/Entrada_Saida/Forma_de_onda/Vin_V_e_Iin_A_e_Vout_V_e_Iout_A/TC-02_Si_Entrada_Saida_Vin_V_e_Iin_A_e_Vout_V_e_Iout_A_01.png",
+      "sha256": "ee7cccd3af4640f3a9324054c0592124d1cbbc02969060f1457889d9cc004f13",
+      "reportInclude": true,
+      "reportCaption": "",
+      "savedAt": "2026-09-28T22:01:58.208Z",
+      "thermalView": "",
+      "imageNote": ""
+    }
+  ],
+  "setupName": "Conversor Ćuk",
+  "displayTitle": "Hard-switching · carga reduzida - Frequencia Reduzida",
+  "displayId": "TC-04",
+  "folderName": "TC-02_Hard-switching_carga_reduzida_SiC",
+  "updatedAt": "2026-09-29T22:30:07.171Z"
+}

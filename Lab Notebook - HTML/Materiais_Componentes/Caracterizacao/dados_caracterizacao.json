@@ -1,0 +1,127 @@
+{
+  "updatedAt": "2026-09-11",
+  "measurements": {
+    "SiC": {
+      "partNumber": "UJ3C065030K3S",
+      "source": "TC1 multi-function tester",
+      "Cg_nF": [
+        5.77,
+        5.84,
+        5.85,
+        5.85
+      ],
+      "Cg_mean_nF": 5.828,
+      "aUg_V": [
+        2.44,
+        2.43,
+        2.43,
+        2.43
+      ],
+      "aUg_mean_V": 2.433,
+      "aVg_V": [
+        0.358,
+        0.323,
+        0.325,
+        0.319
+      ],
+      "aVg_mean_V": 0.331,
+      "RDS_tester_kOhm": [
+        0.38,
+        0.39,
+        0.38,
+        0.38
+      ],
+      "RDS_tester_mean_kOhm": 0.383,
+      "note": "A leitura RDS do TC1 não deve ser usada diretamente como RDS(on) de projeto."
+    },
+    "Si": {
+      "partNumber": "IRFP4768",
+      "source": "TC1 multi-function tester",
+      "Vt_V": [
+        4.41,
+        4.39,
+        4.42,
+        4.42
+      ],
+      "Vt_mean_V": 4.41,
+      "Cg_nF": [
+        14.3,
+        14,
+        14,
+        14.3
+      ],
+      "Cg_mean_nF": 14.15,
+      "auxiliary_V": [
+        0.527,
+        0.523,
+        0.524,
+        0.527
+      ],
+      "auxiliary_mean_V": 0.525,
+      "RDS_tester_Ohm": [
+        0.4,
+        0.2,
+        0.2,
+        0.4
+      ],
+      "RDS_tester_mean_Ohm": 0.3,
+      "note": "A leitura RDS do TC1 não deve ser usada diretamente como RDS(on) de projeto."
+    },
+    "inductors": {
+      "testFrequency_kHz": 100,
+      "Rs_Ohm": [
+        0.069,
+        0.104,
+        0.084,
+        0.088
+      ],
+      "Rs_mean_Ohm": 0.08625,
+      "note": "Leituras preliminares de Rs na ponte RLC a 100 kHz."
+    }
+  },
+  "datasheets": {
+    "SiC": {
+      "partNumber": "UJ3C065030K3S",
+      "manufacturer": "onsemi",
+      "url": "https://www.onsemi.com/download/data-sheet/pdf/uj3c065030k3s-d.pdf",
+      "VDS_V": 650,
+      "ID_A_at_Tc25": 85,
+      "RDSon_typ_mOhm": 27,
+      "RDSon_max_mOhm": 35,
+      "RDSon_condition": "VGS=12 V, ID=50 A, Tj=25 °C",
+      "Qg_nC": 51,
+      "Qgd_nC": 11,
+      "Coss_pF": 320,
+      "Coss_condition": "VDS=100 V, VGS=0 V, f=100 kHz",
+      "Eoss_uJ_at_400V": 18.5,
+      "RthJC_typ_C_per_W": 0.26,
+      "RthJC_max_C_per_W": 0.34,
+      "Tjmax_C": 175
+    },
+    "Si": {
+      "partNumber": "IRFP4768",
+      "manufacturer": "Infineon",
+      "url": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irfp4768-datasheet-en.pdf",
+      "VDS_V": 250,
+      "ID_A_at_Tc25": 93,
+      "RDSon_typ_mOhm": 14.5,
+      "RDSon_max_mOhm": 17.5,
+      "RDSon_condition": "VGS=10 V, ID=56 A",
+      "VGSth_V": "3–5",
+      "Qg_typ_nC": 180,
+      "Qg_max_nC": 270,
+      "Qgd_nC": 72,
+      "Coss_pF": 700,
+      "Coss_condition": "VDS=50 V, VGS=0 V, f=1 MHz",
+      "RthJC_max_C_per_W": 0.29,
+      "Tjmax_C": 175
+    }
+  },
+  "thermalModel": {
+    "conduction": "Pcond ≈ Irms² · RDS(on)(Tj,VGS)",
+    "switching": "Psw ≈ fs · (Eon + Eoff)",
+    "gateDrive": "Pgate ≈ Qg · VGS · fs",
+    "junctionEstimate": "Tj ≈ Tc + Pdevice · RθJC",
+    "note": "Tc é temperatura do encapsulamento; Tj será estimada."
+  }
+}

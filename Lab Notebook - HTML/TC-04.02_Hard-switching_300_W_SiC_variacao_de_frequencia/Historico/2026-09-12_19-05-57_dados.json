@@ -1,0 +1,332 @@
+{
+  "version": 18,
+  "snapshotAt": "2026-09-12T22:05:57.649Z",
+  "testCase": {
+    "id": "TC-04.02",
+    "title": "Hard-switching · 300 W · SiC · variação de frequência",
+    "goal": "Repetir o TC-04 alterando somente a frequência de comutação, mantendo as demais condições do ensaio.",
+    "switchType": "SiC MOSFET",
+    "status": "done",
+    "freq": "100",
+    "duty": "58",
+    "vin": "36",
+    "vout": "43.1",
+    "pin": "365,7 ",
+    "pout": "324,8 ",
+    "iout": "7,06",
+    "waveform": "",
+    "notes": "",
+    "acceptance": "",
+    "simulationEnabled": false,
+    "simulationFile": null,
+    "simulationImages": [],
+    "trash": [],
+    "enableForward": true,
+    "enableReverse": false,
+    "activeDirection": "forward",
+    "directions": {
+      "forward": {
+        "freq": "100",
+        "duty": "58",
+        "vin": "36",
+        "vout": "43.1",
+        "pin": "365,7 ",
+        "pout": "324,8 ",
+        "iout": "7,06",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [
+          {
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signal": "Geral",
+            "originalName": "TC-04.02_SiC_Entrada_Geral_VI_01.png",
+            "fileName": "TC-04.02_SiC_Chave_Q1_Geral_01.png",
+            "relativePath": "TC-04.02_Hard-switching_300_W_SiC_variacao_de_frequencia/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Geral/TC-04.02_SiC_Chave_Q1_Geral_01.png",
+            "sha256": "b13b3f7756e4a619206528b0ff44dab7127bca09dd7bb6b397742e252b1b5446",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-09-12T21:59:03.437Z"
+          }
+        ],
+        "trash": [],
+        "executionDone": true,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      },
+      "reverse": {
+        "freq": "",
+        "duty": "",
+        "vin": "50",
+        "vout": "30",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      }
+    },
+    "enableSi": true,
+    "enableSiC": true,
+    "activeSwitchVariant": "SiC",
+    "switchVariants": {
+      "SiC": {
+        "switches": [
+          {
+            "part": "UJ3C065030K3S",
+            "technology": "SiC",
+            "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "UJ3C065030K3S",
+            "technology": "SiC",
+            "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "100",
+            "duty": "58",
+            "vin": "36",
+            "vout": "43.1",
+            "pin": "365,7 ",
+            "pout": "324,8 ",
+            "iout": "7,06",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [
+              {
+                "subject": "Chave Q1",
+                "type": "Forma de onda",
+                "signal": "Geral",
+                "originalName": "TC-04.02_SiC_Entrada_Geral_VI_01.png",
+                "fileName": "TC-04.02_SiC_Chave_Q1_Geral_01.png",
+                "relativePath": "TC-04.02_Hard-switching_300_W_SiC_variacao_de_frequencia/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Geral/TC-04.02_SiC_Chave_Q1_Geral_01.png",
+                "sha256": "b13b3f7756e4a619206528b0ff44dab7127bca09dd7bb6b397742e252b1b5446",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-12T21:59:03.437Z"
+              }
+            ],
+            "trash": [],
+            "executionDone": true,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      },
+      "Si": {
+        "switches": [
+          {
+            "part": "IRFP4768PbF",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": false,
+            "collectVGS": false,
+            "collectIDS": false,
+            "collectIGS": false
+          },
+          {
+            "part": "IRFP4768PbF",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": false,
+            "collectVGS": false,
+            "collectIDS": false,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "50",
+            "duty": "58",
+            "vin": "36",
+            "vout": "46,0",
+            "pin": "368,1",
+            "pout": "316,5",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [
+              {
+                "subject": "Entrada",
+                "type": "Forma de onda",
+                "signal": "Geral (V + I)",
+                "originalName": "clipboard.png",
+                "fileName": "TC-04.02_Si_Entrada_Geral_VI_01.png",
+                "relativePath": "TC-04.02_Hard-switching_300_W_SiC_variacao_de_frequencia/Teste_Pratico/Direto/Si/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-04.02_Si_Entrada_Geral_VI_01.png",
+                "sha256": "8c9d7954fca45bfcaa47160cbc0c82562fc6aa1f04e55cb38657dc4b08a59d94",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-09-12T20:47:06.907Z"
+              }
+            ],
+            "trash": [],
+            "executionDone": true,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      }
+    },
+    "inductorCount": 2,
+    "capacitorCount": 2,
+    "switchCount": 2,
+    "inductors": [
+      {
+        "value": "50",
+        "unit": "µH",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      },
+      {
+        "value": "75",
+        "unit": "µH",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      }
+    ],
+    "capacitors": [
+      {
+        "value": "5",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      },
+      {
+        "value": "4.75",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      }
+    ],
+    "switches": [
+      {
+        "part": "UJ3C065030K3S",
+        "technology": "SiC",
+        "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": true,
+        "collectIGS": false
+      },
+      {
+        "part": "UJ3C065030K3S",
+        "technology": "SiC",
+        "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": false,
+        "collectIGS": false
+      }
+    ],
+    "evidence": [
+      {
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signal": "Geral",
+        "originalName": "TC-04.02_SiC_Entrada_Geral_VI_01.png",
+        "fileName": "TC-04.02_SiC_Chave_Q1_Geral_01.png",
+        "relativePath": "TC-04.02_Hard-switching_300_W_SiC_variacao_de_frequencia/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Geral/TC-04.02_SiC_Chave_Q1_Geral_01.png",
+        "sha256": "b13b3f7756e4a619206528b0ff44dab7127bca09dd7bb6b397742e252b1b5446",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-09-12T21:59:03.437Z"
+      }
+    ],
+    "setupName": "Conversor CUK - Dissipativo - SIC",
+    "displayTitle": "Hard-switching · 300 W · variação de frequência",
+    "updatedAt": "2026-09-12T22:05:55.017Z"
+  }
+}

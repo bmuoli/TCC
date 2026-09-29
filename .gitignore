@@ -1,0 +1,40 @@
+# Arquivos temporários do Windows, Office, navegadores e editores
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
+*.tmp
+*.temp
+*.swp
+*.swo
+*.autosave
+*.part
+*.crdownload
+*.download
+
+# Credenciais e chaves locais (nunca versionar)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+
+# Estado transitório do auxiliar de sincronização
+.tcc-github-sync/
+**/.tcc-github-sync/
+
+# Documentos de terceiros: excluídos até haver autorização explícita
+/Apostilas/**/*.pdf
+/Artigos/**/*.pdf
+/Livros/**/*.pdf
+/Normas/**/*.pdf
+/Notícias/**/*.pdf
+/NASA's Technical Handbook for Avoiding On-Orbit ESD Anomalies Due to Internal Charging Effects.pdf
+/Lab Notebook - HTML/Materiais_Componentes/Datasheets/**/*.pdf
+/Normas/**/*.zip
