@@ -6,10 +6,11 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$HelperVersion = '1.0.1'
+$HelperVersion = '1.0.2'
 $RepositoryRoot = 'C:\Users\muril\OneDrive\Área de Trabalho\01 - Faculdade e Estudos\TCC'
 $NotebookPath = Join-Path $PSScriptRoot 'TCC_Lab_Notebook_v50.html'
 $ExpectedRemoteUrl = 'https://github.com/bmuoli/TCC.git'
+$ExpectedGitDir = 'C:\Users\muril\TCC_Git_Metadata\repo.git'
 $GitExe = 'C:\Program Files\Git\cmd\git.exe'
 $ListenAddress = [System.Net.IPAddress]::Loopback
 $ListenPort = 8765
@@ -19,6 +20,19 @@ $script:OfflineTestPending = [bool]$TestOfflineOnce
 function Invoke-Git {
     param([Parameter(Mandatory)][string[]]$Arguments)
     $previousErrorPreference = $ErrorActionPreference
+    $gitEnvironmentNames = @(
+        'GIT_DIR',
+        'GIT_WORK_TREE',
+        'GIT_INDEX_FILE',
+        'GIT_COMMON_DIR',
+        'GIT_OBJECT_DIRECTORY',
+        'GIT_ALTERNATE_OBJECT_DIRECTORIES'
+    )
+    $savedGitEnvironment = @{}
+    foreach ($name in $gitEnvironmentNames) {
+        $savedGitEnvironment[$name] = [Environment]::GetEnvironmentVariable($name, 'Process')
+        [Environment]::SetEnvironmentVariable($name, $null, 'Process')
+    }
     $ErrorActionPreference = 'Continue'
     try {
         $lines = & $GitExe -C $RepositoryRoot @Arguments 2>&1
@@ -26,6 +40,9 @@ function Invoke-Git {
     }
     finally {
         $ErrorActionPreference = $previousErrorPreference
+        foreach ($name in $gitEnvironmentNames) {
+            [Environment]::SetEnvironmentVariable($name, $savedGitEnvironment[$name], 'Process')
+        }
     }
     [pscustomobject]@{
         ExitCode = $exitCode
@@ -40,11 +57,19 @@ function Assert-Repository {
     if (-not (Test-Path -LiteralPath $GitExe -PathType Leaf)) {
         throw 'Git não foi encontrado no caminho configurado.'
     }
-    $top = Invoke-Git @('rev-parse', '--show-toplevel')
-    if ($top.ExitCode -ne 0) { throw 'A pasta autorizada não é um repositório Git válido.' }
-    $expected = [System.IO.Path]::GetFullPath($RepositoryRoot).TrimEnd('\')
-    $actual = [System.IO.Path]::GetFullPath(($top.Output -replace '/', '\')).TrimEnd('\')
-    if ($actual -ne $expected) { throw 'O Git apontou para uma raiz diferente da pasta autorizada; sincronização bloqueada.' }
+    $inside = Invoke-Git @('rev-parse', '--is-inside-work-tree')
+    $prefix = Invoke-Git @('rev-parse', '--show-prefix')
+    $gitDir = Invoke-Git @('rev-parse', '--absolute-git-dir')
+    if ($inside.ExitCode -ne 0 -or $inside.Output -ne 'true' -or
+        $prefix.ExitCode -ne 0 -or $prefix.Output -ne '' -or
+        $gitDir.ExitCode -ne 0) {
+        throw 'A pasta autorizada não é a raiz de um repositório Git válido; sincronização bloqueada.'
+    }
+    $expectedMetadata = [System.IO.Path]::GetFullPath($ExpectedGitDir).TrimEnd('\')
+    $actualMetadata = [System.IO.Path]::GetFullPath(($gitDir.Output -replace '/', '\')).TrimEnd('\')
+    if (-not [string]::Equals($actualMetadata, $expectedMetadata, [StringComparison]::OrdinalIgnoreCase)) {
+        throw 'Os metadados Git não correspondem ao repositório autorizado; sincronização bloqueada.'
+    }
     $branch = Invoke-Git @('branch', '--show-current')
     if ($branch.ExitCode -ne 0 -or $branch.Output -ne 'main') {
         throw 'A sincronização exige a branch main; nenhuma alteração foi enviada.'
