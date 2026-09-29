@@ -103,7 +103,8 @@
             "Entrada"
           ],
           "signalSelections": [],
-          "thermalView": ""
+          "thermalView": "",
+          "imageNote": ""
         }
       ],
       "trash": [
@@ -246,7 +247,8 @@
                 "Entrada"
               ],
               "signalSelections": [],
-              "thermalView": ""
+              "thermalView": "",
+              "imageNote": ""
             }
           ],
           "trash": [
@@ -470,12 +472,14 @@
         "Entrada"
       ],
       "signalSelections": [],
-      "thermalView": ""
+      "thermalView": "",
+      "imageNote": ""
     }
   ],
   "displayId": "TC-01.03",
   "displayTitle": "Hard-switching · 350 W · CargaFixa",
   "displayGoal": "Operação nominal dissipativa em 300 W.",
-  "setupName": "",
-  "updatedAt": "2026-09-29T00:22:10.591Z"
+  "setupName": "Conversor Ćuk",
+  "folderName": "TC-01.03_Hard-switching_300_W_CargaFixa",
+  "updatedAt": "2026-09-29T23:53:11.289Z"
 }
