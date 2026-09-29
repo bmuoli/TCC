@@ -6,7 +6,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$HelperVersion = '1.0.0'
+$HelperVersion = '1.0.1'
 $RepositoryRoot = 'C:\Users\muril\OneDrive\Área de Trabalho\01 - Faculdade e Estudos\TCC'
 $NotebookPath = Join-Path $PSScriptRoot 'TCC_Lab_Notebook_v50.html'
 $ExpectedRemoteUrl = 'https://github.com/bmuoli/TCC.git'
@@ -18,8 +18,15 @@ $script:OfflineTestPending = [bool]$TestOfflineOnce
 
 function Invoke-Git {
     param([Parameter(Mandatory)][string[]]$Arguments)
-    $lines = & $GitExe -C $RepositoryRoot @Arguments 2>&1
-    $exitCode = $LASTEXITCODE
+    $previousErrorPreference = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    try {
+        $lines = & $GitExe -C $RepositoryRoot @Arguments 2>&1
+        $exitCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $previousErrorPreference
+    }
     [pscustomobject]@{
         ExitCode = $exitCode
         Output = (($lines | ForEach-Object { $_.ToString() }) -join "`n").Trim()
