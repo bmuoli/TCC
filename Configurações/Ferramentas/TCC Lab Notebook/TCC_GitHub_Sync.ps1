@@ -344,7 +344,8 @@ try {
                     $id = $idMatch.Groups[1].Value.ToLowerInvariant()
                     if (-not $manifest.ContainsKey($id)) { Send-Json $stream 404 @{ message = 'Evidência não autorizada ou não encontrada.' }; continue }
                     $assetPath = $manifest[$id]
-                    $assetBytes = [System.IO.File]::ReadAllBytes($assetPath)
+                    $readPath = if ($assetPath.Length -ge 248 -and -not $assetPath.StartsWith('\\?\')) { '\\?\' + $assetPath } else { $assetPath }
+                    $assetBytes = [System.IO.File]::ReadAllBytes($readPath)
                     Send-HttpResponse -Stream $stream -StatusCode 200 -Reason 'OK' -Body $assetBytes -ContentType (Get-EvidenceContentType -Path $assetPath)
                 }
                 catch { Send-Json $stream 503 @{ message = ('Não foi possível ler a evidência: ' + $_.Exception.Message) } }
