@@ -202,7 +202,7 @@ function Get-TextSha256 {
 }
 
 function Add-RegisteredEvidencePaths {
-    param($Value, [Parameter(Mandatory)][System.Collections.Generic.List[string]]$Paths)
+    param($Value, [System.Collections.Generic.List[string]]$Paths)
     if ($null -eq $Value -or $Value -is [string] -or $Value -is [ValueType]) { return }
     if ($Value -is [System.Array]) {
         foreach ($item in $Value) { Add-RegisteredEvidencePaths -Value $item -Paths $Paths }
