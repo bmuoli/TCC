@@ -1,11 +1,12 @@
-param([string]$Root = $PSScriptRoot)
+param([string]$Root)
 
 $ErrorActionPreference = 'Stop'
+if (-not $Root) { $Root = Join-Path $PSScriptRoot '..\..\..\Lab Notebook - HTML' }
 $rootPath = [IO.Path]::GetFullPath($Root).TrimEnd('\', '/')
 $manifestPath = Join-Path $PSScriptRoot 'renomeacoes.csv'
 if (-not (Test-Path -LiteralPath $manifestPath -PathType Leaf)) { throw 'renomeacoes.csv nao encontrado ao lado do programa.' }
 if (-not (Test-Path -LiteralPath (Join-Path $rootPath 'campanha.json') -PathType Leaf)) {
-    throw 'Coloque os tres arquivos deste pacote diretamente na pasta Testes_TCC (ao lado de campanha.json).'
+    throw "Pasta do Lab Notebook invalida ou sem campanha.json: $rootPath"
 }
 
 function Local-Path([string]$relative) {
@@ -113,7 +114,11 @@ Write-Host '[0] Cancelar'
 $choice = Read-Host 'Escolha'
 if ($choice -ne '2') { Write-Host 'Nenhum arquivo foi alterado.'; exit 0 }
 
-$backup = Join-Path $rootPath ('_padronizacao_backup_' + (Get-Date -Format 'yyyy-MM-dd_HH-mm-ss'))
+$backupRoot = Join-Path $PSScriptRoot 'Backups'
+if (-not (Test-Path -LiteralPath $backupRoot -PathType Container)) {
+    New-Item -ItemType Directory -Path $backupRoot | Out-Null
+}
+$backup = Join-Path $backupRoot ('_padronizacao_backup_' + (Get-Date -Format 'yyyy-MM-dd_HH-mm-ss'))
 if (Test-Path -LiteralPath $backup) { throw 'Pasta de backup ja existe. Tente novamente em um segundo.' }
 $moved = New-Object System.Collections.ArrayList
 $savedJson = New-Object System.Collections.ArrayList
