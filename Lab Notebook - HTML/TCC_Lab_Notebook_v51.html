@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TCC Lab Notebook v51 · GitHub Sync 1.1</title>
+<title>TCC Lab Notebook v51 · GitHub Sync 1.1.1</title>
 <style>
 :root{
   color-scheme: light dark;
@@ -348,7 +348,7 @@ details.charDetails summary{cursor:pointer;font-weight:800}
   <section class="panel top">
     <div>
       <div class="small muted" style="font-weight:800;letter-spacing:.11em;text-transform:uppercase">Campanha experimental · TCC</div>
-      <h1 style="margin-top:4px">TCC Lab Notebook <span class="chip">v51 · GitHub Sync 1.1</span></h1>
+      <h1 style="margin-top:4px">TCC Lab Notebook <span class="chip">v51 · GitHub Sync 1.1.1</span></h1>
       <p class="muted" style="margin-bottom:0">Cada Test Case reúne Teste Prático e Simulação nos sentidos Direto e Reverso. Os ensaios básicos já vêm preparados para comprovar a bidirecionalidade.</p>
     </div>
     <div class="actions">
@@ -3699,7 +3699,7 @@ async function resolveEvidenceFile(rel){
 
   // O Chromium pode falhar em caminhos do Windows acima de MAX_PATH. O
   // auxiliar só aceita um ID SHA-256 previamente autorizado pelo campanha.json.
-  try{return await resolveEvidenceViaHelper(repairedRel)}catch(e){throw directError||e}
+  try{return await resolveEvidenceViaHelper(rel)}catch(e){throw directError||e}
 }
 
 async function getFileParentAndName(rel){
