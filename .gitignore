@@ -28,13 +28,3 @@ id_ed25519.*
 # Estado transitório do auxiliar de sincronização
 .tcc-github-sync/
 **/.tcc-github-sync/
-
-# Documentos de terceiros: excluídos até haver autorização explícita
-/Apostilas/**/*.pdf
-/Artigos/**/*.pdf
-/Livros/**/*.pdf
-/Normas/**/*.pdf
-/Notícias/**/*.pdf
-/NASA's Technical Handbook for Avoiding On-Orbit ESD Anomalies Due to Internal Charging Effects.pdf
-/Lab Notebook - HTML/Materiais_Componentes/Datasheets/**/*.pdf
-/Normas/**/*.zip
