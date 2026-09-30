@@ -1,6 +1,6 @@
 # Sincronização do TCC Lab Notebook com GitHub
 
-Versões: Lab Notebook v51 · auxiliar local 1.1.0.
+Versões: Lab Notebook v51 · auxiliar local 1.1.1.
 
 1. Abra o atalho **TCC Lab Notebook** na Área de Trabalho (ou execute `Iniciar_TCC_Lab_Notebook.bat` nesta pasta de ferramentas) e mantenha a janela do auxiliar aberta.
 2. No navegador, conecte a pasta `Lab Notebook - HTML` quando solicitado.

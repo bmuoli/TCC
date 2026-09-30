@@ -6,7 +6,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$HelperVersion = '1.1.0'
+$HelperVersion = '1.1.1'
 $RepositoryRoot = 'C:\Users\muril\OneDrive\Área de Trabalho\01 - Faculdade e Estudos\TCC'
 $NotebookPath = Join-Path $RepositoryRoot 'Lab Notebook - HTML\TCC_Lab_Notebook_v51.html'
 $ExpectedRemoteUrl = 'https://github.com/bmuoli/TCC.git'
@@ -158,10 +158,20 @@ function Invoke-SafeSync {
 
         $add = Invoke-Git @('add', '--all')
         if ($add.ExitCode -ne 0) { throw "Falha ao preparar os arquivos para commit: $($add.Output)" }
-        $ignoredInIndex = Invoke-Git @('ls-files', '-ci', '--exclude-standard')
-        if ($ignoredInIndex.ExitCode -ne 0) { throw 'Não foi possível validar as exclusões do repositório.' }
-        if ($ignoredInIndex.Output) {
-            throw 'A sincronização foi bloqueada porque há arquivos ignorados preparados no índice. Nenhum commit ou push foi feito.'
+        $stagedNames = Invoke-Git @('-c', 'core.quotepath=false', 'diff', '--cached', '--name-only')
+        if ($stagedNames.ExitCode -ne 0) { throw 'Não foi possível validar os arquivos preparados.' }
+        $ignoredPrepared = [System.Collections.Generic.List[string]]::new()
+        foreach ($stagedPath in @($stagedNames.Output -split "`n" | Where-Object { $_ })) {
+            $ignoredCheck = Invoke-Git @('check-ignore', '--no-index', '--quiet', '--', $stagedPath)
+            if ($ignoredCheck.ExitCode -eq 0) { $ignoredPrepared.Add($stagedPath) }
+            elseif ($ignoredCheck.ExitCode -ne 1) { throw "Não foi possível validar a exclusão de $stagedPath." }
+        }
+        if ($ignoredPrepared.Count -gt 0) {
+            foreach ($blockedPath in $ignoredPrepared) {
+                $unstage = Invoke-Git @('restore', '--staged', '--', $blockedPath)
+                if ($unstage.ExitCode -ne 0) { throw "Falha ao retirar do índice o arquivo bloqueado $blockedPath." }
+            }
+            throw ('A sincronização retirou do índice arquivo(s) protegido(s) pelo .gitignore e não fez commit/push: ' + ($ignoredPrepared -join ', '))
         }
         Assert-NoConflict
 
