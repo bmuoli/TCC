@@ -1718,7 +1718,7 @@
   ],
   "capacitors": [
     {
-      "value": "",
+      "value": "4,7",
       "unit": "µF",
       "notes": "",
       "collectI": false,
@@ -2139,5 +2139,5 @@
   "setupName": "Conversor Ćuk",
   "displayTitle": "Célula auxiliar · 350 W",
   "folderName": "TC-07_Celula_auxiliar_350_W",
-  "updatedAt": "2026-09-30T00:02:38.197Z"
+  "updatedAt": "2026-10-01T00:26:35.565Z"
 }

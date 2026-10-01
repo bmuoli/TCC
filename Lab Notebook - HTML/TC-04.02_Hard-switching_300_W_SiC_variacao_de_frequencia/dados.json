@@ -87,7 +87,8 @@
               "signal": "Corrente de saída (A)"
             }
           ],
-          "thermalView": ""
+          "thermalView": "",
+          "imageNote": ""
         }
       ],
       "trash": [
@@ -214,7 +215,8 @@
                   "signal": "Corrente de saída (A)"
                 }
               ],
-              "thermalView": ""
+              "thermalView": "",
+              "imageNote": ""
             }
           ],
           "trash": [
@@ -338,7 +340,8 @@
                   "signal": "Corrente de saída (A)"
                 }
               ],
-              "thermalView": ""
+              "thermalView": "",
+              "imageNote": ""
             }
           ],
           "trash": [],
@@ -377,7 +380,7 @@
     }
   },
   "inductorCount": 2,
-  "capacitorCount": 1,
+  "capacitorCount": 2,
   "switchCount": 2,
   "inductors": [
     {
@@ -398,6 +401,13 @@
   "capacitors": [
     {
       "value": "5",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    },
+    {
+      "value": "4",
       "unit": "µF",
       "notes": "",
       "collectI": false,
@@ -458,10 +468,11 @@
           "signal": "Corrente de saída (A)"
         }
       ],
-      "thermalView": ""
+      "thermalView": "",
+      "imageNote": ""
     }
   ],
-  "setupName": "",
+  "setupName": "Conversor Ćuk",
   "displayTitle": "Hard-switching · 350 W · variação de frequência",
   "displayId": "TC-01.02",
   "folderName": "TC-04.02_Hard-switching_300_W_SiC_variacao_de_frequencia",
@@ -472,5 +483,5 @@
     "ids": false,
     "tempCase": false
   },
-  "updatedAt": "2026-09-29T00:28:47.987Z"
+  "updatedAt": "2026-10-01T00:26:01.779Z"
 }

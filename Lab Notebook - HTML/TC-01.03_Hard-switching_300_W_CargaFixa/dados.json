@@ -409,7 +409,7 @@
     }
   },
   "inductorCount": 2,
-  "capacitorCount": 1,
+  "capacitorCount": 2,
   "switchCount": 2,
   "inductors": [
     {
@@ -430,6 +430,13 @@
   "capacitors": [
     {
       "value": "5",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    },
+    {
+      "value": "4,7",
       "unit": "µF",
       "notes": "",
       "collectI": false,
@@ -481,5 +488,5 @@
   "displayGoal": "Operação nominal dissipativa em 300 W.",
   "setupName": "Conversor Ćuk",
   "folderName": "TC-01.03_Hard-switching_300_W_CargaFixa",
-  "updatedAt": "2026-09-29T23:53:11.289Z"
+  "updatedAt": "2026-10-01T00:26:20.758Z"
 }

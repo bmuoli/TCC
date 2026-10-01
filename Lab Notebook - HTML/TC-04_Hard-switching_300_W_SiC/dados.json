@@ -2448,7 +2448,7 @@
     }
   },
   "inductorCount": 2,
-  "capacitorCount": 1,
+  "capacitorCount": 2,
   "switchCount": 2,
   "inductors": [
     {
@@ -2986,5 +2986,5 @@
   "displayGoal": "Operação nominal dissipativa em 300 W.",
   "displayId": "TC-01",
   "folderName": "TC-04_Hard-switching_300_W_SiC",
-  "updatedAt": "2026-09-29T23:51:09.243Z"
+  "updatedAt": "2026-10-01T00:26:16.706Z"
 }

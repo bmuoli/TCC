@@ -1,0 +1,1699 @@
+{
+  "version": 18,
+  "snapshotAt": "2026-10-01T12:14:24.622Z",
+  "testCase": {
+    "id": "TB-01",
+    "title": "Hard-switching · 370 W · cópia",
+    "goal": "Operação nominal dissipativa em 300 W.",
+    "switchType": "MOSFET Si",
+    "status": "done",
+    "freq": "100",
+    "duty": "72",
+    "vin": "51.7",
+    "vout": "35.5",
+    "pin": "386,2 ",
+    "pout": "365,7 ",
+    "iout": "10,3 ",
+    "waveform": "",
+    "notes": "Ensaio do conversor Buck síncrono com SiC, operando no sentido abaixador, com transferência de potência da porta de aproximadamente 50 V para a porta de aproximadamente 36 V.\n\nCarga resistiva fixa: ≈ 3,5 Ω.\n\nVin = 51,7 V | Iin = 7,47 A\nVout = 35,5 V | Iout = 10,3 A\n\nPin ≈ 386,2 W\nPout (Vout·Iout) ≈ 365,7 W\nPout (Vout²/R) ≈ 360,0 W\n\nη ≈ 94,7% pela medição V·I\nη ≈ 93,2% pela carga resistiva\n\nA corrente de saída medida é compatível com o valor esperado para a carga resistiva utilizada, indicando boa coerência entre as medições elétricas e a carga do ensaio.\n\nO conversor apresentou operação estável na faixa de potência próxima à nominal de uma fase, comprovando a operação do estágio Buck no sentido 50 V → 36 V.\n\nO caminho de dreno foi temporariamente modificado com a inserção de um trecho de condutor para permitir a medição da corrente com a sonda. Essa alteração aumenta a indutância parasita do loop de comutação e pode contribuir para a sobretensão observada em VDS.\n\nA remoção desse caminho adicional tende a reduzir o overshoot e as oscilações durante a comutação, podendo também reduzir as perdas associadas às transições e contribuir para aumento do rendimento.",
+    "acceptance": "",
+    "simulationEnabled": false,
+    "simulationFile": null,
+    "simulationImages": [],
+    "trash": [
+      {
+        "subjects": [
+          "Chave Q1"
+        ],
+        "subject": "Chave Q1",
+        "type": "Termica",
+        "signalSelections": [],
+        "signal": "",
+        "originalName": "FLIR2287.jpg",
+        "fileName": "TB-01_SiC_Chave_Q1_Termica_01_1.jpg",
+        "relativePath": "TB-01_Hard-switching_370_W/Lixeira/Teste_Pratico/Direto/SiC/Chave_Q1/Termica/TB-01_SiC_Chave_Q1_Termica_01_1.jpg",
+        "sha256": "999e4494830974caea72eb0ef3850633836261e690867ec2475e93674fe4d912",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T12:12:19.757Z",
+        "originalRelativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TB-01_SiC_Chave_Q1_Termica_01_1.jpg",
+        "trashedAt": "2026-10-01T12:12:34.352Z",
+        "fileMissing": false,
+        "hadAnnotations": false
+      }
+    ],
+    "enableForward": true,
+    "enableReverse": true,
+    "activeDirection": "forward",
+    "directions": {
+      "forward": {
+        "freq": "100",
+        "duty": "72",
+        "vin": "51.7",
+        "vout": "35.5",
+        "pin": "386,2 ",
+        "pout": "365,7 ",
+        "iout": "10,3 ",
+        "waveform": "",
+        "notes": "Ensaio do conversor Buck síncrono com SiC, operando no sentido abaixador, com transferência de potência da porta de aproximadamente 50 V para a porta de aproximadamente 36 V.\n\nCarga resistiva fixa: ≈ 3,5 Ω.\n\nVin = 51,7 V | Iin = 7,47 A\nVout = 35,5 V | Iout = 10,3 A\n\nPin ≈ 386,2 W\nPout (Vout·Iout) ≈ 365,7 W\nPout (Vout²/R) ≈ 360,0 W\n\nη ≈ 94,7% pela medição V·I\nη ≈ 93,2% pela carga resistiva\n\nA corrente de saída medida é compatível com o valor esperado para a carga resistiva utilizada, indicando boa coerência entre as medições elétricas e a carga do ensaio.\n\nO conversor apresentou operação estável na faixa de potência próxima à nominal de uma fase, comprovando a operação do estágio Buck no sentido 50 V → 36 V.\n\nO caminho de dreno foi temporariamente modificado com a inserção de um trecho de condutor para permitir a medição da corrente com a sonda. Essa alteração aumenta a indutância parasita do loop de comutação e pode contribuir para a sobretensão observada em VDS.\n\nA remoção desse caminho adicional tende a reduzir o overshoot e as oscilações durante a comutação, podendo também reduzir as perdas associadas às transições e contribuir para aumento do rendimento.",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [
+          {
+            "subjects": [
+              "Chave Q1"
+            ],
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Chave Q1",
+                "signal": "Tensão VDS (V)"
+              },
+              {
+                "subject": "Chave Q1",
+                "signal": "Tensão VGS (V)"
+              },
+              {
+                "subject": "Chave Q1",
+                "signal": "Corrente IDS (A)"
+              }
+            ],
+            "signal": "VDS (V) + VGS (V) + IDS (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TB-01_SiC_Chave_Q1_VDS_V_e_VGS_V_e_IDS_A_01.png",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V_e_IDS_A/TB-01_SiC_Chave_Q1_VDS_V_e_VGS_V_e_IDS_A_01.png",
+            "sha256": "8b8b663a6bd18db10f2262fd12e88e4f7bc66fab8228110f5a8fcd97fa77e4ed",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T00:37:22.617Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Chave Q1"
+            ],
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Chave Q1",
+                "signal": "Tensão VDS (V)"
+              },
+              {
+                "subject": "Chave Q1",
+                "signal": "Tensão VGS (V)"
+              }
+            ],
+            "signal": "VDS (V) + VGS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TB-01_SiC_Chave_Q1_VDS_V_e_VGS_V_01.png",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TB-01_SiC_Chave_Q1_VDS_V_e_VGS_V_01.png",
+            "sha256": "cce33cc5783954587975281eb34ee4a2f29ceeba9e3ee02a6731b62ef43d58b4",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T00:39:53.663Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Chave Q1"
+            ],
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Chave Q1",
+                "signal": "Tensão VDS (V)"
+              },
+              {
+                "subject": "Chave Q1",
+                "signal": "Corrente IDS (A)"
+              }
+            ],
+            "signal": "VDS (V) + IDS (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TB-01_SiC_Chave_Q1_VDS_V_e_IDS_A_01.png",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_IDS_A/TB-01_SiC_Chave_Q1_VDS_V_e_IDS_A_01.png",
+            "sha256": "375621ba36ee722383f4d300c761f933f0cfa2061f3edee4579bbdb2c351a39b",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T00:41:33.131Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Chave Q1"
+            ],
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Chave Q1",
+                "signal": "Tensão VDS (V)"
+              }
+            ],
+            "signal": "VDS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TB-01_SiC_Chave_Q1_VDS_V_01.png",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V/TB-01_SiC_Chave_Q1_VDS_V_01.png",
+            "sha256": "0340e7ac8c0b749634daedb70da6ab6b8f22870dc05f690c246ef809085d0945",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T01:06:29.774Z",
+            "thermalView": "",
+            "imageNote": "Sobretensão em VDS associada à comutação, possivelmente intensificada pela indutância parasita introduzida no caminho do dreno para medição de corrente.",
+            "annotatedFileName": "TB-01_SiC_Chave_Q1_VDS_V_01_anotada.png",
+            "annotatedRelativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V/TB-01_SiC_Chave_Q1_VDS_V_01_anotada.png",
+            "annotationShapes": [],
+            "annotationUpdatedAt": "2026-10-01T01:49:51.084Z"
+          },
+          {
+            "subjects": [
+              "Chave Q1"
+            ],
+            "subject": "Chave Q1",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Chave Q1",
+                "signal": "Corrente IDS (A)"
+              }
+            ],
+            "signal": "IDS (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TB-01_SiC_Chave_Q1_IDS_A_01.png",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/IDS_A/TB-01_SiC_Chave_Q1_IDS_A_01.png",
+            "sha256": "1eec34d63b7b947e3fbd0bbb88d1a539bff1a39905a1aee7923ab5e0927fc18d",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T01:07:42.059Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Capacitor C1"
+            ],
+            "subject": "Capacitor C1",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Capacitor C1",
+                "signal": "Tensão (V)"
+              }
+            ],
+            "signal": "VC1 (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TB-01_SiC_Capacitor_C1_VC1_V_01.png",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Capacitor_C1/Forma_de_onda/VC1_V/TB-01_SiC_Capacitor_C1_VC1_V_01.png",
+            "sha256": "ba7fdb22585d19247a17b32af5aa8f4b5bfceba616c2ad02231584ca94bbe6b0",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T01:14:47.757Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Capacitor C1"
+            ],
+            "subject": "Capacitor C1",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Capacitor C1",
+                "signal": "Tensão (V)"
+              }
+            ],
+            "signal": "VC1 (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TB-01_SiC_Capacitor_C1_VC1_V_02.png",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Capacitor_C1/Forma_de_onda/VC1_V/TB-01_SiC_Capacitor_C1_VC1_V_02.png",
+            "sha256": "d6b3357c7eab4d7fe2bdedd64d192c6c57ac02b0d80d210876219e53af929cfd",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T01:15:12.714Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Chave Q2"
+            ],
+            "subject": "Chave Q2",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Chave Q2",
+                "signal": "Tensão VDS (V)"
+              }
+            ],
+            "signal": "VDS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TB-01_SiC_Chave_Q2_VDS_V_01.png",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q2/Forma_de_onda/VDS_V/TB-01_SiC_Chave_Q2_VDS_V_01.png",
+            "sha256": "4d373a5b1072f53f64afeae4fa2e426c40e5e48991f68ced3d2f7f3be1d839e0",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T01:22:42.772Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Chave Q2"
+            ],
+            "subject": "Chave Q2",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Chave Q2",
+                "signal": "Tensão VDS (V)"
+              },
+              {
+                "subject": "Chave Q2",
+                "signal": "Tensão VGS (V)"
+              }
+            ],
+            "signal": "VDS (V) + VGS (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TB-01_SiC_Chave_Q2_VDS_V_e_VGS_V_01.png",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q2/Forma_de_onda/VDS_V_e_VGS_V/TB-01_SiC_Chave_Q2_VDS_V_e_VGS_V_01.png",
+            "sha256": "02daeeeec0b274519a05b85c9b2dd935ad3030111d027ba50eebd6dceb0776a8",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T01:21:09.823Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Indutor L1"
+            ],
+            "subject": "Indutor L1",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Indutor L1",
+                "signal": "Tensão (V)"
+              },
+              {
+                "subject": "Indutor L1",
+                "signal": "Corrente (A)"
+              }
+            ],
+            "signal": "VL1 (V) + IL1 (A)",
+            "originalName": "clipboard.png",
+            "fileName": "TB-01_SiC_Indutor_L1_VL1_V_e_IL1_A_01.png",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L1/Forma_de_onda/VL1_V_e_IL1_A/TB-01_SiC_Indutor_L1_VL1_V_e_IL1_A_01.png",
+            "sha256": "de1a22e42b4a7eb8b62d463750b89fcfa924cb03a71b2b350ab6f5b8c378b7cb",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T01:29:25.044Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Indutor L2"
+            ],
+            "subject": "Indutor L2",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Indutor L2",
+                "signal": "Corrente (A)"
+              },
+              {
+                "subject": "Indutor L2",
+                "signal": "Tensão (V)"
+              }
+            ],
+            "signal": "IL2 (A) + VL2 (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TB-01_SiC_Indutor_L2_IL2_A_e_VL2_V_01.png",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L2/Forma_de_onda/IL2_A_e_VL2_V/TB-01_SiC_Indutor_L2_IL2_A_e_VL2_V_01.png",
+            "sha256": "0f561f7ee644a4b7e45b34686bb885b34954351925d890ba3d7db7baa57e396f",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T01:32:10.095Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Indutor L2"
+            ],
+            "subject": "Indutor L2",
+            "type": "Forma de onda",
+            "signalSelections": [
+              {
+                "subject": "Indutor L2",
+                "signal": "Tensão (V)"
+              }
+            ],
+            "signal": "VL2 (V)",
+            "originalName": "clipboard.png",
+            "fileName": "TB-01_SiC_Indutor_L2_VL2_V_01.png",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L2/Forma_de_onda/VL2_V/TB-01_SiC_Indutor_L2_VL2_V_01.png",
+            "sha256": "529be370d1014151fc987adecaa639c9fb6c2f27c537d5aba5f45af3934ceb24",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T01:33:04.423Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Chave Q1"
+            ],
+            "subject": "Chave Q1",
+            "type": "Termica",
+            "signalSelections": [],
+            "signal": "",
+            "originalName": "FLIR2281.jpg",
+            "fileName": "TB-01_SiC_Chave_Q1_Termica_01.jpg",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TB-01_SiC_Chave_Q1_Termica_01.jpg",
+            "sha256": "b956ff3d2ea36a013a3c4d427d04a2dac7140e1962b6a117f0fef2c904064c98",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T12:12:09.528Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Chave Q1"
+            ],
+            "subject": "Chave Q1",
+            "type": "Termica",
+            "signalSelections": [],
+            "signal": "",
+            "originalName": "FLIR2282.jpg",
+            "fileName": "TB-01_SiC_Chave_Q1_Termica_Panoramica_01.jpg",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TB-01_SiC_Chave_Q1_Termica_Panoramica_01.jpg",
+            "sha256": "47d6eb655a3878ea94e86a8f92b6e3bf7e0fe7985e4706c514b96a9f37e4302c",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T12:12:13.608Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Chave Q2"
+            ],
+            "subject": "Chave Q2",
+            "type": "Termica",
+            "signalSelections": [],
+            "signal": "",
+            "originalName": "FLIR2287.jpg",
+            "fileName": "TB-01_SiC_Chave_Q2_Termica_01.jpg",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q2/Termica/TB-01_SiC_Chave_Q2_Termica_01.jpg",
+            "sha256": "999e4494830974caea72eb0ef3850633836261e690867ec2475e93674fe4d912",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T12:12:40.233Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Chave Q2"
+            ],
+            "subject": "Chave Q2",
+            "type": "Termica",
+            "signalSelections": [],
+            "signal": "",
+            "originalName": "FLIR2288.jpg",
+            "fileName": "TB-01_SiC_Chave_Q2_Termica_Panoramica_01.jpg",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q2/Termica/TB-01_SiC_Chave_Q2_Termica_Panoramica_01.jpg",
+            "sha256": "f6244dd11067dbaabf58d5f194e9f95cc30c6499f49f7edca8bcb7897046ef2f",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T12:12:45.997Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Indutor L1"
+            ],
+            "subject": "Indutor L1",
+            "type": "Termica",
+            "signalSelections": [],
+            "signal": "",
+            "originalName": "FLIR2283.jpg",
+            "fileName": "TB-01_SiC_Indutor_L1_Termica_01.jpg",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L1/Termica/TB-01_SiC_Indutor_L1_Termica_01.jpg",
+            "sha256": "e97dc9ca16d91186ba15f59831846c5f932ee4add4a22be2b3ac3bf178b756e1",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T12:13:17.928Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Indutor L1"
+            ],
+            "subject": "Indutor L1",
+            "type": "Termica",
+            "signalSelections": [],
+            "signal": "",
+            "originalName": "FLIR2284.jpg",
+            "fileName": "TB-01_SiC_Indutor_L1_Termica_Panoramica_01.jpg",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L1/Termica/TB-01_SiC_Indutor_L1_Termica_Panoramica_01.jpg",
+            "sha256": "d4bb7425d323e5caf37f53042e4eff729b073ef3ce333a5bf4e2de961fdab589",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T12:13:20.619Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Indutor L2"
+            ],
+            "subject": "Indutor L2",
+            "type": "Termica",
+            "signalSelections": [],
+            "signal": "",
+            "originalName": "FLIR2285.jpg",
+            "fileName": "TB-01_SiC_Indutor_L2_Termica_01.jpg",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L2/Termica/TB-01_SiC_Indutor_L2_Termica_01.jpg",
+            "sha256": "b97baf65977e988a0a3a98b4e396c1dadb6e2bb00246341ae3277ec39ed35f54",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T12:13:28.234Z",
+            "thermalView": "",
+            "imageNote": ""
+          },
+          {
+            "subjects": [
+              "Indutor L2"
+            ],
+            "subject": "Indutor L2",
+            "type": "Termica",
+            "signalSelections": [],
+            "signal": "",
+            "originalName": "FLIR2286.jpg",
+            "fileName": "TB-01_SiC_Indutor_L2_Termica_Panoramica_01.jpg",
+            "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L2/Termica/TB-01_SiC_Indutor_L2_Termica_Panoramica_01.jpg",
+            "sha256": "711ea430909d3db6eadd116e9e0bbc77b24a260d0c54903ba008bcea37ee861c",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T12:13:31.647Z"
+          }
+        ],
+        "trash": [
+          {
+            "subjects": [
+              "Chave Q1"
+            ],
+            "subject": "Chave Q1",
+            "type": "Termica",
+            "signalSelections": [],
+            "signal": "",
+            "originalName": "FLIR2287.jpg",
+            "fileName": "TB-01_SiC_Chave_Q1_Termica_01_1.jpg",
+            "relativePath": "TB-01_Hard-switching_370_W/Lixeira/Teste_Pratico/Direto/SiC/Chave_Q1/Termica/TB-01_SiC_Chave_Q1_Termica_01_1.jpg",
+            "sha256": "999e4494830974caea72eb0ef3850633836261e690867ec2475e93674fe4d912",
+            "reportInclude": true,
+            "reportCaption": "",
+            "savedAt": "2026-10-01T12:12:19.757Z",
+            "originalRelativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TB-01_SiC_Chave_Q1_Termica_01_1.jpg",
+            "trashedAt": "2026-10-01T12:12:34.352Z",
+            "fileMissing": false,
+            "hadAnnotations": false
+          }
+        ],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      },
+      "reverse": {
+        "freq": "",
+        "duty": "",
+        "vin": "50",
+        "vout": "30",
+        "pin": "",
+        "pout": "",
+        "iout": "",
+        "waveform": "",
+        "notes": "",
+        "simulationEnabled": false,
+        "simulationFile": null,
+        "simulationImages": [],
+        "evidence": [],
+        "trash": [],
+        "executionDone": false,
+        "captureChecklist": {
+          "vds": false,
+          "vgs": false,
+          "ids": false,
+          "tempCase": false
+        }
+      }
+    },
+    "enableSi": false,
+    "enableSiC": true,
+    "activeSwitchVariant": "SiC",
+    "switchVariants": {
+      "SiC": {
+        "switches": [
+          {
+            "part": "UJ3C065030K3S",
+            "technology": "SiC",
+            "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "UJ3C065030K3S",
+            "technology": "SiC",
+            "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": false,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "100",
+            "duty": "72",
+            "vin": "51.7",
+            "vout": "35.5",
+            "pin": "386,2 ",
+            "pout": "365,7 ",
+            "iout": "10,3 ",
+            "waveform": "",
+            "notes": "Ensaio do conversor Buck síncrono com SiC, operando no sentido abaixador, com transferência de potência da porta de aproximadamente 50 V para a porta de aproximadamente 36 V.\n\nCarga resistiva fixa: ≈ 3,5 Ω.\n\nVin = 51,7 V | Iin = 7,47 A\nVout = 35,5 V | Iout = 10,3 A\n\nPin ≈ 386,2 W\nPout (Vout·Iout) ≈ 365,7 W\nPout (Vout²/R) ≈ 360,0 W\n\nη ≈ 94,7% pela medição V·I\nη ≈ 93,2% pela carga resistiva\n\nA corrente de saída medida é compatível com o valor esperado para a carga resistiva utilizada, indicando boa coerência entre as medições elétricas e a carga do ensaio.\n\nO conversor apresentou operação estável na faixa de potência próxima à nominal de uma fase, comprovando a operação do estágio Buck no sentido 50 V → 36 V.\n\nO caminho de dreno foi temporariamente modificado com a inserção de um trecho de condutor para permitir a medição da corrente com a sonda. Essa alteração aumenta a indutância parasita do loop de comutação e pode contribuir para a sobretensão observada em VDS.\n\nA remoção desse caminho adicional tende a reduzir o overshoot e as oscilações durante a comutação, podendo também reduzir as perdas associadas às transições e contribuir para aumento do rendimento.",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [
+              {
+                "subjects": [
+                  "Chave Q1"
+                ],
+                "subject": "Chave Q1",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Tensão VDS (V)"
+                  },
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Tensão VGS (V)"
+                  },
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Corrente IDS (A)"
+                  }
+                ],
+                "signal": "VDS (V) + VGS (V) + IDS (A)",
+                "originalName": "clipboard.png",
+                "fileName": "TB-01_SiC_Chave_Q1_VDS_V_e_VGS_V_e_IDS_A_01.png",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V_e_IDS_A/TB-01_SiC_Chave_Q1_VDS_V_e_VGS_V_e_IDS_A_01.png",
+                "sha256": "8b8b663a6bd18db10f2262fd12e88e4f7bc66fab8228110f5a8fcd97fa77e4ed",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T00:37:22.617Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Chave Q1"
+                ],
+                "subject": "Chave Q1",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Tensão VDS (V)"
+                  },
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Tensão VGS (V)"
+                  }
+                ],
+                "signal": "VDS (V) + VGS (V)",
+                "originalName": "clipboard.png",
+                "fileName": "TB-01_SiC_Chave_Q1_VDS_V_e_VGS_V_01.png",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TB-01_SiC_Chave_Q1_VDS_V_e_VGS_V_01.png",
+                "sha256": "cce33cc5783954587975281eb34ee4a2f29ceeba9e3ee02a6731b62ef43d58b4",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T00:39:53.663Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Chave Q1"
+                ],
+                "subject": "Chave Q1",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Tensão VDS (V)"
+                  },
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Corrente IDS (A)"
+                  }
+                ],
+                "signal": "VDS (V) + IDS (A)",
+                "originalName": "clipboard.png",
+                "fileName": "TB-01_SiC_Chave_Q1_VDS_V_e_IDS_A_01.png",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_IDS_A/TB-01_SiC_Chave_Q1_VDS_V_e_IDS_A_01.png",
+                "sha256": "375621ba36ee722383f4d300c761f933f0cfa2061f3edee4579bbdb2c351a39b",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T00:41:33.131Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Chave Q1"
+                ],
+                "subject": "Chave Q1",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Tensão VDS (V)"
+                  }
+                ],
+                "signal": "VDS (V)",
+                "originalName": "clipboard.png",
+                "fileName": "TB-01_SiC_Chave_Q1_VDS_V_01.png",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V/TB-01_SiC_Chave_Q1_VDS_V_01.png",
+                "sha256": "0340e7ac8c0b749634daedb70da6ab6b8f22870dc05f690c246ef809085d0945",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T01:06:29.774Z",
+                "thermalView": "",
+                "imageNote": "Sobretensão em VDS associada à comutação, possivelmente intensificada pela indutância parasita introduzida no caminho do dreno para medição de corrente.",
+                "annotatedFileName": "TB-01_SiC_Chave_Q1_VDS_V_01_anotada.png",
+                "annotatedRelativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V/TB-01_SiC_Chave_Q1_VDS_V_01_anotada.png",
+                "annotationShapes": [],
+                "annotationUpdatedAt": "2026-10-01T01:49:51.084Z"
+              },
+              {
+                "subjects": [
+                  "Chave Q1"
+                ],
+                "subject": "Chave Q1",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Chave Q1",
+                    "signal": "Corrente IDS (A)"
+                  }
+                ],
+                "signal": "IDS (A)",
+                "originalName": "clipboard.png",
+                "fileName": "TB-01_SiC_Chave_Q1_IDS_A_01.png",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/IDS_A/TB-01_SiC_Chave_Q1_IDS_A_01.png",
+                "sha256": "1eec34d63b7b947e3fbd0bbb88d1a539bff1a39905a1aee7923ab5e0927fc18d",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T01:07:42.059Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Capacitor C1"
+                ],
+                "subject": "Capacitor C1",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Capacitor C1",
+                    "signal": "Tensão (V)"
+                  }
+                ],
+                "signal": "VC1 (V)",
+                "originalName": "clipboard.png",
+                "fileName": "TB-01_SiC_Capacitor_C1_VC1_V_01.png",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Capacitor_C1/Forma_de_onda/VC1_V/TB-01_SiC_Capacitor_C1_VC1_V_01.png",
+                "sha256": "ba7fdb22585d19247a17b32af5aa8f4b5bfceba616c2ad02231584ca94bbe6b0",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T01:14:47.757Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Capacitor C1"
+                ],
+                "subject": "Capacitor C1",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Capacitor C1",
+                    "signal": "Tensão (V)"
+                  }
+                ],
+                "signal": "VC1 (V)",
+                "originalName": "clipboard.png",
+                "fileName": "TB-01_SiC_Capacitor_C1_VC1_V_02.png",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Capacitor_C1/Forma_de_onda/VC1_V/TB-01_SiC_Capacitor_C1_VC1_V_02.png",
+                "sha256": "d6b3357c7eab4d7fe2bdedd64d192c6c57ac02b0d80d210876219e53af929cfd",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T01:15:12.714Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Chave Q2"
+                ],
+                "subject": "Chave Q2",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Chave Q2",
+                    "signal": "Tensão VDS (V)"
+                  }
+                ],
+                "signal": "VDS (V)",
+                "originalName": "clipboard.png",
+                "fileName": "TB-01_SiC_Chave_Q2_VDS_V_01.png",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q2/Forma_de_onda/VDS_V/TB-01_SiC_Chave_Q2_VDS_V_01.png",
+                "sha256": "4d373a5b1072f53f64afeae4fa2e426c40e5e48991f68ced3d2f7f3be1d839e0",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T01:22:42.772Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Chave Q2"
+                ],
+                "subject": "Chave Q2",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Chave Q2",
+                    "signal": "Tensão VDS (V)"
+                  },
+                  {
+                    "subject": "Chave Q2",
+                    "signal": "Tensão VGS (V)"
+                  }
+                ],
+                "signal": "VDS (V) + VGS (V)",
+                "originalName": "clipboard.png",
+                "fileName": "TB-01_SiC_Chave_Q2_VDS_V_e_VGS_V_01.png",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q2/Forma_de_onda/VDS_V_e_VGS_V/TB-01_SiC_Chave_Q2_VDS_V_e_VGS_V_01.png",
+                "sha256": "02daeeeec0b274519a05b85c9b2dd935ad3030111d027ba50eebd6dceb0776a8",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T01:21:09.823Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Indutor L1"
+                ],
+                "subject": "Indutor L1",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Indutor L1",
+                    "signal": "Tensão (V)"
+                  },
+                  {
+                    "subject": "Indutor L1",
+                    "signal": "Corrente (A)"
+                  }
+                ],
+                "signal": "VL1 (V) + IL1 (A)",
+                "originalName": "clipboard.png",
+                "fileName": "TB-01_SiC_Indutor_L1_VL1_V_e_IL1_A_01.png",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L1/Forma_de_onda/VL1_V_e_IL1_A/TB-01_SiC_Indutor_L1_VL1_V_e_IL1_A_01.png",
+                "sha256": "de1a22e42b4a7eb8b62d463750b89fcfa924cb03a71b2b350ab6f5b8c378b7cb",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T01:29:25.044Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Indutor L2"
+                ],
+                "subject": "Indutor L2",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Indutor L2",
+                    "signal": "Corrente (A)"
+                  },
+                  {
+                    "subject": "Indutor L2",
+                    "signal": "Tensão (V)"
+                  }
+                ],
+                "signal": "IL2 (A) + VL2 (V)",
+                "originalName": "clipboard.png",
+                "fileName": "TB-01_SiC_Indutor_L2_IL2_A_e_VL2_V_01.png",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L2/Forma_de_onda/IL2_A_e_VL2_V/TB-01_SiC_Indutor_L2_IL2_A_e_VL2_V_01.png",
+                "sha256": "0f561f7ee644a4b7e45b34686bb885b34954351925d890ba3d7db7baa57e396f",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T01:32:10.095Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Indutor L2"
+                ],
+                "subject": "Indutor L2",
+                "type": "Forma de onda",
+                "signalSelections": [
+                  {
+                    "subject": "Indutor L2",
+                    "signal": "Tensão (V)"
+                  }
+                ],
+                "signal": "VL2 (V)",
+                "originalName": "clipboard.png",
+                "fileName": "TB-01_SiC_Indutor_L2_VL2_V_01.png",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L2/Forma_de_onda/VL2_V/TB-01_SiC_Indutor_L2_VL2_V_01.png",
+                "sha256": "529be370d1014151fc987adecaa639c9fb6c2f27c537d5aba5f45af3934ceb24",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T01:33:04.423Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Chave Q1"
+                ],
+                "subject": "Chave Q1",
+                "type": "Termica",
+                "signalSelections": [],
+                "signal": "",
+                "originalName": "FLIR2281.jpg",
+                "fileName": "TB-01_SiC_Chave_Q1_Termica_01.jpg",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TB-01_SiC_Chave_Q1_Termica_01.jpg",
+                "sha256": "b956ff3d2ea36a013a3c4d427d04a2dac7140e1962b6a117f0fef2c904064c98",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T12:12:09.528Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Chave Q1"
+                ],
+                "subject": "Chave Q1",
+                "type": "Termica",
+                "signalSelections": [],
+                "signal": "",
+                "originalName": "FLIR2282.jpg",
+                "fileName": "TB-01_SiC_Chave_Q1_Termica_Panoramica_01.jpg",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TB-01_SiC_Chave_Q1_Termica_Panoramica_01.jpg",
+                "sha256": "47d6eb655a3878ea94e86a8f92b6e3bf7e0fe7985e4706c514b96a9f37e4302c",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T12:12:13.608Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Chave Q2"
+                ],
+                "subject": "Chave Q2",
+                "type": "Termica",
+                "signalSelections": [],
+                "signal": "",
+                "originalName": "FLIR2287.jpg",
+                "fileName": "TB-01_SiC_Chave_Q2_Termica_01.jpg",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q2/Termica/TB-01_SiC_Chave_Q2_Termica_01.jpg",
+                "sha256": "999e4494830974caea72eb0ef3850633836261e690867ec2475e93674fe4d912",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T12:12:40.233Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Chave Q2"
+                ],
+                "subject": "Chave Q2",
+                "type": "Termica",
+                "signalSelections": [],
+                "signal": "",
+                "originalName": "FLIR2288.jpg",
+                "fileName": "TB-01_SiC_Chave_Q2_Termica_Panoramica_01.jpg",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q2/Termica/TB-01_SiC_Chave_Q2_Termica_Panoramica_01.jpg",
+                "sha256": "f6244dd11067dbaabf58d5f194e9f95cc30c6499f49f7edca8bcb7897046ef2f",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T12:12:45.997Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Indutor L1"
+                ],
+                "subject": "Indutor L1",
+                "type": "Termica",
+                "signalSelections": [],
+                "signal": "",
+                "originalName": "FLIR2283.jpg",
+                "fileName": "TB-01_SiC_Indutor_L1_Termica_01.jpg",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L1/Termica/TB-01_SiC_Indutor_L1_Termica_01.jpg",
+                "sha256": "e97dc9ca16d91186ba15f59831846c5f932ee4add4a22be2b3ac3bf178b756e1",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T12:13:17.928Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Indutor L1"
+                ],
+                "subject": "Indutor L1",
+                "type": "Termica",
+                "signalSelections": [],
+                "signal": "",
+                "originalName": "FLIR2284.jpg",
+                "fileName": "TB-01_SiC_Indutor_L1_Termica_Panoramica_01.jpg",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L1/Termica/TB-01_SiC_Indutor_L1_Termica_Panoramica_01.jpg",
+                "sha256": "d4bb7425d323e5caf37f53042e4eff729b073ef3ce333a5bf4e2de961fdab589",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T12:13:20.619Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Indutor L2"
+                ],
+                "subject": "Indutor L2",
+                "type": "Termica",
+                "signalSelections": [],
+                "signal": "",
+                "originalName": "FLIR2285.jpg",
+                "fileName": "TB-01_SiC_Indutor_L2_Termica_01.jpg",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L2/Termica/TB-01_SiC_Indutor_L2_Termica_01.jpg",
+                "sha256": "b97baf65977e988a0a3a98b4e396c1dadb6e2bb00246341ae3277ec39ed35f54",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T12:13:28.234Z",
+                "thermalView": "",
+                "imageNote": ""
+              },
+              {
+                "subjects": [
+                  "Indutor L2"
+                ],
+                "subject": "Indutor L2",
+                "type": "Termica",
+                "signalSelections": [],
+                "signal": "",
+                "originalName": "FLIR2286.jpg",
+                "fileName": "TB-01_SiC_Indutor_L2_Termica_Panoramica_01.jpg",
+                "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L2/Termica/TB-01_SiC_Indutor_L2_Termica_Panoramica_01.jpg",
+                "sha256": "711ea430909d3db6eadd116e9e0bbc77b24a260d0c54903ba008bcea37ee861c",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T12:13:31.647Z"
+              }
+            ],
+            "trash": [
+              {
+                "subjects": [
+                  "Chave Q1"
+                ],
+                "subject": "Chave Q1",
+                "type": "Termica",
+                "signalSelections": [],
+                "signal": "",
+                "originalName": "FLIR2287.jpg",
+                "fileName": "TB-01_SiC_Chave_Q1_Termica_01_1.jpg",
+                "relativePath": "TB-01_Hard-switching_370_W/Lixeira/Teste_Pratico/Direto/SiC/Chave_Q1/Termica/TB-01_SiC_Chave_Q1_Termica_01_1.jpg",
+                "sha256": "999e4494830974caea72eb0ef3850633836261e690867ec2475e93674fe4d912",
+                "reportInclude": true,
+                "reportCaption": "",
+                "savedAt": "2026-10-01T12:12:19.757Z",
+                "originalRelativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TB-01_SiC_Chave_Q1_Termica_01_1.jpg",
+                "trashedAt": "2026-10-01T12:12:34.352Z",
+                "fileMissing": false,
+                "hadAnnotations": false
+              }
+            ],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      },
+      "Si": {
+        "switches": [
+          {
+            "part": "Si · IRFP4768PbF",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          },
+          {
+            "part": "Si · IRFP4768PbF",
+            "technology": "Si",
+            "notes": "",
+            "collectVDS": true,
+            "collectVGS": true,
+            "collectIDS": true,
+            "collectIGS": false
+          }
+        ],
+        "directions": {
+          "forward": {
+            "freq": "100",
+            "duty": "58",
+            "vin": "34",
+            "vout": "46",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          },
+          "reverse": {
+            "freq": "",
+            "duty": "",
+            "vin": "50",
+            "vout": "30",
+            "pin": "",
+            "pout": "",
+            "iout": "",
+            "waveform": "",
+            "notes": "",
+            "simulationEnabled": false,
+            "simulationFile": null,
+            "simulationImages": [],
+            "evidence": [],
+            "trash": [],
+            "executionDone": false,
+            "captureChecklist": {
+              "vds": false,
+              "vgs": false,
+              "ids": false,
+              "tempCase": false
+            }
+          }
+        }
+      }
+    },
+    "inductorCount": 2,
+    "capacitorCount": 2,
+    "switchCount": 2,
+    "inductors": [
+      {
+        "value": "50",
+        "unit": "µH",
+        "notes": "Indutor de filtro de entrada",
+        "collectI": true,
+        "collectV": true
+      },
+      {
+        "value": "70",
+        "unit": "µH",
+        "notes": "Indutor de saida",
+        "collectI": true,
+        "collectV": true
+      }
+    ],
+    "capacitors": [
+      {
+        "value": "5",
+        "unit": "µF",
+        "notes": "Capacitor de filtro de entrada",
+        "collectI": false,
+        "collectV": true
+      },
+      {
+        "value": "4,7",
+        "unit": "µF",
+        "notes": "",
+        "collectI": false,
+        "collectV": false
+      }
+    ],
+    "switches": [
+      {
+        "part": "UJ3C065030K3S",
+        "technology": "SiC",
+        "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": true,
+        "collectIGS": false
+      },
+      {
+        "part": "UJ3C065030K3S",
+        "technology": "SiC",
+        "notes": "SiC cascode de 650 V, com \\(R_{DS(on)}\\) na casa de 30 mΩ",
+        "collectVDS": true,
+        "collectVGS": true,
+        "collectIDS": false,
+        "collectIGS": false
+      }
+    ],
+    "evidence": [
+      {
+        "subjects": [
+          "Chave Q1"
+        ],
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Chave Q1",
+            "signal": "Tensão VDS (V)"
+          },
+          {
+            "subject": "Chave Q1",
+            "signal": "Tensão VGS (V)"
+          },
+          {
+            "subject": "Chave Q1",
+            "signal": "Corrente IDS (A)"
+          }
+        ],
+        "signal": "VDS (V) + VGS (V) + IDS (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TB-01_SiC_Chave_Q1_VDS_V_e_VGS_V_e_IDS_A_01.png",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V_e_IDS_A/TB-01_SiC_Chave_Q1_VDS_V_e_VGS_V_e_IDS_A_01.png",
+        "sha256": "8b8b663a6bd18db10f2262fd12e88e4f7bc66fab8228110f5a8fcd97fa77e4ed",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T00:37:22.617Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Chave Q1"
+        ],
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Chave Q1",
+            "signal": "Tensão VDS (V)"
+          },
+          {
+            "subject": "Chave Q1",
+            "signal": "Tensão VGS (V)"
+          }
+        ],
+        "signal": "VDS (V) + VGS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TB-01_SiC_Chave_Q1_VDS_V_e_VGS_V_01.png",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_VGS_V/TB-01_SiC_Chave_Q1_VDS_V_e_VGS_V_01.png",
+        "sha256": "cce33cc5783954587975281eb34ee4a2f29ceeba9e3ee02a6731b62ef43d58b4",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T00:39:53.663Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Chave Q1"
+        ],
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Chave Q1",
+            "signal": "Tensão VDS (V)"
+          },
+          {
+            "subject": "Chave Q1",
+            "signal": "Corrente IDS (A)"
+          }
+        ],
+        "signal": "VDS (V) + IDS (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TB-01_SiC_Chave_Q1_VDS_V_e_IDS_A_01.png",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V_e_IDS_A/TB-01_SiC_Chave_Q1_VDS_V_e_IDS_A_01.png",
+        "sha256": "375621ba36ee722383f4d300c761f933f0cfa2061f3edee4579bbdb2c351a39b",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T00:41:33.131Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Chave Q1"
+        ],
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Chave Q1",
+            "signal": "Tensão VDS (V)"
+          }
+        ],
+        "signal": "VDS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TB-01_SiC_Chave_Q1_VDS_V_01.png",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V/TB-01_SiC_Chave_Q1_VDS_V_01.png",
+        "sha256": "0340e7ac8c0b749634daedb70da6ab6b8f22870dc05f690c246ef809085d0945",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T01:06:29.774Z",
+        "thermalView": "",
+        "imageNote": "Sobretensão em VDS associada à comutação, possivelmente intensificada pela indutância parasita introduzida no caminho do dreno para medição de corrente.",
+        "annotatedFileName": "TB-01_SiC_Chave_Q1_VDS_V_01_anotada.png",
+        "annotatedRelativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/VDS_V/TB-01_SiC_Chave_Q1_VDS_V_01_anotada.png",
+        "annotationShapes": [],
+        "annotationUpdatedAt": "2026-10-01T01:49:51.084Z"
+      },
+      {
+        "subjects": [
+          "Chave Q1"
+        ],
+        "subject": "Chave Q1",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Chave Q1",
+            "signal": "Corrente IDS (A)"
+          }
+        ],
+        "signal": "IDS (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TB-01_SiC_Chave_Q1_IDS_A_01.png",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/IDS_A/TB-01_SiC_Chave_Q1_IDS_A_01.png",
+        "sha256": "1eec34d63b7b947e3fbd0bbb88d1a539bff1a39905a1aee7923ab5e0927fc18d",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T01:07:42.059Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Capacitor C1"
+        ],
+        "subject": "Capacitor C1",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Capacitor C1",
+            "signal": "Tensão (V)"
+          }
+        ],
+        "signal": "VC1 (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TB-01_SiC_Capacitor_C1_VC1_V_01.png",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Capacitor_C1/Forma_de_onda/VC1_V/TB-01_SiC_Capacitor_C1_VC1_V_01.png",
+        "sha256": "ba7fdb22585d19247a17b32af5aa8f4b5bfceba616c2ad02231584ca94bbe6b0",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T01:14:47.757Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Capacitor C1"
+        ],
+        "subject": "Capacitor C1",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Capacitor C1",
+            "signal": "Tensão (V)"
+          }
+        ],
+        "signal": "VC1 (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TB-01_SiC_Capacitor_C1_VC1_V_02.png",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Capacitor_C1/Forma_de_onda/VC1_V/TB-01_SiC_Capacitor_C1_VC1_V_02.png",
+        "sha256": "d6b3357c7eab4d7fe2bdedd64d192c6c57ac02b0d80d210876219e53af929cfd",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T01:15:12.714Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Chave Q2"
+        ],
+        "subject": "Chave Q2",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Chave Q2",
+            "signal": "Tensão VDS (V)"
+          }
+        ],
+        "signal": "VDS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TB-01_SiC_Chave_Q2_VDS_V_01.png",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q2/Forma_de_onda/VDS_V/TB-01_SiC_Chave_Q2_VDS_V_01.png",
+        "sha256": "4d373a5b1072f53f64afeae4fa2e426c40e5e48991f68ced3d2f7f3be1d839e0",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T01:22:42.772Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Chave Q2"
+        ],
+        "subject": "Chave Q2",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Chave Q2",
+            "signal": "Tensão VDS (V)"
+          },
+          {
+            "subject": "Chave Q2",
+            "signal": "Tensão VGS (V)"
+          }
+        ],
+        "signal": "VDS (V) + VGS (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TB-01_SiC_Chave_Q2_VDS_V_e_VGS_V_01.png",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q2/Forma_de_onda/VDS_V_e_VGS_V/TB-01_SiC_Chave_Q2_VDS_V_e_VGS_V_01.png",
+        "sha256": "02daeeeec0b274519a05b85c9b2dd935ad3030111d027ba50eebd6dceb0776a8",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T01:21:09.823Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Indutor L1"
+        ],
+        "subject": "Indutor L1",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Indutor L1",
+            "signal": "Tensão (V)"
+          },
+          {
+            "subject": "Indutor L1",
+            "signal": "Corrente (A)"
+          }
+        ],
+        "signal": "VL1 (V) + IL1 (A)",
+        "originalName": "clipboard.png",
+        "fileName": "TB-01_SiC_Indutor_L1_VL1_V_e_IL1_A_01.png",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L1/Forma_de_onda/VL1_V_e_IL1_A/TB-01_SiC_Indutor_L1_VL1_V_e_IL1_A_01.png",
+        "sha256": "de1a22e42b4a7eb8b62d463750b89fcfa924cb03a71b2b350ab6f5b8c378b7cb",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T01:29:25.044Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Indutor L2"
+        ],
+        "subject": "Indutor L2",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Indutor L2",
+            "signal": "Corrente (A)"
+          },
+          {
+            "subject": "Indutor L2",
+            "signal": "Tensão (V)"
+          }
+        ],
+        "signal": "IL2 (A) + VL2 (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TB-01_SiC_Indutor_L2_IL2_A_e_VL2_V_01.png",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L2/Forma_de_onda/IL2_A_e_VL2_V/TB-01_SiC_Indutor_L2_IL2_A_e_VL2_V_01.png",
+        "sha256": "0f561f7ee644a4b7e45b34686bb885b34954351925d890ba3d7db7baa57e396f",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T01:32:10.095Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Indutor L2"
+        ],
+        "subject": "Indutor L2",
+        "type": "Forma de onda",
+        "signalSelections": [
+          {
+            "subject": "Indutor L2",
+            "signal": "Tensão (V)"
+          }
+        ],
+        "signal": "VL2 (V)",
+        "originalName": "clipboard.png",
+        "fileName": "TB-01_SiC_Indutor_L2_VL2_V_01.png",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L2/Forma_de_onda/VL2_V/TB-01_SiC_Indutor_L2_VL2_V_01.png",
+        "sha256": "529be370d1014151fc987adecaa639c9fb6c2f27c537d5aba5f45af3934ceb24",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T01:33:04.423Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Chave Q1"
+        ],
+        "subject": "Chave Q1",
+        "type": "Termica",
+        "signalSelections": [],
+        "signal": "",
+        "originalName": "FLIR2281.jpg",
+        "fileName": "TB-01_SiC_Chave_Q1_Termica_01.jpg",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TB-01_SiC_Chave_Q1_Termica_01.jpg",
+        "sha256": "b956ff3d2ea36a013a3c4d427d04a2dac7140e1962b6a117f0fef2c904064c98",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T12:12:09.528Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Chave Q1"
+        ],
+        "subject": "Chave Q1",
+        "type": "Termica",
+        "signalSelections": [],
+        "signal": "",
+        "originalName": "FLIR2282.jpg",
+        "fileName": "TB-01_SiC_Chave_Q1_Termica_Panoramica_01.jpg",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TB-01_SiC_Chave_Q1_Termica_Panoramica_01.jpg",
+        "sha256": "47d6eb655a3878ea94e86a8f92b6e3bf7e0fe7985e4706c514b96a9f37e4302c",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T12:12:13.608Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Chave Q2"
+        ],
+        "subject": "Chave Q2",
+        "type": "Termica",
+        "signalSelections": [],
+        "signal": "",
+        "originalName": "FLIR2287.jpg",
+        "fileName": "TB-01_SiC_Chave_Q2_Termica_01.jpg",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q2/Termica/TB-01_SiC_Chave_Q2_Termica_01.jpg",
+        "sha256": "999e4494830974caea72eb0ef3850633836261e690867ec2475e93674fe4d912",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T12:12:40.233Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Chave Q2"
+        ],
+        "subject": "Chave Q2",
+        "type": "Termica",
+        "signalSelections": [],
+        "signal": "",
+        "originalName": "FLIR2288.jpg",
+        "fileName": "TB-01_SiC_Chave_Q2_Termica_Panoramica_01.jpg",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q2/Termica/TB-01_SiC_Chave_Q2_Termica_Panoramica_01.jpg",
+        "sha256": "f6244dd11067dbaabf58d5f194e9f95cc30c6499f49f7edca8bcb7897046ef2f",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T12:12:45.997Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Indutor L1"
+        ],
+        "subject": "Indutor L1",
+        "type": "Termica",
+        "signalSelections": [],
+        "signal": "",
+        "originalName": "FLIR2283.jpg",
+        "fileName": "TB-01_SiC_Indutor_L1_Termica_01.jpg",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L1/Termica/TB-01_SiC_Indutor_L1_Termica_01.jpg",
+        "sha256": "e97dc9ca16d91186ba15f59831846c5f932ee4add4a22be2b3ac3bf178b756e1",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T12:13:17.928Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Indutor L1"
+        ],
+        "subject": "Indutor L1",
+        "type": "Termica",
+        "signalSelections": [],
+        "signal": "",
+        "originalName": "FLIR2284.jpg",
+        "fileName": "TB-01_SiC_Indutor_L1_Termica_Panoramica_01.jpg",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L1/Termica/TB-01_SiC_Indutor_L1_Termica_Panoramica_01.jpg",
+        "sha256": "d4bb7425d323e5caf37f53042e4eff729b073ef3ce333a5bf4e2de961fdab589",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T12:13:20.619Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Indutor L2"
+        ],
+        "subject": "Indutor L2",
+        "type": "Termica",
+        "signalSelections": [],
+        "signal": "",
+        "originalName": "FLIR2285.jpg",
+        "fileName": "TB-01_SiC_Indutor_L2_Termica_01.jpg",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L2/Termica/TB-01_SiC_Indutor_L2_Termica_01.jpg",
+        "sha256": "b97baf65977e988a0a3a98b4e396c1dadb6e2bb00246341ae3277ec39ed35f54",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T12:13:28.234Z",
+        "thermalView": "",
+        "imageNote": ""
+      },
+      {
+        "subjects": [
+          "Indutor L2"
+        ],
+        "subject": "Indutor L2",
+        "type": "Termica",
+        "signalSelections": [],
+        "signal": "",
+        "originalName": "FLIR2286.jpg",
+        "fileName": "TB-01_SiC_Indutor_L2_Termica_Panoramica_01.jpg",
+        "relativePath": "TB-01_Hard-switching_370_W/Teste_Pratico/Direto/SiC/Evidencias/Indutor_L2/Termica/TB-01_SiC_Indutor_L2_Termica_Panoramica_01.jpg",
+        "sha256": "711ea430909d3db6eadd116e9e0bbc77b24a260d0c54903ba008bcea37ee861c",
+        "reportInclude": true,
+        "reportCaption": "",
+        "savedAt": "2026-10-01T12:13:31.647Z"
+      }
+    ],
+    "displayId": "TB-01",
+    "displayTitle": "Hard-switching · 370 W ",
+    "displayGoal": "Operação nominal dissipativa em 370 W.",
+    "setupName": "Conversor Buck",
+    "folderName": "TB-01_Hard-switching_370_W",
+    "updatedAt": "2026-10-01T12:14:23.328Z"
+  }
+}
