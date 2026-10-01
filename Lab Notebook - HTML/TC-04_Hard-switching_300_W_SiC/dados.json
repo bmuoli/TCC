@@ -2473,6 +2473,13 @@
       "notes": "",
       "collectI": false,
       "collectV": false
+    },
+    {
+      "value": "4,7",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
     }
   ],
   "switches": [
@@ -2986,5 +2993,5 @@
   "displayGoal": "Operação nominal dissipativa em 300 W.",
   "displayId": "TC-01",
   "folderName": "TC-04_Hard-switching_300_W_SiC",
-  "updatedAt": "2026-10-01T00:26:16.706Z"
+  "updatedAt": "2026-10-01T18:02:04.224Z"
 }
