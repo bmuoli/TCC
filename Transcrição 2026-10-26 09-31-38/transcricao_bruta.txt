@@ -1,0 +1,668 @@
+﻿[00:00:00.000] como um bug fixe, tipo, pra 2.27.2,
+[00:00:02.760] mas não necessariamente
+[00:00:04.280] do jeito que foi escrito aqui.
+[00:00:06.220] Então, agora a gente tem que tomar a decisão de
+[00:00:08.220] vamos mergear, não vamos mergear,
+[00:00:10.540] ele vai gerar um novo teste,
+[00:00:12.560] como que vai ficar, sabe?
+[00:00:15.250] Aqui que fica a questão.
+[00:00:17.190] Fora outros buracos, outras coisas
+[00:00:18.910] que teve de defining.
+[00:00:20.800] É, o que eu tinha visto
+[00:00:22.640] que daria pra tirar
+[00:00:24.840] é o 10, 11, 12,
+[00:00:27.500] já tá coberto
+[00:00:28.620] pros test cases que o Murilo tinha feito,
+[00:00:31.060] daí o resto,
+[00:00:32.500] eu acho que teria que deixar tudo, né?
+[00:00:34.220] Só o que eu tava falando de adaptar
+[00:00:36.880] lá as variáveis
+[00:00:38.460] é ver no detalhe as variáveis
+[00:00:40.640] novas que
+[00:00:42.660] existem, né, no...
+[00:00:44.800] agora na implementação
+[00:00:47.140] que eu vi lá que tinha algumas variáveis
+[00:00:48.820] de flag state,
+[00:00:50.160] c flag state,
+[00:00:52.460] state flag,
+[00:00:53.820] essas variáveis novas, né, se faz sentido
+[00:00:55.720] também colocar nisso, mas daí você comentou
+[00:00:58.040] da questão
+[00:00:59.620] que, tipo,
+[00:01:01.280] da compatibilidade das versões, né,
+[00:01:02.960] que daí faria sentido deixar os dois
+[00:01:05.560] como sendo independentes.
+[00:01:07.640] Sim. Deixa eu pensar.
+[00:01:15.090] Ah, nada que
+[00:01:16.250] também eu não... porque ali eu criei
+[00:01:18.030] pra 2.27, realmente,
+[00:01:19.690] a não ser que eu crie teste case pra
+[00:01:23.300] 2.30, que então, pelo que ele disse,
+[00:01:25.420] seria parecido
+[00:01:27.800] a partir da 2.30, então eu ia fazer um merge,
+[00:01:30.220] juntava os dois.
+[00:01:33.510] Então, mas é que isso daqui,
+[00:01:35.170] na verdade, foi criado em cima da 2.31,
+[00:01:37.730] é exatamente isso,
+[00:01:38.710] que eu tô tentando evitar, no sentido de
+[00:01:40.930] eu não sei se isso 100%
+[00:01:42.870] vai tá 1 pra 1 aplicado
+[00:01:44.590] pra 2.27.2 e pra
+[00:01:46.810] 2.30.1
+[00:01:48.510] pelo conteúdo do que você mexeu.
+[00:01:50.490] Eu não tenho 100% de certeza, sabe?
+[00:01:52.930] Teoricamente tinha que eu entrar,
+[00:01:54.710] olhar e ver, não, isso daqui ainda faz sentido,
+[00:01:56.950] isso daqui ainda faz sentido,
+[00:01:58.430] pra validar. Eu acho que sim.
+[00:02:00.810] Minha impressão de bate-pronto
+[00:02:02.470] é sim, mas tem que dar
+[00:02:04.730] uma olhada no detalhe.
+[00:02:06.110] Isso você diz sim pras outras versões,
+[00:02:08.530] né? Sim, pra 2.27.2
+[00:02:11.420] e pra 2.30.1
+[00:02:12.680] por causa do que você implementou agora
+[00:02:14.480] pro BugFix. Porque se
+[00:02:16.500] olhar antes, não necessariamente,
+[00:02:18.640] principalmente esses casos que tá replicado
+[00:02:20.780] que nem o Igor falou.
+[00:02:22.580] Tá. É porque eu tô comentando que
+[00:02:24.500] ali, basicamente, eu criei
+[00:02:26.400] 2.27, mas aí eu não pensei.
+[00:02:28.700] Então teria que criar
+[00:02:30.460] nos test case ali, né? Não, não tem problema.
+[00:02:33.080] Não tem problema.
+[00:02:34.320] Isso daqui é só, tipo, ele inicialmente
+[00:02:36.980] tá aplicado pra 2.27.2,
+[00:02:39.080] e na hora que a gente for gerar uma run,
+[00:02:41.060] você coloca uma run 2.27.2,
+[00:02:43.380] uma run 2.30.1,
+[00:02:44.740] e com o customer specific, tipo,
+[00:02:47.600] não é pra ficar copiando
+[00:02:49.160] e colando test case de coisas que estão
+[00:02:50.920] escritas iguais. Eu tô falando que
+[00:02:52.560] isso daqui, o conteúdo disso daqui, não é
+[00:02:54.860] um pra um com o conteúdo disso daqui.
+[00:02:57.220] Isso é algo que a gente fez, que a gente
+[00:02:58.960] listou pra 2.30.1,
+[00:03:01.620] olhando pro software da 2.30.1.
+[00:03:03.620] Mas isso daqui, não,
+[00:03:06.480] o conteúdo
+[00:03:07.360] completo não tá sendo coberto
+[00:03:09.080] pelo que você escreveu. E é isso que a gente tem que
+[00:03:11.000] garantir, que o conteúdo completo
+[00:03:12.540] está sendo validado em todas as runs.
+[00:03:15.400] Daí agora, o que precisa
+[00:03:17.140] tomar decisão no detalhe é
+[00:03:19.000] como fazer isso, como operacionalizar
+[00:03:21.040] isso. Entendeu?
+[00:03:25.650] O Igor tinha comentado,
+[00:03:27.990] cadê o Igor? Você falou que já tinha,
+[00:03:29.990] tinha que fazer um resumo das mudanças.
+[00:03:33.190] É, na verdade
+[00:03:33.950] eu tava meio que
+[00:03:37.170] mapeando
+[00:03:37.650] o que que faltava de
+[00:03:39.870] variáveis que seria útil,
+[00:03:41.890] tipo, útil que você
+[00:03:43.650] coloca no outro test case lá,
+[00:03:45.850] que é aquelas variáveis novas, né?
+[00:03:47.710] Só que ainda eu tava vendo no detalhe,
+[00:03:50.070] ainda não tinha finalizado, pra gente ver
+[00:03:51.630] o que faria sentido colocar nesse
+[00:03:54.090] nesse test case também,
+[00:03:56.010] né? Daí eu acho que
+[00:03:58.810] pensando que a Erika
+[00:04:00.030] falou, se fizer sentido,
+[00:04:02.070] acho que vale, né? Porque daí
+[00:04:03.770] essas variáveis novas valem pra qualquer versão.
+[00:04:06.830] Sim, eu acho que sim.
+[00:04:08.290] 2.27, 2.30,
+[00:04:10.310] 2.31.
+[00:04:12.210] E eu acho que pra não ficar
+[00:04:13.590] confuso, faz sentido
+[00:04:15.430] deixar merjado também.
+[00:04:17.050] Pra ficar tudo agregado num lugar
+[00:04:19.930] só e não correr
+[00:04:21.730] risco de...
+[00:04:23.730] Performar uma coisa e deixar de outra pro lado.
+[00:04:27.070] Exato.
+[00:04:27.890] É, o que não tinha pensado era isso que a Erika
+[00:04:29.810] falou, né? Se faria sentido essas
+[00:04:32.030] transições de estados pra
+[00:04:34.190] atrás da 2.31, mas...
+[00:04:36.290] Eu acho que sim.
+[00:04:37.750] Meu gut feeling que sim, mas tem que olhar
+[00:04:39.890] no detalhe. Então o que eu vou
+[00:04:41.990] gerir então é talvez... Então deixa
+[00:04:43.710] isso daqui marcado como 2.31
+[00:04:45.570] do jeito que tá, tipo, não altera nada
+[00:04:47.610] porque isso daqui foi performado, foi executado
+[00:04:49.970] na 2.31 e a gente precisa
+[00:04:51.730] deixar como
+[00:04:53.730] histórico.
+[00:04:55.590] E daí copia esses
+[00:04:57.570] casos que não estão sendo repetidos
+[00:04:59.790] pra o
+[00:05:01.310] test case novo, pra ser
+[00:05:03.570] executado junto.
+[00:05:05.070] O que tiver duplicado, o que tiver
+[00:05:07.830] de conteúdo, que já existe um caso aqui
+[00:05:09.670] dentro que já valida, não precisa copiar.
+[00:05:11.990] Os outros daí copia.
+[00:05:13.430] Daí vê o nome, você tem que
+[00:05:15.690] ajustar alguma coisa e copia.
+[00:05:18.030] Daí isso daqui fica travado no
+[00:05:19.750] tempo como obsoleto e o novo
+[00:05:21.570] que a gente vai executar vai ser tudo a partir
+[00:05:23.890] desse. Não tem problema, ele tá
+[00:05:25.690] marcado como 2.27.2
+[00:05:28.250] porque só significa que é
+[00:05:29.470] dessa versão pra frente. Mas a gente
+[00:05:31.710] deixa um test case único.
+[00:05:33.310] A única coisa que vai diferenciar entre as
+[00:05:35.570] versões de bug fixes é o run.
+[00:05:38.050] Se no run tiver um
+[00:05:39.750] desses casos que não faz sentido aplicar,
+[00:05:41.990] a gente não bota no conteúdo da run.
+[00:05:43.770] Mas se a gente ficar copiando e colando
+[00:05:45.490] vários textos iguais, vai ser horrível
+[00:05:47.850] de fazer manutenção desses test cases.
+[00:05:49.490] Tem que evitar isso.
+[00:05:51.150] Faz sentido.
+[00:05:54.200] É o que faz sentido, então,
+[00:05:56.660] Muri. É olhar
+[00:05:58.060] no detalhe, pega o que o Igor já
+[00:06:00.040] tinha avaliado, olha no
+[00:06:02.080] detalhe e tenta mergear em cima
+[00:06:04.100] desse daqui pra gente ter um
+[00:06:05.380] test case único.
+[00:06:07.800] Beleza, perfeito.
+[00:06:09.390] É o passo 1 da história.
+[00:06:12.310] Será que, só uma duvidazinha, muda ali o título
+[00:06:14.450] do 2.31
+[00:06:17.730] pra alguma coisa de tipo...
+[00:06:20.500] Porque o meu medo também é depois, na hora de performar,
+[00:06:22.800] mudar e fazer aquilo lá também.
+[00:06:25.160] Em vez de fazer o que...
+[00:06:26.460] Eu acho que não, porque isso daqui
+[00:06:28.520] já foi executado no passado,
+[00:06:30.700] então é bom deixar...
+[00:06:32.680] Ele é 2.31.0 mesmo.
+[00:06:34.520] Ele foi executado pra 2.31.0.
+[00:06:36.500] Ele foi executado aqui, ele tem o histórico
+[00:06:38.400] da execução, então
+[00:06:39.960] é importante deixar do jeito que tá.
+[00:06:42.380] Eu digo que seria
+[00:06:44.040] colocar tipo um parênteses antes de tudo ali
+[00:06:45.920] de update, só colocar... Ah, esqueci a palavra.
+[00:06:48.300] Tanto em português quanto em inglês.
+[00:06:50.640] Como antigo.
+[00:06:53.380] Eu acho que não precisa.
+[00:06:55.120] Porque na hora que a gente for executar agora,
+[00:06:57.220] a gente vai apontar pra esse cara novo.
+[00:06:59.400] É verdade, né? Vai tá tudo...
+[00:07:00.540] O mundo vai executar o 1.2.0.4, é.
+[00:07:03.320] É verdade. Tô esquecendo que tem isso.
+[00:07:05.360] Tudo bem.
+[00:07:08.280] Beleza, tá bom. Então eu pego
+[00:07:10.600] as coisinhas que o Igor mandar e eu já faço
+[00:07:12.500] comparação e já vou mudando
+[00:07:13.920] o que tiver...
+[00:07:16.760] Várias vezes diferentinho e faço merge.
+[00:07:19.750] Teve mais algum finding
+[00:07:21.090] de conteúdo desse daqui
+[00:07:22.950] que você teve, Igor?
+[00:07:25.870] Ou você já passou
+[00:07:27.270] e já foi corrigido?
+[00:07:28.790] O Murilo... Eu passei pro Murilo
+[00:07:30.790] ele corrigiu agora
+[00:07:32.450] ele falou agora pra mim pela manhã, eu não vi
+[00:07:34.610] ainda no detalhe. Nem cheguei a abrir.
+[00:07:36.370] Eu vou abrir daí só pra dar o
+[00:07:39.260] final, né?
+[00:07:39.940] Eu li bem por cima, eu ainda
+[00:07:42.600] tenho que dar mais uma olhada com carinho.
+[00:07:45.040] Uma coisa que eu achei estranha foi
+[00:07:46.540] esse segundo caso aqui, que parece
+[00:07:48.400] que você tá misturando
+[00:07:50.280] startRoutine pra SCU e
+[00:07:52.180] MCUControl interno.
+[00:07:54.580] É isso aqui mesmo?
+[00:07:59.150] É...
+[00:08:01.920] Deixa eu lembrar qual que é esse.
+[00:08:03.960] Interface address.
+[00:08:07.080] Não.
+[00:08:08.240] Não era pra ser isso. Era simplesmente só testar
+[00:08:10.720] realmente o...
+[00:08:12.880] Se entra certinho a updateState a SCU,
+[00:08:15.060] cada SCU separadinha.
+[00:08:17.700] Então eu vou melhorar.
+[00:08:20.380] O que eu ia falar é que
+[00:08:22.100] existem duas frentes que precisam
+[00:08:24.000] ser validadas em paralelo, que é
+[00:08:25.900] um pouco o que acontece aqui.
+[00:08:27.740] Daí tem que dar uma olhada se faz sentido
+[00:08:29.520] o jeito que você escreveu, ou só de você
+[00:08:32.060] mergear ele já vai estar corrigido.
+[00:08:33.880] Mas é o sentido de
+[00:08:36.380] a gente estabelecer
+[00:08:38.100] o updateState através do
+[00:08:39.660] multi-flashing, então tudo que
+[00:08:42.020] é relacionado com as SCUs
+[00:08:43.860] é só mensagens internas
+[00:08:45.820] e estabelecer o updateState
+[00:08:47.720] através do DS como single
+[00:08:49.820] flashing de uma SCU. Então existe um
+[00:08:52.000] cenário, que é normalmente
+[00:08:53.720] um cenário atípico, um cenário só de
+[00:08:55.500] que quando as coisas deram
+[00:08:57.780] errado, mas a gente tem que suportar,
+[00:09:00.120] é fazer um single flashing numa SCU.
+[00:09:02.240] Daí a gente valida, start, stop,
+[00:09:03.760] routine direto pra aquela SCU.
+[00:09:05.560] Mas o normal padrão multi-flashing
+[00:09:07.680] é MCO control. Mas ambas as frentes
+[00:09:09.680] precisam ser validadas no teste QA.
+[00:09:11.660] Pode falar, Rafa.
+[00:09:16.020] Até quando a gente faz multi-flashing
+[00:09:17.360] de SCU, a comunicação passa primeiro
+[00:09:19.380] pela MCO, ela testa
+[00:09:21.380] a comunicação em MCO que manda o control
+[00:09:23.240] routine. Tipo, o DS funciona?
+[00:09:25.280] Não, não, não. Mas a gente
+[00:09:27.180] tem que validar start, stop, routine
+[00:09:29.100] pra SCU também. É isso que eu tô falando.
+[00:09:31.700] Tipo, existe o cenário
+[00:09:33.460] multi-flashing. O cenário multi-flashing que a gente
+[00:09:35.340] tem MCO e SCUs, isso que a gente valida
+[00:09:37.360] o MCO control e o updateState control.
+[00:09:39.420] Mas existe um cenário atípico
+[00:09:41.360] que a gente também tem que validar e é por isso
+[00:09:43.480] que tá implementado o processamento
+[00:09:45.240] da start routine e da stop routine direto
+[00:09:47.600] numa SCU. Ambas as coisas
+[00:09:49.140] tem que estar distintas e mapeadas no teste case.
+[00:09:51.560] Perfeito. E pra mim isso daqui tá meio
+[00:09:53.100] misturado. Tipo, não tá muito claro.
+[00:09:55.440] Beleza. Perfeito.
+[00:09:57.060] Deu pra entender. E daí é distinto.
+[00:09:58.980] Não pode misturar as coisas. Você não pode mandar
+[00:10:01.100] uma start routine pra uma SCU e
+[00:10:03.100] depois validar coisas no meio através
+[00:10:05.240] do MCO control. Porque muito provavelmente
+[00:10:07.360] esse cenário vai ser o cenário que
+[00:10:09.160] a SCU vai estar num chicotinho
+[00:10:11.640] isolado sem estar conectado com o resto
+[00:10:13.160] do subsistema, entendeu?
+[00:10:14.460] Perfeito. Ok. Faz sentido.
+[00:10:18.740] É. Deixa eu ver.
+[00:10:20.620] Tinha mais alguma coisa. Aqui que eu ia falar
+[00:10:22.320] aqui você tá validando só com
+[00:10:24.540] vários valores
+[00:10:26.300] de delay entre um processo
+[00:10:28.260] de flashing e uma parametrização, né?
+[00:10:30.340] Uhum. Será que faz sentido
+[00:10:33.140] ter quatro distintos pra isso daqui?
+[00:10:35.040] Isso aqui tá validando tudo mais ou menos a mesma coisa, né?
+[00:10:37.300] De 10 pra 25
+[00:10:39.480] acho que isso aqui tá muito repetido.
+[00:10:41.680] Tá bom.
+[00:10:42.800] É o que eu tava pensando é porque...
+[00:10:46.420] Reproduza 5 segundos a mais, 5 segundos a mais
+[00:10:48.960] e 5 segundos a mais.
+[00:10:49.780] O que é que você tá validando de distinto
+[00:10:52.740] entre 10, 15, 20, 25?
+[00:10:55.240] O meu medo era de... Porque o que a gente
+[00:10:56.820] passou do processo lá foi de 10 a 20
+[00:10:58.780] segundos, né? Foi mais um receio
+[00:11:01.060] de... E se quebrasse com
+[00:11:02.600] 15 segundos? Aí... Por isso que
+[00:11:04.760] eu... E o 25 eu coloquei só de bola
+[00:11:06.660] mesmo. 25 daria
+[00:11:08.280] bem tranquilo pra tirar. Meu receio é mais de...
+[00:11:11.960] Então, mas eu só tô pensando
+[00:11:12.960] o que da estrutura da
+[00:11:14.940] arquitetura do software que quebraria
+[00:11:16.860] entre 10 e 20? Porque ele é um...
+[00:11:18.980] É, nada. Que é entre uma stop e um start, né?
+[00:11:21.760] Uhum. Tipo, é só pra...
+[00:11:23.520] É que isso daqui vai... Isso que
+[00:11:25.320] gasta tempo, né? Só pra gente não
+[00:11:27.120] ficar executando coisas
+[00:11:29.360] que não... Você não tá comparando
+[00:11:31.080] comportamentos distintos. Talvez
+[00:11:33.100] o mínimo e o máximo... É, eu tava pensando nisso.
+[00:11:35.180] O mínimo que a gente passou e o máximo.
+[00:11:37.340] Daí, beleza. Pode ser. Pode ser.
+[00:11:39.320] Perfeito. E daí fora
+[00:11:43.150] é isso adicionar o caso
+[00:11:44.950] lá do skipar o refresh
+[00:11:47.370] com... Toda vez que identificar
+[00:11:48.910] um EDS reset, que é a última coisa que a gente
+[00:11:50.930] colocou. Isso daí não tá mapeado.
+[00:11:52.830] Tem que tá como um teste separado.
+[00:11:54.650] Sim. Beleza.
+[00:12:05.080] Beleza. Querem
+[00:12:06.080] já emendar num... Já que tá todo mundo
+[00:12:07.940] na chamada, já emendar o stand-up?
+[00:12:10.940] Pode ser. Pra gente não
+[00:12:12.060] parar de volta. Uhum.
+[00:12:14.220] Vai falar, mas o cu...
+[00:12:15.680] Aí eu vi ele tá... Não, o cupica. O cupica tá no médico.
+[00:12:18.260] É, ele tá no médico.
+[00:12:21.160] E daí agora a gente só tem que fazer a dança das cadeiras
+[00:12:23.580] porque o Muri tá sobrecarregado
+[00:12:25.540] de tarefas por causa do
+[00:12:27.360] do finding que a gente teve na quinta.
+[00:12:31.780] Então, vamos lá.
+[00:12:37.770] Então, eu vou deixar...
+[00:12:39.610] Na sexta-feira eu dei uma olhada
+[00:12:41.210] na...
+[00:12:42.610] nos branches que o
+[00:12:44.790] Muri tinha atualizado.
+[00:12:46.290] Eu vou deixar só com um pontinho
+[00:12:52.800] simbólico aqui,
+[00:12:53.540] mas eu já olhei e já vai tá liberado
+[00:12:55.620] pra performar.
+[00:12:57.100] Só deixar o simbólico pra depois,
+[00:12:59.360] no final de todos os test cases,
+[00:13:01.820] eu aprová-la pra branch
+[00:13:03.360] do BugFix.
+[00:13:05.580] E caso a gente tenha um slide no test case
+[00:13:07.920] do Batch 3, mas na madeira,
+[00:13:09.540] a gente vai ter que
+[00:13:10.940] colocar com o mundo pra mexer.
+[00:13:13.870] Mas tá.
+[00:13:15.630] O tópico do dissecation, eu não consegui
+[00:13:17.590] arrumar aquele treco em aberto
+[00:13:19.830] lá que eu falei pra vocês, então vou deixar em aberto.
+[00:13:22.410] Function design não olhei.
+[00:13:24.610] Reworking da implementação desse
+[00:13:25.830] não precisou ainda.
+[00:13:27.510] Daí eu olhei o
+[00:13:28.990] review do plan
+[00:13:31.730] do test case
+[00:13:32.970] do override. Eu ainda preciso
+[00:13:35.450] desses pontos porque eu ainda preciso olhar no detalhe
+[00:13:37.530] o que o Kupka me passou cedo.
+[00:13:41.460] E agora o plan,
+[00:13:43.140] eu vou, sei lá, vou baixar...
+[00:13:44.360] uns dois daqui, que é o que eu olhei
+[00:13:46.340] hoje cedo, e eu vou
+[00:13:48.900] acompanhar o que vocês forem mexendo
+[00:13:50.400] até liberar.
+[00:13:55.320] Perfeito.
+[00:13:57.350] Tá. Eu fiquei fazendo
+[00:14:00.050] as edições ali do test case
+[00:14:02.010] que o Igor tinha mandado,
+[00:14:03.970] inclusive não abaixei os pontos,
+[00:14:06.450] mas eu acho que foi...
+[00:14:09.980] Perdão, até esqueci de colocar.
+[00:14:11.780] Mas foi uns...
+[00:14:14.680] Ainda precisa de um 5, né?
+[00:14:16.640] Aham.
+[00:14:17.780] E esse daqui,
+[00:14:19.420] também vamos deixar como committed
+[00:14:21.080] e vou abaixar pra um ponto, né?
+[00:14:23.660] Que é o que você gastou na sexta, né?
+[00:14:26.440] Perfeito.
+[00:14:27.040] Da implementação, né?
+[00:14:28.260] É, que é pra fazer duas outras
+[00:14:32.220] sprints. Pequeno
+[00:14:33.100] aparentes, amiga, eu esqueci de novo,
+[00:14:35.180] perdão, do relatório
+[00:14:37.280] da Yael, aí tem até
+[00:14:39.140] sexta que vem.
+[00:14:41.230] Quer dizer, essa sexta, que é até dia 30.
+[00:14:43.650] Aí, qualquer tempinho que tiver,
+[00:14:45.770] eu acho que já vou adiantando pra talvez já
+[00:14:47.670] na próxima sprint já
+[00:14:49.410] tentar
+[00:14:49.850] tentar...
+[00:14:50.030] Já liberar pra ti também.
+[00:14:51.610] Pode ser?
+[00:14:52.350] Tá bom.
+[00:14:53.380] Aham.
+[00:14:54.320] Pode ser sim.
+[00:14:55.340] Se eu só consegui fazer isso só depois de destravar
+[00:14:57.440] o test case, seria o meio ideal.
+[00:14:59.600] Porque daí os meninos não ficam travados
+[00:15:01.920] e a gente volta
+[00:15:03.540] pras coisas de documentação.
+[00:15:05.140] Sim. Beleza.
+[00:15:08.840] Beleza.
+[00:15:09.940] Daí, o que eu vou sugerir,
+[00:15:12.440] que agora, tanto o Igor quanto o Rafa
+[00:15:15.260] vão estar travados,
+[00:15:17.340] não conseguem começar
+[00:15:18.820] a executar os testes, que é o que está mapeado
+[00:15:21.360] de grosso do sprint
+[00:15:23.040] deles. Então, essa, escrever
+[00:15:25.120] o release, atualizar o conteúdo
+[00:15:27.280] do release checklist, eu vou sugerir de passar
+[00:15:29.080] pra um dos dois. A gente já define
+[00:15:31.100] quem. Daí, o Kupka
+[00:15:40.620] ele escreveu, eu não sei,
+[00:15:41.940] ele devia ter baixado,
+[00:15:43.920] eu não sei se ele não... Acho que ele não baixou.
+[00:15:50.460] Não, ele não baixou. Vou pedir pra ele
+[00:15:52.320] baixar depois o quanto que ele gastou.
+[00:15:54.400] Na verdade, provavelmente é tudo, porque
+[00:15:56.200] daí, depois que ele
+[00:15:58.500] voltar do médico, depois que a gente...
+[00:16:00.480] revisar, ele vai
+[00:16:01.640] shiftar pro rework desses test cases.
+[00:16:04.260] Então, o objetivo é o Kupka
+[00:16:06.340] tentar matar isso
+[00:16:08.000] hoje, pra ele, caso
+[00:16:10.060] libere pra performar os test cases
+[00:16:12.100] amanhã, ele já consiga shiftar
+[00:16:14.200] pros testes de volta. Se não, daí ele...
+[00:16:16.700] Se não liberar, daí ele vai ter que
+[00:16:18.240] ainda trabalhar nisso amanhã, pra convergir
+[00:16:20.660] ou do override. Mas ele
+[00:16:22.140] terminou de escrever, ele me passou hoje cedo, antes
+[00:16:24.200] de ir pro médico.
+[00:16:27.500] Daí, já vamos pro Rafa,
+[00:16:29.300] vamos shiftar pro Igor primeiro.
+[00:16:30.840] Tá, deixa eu relembrar se deixei
+[00:16:33.240] alguma coisa aberta, que
+[00:16:34.540] deveria estar fechado.
+[00:16:36.420] Ah, eu revi o test case, então
+[00:16:38.840] eu só preciso ver no detalhe aqui
+[00:16:40.680] as mudanças do brilho lá,
+[00:16:42.780] mas é possível, já tá fechado, já.
+[00:16:45.760] Daí, eu já fecho
+[00:16:47.000] ele, e acho que
+[00:16:48.880] era isso, né?
+[00:16:49.960] E daí, performar os test cases
+[00:16:53.100] em tempo de recuperar.
+[00:16:54.940] É isso.
+[00:16:56.600] E o administrativo que eu fechei...
+[00:16:59.340] Ah, tá, do adicionar
+[00:17:01.460] o... Só que isso, né?
+[00:17:03.090] Na verdade, daí, acho que a gente vai ter que criar depois um
+[00:17:05.070] pra comitar, né?
+[00:17:07.930] Aham, arrumar a branch.
+[00:17:09.270] É. Beleza.
+[00:17:12.010] Perguntinha,
+[00:17:13.590] qual que é a tua prioridade?
+[00:17:15.050] A revisão ou
+[00:17:17.310] mergear os dois test cases?
+[00:17:19.030] A revisão do CUP?
+[00:17:21.530] Então, é isso que eu ia sugerir.
+[00:17:24.390] É isso que você
+[00:17:25.410] tá sobrecarregado. A tua prioridade
+[00:17:27.290] é arrumar o test case do update state, que você
+[00:17:29.430] é a pessoa mais capaz de fazer isso.
+[00:17:31.610] Isso no detalhe, porque você que implementou.
+[00:17:33.710] Daí, a revisão
+[00:17:36.610] do test case
+[00:17:37.750] do override é uma coisa que tá pra você
+[00:17:39.750] que precisa shiftar,
+[00:17:41.170] e atualizar o conteúdo do release checklist
+[00:17:43.490] também tá pra você pra revisar.
+[00:17:45.770] A gente só tem que decidir quem dos dois
+[00:17:47.830] vai pegar. O Igor ou o Rafa,
+[00:17:49.610] um dos dois vai pegar um desses dois,
+[00:17:51.310] porque eles são travados, porque eles não conseguem executar
+[00:17:53.690] o teste agora, entendeu?
+[00:17:58.000] Rafa, eu tinha
+[00:17:58.980] criado pra mapear as
+[00:18:00.620] atividades da viagem,
+[00:18:03.080] do sprint passado,
+[00:18:05.660] na verdade, finalzinho do sprint passado,
+[00:18:07.580] tanto agora. Então, eu vou fechar aqui
+[00:18:09.380] com o Dan, que foi os dois dias
+[00:18:11.670] que você ficou quinta e sexta lá.
+[00:18:13.730] Beleza?
+[00:18:19.550] Daí, você tinha ficado com testes
+[00:18:21.970] performar test cases, mas como
+[00:18:23.770] você bem ouviu, não tá
+[00:18:25.530] liberado ainda. Então, agora
+[00:18:27.170] só preferências. Então, tem
+[00:18:29.790] uma, atualizar
+[00:18:30.950] o release checklist e
+[00:18:33.510] revisar o do override.
+[00:18:35.530] A minha sugestão,
+[00:18:37.310] eu acho que o Rafa é melhor revisar o do override
+[00:18:39.290] e o Igor passar pro
+[00:18:40.630] do release checklist, porque
+[00:18:42.310] o Rafa tá mais por dentro do
+[00:18:45.030] do outro bug fix.
+[00:18:48.520] Só pra relembrar,
+[00:18:50.860] não sei se a gente entrou no detalhe,
+[00:18:52.560] mas lembro, o
+[00:18:53.920] release checklist pra atualizar é adicionar
+[00:18:57.580] agora as mudanças
+[00:18:58.840] do update state
+[00:19:00.420] da FCU também?
+[00:19:02.220] Isso. O conteúdo do que a gente tá liberando
+[00:19:04.620] nos bug fixes vai ter que entrar
+[00:19:06.480] como itens novos do release checklist.
+[00:19:09.000] Daí, você tem que pensar
+[00:19:10.220] isso é o objetivo do tipo
+[00:19:12.860] olhar lá o release checklist
+[00:19:14.340] o que que era o release checklist na época
+[00:19:16.840] da 2.27, daí tem que olhar
+[00:19:18.840] versão por versão que a gente liberou
+[00:19:21.260] o que que era o release checklist da
+[00:19:22.920] 2.30 e gerar meio que
+[00:19:25.000] uma run nova de release checklist
+[00:19:27.400] com o conteúdo
+[00:19:28.780] que seria 2.27. Então, o que que
+[00:19:30.980] na época da 2.27
+[00:19:32.420] a gente tava liberando que a gente tem que
+[00:19:34.780] garantir que ainda tá consistente
+[00:19:36.440] e colocar uma linha nova com
+[00:19:38.760] relação ao update state e colocar
+[00:19:40.460] uma linha nova com relação ao do
+[00:19:42.580] override. Pra você se familiarizar
+[00:19:45.100] com o override, você pode ler tanto
+[00:19:46.460] o function design da Lily quanto o próprio
+[00:19:48.540] test case em si. Você já meio que
+[00:19:50.680] vai ter que fazer isso porque você que vai executar
+[00:19:52.880] os test cases, porque você que não
+[00:19:54.700] tá biased pelo bug
+[00:19:56.560] pra executar. Então, isso já
+[00:19:58.640] é uma oportunidade pra você se familiarizando
+[00:20:00.660] com o conteúdo porque vai ser a próxima
+[00:20:02.740] atividade que você vai executar.
+[00:20:04.580] Mas o atualizar o
+[00:20:06.560] release checklist é isso.
+[00:20:09.120] Recuperar qual que é a versão do Excel
+[00:20:10.880] correspondente pra cada uma dessas
+[00:20:12.600] versões pra gente poder gerar uma run
+[00:20:14.740] que agora tá no Azure
+[00:20:16.800] correspondente com aquilo. Se tiver que fazer
+[00:20:18.720] alguma manutenção, eu não sei exatamente
+[00:20:20.740] como que vai tá lá. Mas isso é
+[00:20:22.840] mais ou menos. Então, a gente tem o
+[00:20:24.800] release checklist da 2.31, tem
+[00:20:26.740] que pegar os anteriores lá no
+[00:20:29.260] repositório do bug server
+[00:20:30.700] lá e... Isso.
+[00:20:32.360] E comparar. Pra poder gerar
+[00:20:34.760] run nova. O que faz sentido executar
+[00:20:36.760] ou não, né? Exatamente.
+[00:20:38.860] No geral, o objetivo é
+[00:20:40.760] a gente precisa rolar um release checklist pra
+[00:20:42.780] garantir que o que a gente tá integrando como
+[00:20:44.880] bug fix tá funcionando
+[00:20:46.760] do tipo tá consistente na versão
+[00:20:48.980] final e o que já
+[00:20:50.940] existia na versão base
+[00:20:52.760] na 2.27.1, na 2.30.0
+[00:20:56.120] aqui é
+[00:20:56.820] 2.27.2
+[00:20:57.960] tá consistente. Então, nada do que
+[00:21:00.900] foi integrado do bug fix quebrou
+[00:21:02.760] outras funcionalidades que a gente já
+[00:21:04.920] tinha validado no release
+[00:21:06.820] da versão anterior, na 2.27.1.
+[00:21:08.860] Na 2.30.0. Na 2.31.0.
+[00:21:11.300] Entendeu? Entendi.
+[00:21:15.220] Então, eu vou passar isso aqui pra você
+[00:21:18.800] e eu vou passar
+[00:21:20.580] o...
+[00:21:22.130] Revisar o test case pro Rafa.
+[00:21:30.040] Que é isso daqui.
+[00:21:41.200] Beleza? Daí eu te ligo, Rafa,
+[00:21:44.780] pra te mostrar o que o Cupca me passou
+[00:21:46.480] antes dele passar e te atualizar.
+[00:21:48.420] Só um adendo pra aproveitar que a gente tá no momento de stand-up.
+[00:21:50.500] Eu acho que é oportuno falar isso... Eu posso
+[00:21:52.320] começar isso à tarde? Deixa eu começar...
+[00:21:54.520] Deixa eu fazer meu acerto, por favor.
+[00:21:59.600] Tá me escutando?
+[00:22:00.940] Aham.
+[00:22:01.740] Eu preciso fazer o acerto porque essa viagem
+[00:22:03.800] saiu do meu bolso, né? Então, eu preciso...
+[00:22:05.640] Ah, tá. Tudo bem.
+[00:22:09.690] Então, quando você quiser
+[00:22:11.570] sentar pra shiftar de tópico, me avisa
+[00:22:13.550] que daí eu te passo o que o Cupca passou.
+[00:22:15.830] Perfeito. Mas, no geral,
+[00:22:18.330] é isso. Então, a gente tá um pouco
+[00:22:20.490] atrás do planejamento por causa do
+[00:22:22.250] finding de quinta-feira, que era o risco
+[00:22:24.250] que a gente já sabia que se tivesse algum finding
+[00:22:26.290] que tivesse que corrigir,
+[00:22:28.010] o planejamento não ia estar
+[00:22:29.590] um pra um. Então,
+[00:22:32.370] hoje, de expectativas, eu acho
+[00:22:34.330] que, no melhor dos cenários,
+[00:22:36.230] a gente vai estar terminando de performar os test cases
+[00:22:38.390] até sexta e a gente ainda vai precisar
+[00:22:40.490] do começo da semana que vem
+[00:22:41.710] pra rodar a documentação We Release Checklist.
+[00:22:44.910] Então, eu já vou pingar o Alberto
+[00:22:46.230] pra ver se ele teve alguma
+[00:22:48.990] atualização das conversas
+[00:22:50.230] lá com a Star ou do planejamento da
+[00:22:52.670] viagem pra validar esse bug fix
+[00:22:54.310] porque, no andar
+[00:22:56.590] da carruagem agora, a gente não vai conseguir
+[00:22:58.470] estar pronto toda sexta-feira com segurança
+[00:23:00.630] rodando os test cases.
+[00:23:02.090] Então, eu vou ver lá o que eu já tinha
+[00:23:04.190] conversado com ele, o que eu já tinha levantado a bandeira,
+[00:23:06.810] tá factível
+[00:23:07.930] ou o que a gente vai ter que fazer.
+[00:23:12.210] Beleza? Então, vão
+[00:23:14.490] avisando. Qualquer
+[00:23:15.510] outra dúvida ou
+[00:23:18.530] coisa que me pacar,
+[00:23:19.530] avisem lá no chat pra gente não se atrasar
+[00:23:21.630] mais ainda. Beleza?
+[00:23:24.030] Se eu tiver, eu vou voltar
+[00:23:26.150] a olhar o conteúdo de ambos, tanto do
+[00:23:28.010] update state quanto do override com o que o
+[00:23:30.170] Kupka me passou hoje, certo? Se eu tiver
+[00:23:32.310] mais algum finding, daí eu aviso,
+[00:23:34.110] vocês, aí na
+[00:23:35.810] execução. Beleza?
+[00:23:39.450] Ok. Tá bom,
+[00:23:40.880] gente. Boa sorte. Tchau, tchau.
+[00:23:43.280] Tchau.

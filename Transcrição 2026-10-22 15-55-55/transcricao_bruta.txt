@@ -1,0 +1,305 @@
+﻿[00:00:00.400] A MCU de qualquer forma
+[00:00:02.860] Ela não vai receber as mensagens?
+[00:00:06.470] Não, porque
+[00:00:07.270] Não tá compilado pra Raven, né?
+[00:00:09.770] Se você olhar ali as mensagens
+[00:00:11.630] Do Gateway
+[00:00:13.150] Não tá compilado pra Raven
+[00:00:14.670] Só tá pros outros costumes
+[00:00:16.610] Tem que tirar a compilação específica
+[00:00:18.910] Por isso que eu falei que precisa da modificação
+[00:00:21.030] Porque precisa fazer
+[00:00:22.270] E daí colocar o if de só
+[00:00:24.870] Pra Raven, né?
+[00:00:26.430] De compilação pra não repassar
+[00:00:28.750] Não fazer o Gateway
+[00:00:29.630] Mas fazer a lógica da flag
+[00:00:36.430] Entendeu?
+[00:00:38.090] Você tá com o código aberto aí?
+[00:00:39.710] A gente pode ver juntos
+[00:00:40.550] Deixa eu abrir
+[00:00:44.090] Entendi
+[00:00:53.210] Abre errado
+[00:00:53.950] Não é nessa
+[00:00:54.830] É nessa aqui
+[00:01:53.890] Beleza
+[00:01:59.690] Tá, o que vai ter que colocar
+[00:02:01.430] É ser um customer específico
+[00:02:06.050] Isso, vai bem no começo
+[00:02:07.870] No Gateway
+[00:02:10.810] Default
+[00:02:11.330] Só pra ver
+[00:02:12.470] Que eu acho que ele tá lá
+[00:02:13.770] O que não tava compilando
+[00:02:17.110] Ou você já tirou?
+[00:02:19.180] Não, não
+[00:02:19.940] Esse if de compilação
+[00:02:21.440] O if de compilação
+[00:02:22.520] Acho que tava logo em cima desse default
+[00:02:24.300] Vai um pouquinho mais pra cima
+[00:02:25.640] If de compilação
+[00:02:27.860] Não
+[00:02:28.900] Tirei
+[00:02:29.420] Não
+[00:02:29.560] Tem certeza?
+[00:02:32.780] Uhum
+[00:02:33.300] Deixa eu ver
+[00:02:35.690] O código que tava aberto aqui
+[00:02:37.370] Que eu achei que ele não tava compilando
+[00:02:52.000] Question soft
+[00:02:53.040] Ok
+[00:02:54.600] Ah não, ele tá fora mesmo
+[00:02:58.360] Parece que
+[00:03:02.290] Não, não, não
+[00:03:06.280] Tem que ter, não faz sentido
+[00:03:07.540] Acho que você tirou sim, amigo
+[00:03:16.760] Ou
+[00:03:18.850] Pera, você tá na 2.27, né?
+[00:03:20.970] Tô na 2.27
+[00:03:22.510] É que eu tô com a 2.30 aberta aqui
+[00:03:28.540] Tô pensando se teria diferença
+[00:03:30.060] 2.27 pra 2.30
+[00:03:32.930] Quando que a gente jogou pro Arquibis?
+[00:03:35.730] Eu já não lembro
+[00:03:41.350] Talvez seja da 2.30 pra frente
+[00:03:43.230] Que tem isso
+[00:03:44.070] Hum
+[00:03:45.850] É que tá na 2.31
+[00:03:49.620] Isso
+[00:03:51.900] Isso é fácil de ser checado depois
+[00:03:54.220] Mas
+[00:03:55.120] Na 2
+[00:03:57.760] Pelo menos a versão que eu tô aberto aqui
+[00:03:59.940] Na 2.30.1
+[00:04:01.460] Ele
+[00:04:02.460] Tem o if condicional
+[00:04:04.640] Logo antes desse bloco
+[00:04:06.760] Da callback do gateway default
+[00:04:09.180] Aham
+[00:04:10.340] Bem aqui
+[00:04:11.480] Isso, bem aí em cima
+[00:04:13.000] É
+[00:04:13.460] Ele tem o condicional
+[00:04:15.900] Pra não compilar pra RAV
+[00:04:17.320] Aham
+[00:04:17.860] Ah, tá
+[00:04:18.760] Então, beleza
+[00:04:19.380] Ok
+[00:04:20.800] Então
+[00:04:21.360] Hum
+[00:04:23.980] É aqui no caso
+[00:04:25.200] Nesse caso que ele
+[00:04:26.040] Que ele tá compilando
+[00:04:27.840] Daí você só coloca
+[00:04:29.800] É tipo o que você botou ali embaixo mesmo
+[00:04:32.180] De só
+[00:04:32.700] O envio
+[00:04:33.820] A parte mesmo
+[00:04:34.900] Se bem que se ele já tava fazendo aí pra RAVN
+[00:04:38.060] É que não vai fazer diferença
+[00:04:40.520] Que a gente não vai
+[00:04:41.460] A gente não vai gerar essa versão pra RAVN
+[00:04:45.320] Então acho que não vai precisar mexer
+[00:04:47.900] É
+[00:04:48.180] Talvez só botar a lógica de que a gente vai fazer isso
+[00:04:49.600] A lógica de não enviar pra RAVN
+[00:04:50.980] E começar a compilar de volta
+[00:04:52.820] Só pra
+[00:04:54.060] 2.31.1
+[00:04:56.180] Que é o que vai impactar pra CNH, entendeu?
+[00:04:58.720] Aham
+[00:04:59.320] Então pra essa versão aí
+[00:05:01.700] Pra 2.27.2
+[00:05:03.060] Pra 2.31
+[00:05:04.200] Deixa só
+[00:05:05.540] Só adiciona
+[00:05:06.640] Então só adiciona na lógica da flag
+[00:05:08.520] E o fix lá do condicional
+[00:05:11.040] E daí na 2.31.1
+[00:05:13.500] A gente coloca o
+[00:05:14.720] Volta a compilar callback pra RAVN
+[00:05:17.640] Mas
+[00:05:18.460] Tira fora
+[00:05:19.620] A parte do gateway em si
+[00:05:23.720] Tá, beleza
+[00:05:25.490] Quando você diz tirar fora a parte do gateway
+[00:05:28.070] É
+[00:05:29.310] O cansem de data só
+[00:05:30.970] O cansem de data não faz pra CNH
+[00:05:34.070] Que não faz sentido
+[00:05:35.150] Ah tá, beleza
+[00:05:37.230] Então só deixa a questão do recebimento mesmo
+[00:05:40.010] Aí sim faz
+[00:05:40.970] Isso, pra poder setar a flag
+[00:05:44.070] Mas você entendeu o porquê, né?
+[00:05:46.030] Aham, porque
+[00:05:46.790] Ah então, é por isso que eu tava
+[00:05:48.070] Bati a cabeça que eu fiquei, ué, mas aqui pelo que eu entendi
+[00:05:51.290] A RAVN vai receber
+[00:05:53.560] É que eu não tenho
+[00:05:54.640] Mas ali eu entendi
+[00:05:55.540] Lá ela não vai receber o
+[00:05:58.380] Callback
+[00:05:58.820] É que eu tenho que olhar pelas entregas lá
+[00:06:01.420] Que agora de cabeça eu não vou lembrar
+[00:06:04.280] Mas
+[00:06:06.100] Eu acho que foi o que a gente mudou
+[00:06:08.040] Depois
+[00:06:08.720] Quando foi confirmado o ST
+[00:06:12.670] Agora
+[00:06:13.590] A arquitetura
+[00:06:15.370] A gente não precisa fazer o gateway
+[00:06:16.850] Porque o ST tá no mesmo barramento
+[00:06:19.130] Eu acho que na 2.27 não tava
+[00:06:21.530] Eu já não vou lembrar
+[00:06:22.650] Mas
+[00:06:22.790] , amigo
+[00:06:23.050] Dá pra checar isso depois, mas
+[00:06:26.520] Se não tiver, daí
+[00:06:29.060] Só adiciona a mesma lógica
+[00:06:30.820] Não precisa
+[00:06:32.460] Daí não precisa modificar o que já tava
+[00:06:35.500] Da CNH
+[00:06:36.460] Tipo, esse if condicional que você botou aí
+[00:06:38.340] Não precisa, porque daí segue o geral, né?
+[00:06:41.300] Porque a gente só vai gerar o bug fix
+[00:06:43.040] Pra Star e pra
+[00:06:46.030] Kaiman
+[00:06:48.730] Só pra não ficar código
+[00:06:50.010] Que não faz sentido, sabe?
+[00:06:53.050] Pera, perdão, amiga
+[00:06:53.790] Eu tava
+[00:06:55.290] Eu devanei
+[00:06:55.910] Qual o if que você falou que não ia precisar?
+[00:06:58.600] Esse if do BDS
+[00:07:01.460] Cancêndidata
+[00:07:01.920] Tipo, nessa versão, na 2.27.2
+[00:07:04.580] A gente não vai gerar nada pra CNH
+[00:07:06.180] Ah, tá
+[00:07:06.660] Não precisa adicionar esse can
+[00:07:08.360] Ou ele já tava assim
+[00:07:10.200] Ele já tava assim?
+[00:07:11.300] Ele já tava assim
+[00:07:12.520] Aham, por isso que eu tô
+[00:07:14.300] Ah, então talvez seja que a gente só jogou pra fora
+[00:07:17.280] É, a gente só jogou pra fora
+[00:07:19.740] Só fez o
+[00:07:20.800] Tuk
+[00:07:24.120] Tá
+[00:07:24.580] Tava, tanto que aqui tá do
+[00:07:27.020] Aham, então talvez seja que a gente só jogou pra fora
+[00:07:27.690] Tá, cadê, cadê, cadê, cadê, cadê?
+[00:07:29.050] Tanto dois
+[00:07:30.290] Aqui
+[00:07:30.830] Então, é
+[00:07:31.810] Então, segue o
+[00:07:33.230] Segue o
+[00:07:34.250] A lógica de
+[00:07:35.430] Editar o menos possível
+[00:07:36.990] Tá bom
+[00:07:37.730] Perfeito
+[00:07:38.730] Só adicionar a lógica
+[00:07:40.230] Tá, só adicionar aqui por cima, beleza
+[00:07:44.090] Perfeito
+[00:07:44.630] Então, vai aí no teu tempo
+[00:07:46.590] Entre hoje e amanhã
+[00:07:48.300] É
+[00:07:49.730] Arruma o que você achar que faz sentido
+[00:07:52.130] Pensa aí no nome
+[00:07:54.010] Se deixa a flag desse jeito
+[00:07:56.770] E daí
+[00:07:58.330] Tipo, o serviço ali
+[00:08:00.170] As coisas, tipo
+[00:08:01.130] Comentar melhor
+[00:08:02.950] Botem define
+[00:08:03.730] O que fizer sentido como define
+[00:08:06.210] Principalmente essa lógica ali do serviço
+[00:08:08.170] Então
+[00:08:08.410] O onze
+[00:08:09.670] Deixar bem explícito
+[00:08:11.150] Que é o seu reset
+[00:08:12.190] Ah, tá bonito
+[00:08:13.210] Comentar ali a lógica do nibble
+[00:08:15.270] O porquê que é o zero, zero
+[00:08:17.490] Copia lá o que o
+[00:08:18.650] O Adri mandou na mensagem
+[00:08:20.430] Como explicação
+[00:08:21.250] E tenta deixar as coisas como define
+[00:08:23.330] Só pra ficar mais bonitinho
+[00:08:25.110] Tá bom
+[00:08:25.950] E daí quando você
+[00:08:27.190] Convergir
+[00:08:27.930] Você me avisa
+[00:08:29.030] Que eu olho de volta
+[00:08:30.050] Pra
+[00:08:30.570] Pra revisar
+[00:08:33.960] Daí a mesma coisa
+[00:08:35.760] Daí só extrapolar a mesma lógica
+[00:08:37.960] Lá pro
+[00:08:38.320] REC
+[00:08:39.040] E pro
+[00:08:40.040] Function Design
+[00:08:41.640] Ficarem atualizados também
+[00:08:44.310] Daí a lógica é amanhã
+[00:08:46.370] A gente ficar
+[00:08:47.190] Andando por isso
+[00:08:48.470] Então
+[00:08:48.730] Quando você quiser que eu revise alguma coisa
+[00:08:50.670] Quando você quiser alinhar alguma coisa
+[00:08:52.010] Você me avisa
+[00:08:52.790] E enquanto eu não estiver
+[00:08:54.370] Fazendo isso
+[00:08:55.650] Eu vou
+[00:08:56.170] Voltar a olhar os test cases
+[00:08:58.030] Com a minha
+[00:08:58.310] Com os meninos
+[00:08:58.790] Então os meninos vão fazer a revisão
+[00:09:00.330] O Kupka vai fazer a escrita
+[00:09:02.010] O Igor vai fazer a revisão do teu
+[00:09:04.810] E eu vou olhar o conteúdo dos dois
+[00:09:07.170] Perfeito
+[00:09:08.690] Em paralelo
+[00:09:09.650] Enquanto
+[00:09:11.350] Tava
+[00:09:13.600] Tava na reunião
+[00:09:14.460] Eu tinha pedido pro Igor
+[00:09:15.300] Só rodar um logzinho
+[00:09:16.540] Pra ver
+[00:09:16.940] Pra Raven
+[00:09:17.660] Pra ver se dava algum erro
+[00:09:19.220] Ele falou que deu boa também lá
+[00:09:20.640] Mas nesse na 2.27
+[00:09:23.980] Então
+[00:09:24.460] Aparentemente não deu realmente problema
+[00:09:26.800] Que é
+[00:09:27.260] Ele tá recebendo
+[00:09:28.300] Tá
+[00:09:29.230] Então
+[00:09:29.750] Aí eu olho na 2.31
+[00:09:31.030] Com calma
+[00:09:31.850] Também
+[00:09:33.140] Tá
+[00:09:33.340] Vou fazer as coisas 2.27
+[00:09:34.740] Aham
+[00:09:36.380] Daí a gente converge isso
+[00:09:37.800] Amanhã
+[00:09:38.640] Eu vou tentar dormir
+[00:09:40.040] Com a ideia na cabeça
+[00:09:41.440] Pra ver se eu penso em mais algum gap
+[00:09:43.240] Que a gente não tá considerando
+[00:09:44.860] Tá bom
+[00:09:46.160] Mas é que esse também
+[00:09:47.260] Por mim
+[00:09:47.680] Eu já caduquei
+[00:09:48.500] Hoje
+[00:09:48.700] Não vai sair muito mais
+[00:09:50.360] Tá bom
+[00:09:53.020] Beleza
+[00:09:53.930] Tá bom
+[00:09:55.270] De nada, amigo
+[00:09:55.850] Qualquer coisa avisa
+[00:09:57.330] Ok
+[00:09:57.830] Tchau, tchau
+[00:09:58.790] Tchau, tchau
+[00:09:59.550] Tchau
+[00:10:07.340] Tchau

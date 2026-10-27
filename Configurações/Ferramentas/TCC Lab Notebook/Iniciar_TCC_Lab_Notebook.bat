@@ -1,6 +1,6 @@
 @echo off
 setlocal
-title TCC Lab Notebook - GitHub Sync
+title TCC Lab Notebook - Salvamento local
 powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0TCC_GitHub_Sync.ps1"
 if errorlevel 1 (
   echo.

@@ -1,0 +1,1219 @@
+﻿1
+00:00:00,400 --> 00:00:02,860
+Murilo: A MCU de qualquer forma
+
+2
+00:00:02,860 --> 00:00:05,380
+Murilo: Ela não vai receber as mensagens?
+
+3
+00:00:06,470 --> 00:00:07,270
+Érica: Não, porque
+
+4
+00:00:07,270 --> 00:00:09,730
+Érica: Não tá compilado pra RAVN, né?
+
+5
+00:00:09,770 --> 00:00:11,630
+Érica: Se você olhar ali as mensagens
+
+6
+00:00:11,630 --> 00:00:13,150
+Érica: Do Gateway
+
+7
+00:00:13,150 --> 00:00:14,670
+Érica: Não tá compilado pra RAVN
+
+8
+00:00:14,670 --> 00:00:16,050
+Érica: Só tá pros outros customers
+
+9
+00:00:16,610 --> 00:00:18,910
+Érica: Tem que tirar a compilação específica
+
+10
+00:00:18,910 --> 00:00:21,030
+Érica: Por isso que eu falei que precisa da modificação
+
+11
+00:00:21,030 --> 00:00:22,270
+Érica: Porque precisa fazer
+
+12
+00:00:22,270 --> 00:00:24,870
+Érica: E daí colocar o if de só
+
+13
+00:00:24,870 --> 00:00:26,390
+Érica: Pra RAVN, né?
+
+14
+00:00:26,430 --> 00:00:28,750
+Érica: De compilação pra não repassar
+
+15
+00:00:28,750 --> 00:00:29,630
+Érica: Não fazer o Gateway
+
+16
+00:00:29,630 --> 00:00:32,090
+Érica: Mas fazer a lógica da flag
+
+17
+00:00:36,430 --> 00:00:36,950
+Érica: Entendeu?
+
+18
+00:00:38,090 --> 00:00:39,670
+Érica: Você tá com o código aberto aí?
+
+19
+00:00:39,710 --> 00:00:40,550
+Érica: A gente pode ver juntos
+
+20
+00:00:40,550 --> 00:00:42,270
+Murilo: Deixa eu abrir
+
+21
+00:00:44,090 --> 00:00:44,610
+Murilo: Entendi
+
+22
+00:00:53,210 --> 00:00:53,950
+Murilo: Abre errado
+
+23
+00:00:53,950 --> 00:00:54,830
+Murilo: Não é nessa
+
+24
+00:00:54,830 --> 00:00:57,380
+Murilo: É nessa aqui
+
+25
+00:01:53,890 --> 00:01:54,410
+Murilo: Beleza
+
+26
+00:01:59,690 --> 00:02:01,430
+Murilo: Tá, o que vai ter que colocar
+
+27
+00:02:01,430 --> 00:02:04,070
+Murilo: É ser um customer específico
+
+28
+00:02:06,050 --> 00:02:07,870
+Érica: Isso, vai bem no começo
+
+29
+00:02:07,870 --> 00:02:08,930
+Érica: No Gateway
+
+30
+00:02:10,810 --> 00:02:11,330
+Érica: Default
+
+31
+00:02:11,330 --> 00:02:12,470
+Érica: Só pra ver
+
+32
+00:02:12,470 --> 00:02:13,770
+Érica: Que eu acho que ele tá lá
+
+33
+00:02:13,770 --> 00:02:16,490
+Érica: O que não tava compilando
+
+34
+00:02:17,110 --> 00:02:18,270
+Érica: Ou você já tirou?
+
+35
+00:02:19,180 --> 00:02:19,940
+Murilo: Não, não
+
+36
+00:02:19,940 --> 00:02:21,440
+Érica: Esse if de compilação
+
+37
+00:02:21,440 --> 00:02:22,520
+Érica: O if de compilação
+
+38
+00:02:22,520 --> 00:02:24,300
+Érica: Acho que tava logo em cima desse default
+
+39
+00:02:24,300 --> 00:02:25,640
+Érica: Vai um pouquinho mais pra cima
+
+40
+00:02:25,640 --> 00:02:27,860
+Érica: If de compilação
+
+41
+00:02:27,860 --> 00:02:28,340
+Murilo: Não
+
+42
+00:02:28,900 --> 00:02:29,420
+Murilo: Tirei
+
+43
+00:02:29,420 --> 00:02:29,560
+Érica: Não
+
+44
+00:02:29,560 --> 00:02:32,160
+Érica: Tem certeza?
+
+45
+00:02:32,780 --> 00:02:33,300
+Murilo: Uhum
+
+46
+00:02:33,300 --> 00:02:35,690
+Érica: Deixa eu ver
+
+47
+00:02:35,690 --> 00:02:37,370
+Érica: O código que tava aberto aqui
+
+48
+00:02:37,370 --> 00:02:49,050
+Érica: Que eu achei que ele não tava compilando
+
+49
+00:02:52,000 --> 00:02:53,040
+Érica: Question soft
+
+50
+00:02:53,040 --> 00:02:53,340
+Érica: Ok
+
+51
+00:02:54,600 --> 00:02:58,360
+Érica: Ah não, ele tá fora mesmo
+
+52
+00:02:58,360 --> 00:02:59,820
+Érica: Parece que
+
+53
+00:03:02,290 --> 00:03:06,280
+Érica: Não, não, não
+
+54
+00:03:06,280 --> 00:03:07,540
+Érica: Tem que ter, não faz sentido
+
+55
+00:03:07,540 --> 00:03:14,240
+Érica: Acho que você tirou sim, amigo
+
+56
+00:03:16,760 --> 00:03:17,240
+Érica: Ou
+
+57
+00:03:18,850 --> 00:03:20,830
+Érica: Pera, você tá na 2.27, né?
+
+58
+00:03:20,970 --> 00:03:21,990
+Murilo: Tô na 2.27
+
+59
+00:03:22,510 --> 00:03:28,540
+Érica: É que eu tô com a 2.30 aberta aqui
+
+60
+00:03:28,540 --> 00:03:30,060
+Érica: Tô pensando se teria diferença
+
+61
+00:03:30,060 --> 00:03:32,000
+Érica: 2.27 pra 2.30
+
+62
+00:03:32,930 --> 00:03:35,250
+Érica: Quando que a gente jogou pro Arquibis?
+
+63
+00:03:35,730 --> 00:03:41,350
+Érica: Eu já não lembro
+
+64
+00:03:41,350 --> 00:03:43,230
+Érica: Talvez seja da 2.30 pra frente
+
+65
+00:03:43,230 --> 00:03:43,910
+Érica: Que tem isso
+
+66
+00:03:44,070 --> 00:03:45,050
+Murilo: Hum
+
+67
+00:03:45,850 --> 00:03:49,620
+Murilo: É que tá na 2.31
+
+68
+00:03:49,620 --> 00:03:50,940
+Érica: Isso
+
+69
+00:03:51,900 --> 00:03:54,220
+Érica: Isso é fácil de ser checado depois
+
+70
+00:03:54,220 --> 00:03:55,120
+Érica: Mas
+
+71
+00:03:55,120 --> 00:03:56,700
+Érica: Na 2
+
+72
+00:03:57,760 --> 00:03:59,940
+Érica: Pelo menos a versão que eu tô aberto aqui
+
+73
+00:03:59,940 --> 00:04:01,460
+Érica: Na 2.30.1
+
+74
+00:04:01,460 --> 00:04:02,460
+Érica: Ele
+
+75
+00:04:02,460 --> 00:04:04,640
+Érica: Tem o if condicional
+
+76
+00:04:04,640 --> 00:04:06,760
+Érica: Logo antes desse bloco
+
+77
+00:04:06,760 --> 00:04:09,180
+Érica: Da callback do gateway default
+
+78
+00:04:09,180 --> 00:04:10,340
+Murilo: Aham
+
+79
+00:04:10,340 --> 00:04:11,480
+Murilo: Bem aqui
+
+80
+00:04:11,480 --> 00:04:13,000
+Érica: Isso, bem aí em cima
+
+81
+00:04:13,000 --> 00:04:13,460
+Érica: É
+
+82
+00:04:13,460 --> 00:04:15,900
+Érica: Ele tem o condicional
+
+83
+00:04:15,900 --> 00:04:17,320
+Murilo: Pra não compilar pra RAVN
+
+84
+00:04:17,320 --> 00:04:17,860
+Érica: Aham
+
+85
+00:04:17,860 --> 00:04:18,760
+Murilo: Ah, tá
+
+86
+00:04:18,760 --> 00:04:19,380
+Murilo: Então, beleza
+
+87
+00:04:19,380 --> 00:04:20,060
+Érica: Ok
+
+88
+00:04:20,800 --> 00:04:21,360
+Érica: Então
+
+89
+00:04:21,360 --> 00:04:22,280
+Murilo: Hum
+
+90
+00:04:23,980 --> 00:04:25,200
+Érica: É aqui no caso
+
+91
+00:04:25,200 --> 00:04:26,040
+Érica: Nesse caso que ele
+
+92
+00:04:26,040 --> 00:04:27,840
+Érica: Que ele tá compilando
+
+93
+00:04:27,840 --> 00:04:29,200
+Érica: Daí você só coloca
+
+94
+00:04:29,800 --> 00:04:32,180
+Érica: É tipo o que você botou ali embaixo mesmo
+
+95
+00:04:32,180 --> 00:04:32,700
+Érica: De só
+
+96
+00:04:32,700 --> 00:04:33,820
+Érica: O envio
+
+97
+00:04:33,820 --> 00:04:34,900
+Érica: A parte mesmo
+
+98
+00:04:34,900 --> 00:04:38,060
+Érica: Se bem que se ele já tava fazendo aí pra RAVN
+
+99
+00:04:38,060 --> 00:04:40,520
+Érica: É que não vai fazer diferença
+
+100
+00:04:40,520 --> 00:04:41,460
+Érica: Que a gente não vai
+
+101
+00:04:41,460 --> 00:04:45,320
+Érica: A gente não vai gerar essa versão pra RAVN
+
+102
+00:04:45,320 --> 00:04:47,360
+Érica: Então acho que não vai precisar mexer
+
+103
+00:04:47,900 --> 00:04:48,180
+Érica: É
+
+104
+00:04:48,180 --> 00:04:49,600
+Érica: Talvez só botar a lógica de que a gente vai fazer isso
+
+105
+00:04:49,600 --> 00:04:50,980
+Érica: A lógica de não enviar pra RAVN
+
+106
+00:04:50,980 --> 00:04:52,820
+Érica: E começar a compilar de volta
+
+107
+00:04:52,820 --> 00:04:54,060
+Érica: Só pra
+
+108
+00:04:54,060 --> 00:04:56,180
+Érica: 2.31.1
+
+109
+00:04:56,180 --> 00:04:58,500
+Érica: Que é o que vai impactar pra CNH, entendeu?
+
+110
+00:04:58,720 --> 00:04:59,320
+Murilo: Aham
+
+111
+00:04:59,320 --> 00:05:01,700
+Érica: Então pra essa versão aí
+
+112
+00:05:01,700 --> 00:05:03,060
+Érica: Pra 2.27.2
+
+113
+00:05:03,060 --> 00:05:04,200
+Érica: Pra 2.31
+
+114
+00:05:04,200 --> 00:05:05,540
+Érica: Deixa só
+
+115
+00:05:05,540 --> 00:05:06,640
+Érica: Só adiciona
+
+116
+00:05:06,640 --> 00:05:08,520
+Érica: Então só adiciona na lógica da flag
+
+117
+00:05:08,520 --> 00:05:11,040
+Érica: E o fix lá do condicional
+
+118
+00:05:11,040 --> 00:05:13,500
+Érica: E daí na 2.31.1
+
+119
+00:05:13,500 --> 00:05:14,720
+Érica: A gente coloca o
+
+120
+00:05:14,720 --> 00:05:17,640
+Érica: Volta a compilar callback pra RAVN
+
+121
+00:05:17,640 --> 00:05:18,460
+Érica: Mas
+
+122
+00:05:18,460 --> 00:05:19,620
+Érica: Tira fora
+
+123
+00:05:19,620 --> 00:05:21,640
+Érica: A parte do gateway em si
+
+124
+00:05:23,720 --> 00:05:24,680
+Murilo: Tá, beleza
+
+125
+00:05:25,490 --> 00:05:27,530
+Murilo: Quando você diz tirar fora a parte do gateway
+
+126
+00:05:28,070 --> 00:05:28,550
+Érica: É
+
+127
+00:05:29,310 --> 00:05:30,970
+Érica: O CAN Send Data só
+
+128
+00:05:30,970 --> 00:05:34,070
+Érica: O CAN Send Data não faz pra CNH
+
+129
+00:05:34,070 --> 00:05:35,150
+Érica: Que não faz sentido
+
+130
+00:05:35,150 --> 00:05:36,350
+Murilo: Ah tá, beleza
+
+131
+00:05:37,230 --> 00:05:40,010
+Murilo: Então só deixa a questão do recebimento mesmo
+
+132
+00:05:40,010 --> 00:05:40,970
+Érica: Aí sim faz
+
+133
+00:05:40,970 --> 00:05:43,590
+Érica: Isso, pra poder setar a flag
+
+134
+00:05:44,070 --> 00:05:45,650
+Érica: Mas você entendeu o porquê, né?
+
+135
+00:05:46,030 --> 00:05:46,790
+Murilo: Aham, porque
+
+136
+00:05:46,790 --> 00:05:48,070
+Murilo: Ah então, é por isso que eu tava
+
+137
+00:05:48,070 --> 00:05:50,550
+Murilo: Bati a cabeça que eu fiquei, ué, mas aqui pelo que eu entendi
+
+138
+00:05:51,290 --> 00:05:52,290
+Murilo: A RAVN vai receber
+
+139
+00:05:53,560 --> 00:05:54,640
+Murilo: É que eu não tenho
+
+140
+00:05:54,640 --> 00:05:55,540
+Murilo: Mas ali eu entendi
+
+141
+00:05:55,540 --> 00:05:57,060
+Murilo: Lá ela não vai receber o
+
+142
+00:05:58,380 --> 00:05:58,820
+Murilo: Callback
+
+143
+00:05:58,820 --> 00:06:01,420
+Érica: É que eu tenho que olhar pelas entregas lá
+
+144
+00:06:01,420 --> 00:06:03,760
+Érica: Que agora de cabeça eu não vou lembrar
+
+145
+00:06:04,280 --> 00:06:04,720
+Érica: Mas
+
+146
+00:06:06,100 --> 00:06:08,040
+Érica: Eu acho que foi o que a gente mudou
+
+147
+00:06:08,040 --> 00:06:08,720
+Érica: Depois
+
+148
+00:06:08,720 --> 00:06:11,100
+Érica: Quando foi confirmado o ST
+
+149
+00:06:12,670 --> 00:06:13,110
+Érica: Agora
+
+150
+00:06:13,590 --> 00:06:15,370
+Érica: A arquitetura
+
+151
+00:06:15,370 --> 00:06:16,850
+Érica: A gente não precisa fazer o gateway
+
+152
+00:06:16,850 --> 00:06:19,130
+Érica: Porque o ST tá no mesmo barramento
+
+153
+00:06:19,130 --> 00:06:21,530
+Érica: Eu acho que na 2.27 não tava
+
+154
+00:06:21,530 --> 00:06:22,650
+Érica: Eu já não vou lembrar
+
+155
+00:06:22,650 --> 00:06:22,770
+Érica: Mas
+
+156
+00:06:22,790 --> 00:06:23,050
+Érica: , amigo
+
+157
+00:06:23,050 --> 00:06:26,520
+Érica: Dá pra checar isso depois, mas
+
+158
+00:06:26,520 --> 00:06:28,340
+Érica: Se não tiver, daí
+
+159
+00:06:29,060 --> 00:06:30,820
+Érica: Só adiciona a mesma lógica
+
+160
+00:06:30,820 --> 00:06:31,340
+Érica: Não precisa
+
+161
+00:06:32,460 --> 00:06:34,680
+Érica: Daí não precisa modificar o que já tava
+
+162
+00:06:35,500 --> 00:06:36,460
+Érica: Da CNH
+
+163
+00:06:36,460 --> 00:06:38,340
+Érica: Tipo, esse if condicional que você botou aí
+
+164
+00:06:38,340 --> 00:06:41,240
+Érica: Não precisa, porque daí segue o geral, né?
+
+165
+00:06:41,300 --> 00:06:43,040
+Érica: Porque a gente só vai gerar o bug fix
+
+166
+00:06:43,040 --> 00:06:44,780
+Érica: Pra Star e pra
+
+167
+00:06:46,030 --> 00:06:46,510
+Érica: Kaiman
+
+168
+00:06:48,730 --> 00:06:50,010
+Érica: Só pra não ficar código
+
+169
+00:06:50,010 --> 00:06:52,750
+Érica: Que não faz sentido, sabe?
+
+170
+00:06:53,050 --> 00:06:53,790
+Murilo: Pera, perdão, amiga
+
+171
+00:06:53,790 --> 00:06:54,510
+Murilo: Eu tava
+
+172
+00:06:55,290 --> 00:06:55,910
+Murilo: Eu devanei
+
+173
+00:06:55,910 --> 00:06:58,030
+Murilo: Qual o if que você falou que não ia precisar?
+
+174
+00:06:58,600 --> 00:07:00,860
+Érica: Esse if do BDS
+
+175
+00:07:01,460 --> 00:07:01,920
+Érica: CAN Send Data
+
+176
+00:07:01,920 --> 00:07:04,580
+Érica: Tipo, nessa versão, na 2.27.2
+
+177
+00:07:04,580 --> 00:07:06,180
+Érica: A gente não vai gerar nada pra CNH
+
+178
+00:07:06,180 --> 00:07:06,660
+Murilo: Ah, tá
+
+179
+00:07:06,660 --> 00:07:08,360
+Érica: Não precisa adicionar esse can
+
+180
+00:07:08,360 --> 00:07:09,620
+Murilo: Ou ele já tava assim
+
+181
+00:07:10,200 --> 00:07:11,260
+Érica: Ele já tava assim?
+
+182
+00:07:11,300 --> 00:07:12,520
+Érica: Ele já tava assim
+
+183
+00:07:12,520 --> 00:07:13,680
+Murilo: Aham, por isso que eu tô
+
+184
+00:07:14,300 --> 00:07:17,280
+Érica: Ah, então talvez seja que a gente só jogou pra fora
+
+185
+00:07:17,280 --> 00:07:19,100
+Murilo: É, a gente só jogou pra fora
+
+186
+00:07:19,740 --> 00:07:20,800
+Murilo: Só fez o
+
+187
+00:07:20,800 --> 00:07:21,420
+Murilo: Tuk
+
+188
+00:07:24,120 --> 00:07:24,580
+Murilo: Tá
+
+189
+00:07:24,580 --> 00:07:26,540
+Murilo: Tava, tanto que aqui tá do
+
+190
+00:07:27,020 --> 00:07:27,480
+Érica: Aham, então talvez seja que a gente só jogou pra fora
+
+191
+00:07:27,690 --> 00:07:29,050
+Murilo: Tá, cadê, cadê, cadê, cadê, cadê?
+
+192
+00:07:29,050 --> 00:07:29,610
+Murilo: Tanto dois
+
+193
+00:07:30,290 --> 00:07:30,830
+Érica: Aqui
+
+194
+00:07:30,830 --> 00:07:31,810
+Érica: Então, é
+
+195
+00:07:31,810 --> 00:07:33,230
+Érica: Então, segue o
+
+196
+00:07:33,230 --> 00:07:34,250
+Érica: Segue o
+
+197
+00:07:34,250 --> 00:07:35,430
+Érica: A lógica de
+
+198
+00:07:35,430 --> 00:07:36,990
+Érica: Editar o menos possível
+
+199
+00:07:36,990 --> 00:07:37,730
+Murilo: Tá bom
+
+200
+00:07:37,730 --> 00:07:38,730
+Érica: Perfeito
+
+201
+00:07:38,730 --> 00:07:40,230
+Érica: Só adicionar a lógica
+
+202
+00:07:40,230 --> 00:07:42,570
+Murilo: Tá, só adicionar aqui por cima, beleza
+
+203
+00:07:44,090 --> 00:07:44,630
+Érica: Perfeito
+
+204
+00:07:44,630 --> 00:07:46,590
+Érica: Então, vai aí no teu tempo
+
+205
+00:07:46,590 --> 00:07:47,790
+Érica: Entre hoje e amanhã
+
+206
+00:07:48,300 --> 00:07:48,570
+Érica: É
+
+207
+00:07:49,730 --> 00:07:52,130
+Érica: Arruma o que você achar que faz sentido
+
+208
+00:07:52,130 --> 00:07:54,010
+Érica: Pensa aí no nome
+
+209
+00:07:54,010 --> 00:07:56,770
+Érica: Se deixa a flag desse jeito
+
+210
+00:07:56,770 --> 00:07:57,350
+Érica: E daí
+
+211
+00:07:58,330 --> 00:08:00,170
+Érica: Tipo, o serviço ali
+
+212
+00:08:00,170 --> 00:08:01,130
+Érica: As coisas, tipo
+
+213
+00:08:01,130 --> 00:08:02,350
+Érica: Comentar melhor
+
+214
+00:08:02,950 --> 00:08:03,730
+Érica: Botem define
+
+215
+00:08:03,730 --> 00:08:05,330
+Érica: O que fizer sentido como define
+
+216
+00:08:06,210 --> 00:08:08,170
+Érica: Principalmente essa lógica ali do serviço
+
+217
+00:08:08,170 --> 00:08:08,410
+Érica: Então
+
+218
+00:08:08,410 --> 00:08:09,670
+Érica: O onze
+
+219
+00:08:09,670 --> 00:08:11,150
+Érica: Deixar bem explícito
+
+220
+00:08:11,150 --> 00:08:12,190
+Érica: Que é o seu reset
+
+221
+00:08:12,190 --> 00:08:13,210
+Érica: Ah, tá bonito
+
+222
+00:08:13,210 --> 00:08:15,270
+Érica: Comentar ali a lógica do nibble
+
+223
+00:08:15,270 --> 00:08:16,850
+Érica: O porquê que é o zero, zero
+
+224
+00:08:17,490 --> 00:08:18,650
+Érica: Copia lá o que o
+
+225
+00:08:18,650 --> 00:08:20,430
+Érica: O Adri mandou na mensagem
+
+226
+00:08:20,430 --> 00:08:21,250
+Érica: Como explicação
+
+227
+00:08:21,250 --> 00:08:23,330
+Érica: E tenta deixar as coisas como define
+
+228
+00:08:23,330 --> 00:08:25,110
+Érica: Só pra ficar mais bonitinho
+
+229
+00:08:25,110 --> 00:08:25,950
+Murilo: Tá bom
+
+230
+00:08:25,950 --> 00:08:27,190
+Érica: E daí quando você
+
+231
+00:08:27,190 --> 00:08:27,930
+Érica: Convergir
+
+232
+00:08:27,930 --> 00:08:29,030
+Érica: Você me avisa
+
+233
+00:08:29,030 --> 00:08:30,050
+Érica: Que eu olho de volta
+
+234
+00:08:30,050 --> 00:08:30,570
+Érica: Pra
+
+235
+00:08:30,570 --> 00:08:33,410
+Érica: Pra revisar
+
+236
+00:08:33,960 --> 00:08:35,760
+Érica: Daí a mesma coisa
+
+237
+00:08:35,760 --> 00:08:37,960
+Érica: Daí só extrapolar a mesma lógica
+
+238
+00:08:37,960 --> 00:08:38,320
+Érica: Lá pro
+
+239
+00:08:38,320 --> 00:08:39,040
+Érica: REC
+
+240
+00:08:39,040 --> 00:08:40,040
+Érica: E pro
+
+241
+00:08:40,040 --> 00:08:40,960
+Érica: Function Design
+
+242
+00:08:41,640 --> 00:08:43,120
+Érica: Ficarem atualizados também
+
+243
+00:08:44,310 --> 00:08:46,370
+Érica: Daí a lógica é amanhã
+
+244
+00:08:46,370 --> 00:08:47,190
+Érica: A gente ficar
+
+245
+00:08:47,190 --> 00:08:48,470
+Érica: Andando por isso
+
+246
+00:08:48,470 --> 00:08:48,730
+Érica: Então
+
+247
+00:08:48,730 --> 00:08:50,670
+Érica: Quando você quiser que eu revise alguma coisa
+
+248
+00:08:50,670 --> 00:08:52,010
+Érica: Quando você quiser alinhar alguma coisa
+
+249
+00:08:52,010 --> 00:08:52,790
+Érica: Você me avisa
+
+250
+00:08:52,790 --> 00:08:54,370
+Érica: E enquanto eu não estiver
+
+251
+00:08:54,370 --> 00:08:55,650
+Érica: Fazendo isso
+
+252
+00:08:55,650 --> 00:08:56,170
+Érica: Eu vou
+
+253
+00:08:56,170 --> 00:08:58,030
+Érica: Voltar a olhar os test cases
+
+254
+00:08:58,030 --> 00:08:58,290
+Érica: Com a minha
+
+255
+00:08:58,310 --> 00:08:58,790
+Érica: Com os meninos
+
+256
+00:08:58,790 --> 00:09:00,330
+Érica: Então os meninos vão fazer a revisão
+
+257
+00:09:00,330 --> 00:09:02,010
+Érica: O Kupka vai fazer a escrita
+
+258
+00:09:02,010 --> 00:09:04,810
+Érica: O Igor vai fazer a revisão do teu
+
+259
+00:09:04,810 --> 00:09:06,430
+Érica: E eu vou olhar o conteúdo dos dois
+
+260
+00:09:07,170 --> 00:09:07,650
+Érica: Perfeito
+
+261
+00:09:08,690 --> 00:09:09,650
+Murilo: Em paralelo
+
+262
+00:09:09,650 --> 00:09:10,150
+Murilo: Enquanto
+
+263
+00:09:11,350 --> 00:09:11,830
+Murilo: Tava
+
+264
+00:09:13,600 --> 00:09:14,460
+Murilo: Tava na reunião
+
+265
+00:09:14,460 --> 00:09:15,300
+Murilo: Eu tinha pedido pro Igor
+
+266
+00:09:15,300 --> 00:09:16,540
+Murilo: Só rodar um logzinho
+
+267
+00:09:16,540 --> 00:09:16,940
+Murilo: Pra ver
+
+268
+00:09:16,940 --> 00:09:17,660
+Murilo: Pra RAVN
+
+269
+00:09:17,660 --> 00:09:19,220
+Murilo: Pra ver se dava algum erro
+
+270
+00:09:19,220 --> 00:09:20,640
+Murilo: Ele falou que deu boa também lá
+
+271
+00:09:20,640 --> 00:09:22,220
+Murilo: Mas nesse na 2.27
+
+272
+00:09:23,980 --> 00:09:24,460
+Murilo: Então
+
+273
+00:09:24,460 --> 00:09:26,800
+Murilo: Aparentemente não deu realmente problema
+
+274
+00:09:26,800 --> 00:09:27,260
+Murilo: Que é
+
+275
+00:09:27,260 --> 00:09:28,300
+Murilo: Ele tá recebendo
+
+276
+00:09:28,300 --> 00:09:29,200
+Érica: Tá
+
+277
+00:09:29,230 --> 00:09:29,750
+Murilo: Então
+
+278
+00:09:29,750 --> 00:09:31,030
+Murilo: Aí eu olho na 2.31
+
+279
+00:09:31,030 --> 00:09:31,850
+Murilo: Com calma
+
+280
+00:09:31,850 --> 00:09:32,730
+Murilo: Também
+
+281
+00:09:33,140 --> 00:09:33,340
+Murilo: Tá
+
+282
+00:09:33,340 --> 00:09:34,740
+Murilo: Vou fazer as coisas 2.27
+
+283
+00:09:34,740 --> 00:09:35,260
+Érica: Aham
+
+284
+00:09:36,380 --> 00:09:37,800
+Érica: Daí a gente converge isso
+
+285
+00:09:37,800 --> 00:09:38,640
+Érica: Amanhã
+
+286
+00:09:38,640 --> 00:09:40,040
+Érica: Eu vou tentar dormir
+
+287
+00:09:40,040 --> 00:09:41,440
+Érica: Com a ideia na cabeça
+
+288
+00:09:41,440 --> 00:09:43,240
+Érica: Pra ver se eu penso em mais algum gap
+
+289
+00:09:43,240 --> 00:09:44,860
+Érica: Que a gente não tá considerando
+
+290
+00:09:44,860 --> 00:09:45,420
+Murilo: Tá bom
+
+291
+00:09:46,160 --> 00:09:47,260
+Érica: Mas é que esse também
+
+292
+00:09:47,260 --> 00:09:47,680
+Érica: Por mim
+
+293
+00:09:47,680 --> 00:09:48,500
+Érica: Eu já caduquei
+
+294
+00:09:48,500 --> 00:09:48,700
+Érica: Hoje
+
+295
+00:09:48,700 --> 00:09:50,360
+Érica: Não vai sair muito mais
+
+296
+00:09:50,360 --> 00:09:51,960
+Murilo: Tá bom
+
+297
+00:09:53,020 --> 00:09:53,540
+Murilo: Beleza
+
+298
+00:09:53,930 --> 00:09:55,270
+Érica: Tá bom
+
+299
+00:09:55,270 --> 00:09:55,850
+Érica: De nada, amigo
+
+300
+00:09:55,850 --> 00:09:57,330
+Érica: Qualquer coisa avisa
+
+301
+00:09:57,330 --> 00:09:57,830
+Murilo: Ok
+
+302
+00:09:57,830 --> 00:09:58,790
+Érica: Tchau, tchau
+
+303
+00:09:58,790 --> 00:09:59,550
+Murilo: Tchau, tchau
+
+304
+00:09:59,550 --> 00:10:00,530
+Érica: Tchau
+
+305
+00:10:07,340 --> 00:10:08,140
+Érica [atribuição incerta]: Tchau

@@ -1,0 +1,144 @@
+﻿TRANSCRIÇÃO COM IDENTIFICAÇÃO DOS INTERLOCUTORES
+Arquivo: C:\Users\muril\OneDrive\Área de Trabalho\2026-10-26 09-31-38.mkv
+Duração: 00:23:57
+Interlocutores identificados: Murilo, Érica, Igor e Rafa
+
+Nota: transcrição automática offline, revisada por contexto e características acústicas.
+Falas sobrepostas ou muito curtas podem exigir conferência auditiva.
+Termos técnicos incertos foram mantidos próximos ao reconhecimento original.
+
+[00:00:00] Érica: como um bug fix, tipo, pra 2.27.2, mas não necessariamente do jeito que foi escrito aqui. Então, agora a gente tem que tomar a decisão de vamos mergear, não vamos mergear, ele vai gerar um novo teste, como que vai ficar, sabe? Aqui que fica a questão. Fora outros buracos, outras coisas que teve de defining.
+
+[00:00:20] Igor: É, o que eu tinha visto que daria pra tirar é o 10, 11, 12, já tá coberto pros test cases que o Murilo tinha feito, daí o resto, eu acho que teria que deixar tudo, né? Só o que eu tava falando de adaptar lá as variáveis é ver no detalhe as variáveis novas que existem, né, no... agora na implementação que eu vi lá que tinha algumas variáveis de flag state, c flag state, state flag, essas variáveis novas, né, se faz sentido também colocar nisso, mas daí você comentou da questão que, tipo, da compatibilidade das versões, né, que daí faria sentido deixar os dois como sendo independentes.
+
+[00:01:07] Érica: Sim. Deixa eu pensar.
+
+[00:01:15] Murilo: Ah, nada que também eu não... porque ali eu criei pra 2.27, realmente, a não ser que eu crie teste case pra 2.30, que então, pelo que ele disse, seria parecido a partir da 2.30, então eu ia fazer um merge, juntava os dois.
+
+[00:01:33] Érica: Então, mas é que isso daqui, na verdade, foi criado em cima da 2.31, é exatamente isso, que eu tô tentando evitar, no sentido de eu não sei se isso 100% vai tá 1 pra 1 aplicado pra 2.27.2 e pra 2.30.1 pelo conteúdo do que você mexeu. Eu não tenho 100% de certeza, sabe? Teoricamente tinha que eu entrar, olhar e ver, não, isso daqui ainda faz sentido, isso daqui ainda faz sentido, pra validar. Eu acho que sim. Minha impressão de bate-pronto é sim, mas tem que dar uma olhada no detalhe. Isso você diz sim pras outras versões, né? Sim, pra 2.27.2 e pra 2.30.1 por causa do que você implementou agora pro bug fix. Porque se olhar antes, não necessariamente, principalmente esses casos que tá replicado que nem o Igor falou.
+
+[00:02:22] Murilo: Tá. É porque eu tô comentando que ali, basicamente, eu criei 2.27, mas aí eu não pensei. Então teria que criar nos test case ali, né? Não, não tem problema.
+
+[00:02:33] Érica: Não tem problema. Isso daqui é só, tipo, ele inicialmente tá aplicado pra 2.27.2, e na hora que a gente for gerar uma run, você coloca uma run 2.27.2, uma run 2.30.1, e com o customer specific, tipo, não é pra ficar copiando e colando test case de coisas que estão escritas iguais. Eu tô falando que isso daqui, o conteúdo disso daqui, não é um pra um com o conteúdo disso daqui. Isso é algo que a gente fez, que a gente listou pra 2.30.1, olhando pro software da 2.30.1. Mas isso daqui, não, o conteúdo completo não tá sendo coberto pelo que você escreveu. E é isso que a gente tem que garantir, que o conteúdo completo está sendo validado em todas as runs. Daí agora, o que precisa tomar decisão no detalhe é como fazer isso, como operacionalizar isso. Entendeu? O Igor tinha comentado, cadê o Igor? Você falou que já tinha, tinha que fazer um resumo das mudanças.
+
+[00:03:33] Igor: É, na verdade eu tava meio que
+
+[00:03:37] Igor: mapeando o que que faltava de variáveis que seria útil, tipo, útil que você coloca no outro test case lá, que é aquelas variáveis novas, né? Só que ainda eu tava vendo no detalhe, ainda não tinha finalizado, pra gente ver o que faria sentido colocar nesse nesse test case também, né? Daí eu acho que pensando que a Erika falou, se fizer sentido, acho que vale, né? Porque daí essas variáveis novas valem pra qualquer versão.
+
+[00:04:06] Érica: Sim, eu acho que sim. 2.27, 2.30, 2.31. E eu acho que pra não ficar confuso, faz sentido deixar mergeado também. Pra ficar tudo agregado num lugar só e não correr risco de... Performar uma coisa e deixar de outra pro lado. Exato.
+
+[00:04:27] Igor: É, o que não tinha pensado era isso que a Erika falou, né? Se faria sentido essas transições de estados pra atrás da 2.31, mas...
+
+[00:04:36] Érica: Eu acho que sim. Meu gut feeling que sim, mas tem que olhar no detalhe. Então o que eu vou gerir então é talvez... Então deixa isso daqui marcado como 2.31 do jeito que tá, tipo, não altera nada porque isso daqui foi performado, foi executado na 2.31 e a gente precisa deixar como histórico. E daí copia esses casos que não estão sendo repetidos pra o test case novo, pra ser executado junto. O que tiver duplicado, o que tiver de conteúdo, que já existe um caso aqui dentro que já valida, não precisa copiar. Os outros daí copia. Daí vê o nome, você tem que ajustar alguma coisa e copia. Daí isso daqui fica travado no tempo como obsoleto e o novo que a gente vai executar vai ser tudo a partir desse. Não tem problema, ele tá marcado como 2.27.2 porque só significa que é dessa versão pra frente. Mas a gente deixa um test case único. A única coisa que vai diferenciar entre as versões de bug fixes é o run. Se no run tiver um desses casos que não faz sentido aplicar, a gente não bota no conteúdo da run. Mas se a gente ficar copiando e colando vários textos iguais, vai ser horrível de fazer manutenção desses test cases. Tem que evitar isso. Faz sentido.
+
+[00:05:54] Érica: É o que faz sentido, então, Muri. É olhar no detalhe, pega o que o Igor já tinha avaliado, olha no detalhe e tenta mergear em cima desse daqui pra gente ter um test case único.
+
+[00:06:07] Murilo: Beleza, perfeito. É o passo 1 da história. Será que, só uma duvidazinha, muda ali o título do 2.31 pra alguma coisa de tipo... Porque o meu medo também é depois, na hora de performar, mudar e fazer aquilo lá também. Em vez de fazer o que...
+
+[00:06:26] Érica: Eu acho que não, porque isso daqui já foi executado no passado, então é bom deixar... Ele é 2.31.0 mesmo. Ele foi executado pra 2.31.0. Ele foi executado aqui, ele tem o histórico da execução, então é importante deixar do jeito que tá.
+
+[00:06:42] Murilo: Eu digo que seria colocar tipo um parênteses antes de tudo ali de update, só colocar... Ah, esqueci a palavra. Tanto em português quanto em inglês. Como antigo.
+
+[00:06:53] Érica: Eu acho que não precisa. Porque na hora que a gente for executar agora, a gente vai apontar pra esse cara novo.
+
+[00:06:59] Murilo: É verdade, né? Vai tá tudo... O mundo vai executar o 1.2.0.4, é. É verdade. Tô esquecendo que tem isso. Tudo bem.
+
+[00:07:08] Murilo: Beleza, tá bom. Então eu pego as coisinhas que o Igor mandar e eu já faço comparação e já vou mudando o que tiver... Várias vezes diferentinho e faço merge.
+
+[00:07:19] Érica: Teve mais algum finding de conteúdo desse daqui que você teve, Igor? Ou você já passou e já foi corrigido?
+
+[00:07:28] Igor: O Murilo... Eu passei pro Murilo ele corrigiu agora ele falou agora pra mim pela manhã, eu não vi ainda no detalhe. Nem cheguei a abrir. Eu vou abrir daí só pra dar o final, né? Eu li bem por cima, eu ainda tenho que dar mais uma olhada com carinho. Uma coisa que eu achei estranha foi esse segundo caso aqui, que parece que você tá misturando StartRoutine pra SCU e MCU Control interno. É isso aqui mesmo?
+
+[00:07:59] Murilo: É...
+
+[00:08:01] Murilo: Deixa eu lembrar qual que é esse. Interface address.
+
+[00:08:07] Murilo: Não. Não era pra ser isso. Era simplesmente só testar realmente o... Se entra certinho a UpdateState a SCU, cada SCU separadinha. Então eu vou melhorar.
+
+[00:08:20] Érica: O que eu ia falar é que existem duas frentes que precisam ser validadas em paralelo, que é um pouco o que acontece aqui. Daí tem que dar uma olhada se faz sentido o jeito que você escreveu, ou só de você mergear ele já vai estar corrigido. Mas é o sentido de a gente estabelecer o UpdateState através do multi-flashing, então tudo que é relacionado com as SCUs é só mensagens internas e estabelecer o UpdateState através do DS como single flashing de uma SCU. Então existe um cenário, que é normalmente um cenário atípico, um cenário só de que quando as coisas deram errado, mas a gente tem que suportar, é fazer um single flashing numa SCU. Daí a gente valida, start, stop, routine direto pra aquela SCU. Mas o normal padrão multi-flashing é MCU control. Mas ambas as frentes precisam ser validadas no teste QA. Pode falar, Rafa.
+
+[00:09:16] Rafa: Até quando a gente faz multi-flashing de SCU, a comunicação passa primeiro pela MCU, ela testa a comunicação em MCU que manda o control routine. Tipo, o DS funciona?
+
+[00:09:25] Érica: Não, não, não. Mas a gente tem que validar start, stop, routine pra SCU também. É isso que eu tô falando. Tipo, existe o cenário multi-flashing. O cenário multi-flashing que a gente tem MCU e SCUs, isso que a gente valida o MCU control e o UpdateState control. Mas existe um cenário atípico que a gente também tem que validar e é por isso que tá implementado o processamento da StartRoutine e da StopRoutine direto numa SCU. Ambas as coisas tem que estar distintas e mapeadas no teste case. Perfeito. E pra mim isso daqui tá meio misturado. Tipo, não tá muito claro.
+
+[00:09:55] Murilo: Beleza. Perfeito.
+
+[00:09:57] Érica: Deu pra entender. E daí é distinto. Não pode misturar as coisas. Você não pode mandar uma StartRoutine pra uma SCU e depois validar coisas no meio através do MCU control. Porque muito provavelmente esse cenário vai ser o cenário que a SCU vai estar num chicotinho isolado sem estar conectado com o resto do subsistema, entendeu?
+
+[00:10:14] Murilo: Perfeito. Ok. Faz sentido.
+
+[00:10:18] Érica: É. Deixa eu ver. Tinha mais alguma coisa. Aqui que eu ia falar aqui você tá validando só com vários valores de delay entre um processo de flashing e uma parametrização, né? Uhum. Será que faz sentido ter quatro distintos pra isso daqui? Isso aqui tá validando tudo mais ou menos a mesma coisa, né? De 10 pra 25 acho que isso aqui tá muito repetido. Tá bom.
+
+[00:10:42] Murilo: É o que eu tava pensando é porque... Reproduza 5 segundos a mais, 5 segundos a mais e 5 segundos a mais. O que é que você tá validando de distinto entre 10, 15, 20, 25? O meu medo era de... Porque o que a gente passou do processo lá foi de 10 a 20 segundos, né? Foi mais um receio de... E se quebrasse com 15 segundos? Aí... Por isso que eu... E o 25 eu coloquei só de bola mesmo. 25 daria bem tranquilo pra tirar. Meu receio é mais de...
+
+[00:11:11] Érica: Então, mas eu só tô pensando o que da estrutura da arquitetura do software que quebraria entre 10 e 20? Porque ele é um... É, nada. Que é entre uma stop e um start, né? Uhum. Tipo, é só pra... É que isso daqui vai... Isso que gasta tempo, né? Só pra gente não ficar executando coisas que não... Você não tá comparando comportamentos distintos. Talvez o mínimo e o máximo... É, eu tava pensando nisso. O mínimo que a gente passou e o máximo. Daí, beleza. Pode ser. Pode ser. Perfeito. E daí fora é isso adicionar o caso lá do skipar o refresh com... Toda vez que identificar um EDS reset, que é a última coisa que a gente colocou. Isso daí não tá mapeado. Tem que tá como um teste separado. Sim. Beleza.
+
+[00:12:05] Érica: Beleza. Querem já emendar num... Já que tá todo mundo na chamada, já emendar o stand-up? Pode ser. Pra gente não parar de volta. Uhum. Vai falar, mas o cu... Aí eu vi ele tá... Não, o Kupka. O Kupka tá no médico.
+
+[00:12:18] Murilo: É, ele tá no médico.
+
+[00:12:21] Érica: E daí agora a gente só tem que fazer a dança das cadeiras porque o Muri tá sobrecarregado de tarefas por causa do do finding que a gente teve na quinta.
+
+[00:12:31] Érica: Então, vamos lá.
+
+[00:12:37] Érica: Então, eu vou deixar... Na sexta-feira eu dei uma olhada na... nos branches que o Muri tinha atualizado. Eu vou deixar só com um pontinho
+
+[00:12:52] Érica: simbólico aqui, mas eu já olhei e já vai tá liberado pra performar. Só deixar o simbólico pra depois, no final de todos os test cases, eu aprová-la pra branch do bug fix. E caso a gente tenha um slide no test case do Batch 3, mas na madeira, a gente vai ter que colocar com o mundo pra mexer. Mas tá. O tópico do dissecation, eu não consegui arrumar aquele treco em aberto lá que eu falei pra vocês, então vou deixar em aberto. Function design não olhei. Reworking da implementação desse não precisou ainda. Daí eu olhei o review do plan do test case do override. Eu ainda preciso desses pontos porque eu ainda preciso olhar no detalhe o que o Kupka me passou cedo. E agora o plan, eu vou, sei lá, vou baixar... uns dois daqui, que é o que eu olhei hoje cedo, e eu vou acompanhar o que vocês forem mexendo até liberar.
+
+[00:13:55] Murilo: Perfeito. Tá. Eu fiquei fazendo as edições ali do test case que o Igor tinha mandado, inclusive não abaixei os pontos, mas eu acho que foi...
+
+[00:14:09] Murilo: Perdão, até esqueci de colocar. Mas foi uns...
+
+[00:14:14] Érica: Ainda precisa de um 5, né?
+
+[00:14:16] Murilo: Aham.
+
+[00:14:17] Érica: E esse daqui, também vamos deixar como committed e vou abaixar pra um ponto, né? Que é o que você gastou na sexta, né?
+
+[00:14:26] Murilo: Perfeito.
+
+[00:14:27] Érica: Da implementação, né?
+
+[00:14:28] Murilo: É, que é pra fazer duas outras sprints. Pequeno aparentes, amiga, eu esqueci de novo, perdão, do relatório da Yael, aí tem até sexta que vem. Quer dizer, essa sexta, que é até dia 30. Aí, qualquer tempinho que tiver, eu acho que já vou adiantando pra talvez já na próxima sprint já tentar tentar... Já liberar pra ti também. Pode ser?
+
+[00:14:52] Érica: Tá bom. Aham. Pode ser sim. Se eu só consegui fazer isso só depois de destravar o test case, seria o meio ideal. Porque daí os meninos não ficam travados e a gente volta pras coisas de documentação.
+
+[00:15:05] Murilo: Sim. Beleza.
+
+[00:15:08] Érica: Beleza. Daí, o que eu vou sugerir, que agora, tanto o Igor quanto o Rafa vão estar travados, não conseguem começar a executar os testes, que é o que está mapeado de grosso do sprint deles. Então, essa, escrever o release, atualizar o conteúdo do release checklist, eu vou sugerir de passar pra um dos dois. A gente já define quem. Daí, o Kupka
+
+[00:15:40] Érica: ele escreveu, eu não sei, ele devia ter baixado, eu não sei se ele não... Acho que ele não baixou.
+
+[00:15:50] Érica: Não, ele não baixou. Vou pedir pra ele baixar depois o quanto que ele gastou. Na verdade, provavelmente é tudo, porque daí, depois que ele voltar do médico, depois que a gente... revisar, ele vai shiftar pro rework desses test cases. Então, o objetivo é o Kupka tentar matar isso hoje, pra ele, caso libere pra performar os test cases amanhã, ele já consiga shiftar pros testes de volta. Se não, daí ele... Se não liberar, daí ele vai ter que ainda trabalhar nisso amanhã, pra convergir ou do override. Mas ele terminou de escrever, ele me passou hoje cedo, antes de ir pro médico. Daí, já vamos pro Rafa, vamos shiftar pro Igor primeiro.
+
+[00:16:30] Igor: Tá, deixa eu relembrar se deixei alguma coisa aberta, que deveria estar fechado. Ah, eu revi o test case, então eu só preciso ver no detalhe aqui as mudanças do brilho lá, mas é possível, já tá fechado, já. Daí, eu já fecho ele, e acho que era isso, né? E daí, performar os test cases em tempo de recuperar. É isso. E o administrativo que eu fechei... Ah, tá, do adicionar o... Só que isso, né? Na verdade, daí, acho que a gente vai ter que criar depois um pra comitar, né? Aham, arrumar a branch.
+
+[00:17:09] Érica: É. Beleza.
+
+[00:17:12] Murilo: Perguntinha, qual que é a tua prioridade? A revisão ou mergear os dois test cases? A revisão do CUP?
+
+[00:17:21] Érica: Então, é isso que eu ia sugerir. É isso que você tá sobrecarregado. A tua prioridade é arrumar o test case do update state, que você é a pessoa mais capaz de fazer isso. Isso no detalhe, porque você que implementou. Daí, a revisão do test case do override é uma coisa que tá pra você que precisa shiftar, e atualizar o conteúdo do release checklist também tá pra você pra revisar. A gente só tem que decidir quem dos dois vai pegar. O Igor ou o Rafa, um dos dois vai pegar um desses dois, porque eles são travados, porque eles não conseguem executar o teste agora, entendeu?
+
+[00:17:58] Érica: Rafa, eu tinha criado pra mapear as atividades da viagem, do sprint passado, na verdade, finalzinho do sprint passado, tanto agora. Então, eu vou fechar aqui com o Dan, que foi os dois dias que você ficou quinta e sexta lá. Beleza?
+
+[00:18:19] Érica: Daí, você tinha ficado com testes performar test cases, mas como você bem ouviu, não tá liberado ainda. Então, agora só preferências. Então, tem uma, atualizar o release checklist e revisar o do override. A minha sugestão, eu acho que o Rafa é melhor revisar o do override e o Igor passar pro do release checklist, porque o Rafa tá mais por dentro do do outro bug fix.
+
+[00:18:48] Igor: Só pra relembrar, não sei se a gente entrou no detalhe, mas lembro, o release checklist pra atualizar é adicionar agora as mudanças do update state da FCU também?
+
+[00:19:02] Érica: Isso. O conteúdo do que a gente tá liberando nos bug fixes vai ter que entrar como itens novos do release checklist. Daí, você tem que pensar isso é o objetivo do tipo olhar lá o release checklist o que que era o release checklist na época da 2.27, daí tem que olhar versão por versão que a gente liberou o que que era o release checklist da 2.30 e gerar meio que uma run nova de release checklist com o conteúdo que seria 2.27. Então, o que que na época da 2.27 a gente tava liberando que a gente tem que garantir que ainda tá consistente e colocar uma linha nova com relação ao update state e colocar uma linha nova com relação ao do override. Pra você se familiarizar com o override, você pode ler tanto o function design da Lily quanto o próprio test case em si. Você já meio que vai ter que fazer isso porque você que vai executar os test cases, porque você que não tá biased pelo bug pra executar. Então, isso já é uma oportunidade pra você se familiarizando com o conteúdo porque vai ser a próxima atividade que você vai executar. Mas o atualizar o release checklist é isso. Recuperar qual que é a versão do Excel correspondente pra cada uma dessas versões pra gente poder gerar uma run que agora tá no Azure correspondente com aquilo. Se tiver que fazer alguma manutenção, eu não sei exatamente como que vai tá lá. Mas isso é mais ou menos. Então, a gente tem o release checklist da 2.31, tem que pegar os anteriores lá no repositório do bug server lá e... Isso. E comparar. Pra poder gerar run nova. O que faz sentido executar ou não, né? Exatamente. No geral, o objetivo é a gente precisa rolar um release checklist pra garantir que o que a gente tá integrando como bug fix tá funcionando do tipo tá consistente na versão final e o que já existia na versão base na 2.27.1, na 2.30.0 aqui é 2.27.2 tá consistente. Então, nada do que foi integrado do bug fix quebrou outras funcionalidades que a gente já tinha validado no release da versão anterior, na 2.27.1. Na 2.30.0. Na 2.31.0. Entendeu? Entendi.
+
+[00:21:15] Érica: Então, eu vou passar isso aqui pra você e eu vou passar o... Revisar o test case pro Rafa.
+
+[00:21:30] Érica: Que é isso daqui.
+
+[00:21:41] Érica: Beleza? Daí eu te ligo, Rafa, pra te mostrar o que o Kupka me passou antes dele passar e te atualizar.
+
+[00:21:48] Rafa: Só um adendo pra aproveitar que a gente tá no momento de stand-up. Eu acho que é oportuno falar isso... Eu posso começar isso à tarde? Deixa eu começar... Deixa eu fazer meu acerto, por favor.
+
+[00:21:59] Rafa: Tá me escutando? Aham. Eu preciso fazer o acerto porque essa viagem saiu do meu bolso, né? Então, eu preciso...
+
+[00:22:05] Érica: Ah, tá. Tudo bem.
+
+[00:22:09] Érica: Então, quando você quiser sentar pra shiftar de tópico, me avisa que daí eu te passo o que o Kupka passou. Perfeito. Mas, no geral, é isso. Então, a gente tá um pouco atrás do planejamento por causa do finding de quinta-feira, que era o risco que a gente já sabia que se tivesse algum finding que tivesse que corrigir, o planejamento não ia estar um pra um. Então, hoje, de expectativas, eu acho que, no melhor dos cenários, a gente vai estar terminando de performar os test cases até sexta e a gente ainda vai precisar do começo da semana que vem pra rodar a documentação Release Checklist. Então, eu já vou pingar o Alberto pra ver se ele teve alguma atualização das conversas lá com a Star ou do planejamento da viagem pra validar esse bug fix porque, no andar da carruagem agora, a gente não vai conseguir estar pronto toda sexta-feira com segurança rodando os test cases. Então, eu vou ver lá o que eu já tinha conversado com ele, o que eu já tinha levantado a bandeira, tá factível ou o que a gente vai ter que fazer. Beleza? Então, vão avisando. Qualquer outra dúvida ou coisa que me pacar, avisem lá no chat pra gente não se atrasar mais ainda. Beleza? Se eu tiver, eu vou voltar a olhar o conteúdo de ambos, tanto do update state quanto do override com o que o Kupka me passou hoje, certo? Se eu tiver mais algum finding, daí eu aviso, vocês, aí na execução. Beleza? Ok. Tá bom, gente. Boa sorte. Tchau, tchau.
+
+[00:23:43] Interlocutor [atribuição incerta]: Tchau.

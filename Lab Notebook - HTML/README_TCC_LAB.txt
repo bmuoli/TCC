@@ -6,7 +6,6 @@ campanha.json      -> estado geral, preparação de projeto e todos os Test Case
 preparacao_projeto.json -> checklist/pendências de Mathcad, perdas e pior caso
 resumo.csv         -> tabela resumida para consulta rápida
 TC-XX_.../dados.json
-TC-XX_.../Historico/<data_hora>_dados.json
 TC-XX_.../Teste_Pratico/<Direto|Reverso>/<Si|SiC>/Evidencias/<Assunto>/<Tipo>/<Sinal opcional>/<arquivos>
 TC-XX_.../Simulacao/<Direto|Reverso>/<Si|SiC>/Arquivo/<arquivo>
 TC-XX_.../Simulacao/<Direto|Reverso>/<Si|SiC>/Evidencias/<Componente>/<Sinal opcional>/<imagens>
@@ -25,15 +24,14 @@ O Radar de pendências mostra o percentual global da campanha. Ele considera as 
 
 Cada Test Case é o agrupador principal. Dentro dele, Teste_Pratico e Simulacao ficam separados por direção (Direto/Reverso) e por tecnologia de chave (Si/SiC). Assim, o mesmo ensaio pode ser repetido com semicondutores diferentes sem sobrescrever resultados.
 
-Ao salvar um Test Case, uma cópia do estado atual também é criada em Historico.
-
 Autosave e sincronização:
 - Ao colar uma imagem, o HTML confirma o recebimento imediatamente e mostra uma prévia; a gravação ocorre em uma fila de fundo.
 - Ctrl+V de imagem funciona também fora da caixa de colagem, desde que o foco não esteja em um campo de texto ou no painel de simulação.
 - Com a pasta conectada, imagens coladas, enviadas ou arrastadas são gravadas no disco em segundo plano.
 - Campos e configurações são sincronizados automaticamente após cerca de 650 ms sem digitação.
 - Existe ainda um autosave de segurança periódico.
-- O botão "Criar checkpoint" gera um snapshot no Histórico; ele não é mais necessário para preservar uma medição.
+- O botão "Salvar tudo na pasta" aguarda as filas, tenta novamente imagens pendentes, grava dados.json, campanha.json e resumo.csv e confere os arquivos gravados.
+- O salvamento local não cria checkpoint, commit ou push e não renomeia a pasta do Test Case.
 - O navegador tenta lembrar a última pasta selecionada e reconecta automaticamente quando a permissão ainda está válida.
 
 Proteção contra duplicação:

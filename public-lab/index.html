@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Painel público dos ensaios experimentais do TCC de conversores Buck e Boost.">
+  <meta name="theme-color" content="#07111f">
+  <title>Lab Notebook · Conversores Buck & Boost</title>
+  <style>
+    :root{
+      color-scheme:dark;
+      --bg:#07111f;--panel:#0d1a2b;--panel2:#122238;--line:#24364d;
+      --text:#eef6ff;--muted:#9bb0c9;--cyan:#34d5ff;--blue:#5b8cff;
+      --green:#43d6a3;--amber:#ffbd59;--red:#ff7285;--shadow:0 22px 60px rgba(0,0,0,.28)
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 85% -10%,rgba(52,213,255,.13),transparent 34%),radial-gradient(circle at 5% 25%,rgba(91,140,255,.11),transparent 30%),var(--bg);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    button,input,select{font:inherit}
+    a{color:inherit}
+    .shell{width:min(1240px,calc(100% - 32px));margin:auto}
+    .hero{padding:28px 0 52px;border-bottom:1px solid rgba(155,176,201,.14)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.08em;font-size:.84rem}
+    .brand-mark{width:35px;height:35px;border-radius:11px;background:linear-gradient(145deg,var(--cyan),var(--blue));box-shadow:0 0 28px rgba(52,213,255,.25);position:relative}
+    .brand-mark:after{content:"";position:absolute;inset:9px;border:2px solid #07111f;border-radius:4px;transform:rotate(45deg)}
+    .github{border:1px solid var(--line);border-radius:999px;padding:9px 14px;text-decoration:none;color:var(--muted);font-weight:750;background:rgba(13,26,43,.58)}
+    .github:hover{color:var(--text);border-color:var(--cyan)}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.55fr);gap:38px;align-items:end;margin-top:54px}
+    .eyebrow{color:var(--cyan);font-weight:850;letter-spacing:.15em;text-transform:uppercase;font-size:.75rem}
+    h1{font-size:clamp(2.6rem,6vw,5.25rem);line-height:.98;letter-spacing:-.055em;margin:14px 0 22px;max-width:850px}
+    .lede{font-size:clamp(1rem,2vw,1.22rem);color:var(--muted);max-width:740px;margin:0}
+    .live-card{background:linear-gradient(145deg,rgba(18,34,56,.9),rgba(13,26,43,.78));border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}
+    .live-row{display:flex;align-items:center;gap:10px;color:var(--green);font-weight:850}
+    .pulse{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 0 7px rgba(67,214,163,.1)}
+    .updated{color:var(--muted);font-size:.88rem;margin-top:10px}
+    main{padding:0 0 80px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-24px}
+    .stat{background:rgba(13,26,43,.94);border:1px solid var(--line);border-radius:18px;padding:18px 20px;box-shadow:0 14px 35px rgba(0,0,0,.18)}
+    .stat span{color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+    .stat strong{display:block;font-size:1.8rem;line-height:1.1;margin-top:7px}
+    .toolbar{display:grid;grid-template-columns:minmax(240px,1fr) 190px 190px;gap:12px;margin:38px 0 24px}
+    .control{width:100%;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:13px;padding:12px 14px;outline:none}
+    .control:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(52,213,255,.1)}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin:30px 0 16px}
+    .section-head h2{font-size:1.55rem;margin:0}
+    .section-head p{color:var(--muted);margin:0}
+    .tests{display:grid;gap:16px}
+    details.test{background:linear-gradient(155deg,rgba(13,26,43,.96),rgba(9,21,36,.96));border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 18px 42px rgba(0,0,0,.16)}
+    details.test[open]{border-color:#355171}
+    summary{list-style:none;cursor:pointer;padding:22px;display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center}
+    summary::-webkit-details-marker{display:none}
+    .test-id{min-width:82px;color:var(--cyan);font-weight:950;letter-spacing:.04em}
+    .test-title{font-size:1.16rem;font-weight:850;line-height:1.25}
+    .test-sub{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px;color:var(--muted);font-size:.82rem}
+    .chevron{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--muted);transition:.2s}
+    details[open] .chevron{transform:rotate(180deg);color:var(--cyan)}
+    .tag{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:4px 9px;background:rgba(18,34,56,.65)}
+    .tag.done{color:var(--green)}.tag.running{color:var(--amber)}.tag.planned{color:var(--muted)}
+    .test-body{border-top:1px solid var(--line);padding:22px}
+    .goal{margin:0 0 20px;color:var(--muted);max-width:900px}
+    .runs{display:grid;gap:16px}
+    .run{border:1px solid var(--line);border-radius:17px;background:rgba(18,34,56,.55);padding:18px}
+    .run-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}
+    .run-title{font-weight:900;font-size:1.02rem}
+    .tech{font-size:.75rem;font-weight:900;letter-spacing:.1em;color:var(--cyan)}
+    .metrics{display:grid;grid-template-columns:repeat(7,minmax(95px,1fr));gap:9px}
+    .metric{border:1px solid rgba(155,176,201,.16);border-radius:12px;padding:10px;background:rgba(7,17,31,.42)}
+    .metric span{display:block;color:var(--muted);font-size:.71rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+    .metric strong{display:block;margin-top:4px;font-size:1.02rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .notes{margin-top:14px;padding:13px 14px;border-left:3px solid var(--blue);background:rgba(91,140,255,.07);border-radius:0 10px 10px 0;color:#c7d6e8;white-space:pre-wrap}
+    .curve-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:15px}
+    .curve{border:1px solid var(--line);border-radius:14px;padding:14px;background:rgba(7,17,31,.43)}
+    .curve h4{margin:0 0 8px;font-size:.9rem}
+    .curve svg{display:block;width:100%;height:auto}
+    .evidence-head{display:flex;justify-content:space-between;align-items:center;margin-top:18px;margin-bottom:10px}
+    .evidence-head h4{margin:0;font-size:.92rem}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+    .shot{padding:0;border:1px solid var(--line);background:#07111f;border-radius:12px;overflow:hidden;color:var(--text);text-align:left;cursor:zoom-in;min-width:0}
+    .shot:hover{border-color:var(--cyan);transform:translateY(-1px)}
+    .shot img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#050b13}
+    .shot-info{padding:9px 10px}
+    .shot-title{display:block;font-size:.77rem;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .shot-type{display:block;color:var(--muted);font-size:.69rem;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .shot.extra{display:none}.gallery.show-all .shot.extra{display:block}
+    .more{margin-top:10px;border:1px solid var(--line);background:transparent;color:var(--text);border-radius:10px;padding:8px 11px;cursor:pointer}
+    .more:hover{border-color:var(--cyan)}
+    .empty,.error{border:1px dashed var(--line);border-radius:18px;padding:32px;text-align:center;color:var(--muted)}
+    .error{color:#ffc0c8;border-color:rgba(255,114,133,.4)}
+    .loading{display:grid;place-items:center;min-height:260px;color:var(--muted)}
+    .spinner{width:34px;height:34px;border:3px solid var(--line);border-top-color:var(--cyan);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 13px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .lightbox{position:fixed;inset:0;background:rgba(1,6,12,.92);z-index:20;display:none;padding:24px;align-items:center;justify-content:center}
+    .lightbox.open{display:flex}
+    .lightbox figure{margin:0;max-width:min(1200px,95vw);max-height:92vh;display:flex;flex-direction:column;gap:10px}
+    .lightbox img{max-width:100%;max-height:82vh;object-fit:contain;border-radius:12px;box-shadow:var(--shadow)}
+    .lightbox figcaption{color:#d6e2ef;text-align:center}
+    .close{position:fixed;right:22px;top:18px;width:44px;height:44px;border:1px solid #42607d;border-radius:50%;background:#0d1a2b;color:white;font-size:1.3rem;cursor:pointer}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.84rem}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1/-1}.metrics{grid-template-columns:repeat(3,1fr)}.gallery{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:620px){.shell{width:min(100% - 20px,1240px)}.hero{padding-top:18px}.hero-grid{margin-top:40px}.stats{gap:8px}.stat{padding:14px}.toolbar{grid-template-columns:1fr}.toolbar input{grid-column:auto}summary{grid-template-columns:1fr auto}.test-id{grid-column:1/-1}.metrics{grid-template-columns:repeat(2,1fr)}.curve-grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.github{font-size:.78rem}.brand span:last-child{display:none}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="shell">
+      <nav class="nav">
+        <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>LAB NOTEBOOK · TCC</span></div>
+        <a class="github" href="https://github.com/bmuoli/TCC" target="_blank" rel="noreferrer">Repositório no GitHub ↗</a>
+      </nav>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Resultados experimentais</div>
+          <h1>Conversores<br>Buck &amp; Boost</h1>
+          <p class="lede">Painel público dos ensaios, medições, curvas de rendimento e evidências do trabalho de conclusão de curso.</p>
+        </div>
+        <aside class="live-card">
+          <div class="live-row"><span class="pulse"></span> Sincronizado com o Git</div>
+          <div class="updated" id="updated">Carregando a versão mais recente…</div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="stats" id="stats" aria-label="Resumo do projeto">
+      <div class="stat"><span>Ensaios publicados</span><strong>—</strong></div>
+      <div class="stat"><span>Execuções com dados</span><strong>—</strong></div>
+      <div class="stat"><span>Evidências</span><strong>—</strong></div>
+      <div class="stat"><span>Ensaios concluídos</span><strong>—</strong></div>
+    </section>
+
+    <section class="toolbar" aria-label="Filtros">
+      <input id="search" class="control" type="search" placeholder="Buscar teste, objetivo ou tecnologia…">
+      <select id="statusFilter" class="control" aria-label="Filtrar por status">
+        <option value="all">Todos os status</option>
+        <option value="done">Concluídos</option>
+        <option value="running">Em execução</option>
+        <option value="review">Dados coletados</option>
+        <option value="planned">Planejados</option>
+      </select>
+      <select id="techFilter" class="control" aria-label="Filtrar por tecnologia">
+        <option value="all">Si e SiC</option>
+        <option value="Si">Somente Si</option>
+        <option value="SiC">Somente SiC</option>
+      </select>
+    </section>
+
+    <div class="section-head">
+      <div><h2>Ensaios com resultados</h2><p>Testes e execuções vazios são ocultados automaticamente.</p></div>
+      <p id="resultCount"></p>
+    </div>
+    <section id="content" class="tests"><div class="loading"><div><div class="spinner"></div>Buscando dados do GitHub…</div></div></section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização da evidência">
+    <button class="close" id="closeLightbox" aria-label="Fechar">×</button>
+    <figure><img id="lightboxImage" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
+  </div>
+
+  <footer><div class="shell">Visualização pública somente de leitura · Os dados são atualizados após cada envio para a branch principal do Git.</div></footer>
+
+  <script>
+  (function(){
+    'use strict';
+    var RAW_ROOT='https://raw.githubusercontent.com/bmuoli/TCC/main/Lab%20Notebook%20-%20HTML/';
+    var CAMPAIGN_URLS=['data/campanha.json','../Lab%20Notebook%20-%20HTML/campanha.json',RAW_ROOT+'campanha.json'];
+    var state={campaign:null,tests:[],search:'',status:'all',tech:'all'};
+    var $=function(id){return document.getElementById(id)};
+    var escapeHtml=function(value){return String(value==null?'':value).replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]})};
+    var text=function(value){return String(value==null?'':value).trim()};
+    var decimal=function(value){var n=Number(String(value==null?'':value).replace(',','.'));return Number.isFinite(n)?n:null};
+    var has=function(value){return text(value)!==''};
+    var statusLabels={done:'Concluído',running:'Em execução',review:'Dados coletados',planned:'Planejado'};
+    var directionLabels={forward:'Direto',reverse:'Reverso / Buck'};
+
+    function encodePath(path){return String(path||'').split('/').filter(Boolean).map(encodeURIComponent).join('/')}
+    function rawAsset(path){
+      var repoPreview=/^(127\.0\.0\.1|localhost)$/.test(location.hostname)&&/\/public-lab\/?$/.test(location.pathname);
+      return (repoPreview?'../Lab%20Notebook%20-%20HTML/':'assets/')+encodePath(path);
+    }
+    function publicEvidence(run){return (run&&Array.isArray(run.evidence)?run.evidence:[]).filter(function(item){return item&&item.reportInclude!==false&&item.relativePath})}
+    function curvePoints(curve){return (curve&&Array.isArray(curve.points)?curve.points:[]).filter(function(p){var p1=decimal(p.p1),p3=decimal(p.p3);return p.selected&&p1!==null&&p1>0&&p3!==null}).map(function(p){var p1=decimal(p.p1),p3=decimal(p.p3);return Object.assign({},p,{p1n:p1,p3n:p3,eta:100*p3/p1})}).sort(function(a,b){return a.p3n-b.p3n})}
+    function curveHasContent(curve){return (curve&&Array.isArray(curve.points)?curve.points:[]).some(function(p){return p.selected&&(has(p.p1)||has(p.p3)||has(p.measuredResistance)||has(p.notes))})}
+    function runHasContent(run){
+      if(!run)return false;
+      return publicEvidence(run).length>0||(run.simulationImages||[]).length>0||run.executionDone===true||has(run.pin)||has(run.pout)||has(run.iout)||has(run.waveform)||has(run.notes)||curveHasContent(run.efficiencyCurve)||curveHasContent(run.buckEfficiencyCurve);
+    }
+    function runsFor(test){
+      var out=[];
+      ['Si','SiC'].forEach(function(variant){
+        ['forward','reverse'].forEach(function(direction){
+          var run=test&&test.switchVariants&&test.switchVariants[variant]&&test.switchVariants[variant].directions&&test.switchVariants[variant].directions[direction];
+          if(runHasContent(run))out.push({variant:variant,direction:direction,run:run});
+        });
+      });
+      return out;
+    }
+    function testTitle(test){return text(test.displayTitle)||text(test.title)||text(test.id)||'Ensaio'}
+    function testId(test){return text(test.displayId)||text(test.id)||'TC'}
+    function testGoal(test){return text(test.displayGoal)||text(test.goal)}
+    function efficiency(run){var pin=decimal(run.pin),pout=decimal(run.pout);return pin!==null&&pin>0&&pout!==null?100*pout/pin:null}
+    function fmt(value,digits){var n=decimal(value);if(n===null)return '—';return n.toLocaleString('pt-BR',{minimumFractionDigits:digits||0,maximumFractionDigits:digits==null?2:digits})}
+    function metric(label,value,unit,digits){if(!has(value))return '';return '<div class="metric"><span>'+escapeHtml(label)+'</span><strong>'+fmt(value,digits)+(unit?' '+escapeHtml(unit):'')+'</strong></div>'}
+    function runMetrics(run){
+      var eta=efficiency(run);
+      return [metric('Frequência',run.freq,'kHz',1),metric('Duty cycle',run.duty,'%',1),metric('Vin',run.vin,'V',2),metric('Vout',run.vout,'V',2),metric('Pin',run.pin,'W',2),metric('Pout',run.pout,'W',2),metric('Iout',run.iout,'A',2),eta===null?'':'<div class="metric"><span>Rendimento</span><strong>'+fmt(eta,2)+' %</strong></div>'].filter(Boolean).join('');
+    }
+    function curveSvg(curve,color){
+      var pts=curvePoints(curve);if(!pts.length)return '';
+      var w=560,h=230,l=48,r=18,t=18,b=38,pw=w-l-r,ph=h-t-b;
+      var maxP=Math.max.apply(null,pts.map(function(p){return p.p3n}).concat([100]));maxP=Math.ceil(maxP/100)*100;
+      var minE=Math.min.apply(null,pts.map(function(p){return p.eta})),maxE=Math.max.apply(null,pts.map(function(p){return p.eta}));
+      var y0=Math.max(0,Math.floor((minE-5)/5)*5),y1=Math.ceil((maxE+5)/5)*5;if(y1-y0<10){y0=Math.max(0,y0-5);y1+=5}
+      var x=function(n){return l+n/maxP*pw},y=function(n){return t+(y1-n)/(y1-y0)*ph};
+      var grid='';for(var i=0;i<5;i++){var pv=i*maxP/4,ev=y0+i*(y1-y0)/4;grid+='<line x1="'+x(pv)+'" y1="'+t+'" x2="'+x(pv)+'" y2="'+(t+ph)+'" stroke="#24364d"/><text x="'+x(pv)+'" y="'+(t+ph+22)+'" fill="#8399b3" text-anchor="middle" font-size="10">'+Math.round(pv)+'</text><line x1="'+l+'" y1="'+y(ev)+'" x2="'+(l+pw)+'" y2="'+y(ev)+'" stroke="#24364d"/><text x="'+(l-8)+'" y="'+(y(ev)+3)+'" fill="#8399b3" text-anchor="end" font-size="10">'+fmt(ev,1)+'</text>'}
+      var poly=pts.length>1?'<polyline points="'+pts.map(function(p){return x(p.p3n)+','+y(p.eta)}).join(' ')+'" fill="none" stroke="'+color+'" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>':'';
+      var dots=pts.map(function(p){return '<g><circle cx="'+x(p.p3n)+'" cy="'+y(p.eta)+'" r="6" fill="'+color+'" stroke="#0d1a2b" stroke-width="3"><title>'+escapeHtml(p.percent+'% · P3 '+p.p3+' W · η '+fmt(p.eta,2)+'%')+'</title></circle><text x="'+x(p.p3n)+'" y="'+(y(p.eta)-10)+'" fill="#eef6ff" text-anchor="middle" font-size="10" font-weight="700">'+escapeHtml(p.percent)+'%</text></g>'}).join('');
+      return '<svg viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Curva de rendimento">'+grid+'<line x1="'+l+'" y1="'+(t+ph)+'" x2="'+(l+pw)+'" y2="'+(t+ph)+'" stroke="#9bb0c9"/>'+poly+dots+'<text x="'+(l+pw/2)+'" y="'+(h-5)+'" fill="#9bb0c9" text-anchor="middle" font-size="11">Potência de saída P3 [W]</text><text x="12" y="'+(t+ph/2)+'" fill="#9bb0c9" text-anchor="middle" font-size="11" transform="rotate(-90 12 '+(t+ph/2)+')">Rendimento [%]</text></svg>';
+    }
+    function curvesHtml(run){
+      var curves=[{label:'Boost',data:run.efficiencyCurve,color:'#34d5ff'},{label:'Buck',data:run.buckEfficiencyCurve,color:'#ffbd59'}].filter(function(c){return curvePoints(c.data).length});
+      if(!curves.length)return '';
+      return '<div class="curve-grid">'+curves.map(function(c){return '<div class="curve"><h4>Curva de Rendimento · '+c.label+'</h4>'+curveSvg(c.data,c.color)+'</div>'}).join('')+'</div>';
+    }
+    function evidenceTitle(item){return text(item.reportCaption)||text(item.fileName)||text(item.originalName)||'Evidência'}
+    function evidenceHtml(run,key){
+      var items=publicEvidence(run);if(!items.length)return '';
+      return '<div class="evidence-head"><h4>Evidências experimentais</h4><span class="tag">'+items.length+' imagem(ns)</span></div><div class="gallery" id="gallery-'+key+'">'+items.map(function(item,index){
+        var path=item.annotatedRelativePath||item.relativePath;var detail=text(item.efficiencyCategory)||[text(item.subject),text(item.type),text(item.signal)].filter(Boolean).join(' · ');
+        return '<button class="shot'+(index>=8?' extra':'')+'" data-image="'+escapeHtml(rawAsset(path))+'" data-caption="'+escapeHtml(evidenceTitle(item))+'"><img loading="lazy" src="'+escapeHtml(rawAsset(path))+'" alt="'+escapeHtml(evidenceTitle(item))+'"><span class="shot-info"><span class="shot-title">'+escapeHtml(evidenceTitle(item))+'</span><span class="shot-type">'+escapeHtml(detail||'Evidência')+'</span></span></button>';
+      }).join('')+'</div>'+(items.length>8?'<button class="more" data-gallery="gallery-'+key+'">Ver todas as '+items.length+' imagens</button>':'');
+    }
+    function runHtml(entry,testIndex,runIndex){
+      var run=entry.run,key=testIndex+'-'+runIndex,metrics=runMetrics(run);
+      return '<section class="run"><div class="run-head"><div><div class="tech">'+escapeHtml(entry.variant)+'</div><div class="run-title">'+escapeHtml(directionLabels[entry.direction]||entry.direction)+'</div></div><span class="tag">'+publicEvidence(run).length+' evidência(s)</span></div>'+(metrics?'<div class="metrics">'+metrics+'</div>':'')+(has(run.notes)?'<div class="notes">'+escapeHtml(run.notes)+'</div>':'')+curvesHtml(run)+evidenceHtml(run,key)+'</section>';
+    }
+    function testHtml(test,index){
+      var runs=runsFor(test),evidence=runs.reduce(function(total,e){return total+publicEvidence(e.run).length},0),tech=[...new Set(runs.map(function(r){return r.variant}))].join(' + '),status=test.status||'planned';
+      return '<details class="test"><summary><div class="test-id">'+escapeHtml(testId(test))+'</div><div><div class="test-title">'+escapeHtml(testTitle(test))+'</div><div class="test-sub"><span class="tag '+escapeHtml(status)+'">'+escapeHtml(statusLabels[status]||status)+'</span><span class="tag">'+escapeHtml(tech)+'</span><span class="tag">'+runs.length+' execução(ões)</span><span class="tag">'+evidence+' evidência(s)</span></div></div><span class="chevron">⌄</span></summary><div class="test-body">'+(testGoal(test)?'<p class="goal"><strong>Objetivo.</strong> '+escapeHtml(testGoal(test))+'</p>':'')+'<div class="runs">'+runs.map(function(run,runIndex){return runHtml(run,index,runIndex)}).join('')+'</div></div></details>';
+    }
+    function visibleTests(){
+      return state.tests.filter(function(test){
+        var runs=runsFor(test);if(!runs.length)return false;
+        if(state.status!=='all'&&test.status!==state.status)return false;
+        if(state.tech!=='all'&&!runs.some(function(r){return r.variant===state.tech}))return false;
+        var probe=(testId(test)+' '+testTitle(test)+' '+testGoal(test)+' '+runs.map(function(r){return r.variant+' '+directionLabels[r.direction]}).join(' ')).toLowerCase();
+        return !state.search||probe.indexOf(state.search)>=0;
+      });
+    }
+    function renderStats(){
+      var tests=state.tests.filter(function(t){return runsFor(t).length}),runs=tests.reduce(function(a,t){return a+runsFor(t).length},0),evidence=tests.reduce(function(a,t){return a+runsFor(t).reduce(function(b,r){return b+publicEvidence(r.run).length},0)},0),done=tests.filter(function(t){return t.status==='done'}).length;
+      $('stats').innerHTML='<div class="stat"><span>Ensaios publicados</span><strong>'+tests.length+'</strong></div><div class="stat"><span>Execuções com dados</span><strong>'+runs+'</strong></div><div class="stat"><span>Evidências</span><strong>'+evidence+'</strong></div><div class="stat"><span>Ensaios concluídos</span><strong>'+done+'</strong></div>';
+    }
+    function render(){
+      var list=visibleTests();$('resultCount').textContent=list.length+' resultado(s)';
+      $('content').innerHTML=list.length?list.map(testHtml).join(''):'<div class="empty">Nenhum ensaio com dados corresponde aos filtros escolhidos.</div>';
+      document.querySelectorAll('.more').forEach(function(btn){btn.addEventListener('click',function(){var gallery=$(btn.dataset.gallery);gallery.classList.toggle('show-all');btn.textContent=gallery.classList.contains('show-all')?'Mostrar menos':'Ver todas as imagens'})});
+      document.querySelectorAll('.shot').forEach(function(btn){btn.addEventListener('click',function(){openLightbox(btn.dataset.image,btn.dataset.caption)})});
+      document.querySelectorAll('.shot img').forEach(function(img){img.addEventListener('error',function(){img.closest('.shot').style.display='none'})});
+    }
+    function openLightbox(src,caption){$('lightboxImage').src=src;$('lightboxImage').alt=caption;$('lightboxCaption').textContent=caption;$('lightbox').classList.add('open');document.body.style.overflow='hidden'}
+    function closeLightbox(){$('lightbox').classList.remove('open');$('lightboxImage').src='';document.body.style.overflow=''}
+    $('closeLightbox').addEventListener('click',closeLightbox);$('lightbox').addEventListener('click',function(e){if(e.target===$('lightbox'))closeLightbox()});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox()});
+    $('search').addEventListener('input',function(e){state.search=e.target.value.trim().toLowerCase();render()});
+    $('statusFilter').addEventListener('change',function(e){state.status=e.target.value;render()});
+    $('techFilter').addEventListener('change',function(e){state.tech=e.target.value;render()});
+
+    function fetchCampaign(index){
+      if(index>=CAMPAIGN_URLS.length)return Promise.reject(new Error('Nenhuma fonte de dados respondeu.'));
+      return fetch(CAMPAIGN_URLS[index]+'?v='+Date.now(),{cache:'no-store'}).then(function(response){if(!response.ok)throw new Error('HTTP '+response.status);return response.json()}).catch(function(){return fetchCampaign(index+1)});
+    }
+    fetchCampaign(0).then(function(campaign){
+      state.campaign=campaign;state.tests=Array.isArray(campaign.tests)?campaign.tests:[];
+      var updated=campaign.updatedAt?new Date(campaign.updatedAt):null;$('updated').textContent=updated&&!isNaN(updated)?'Dados atualizados em '+updated.toLocaleString('pt-BR'):'Dados carregados da branch main';
+      renderStats();render();
+    }).catch(function(error){$('updated').textContent='Falha ao carregar a versão mais recente';$('content').innerHTML='<div class="error"><strong>Não foi possível carregar os dados públicos.</strong><br>Tente novamente em alguns instantes ou confira o repositório no GitHub.<br><small>'+escapeHtml(error.message)+'</small></div>';$('resultCount').textContent=''});
+  })();
+  </script>
+</body>
+</html>

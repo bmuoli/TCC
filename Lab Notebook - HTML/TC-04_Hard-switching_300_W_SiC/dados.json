@@ -30,7 +30,8 @@
       "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_01_1.jpg",
       "trashedAt": "2026-09-11T14:50:20.138Z",
       "fileMissing": true,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -44,7 +45,8 @@
       "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica-Panoramica_01_1.jpg",
       "trashedAt": "2026-09-11T14:50:25.325Z",
       "fileMissing": true,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -58,7 +60,8 @@
       "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_03-Resistores_Gate_1.jpg",
       "trashedAt": "2026-09-11T14:50:31.104Z",
       "fileMissing": true,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -72,7 +75,8 @@
       "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_01_1.png",
       "trashedAt": "2026-09-11T14:50:36.221Z",
       "fileMissing": true,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -86,7 +90,8 @@
       "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Geral_01.png",
       "trashedAt": "2026-09-11T14:50:39.946Z",
       "fileMissing": true,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -100,7 +105,8 @@
       "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Corrente_IDS_A/TC-04_SiC_Chave_Q1_Forma_de_onda_Corrente_IDS_A_01_1.png",
       "trashedAt": "2026-09-11T14:50:42.205Z",
       "fileMissing": true,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -114,7 +120,8 @@
       "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VGS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VGS_V_01_1.png",
       "trashedAt": "2026-09-11T14:50:45.586Z",
       "fileMissing": true,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -128,7 +135,8 @@
       "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_03_1.png",
       "trashedAt": "2026-09-11T14:50:53.911Z",
       "fileMissing": true,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Entrada",
@@ -144,7 +152,8 @@
       "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-04_SiC_Entrada_Geral_VI_02.png",
       "trashedAt": "2026-09-11T19:11:02.995Z",
       "fileMissing": false,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Saida",
@@ -160,7 +169,8 @@
       "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Saida/Forma_de_onda/Geral_VI/TC-04_SiC_Saida_Geral_VI_02.png",
       "trashedAt": "2026-09-11T19:11:15.589Z",
       "fileMissing": false,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -177,7 +187,8 @@
       "trashedAt": "2026-09-11T22:26:38.982Z",
       "fileMissing": false,
       "hadAnnotations": false,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -194,7 +205,8 @@
       "trashedAt": "2026-09-11T22:26:40.048Z",
       "fileMissing": false,
       "hadAnnotations": false,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Saida",
@@ -211,7 +223,8 @@
       "trashedAt": "2026-09-14T13:12:08.385Z",
       "fileMissing": false,
       "hadAnnotations": false,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Entrada",
@@ -228,7 +241,8 @@
       "trashedAt": "2026-09-14T13:14:03.525Z",
       "fileMissing": false,
       "hadAnnotations": false,
-      "thermalView": ""
+      "thermalView": "",
+      "efficiencyMode": ""
     }
   ],
   "enableForward": true,
@@ -265,7 +279,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -283,7 +298,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -301,7 +317,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -319,7 +336,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -337,7 +355,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -356,7 +375,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -375,7 +395,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -394,7 +415,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q2",
@@ -412,7 +434,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q2",
@@ -430,7 +453,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q2",
@@ -448,7 +472,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q2",
@@ -466,7 +491,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q2",
@@ -484,7 +510,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Indutor L1",
@@ -502,7 +529,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Indutor L1",
@@ -551,7 +579,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Indutor L1",
@@ -569,7 +598,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Indutor L1",
@@ -587,7 +617,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Indutor L1",
@@ -605,7 +636,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Indutor L2",
@@ -623,7 +655,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Indutor L2",
@@ -641,7 +674,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Indutor L2",
@@ -659,7 +693,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Indutor L2",
@@ -677,7 +712,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Indutor L2",
@@ -695,7 +731,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Entrada",
@@ -713,7 +750,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -731,7 +769,8 @@
           ],
           "signalSelections": [],
           "thermalView": "",
-          "imageNote": ""
+          "imageNote": "",
+          "efficiencyMode": ""
         }
       ],
       "trash": [
@@ -747,7 +786,8 @@
           "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_01_1.jpg",
           "trashedAt": "2026-09-11T14:50:20.138Z",
           "fileMissing": true,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -761,7 +801,8 @@
           "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica-Panoramica_01_1.jpg",
           "trashedAt": "2026-09-11T14:50:25.325Z",
           "fileMissing": true,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -775,7 +816,8 @@
           "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_03-Resistores_Gate_1.jpg",
           "trashedAt": "2026-09-11T14:50:31.104Z",
           "fileMissing": true,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -789,7 +831,8 @@
           "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_01_1.png",
           "trashedAt": "2026-09-11T14:50:36.221Z",
           "fileMissing": true,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -803,7 +846,8 @@
           "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Geral_01.png",
           "trashedAt": "2026-09-11T14:50:39.946Z",
           "fileMissing": true,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -817,7 +861,8 @@
           "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Corrente_IDS_A/TC-04_SiC_Chave_Q1_Forma_de_onda_Corrente_IDS_A_01_1.png",
           "trashedAt": "2026-09-11T14:50:42.205Z",
           "fileMissing": true,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -831,7 +876,8 @@
           "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VGS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VGS_V_01_1.png",
           "trashedAt": "2026-09-11T14:50:45.586Z",
           "fileMissing": true,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -845,7 +891,8 @@
           "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_03_1.png",
           "trashedAt": "2026-09-11T14:50:53.911Z",
           "fileMissing": true,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Entrada",
@@ -861,7 +908,8 @@
           "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-04_SiC_Entrada_Geral_VI_02.png",
           "trashedAt": "2026-09-11T19:11:02.995Z",
           "fileMissing": false,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Saida",
@@ -877,7 +925,8 @@
           "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Saida/Forma_de_onda/Geral_VI/TC-04_SiC_Saida_Geral_VI_02.png",
           "trashedAt": "2026-09-11T19:11:15.589Z",
           "fileMissing": false,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -894,7 +943,8 @@
           "trashedAt": "2026-09-11T22:26:38.982Z",
           "fileMissing": false,
           "hadAnnotations": false,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Chave Q1",
@@ -911,7 +961,8 @@
           "trashedAt": "2026-09-11T22:26:40.048Z",
           "fileMissing": false,
           "hadAnnotations": false,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Saida",
@@ -928,7 +979,8 @@
           "trashedAt": "2026-09-14T13:12:08.385Z",
           "fileMissing": false,
           "hadAnnotations": false,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         },
         {
           "subject": "Entrada",
@@ -945,9 +997,208 @@
           "trashedAt": "2026-09-14T13:14:03.525Z",
           "fileMissing": false,
           "hadAnnotations": false,
-          "thermalView": ""
+          "thermalView": "",
+          "efficiencyMode": ""
         }
       ],
+      "efficiencyCurve": {
+        "chartMode": "efficiency_vs_power",
+        "points": [
+          {
+            "id": "10",
+            "percent": 10,
+            "theoreticalPower": 75,
+            "targetResistance": 33.3,
+            "targetResistanceLabel": "33,3",
+            "bankConfig": "3 × 100 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "25",
+            "percent": 25,
+            "theoreticalPower": 187.5,
+            "targetResistance": 13.3,
+            "targetResistanceLabel": "13,3",
+            "bankConfig": "7 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "50",
+            "percent": 50,
+            "theoreticalPower": 375,
+            "targetResistance": 6.67,
+            "targetResistanceLabel": "6,67",
+            "bankConfig": "15 × 100 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "75",
+            "percent": 75,
+            "theoreticalPower": 562.5,
+            "targetResistance": 4.44,
+            "targetResistanceLabel": "4,44",
+            "bankConfig": "2 × 9,9 Ω em paralelo + 1 × 100 Ω em paralelo + 2 × 150 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "90",
+            "percent": 90,
+            "theoreticalPower": 675,
+            "targetResistance": 3.7,
+            "targetResistanceLabel": "3,70",
+            "bankConfig": "2 × 9,9 Ω em paralelo + 5 × 100 Ω em paralelo + 2 × 150 Ω em paralelo + 1 × 220 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "100",
+            "percent": 100,
+            "theoreticalPower": 750,
+            "targetResistance": 3.33,
+            "targetResistanceLabel": "3,33",
+            "bankConfig": "3 × 9,9 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          }
+        ]
+      },
+      "buckEfficiencyCurve": {
+        "chartMode": "efficiency_vs_power",
+        "points": [
+          {
+            "id": "10",
+            "percent": 10,
+            "targetPower": 75,
+            "targetResistance": 17.28,
+            "targetResistanceLabel": "17,28",
+            "equivalentResistance": 16.67,
+            "equivalentResistanceLabel": "16,67",
+            "theoreticalPower": 77.8,
+            "bankConfig": "6 × 100 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "25",
+            "percent": 25,
+            "targetPower": 187.5,
+            "targetResistance": 6.91,
+            "targetResistanceLabel": "6,91",
+            "equivalentResistance": 6.87,
+            "equivalentResistanceLabel": "6,87",
+            "theoreticalPower": 188.6,
+            "bankConfig": "1 × 9,9 Ω em paralelo + 4 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "50",
+            "percent": 50,
+            "targetPower": 375,
+            "targetResistance": 3.46,
+            "targetResistanceLabel": "3,46",
+            "equivalentResistance": 3.46,
+            "equivalentResistanceLabel": "3,46",
+            "theoreticalPower": 374.1,
+            "bankConfig": "2 × 9,9 Ω em paralelo + 8 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "75",
+            "percent": 75,
+            "targetPower": 562.5,
+            "targetResistance": 2.3,
+            "targetResistanceLabel": "2,30",
+            "equivalentResistance": 2.3,
+            "equivalentResistanceLabel": "2,30",
+            "theoreticalPower": 562.5,
+            "bankConfig": "4 × 9,9 Ω em paralelo + 3 × 100 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "90",
+            "percent": 90,
+            "targetPower": 675,
+            "targetResistance": 1.92,
+            "targetResistanceLabel": "1,92",
+            "equivalentResistance": 1.92,
+            "equivalentResistanceLabel": "1,92",
+            "theoreticalPower": 674.8,
+            "bankConfig": "4 × 9,9 Ω em paralelo + 11 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "100",
+            "percent": 100,
+            "targetPower": 750,
+            "targetResistance": 1.73,
+            "targetResistanceLabel": "1,73",
+            "equivalentResistance": 1.72,
+            "equivalentResistanceLabel": "1,72",
+            "theoreticalPower": 752.6,
+            "bankConfig": "4 × 9,9 Ω em paralelo + 15 × 100 Ω em paralelo + 4 × 150 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          }
+        ]
+      },
+      "activeEfficiencyMode": "boost",
+      "efficiencyComparisonEnabled": false,
       "executionDone": true,
       "captureChecklist": {
         "vds": true,
@@ -971,6 +1222,204 @@
       "simulationImages": [],
       "evidence": [],
       "trash": [],
+      "efficiencyCurve": {
+        "chartMode": "efficiency_vs_power",
+        "points": [
+          {
+            "id": "10",
+            "percent": 10,
+            "theoreticalPower": 75,
+            "targetResistance": 33.3,
+            "targetResistanceLabel": "33,3",
+            "bankConfig": "3 × 100 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "25",
+            "percent": 25,
+            "theoreticalPower": 187.5,
+            "targetResistance": 13.3,
+            "targetResistanceLabel": "13,3",
+            "bankConfig": "7 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "50",
+            "percent": 50,
+            "theoreticalPower": 375,
+            "targetResistance": 6.67,
+            "targetResistanceLabel": "6,67",
+            "bankConfig": "15 × 100 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "75",
+            "percent": 75,
+            "theoreticalPower": 562.5,
+            "targetResistance": 4.44,
+            "targetResistanceLabel": "4,44",
+            "bankConfig": "2 × 9,9 Ω em paralelo + 1 × 100 Ω em paralelo + 2 × 150 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "90",
+            "percent": 90,
+            "theoreticalPower": 675,
+            "targetResistance": 3.7,
+            "targetResistanceLabel": "3,70",
+            "bankConfig": "2 × 9,9 Ω em paralelo + 5 × 100 Ω em paralelo + 2 × 150 Ω em paralelo + 1 × 220 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "100",
+            "percent": 100,
+            "theoreticalPower": 750,
+            "targetResistance": 3.33,
+            "targetResistanceLabel": "3,33",
+            "bankConfig": "3 × 9,9 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          }
+        ]
+      },
+      "buckEfficiencyCurve": {
+        "chartMode": "efficiency_vs_power",
+        "points": [
+          {
+            "id": "10",
+            "percent": 10,
+            "targetPower": 75,
+            "targetResistance": 17.28,
+            "targetResistanceLabel": "17,28",
+            "equivalentResistance": 16.67,
+            "equivalentResistanceLabel": "16,67",
+            "theoreticalPower": 77.8,
+            "bankConfig": "6 × 100 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "25",
+            "percent": 25,
+            "targetPower": 187.5,
+            "targetResistance": 6.91,
+            "targetResistanceLabel": "6,91",
+            "equivalentResistance": 6.87,
+            "equivalentResistanceLabel": "6,87",
+            "theoreticalPower": 188.6,
+            "bankConfig": "1 × 9,9 Ω em paralelo + 4 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "50",
+            "percent": 50,
+            "targetPower": 375,
+            "targetResistance": 3.46,
+            "targetResistanceLabel": "3,46",
+            "equivalentResistance": 3.46,
+            "equivalentResistanceLabel": "3,46",
+            "theoreticalPower": 374.1,
+            "bankConfig": "2 × 9,9 Ω em paralelo + 8 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "75",
+            "percent": 75,
+            "targetPower": 562.5,
+            "targetResistance": 2.3,
+            "targetResistanceLabel": "2,30",
+            "equivalentResistance": 2.3,
+            "equivalentResistanceLabel": "2,30",
+            "theoreticalPower": 562.5,
+            "bankConfig": "4 × 9,9 Ω em paralelo + 3 × 100 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "90",
+            "percent": 90,
+            "targetPower": 675,
+            "targetResistance": 1.92,
+            "targetResistanceLabel": "1,92",
+            "equivalentResistance": 1.92,
+            "equivalentResistanceLabel": "1,92",
+            "theoreticalPower": 674.8,
+            "bankConfig": "4 × 9,9 Ω em paralelo + 11 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          },
+          {
+            "id": "100",
+            "percent": 100,
+            "targetPower": 750,
+            "targetResistance": 1.73,
+            "targetResistanceLabel": "1,73",
+            "equivalentResistance": 1.72,
+            "equivalentResistanceLabel": "1,72",
+            "theoreticalPower": 752.6,
+            "bankConfig": "4 × 9,9 Ω em paralelo + 15 × 100 Ω em paralelo + 4 × 150 Ω em paralelo",
+            "selected": false,
+            "measuredResistance": "",
+            "p1": "",
+            "p3": "",
+            "efficiency": null,
+            "notes": ""
+          }
+        ]
+      },
+      "activeEfficiencyMode": "boost",
+      "efficiencyComparisonEnabled": false,
       "executionDone": false,
       "captureChecklist": {
         "vds": false,
@@ -1036,7 +1485,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1054,7 +1504,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1072,7 +1523,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1090,7 +1542,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1108,7 +1561,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1127,7 +1581,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1146,7 +1601,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1165,7 +1621,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -1183,7 +1640,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -1201,7 +1659,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -1219,7 +1678,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -1237,7 +1697,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -1255,7 +1716,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L1",
@@ -1273,7 +1735,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L1",
@@ -1322,7 +1785,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L1",
@@ -1340,7 +1804,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L1",
@@ -1358,7 +1823,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L1",
@@ -1376,7 +1842,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L2",
@@ -1394,7 +1861,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L2",
@@ -1412,7 +1880,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L2",
@@ -1430,7 +1899,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L2",
@@ -1448,7 +1918,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L2",
@@ -1466,7 +1937,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Entrada",
@@ -1484,7 +1956,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1502,7 +1975,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             }
           ],
           "trash": [
@@ -1518,7 +1992,8 @@
               "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_01_1.jpg",
               "trashedAt": "2026-09-11T14:50:20.138Z",
               "fileMissing": true,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1532,7 +2007,8 @@
               "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica-Panoramica_01_1.jpg",
               "trashedAt": "2026-09-11T14:50:25.325Z",
               "fileMissing": true,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1546,7 +2022,8 @@
               "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Termica/TC-04_SiC_Chave_Q1_Termica_03-Resistores_Gate_1.jpg",
               "trashedAt": "2026-09-11T14:50:31.104Z",
               "fileMissing": true,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1560,7 +2037,8 @@
               "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_01_1.png",
               "trashedAt": "2026-09-11T14:50:36.221Z",
               "fileMissing": true,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1574,7 +2052,8 @@
               "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Geral_01.png",
               "trashedAt": "2026-09-11T14:50:39.946Z",
               "fileMissing": true,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1588,7 +2067,8 @@
               "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Corrente_IDS_A/TC-04_SiC_Chave_Q1_Forma_de_onda_Corrente_IDS_A_01_1.png",
               "trashedAt": "2026-09-11T14:50:42.205Z",
               "fileMissing": true,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1602,7 +2082,8 @@
               "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VGS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VGS_V_01_1.png",
               "trashedAt": "2026-09-11T14:50:45.586Z",
               "fileMissing": true,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1616,7 +2097,8 @@
               "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Chave_Q1/Forma_de_onda/Tensao_VDS_V/TC-04_SiC_Chave_Q1_Forma_de_onda_Tensao_VDS_V_03_1.png",
               "trashedAt": "2026-09-11T14:50:53.911Z",
               "fileMissing": true,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Entrada",
@@ -1632,7 +2114,8 @@
               "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Entrada/Forma_de_onda/Geral_VI/TC-04_SiC_Entrada_Geral_VI_02.png",
               "trashedAt": "2026-09-11T19:11:02.995Z",
               "fileMissing": false,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Saida",
@@ -1648,7 +2131,8 @@
               "originalRelativePath": "TC-04_Hard-switching_300_W_SiC/Teste_Pratico/Direto/SiC/Evidencias/Saida/Forma_de_onda/Geral_VI/TC-04_SiC_Saida_Geral_VI_02.png",
               "trashedAt": "2026-09-11T19:11:15.589Z",
               "fileMissing": false,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1665,7 +2149,8 @@
               "trashedAt": "2026-09-11T22:26:38.982Z",
               "fileMissing": false,
               "hadAnnotations": false,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1682,7 +2167,8 @@
               "trashedAt": "2026-09-11T22:26:40.048Z",
               "fileMissing": false,
               "hadAnnotations": false,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Saida",
@@ -1699,7 +2185,8 @@
               "trashedAt": "2026-09-14T13:12:08.385Z",
               "fileMissing": false,
               "hadAnnotations": false,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Entrada",
@@ -1716,9 +2203,208 @@
               "trashedAt": "2026-09-14T13:14:03.525Z",
               "fileMissing": false,
               "hadAnnotations": false,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             }
           ],
+          "efficiencyCurve": {
+            "chartMode": "efficiency_vs_power",
+            "points": [
+              {
+                "id": "10",
+                "percent": 10,
+                "theoreticalPower": 75,
+                "targetResistance": 33.3,
+                "targetResistanceLabel": "33,3",
+                "bankConfig": "3 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "25",
+                "percent": 25,
+                "theoreticalPower": 187.5,
+                "targetResistance": 13.3,
+                "targetResistanceLabel": "13,3",
+                "bankConfig": "7 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "50",
+                "percent": 50,
+                "theoreticalPower": 375,
+                "targetResistance": 6.67,
+                "targetResistanceLabel": "6,67",
+                "bankConfig": "15 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "75",
+                "percent": 75,
+                "theoreticalPower": 562.5,
+                "targetResistance": 4.44,
+                "targetResistanceLabel": "4,44",
+                "bankConfig": "2 × 9,9 Ω em paralelo + 1 × 100 Ω em paralelo + 2 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "90",
+                "percent": 90,
+                "theoreticalPower": 675,
+                "targetResistance": 3.7,
+                "targetResistanceLabel": "3,70",
+                "bankConfig": "2 × 9,9 Ω em paralelo + 5 × 100 Ω em paralelo + 2 × 150 Ω em paralelo + 1 × 220 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "100",
+                "percent": 100,
+                "theoreticalPower": 750,
+                "targetResistance": 3.33,
+                "targetResistanceLabel": "3,33",
+                "bankConfig": "3 × 9,9 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              }
+            ]
+          },
+          "buckEfficiencyCurve": {
+            "chartMode": "efficiency_vs_power",
+            "points": [
+              {
+                "id": "10",
+                "percent": 10,
+                "targetPower": 75,
+                "targetResistance": 17.28,
+                "targetResistanceLabel": "17,28",
+                "equivalentResistance": 16.67,
+                "equivalentResistanceLabel": "16,67",
+                "theoreticalPower": 77.8,
+                "bankConfig": "6 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "25",
+                "percent": 25,
+                "targetPower": 187.5,
+                "targetResistance": 6.91,
+                "targetResistanceLabel": "6,91",
+                "equivalentResistance": 6.87,
+                "equivalentResistanceLabel": "6,87",
+                "theoreticalPower": 188.6,
+                "bankConfig": "1 × 9,9 Ω em paralelo + 4 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "50",
+                "percent": 50,
+                "targetPower": 375,
+                "targetResistance": 3.46,
+                "targetResistanceLabel": "3,46",
+                "equivalentResistance": 3.46,
+                "equivalentResistanceLabel": "3,46",
+                "theoreticalPower": 374.1,
+                "bankConfig": "2 × 9,9 Ω em paralelo + 8 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "75",
+                "percent": 75,
+                "targetPower": 562.5,
+                "targetResistance": 2.3,
+                "targetResistanceLabel": "2,30",
+                "equivalentResistance": 2.3,
+                "equivalentResistanceLabel": "2,30",
+                "theoreticalPower": 562.5,
+                "bankConfig": "4 × 9,9 Ω em paralelo + 3 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "90",
+                "percent": 90,
+                "targetPower": 675,
+                "targetResistance": 1.92,
+                "targetResistanceLabel": "1,92",
+                "equivalentResistance": 1.92,
+                "equivalentResistanceLabel": "1,92",
+                "theoreticalPower": 674.8,
+                "bankConfig": "4 × 9,9 Ω em paralelo + 11 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "100",
+                "percent": 100,
+                "targetPower": 750,
+                "targetResistance": 1.73,
+                "targetResistanceLabel": "1,73",
+                "equivalentResistance": 1.72,
+                "equivalentResistanceLabel": "1,72",
+                "theoreticalPower": 752.6,
+                "bankConfig": "4 × 9,9 Ω em paralelo + 15 × 100 Ω em paralelo + 4 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              }
+            ]
+          },
+          "activeEfficiencyMode": "boost",
+          "efficiencyComparisonEnabled": false,
           "executionDone": true,
           "captureChecklist": {
             "vds": true,
@@ -1742,6 +2428,204 @@
           "simulationImages": [],
           "evidence": [],
           "trash": [],
+          "efficiencyCurve": {
+            "chartMode": "efficiency_vs_power",
+            "points": [
+              {
+                "id": "10",
+                "percent": 10,
+                "theoreticalPower": 75,
+                "targetResistance": 33.3,
+                "targetResistanceLabel": "33,3",
+                "bankConfig": "3 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "25",
+                "percent": 25,
+                "theoreticalPower": 187.5,
+                "targetResistance": 13.3,
+                "targetResistanceLabel": "13,3",
+                "bankConfig": "7 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "50",
+                "percent": 50,
+                "theoreticalPower": 375,
+                "targetResistance": 6.67,
+                "targetResistanceLabel": "6,67",
+                "bankConfig": "15 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "75",
+                "percent": 75,
+                "theoreticalPower": 562.5,
+                "targetResistance": 4.44,
+                "targetResistanceLabel": "4,44",
+                "bankConfig": "2 × 9,9 Ω em paralelo + 1 × 100 Ω em paralelo + 2 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "90",
+                "percent": 90,
+                "theoreticalPower": 675,
+                "targetResistance": 3.7,
+                "targetResistanceLabel": "3,70",
+                "bankConfig": "2 × 9,9 Ω em paralelo + 5 × 100 Ω em paralelo + 2 × 150 Ω em paralelo + 1 × 220 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "100",
+                "percent": 100,
+                "theoreticalPower": 750,
+                "targetResistance": 3.33,
+                "targetResistanceLabel": "3,33",
+                "bankConfig": "3 × 9,9 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              }
+            ]
+          },
+          "buckEfficiencyCurve": {
+            "chartMode": "efficiency_vs_power",
+            "points": [
+              {
+                "id": "10",
+                "percent": 10,
+                "targetPower": 75,
+                "targetResistance": 17.28,
+                "targetResistanceLabel": "17,28",
+                "equivalentResistance": 16.67,
+                "equivalentResistanceLabel": "16,67",
+                "theoreticalPower": 77.8,
+                "bankConfig": "6 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "25",
+                "percent": 25,
+                "targetPower": 187.5,
+                "targetResistance": 6.91,
+                "targetResistanceLabel": "6,91",
+                "equivalentResistance": 6.87,
+                "equivalentResistanceLabel": "6,87",
+                "theoreticalPower": 188.6,
+                "bankConfig": "1 × 9,9 Ω em paralelo + 4 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "50",
+                "percent": 50,
+                "targetPower": 375,
+                "targetResistance": 3.46,
+                "targetResistanceLabel": "3,46",
+                "equivalentResistance": 3.46,
+                "equivalentResistanceLabel": "3,46",
+                "theoreticalPower": 374.1,
+                "bankConfig": "2 × 9,9 Ω em paralelo + 8 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "75",
+                "percent": 75,
+                "targetPower": 562.5,
+                "targetResistance": 2.3,
+                "targetResistanceLabel": "2,30",
+                "equivalentResistance": 2.3,
+                "equivalentResistanceLabel": "2,30",
+                "theoreticalPower": 562.5,
+                "bankConfig": "4 × 9,9 Ω em paralelo + 3 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "90",
+                "percent": 90,
+                "targetPower": 675,
+                "targetResistance": 1.92,
+                "targetResistanceLabel": "1,92",
+                "equivalentResistance": 1.92,
+                "equivalentResistanceLabel": "1,92",
+                "theoreticalPower": 674.8,
+                "bankConfig": "4 × 9,9 Ω em paralelo + 11 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "100",
+                "percent": 100,
+                "targetPower": 750,
+                "targetResistance": 1.73,
+                "targetResistanceLabel": "1,73",
+                "equivalentResistance": 1.72,
+                "equivalentResistanceLabel": "1,72",
+                "theoreticalPower": 752.6,
+                "bankConfig": "4 × 9,9 Ω em paralelo + 15 × 100 Ω em paralelo + 4 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              }
+            ]
+          },
+          "activeEfficiencyMode": "boost",
+          "efficiencyComparisonEnabled": false,
           "executionDone": false,
           "captureChecklist": {
             "vds": false,
@@ -1805,7 +2689,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1825,7 +2710,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1843,7 +2729,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1861,7 +2748,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1879,7 +2767,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -1897,7 +2786,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -1915,7 +2805,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -1933,7 +2824,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L1",
@@ -1951,7 +2843,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L1",
@@ -1969,7 +2862,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L2",
@@ -1987,7 +2881,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L2",
@@ -2005,7 +2900,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -2023,7 +2919,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -2045,7 +2942,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -2063,7 +2961,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -2081,7 +2980,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -2099,7 +2999,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L1",
@@ -2117,7 +3018,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L1",
@@ -2135,7 +3037,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L1",
@@ -2154,7 +3057,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L1",
@@ -2173,7 +3077,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L1",
@@ -2191,7 +3096,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L2",
@@ -2209,7 +3115,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L2",
@@ -2227,7 +3134,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L2",
@@ -2246,7 +3154,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L2",
@@ -2264,7 +3173,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Indutor L2",
@@ -2282,7 +3192,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Saida",
@@ -2300,7 +3211,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Capacitor C1",
@@ -2318,7 +3230,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Entrada",
@@ -2340,7 +3253,8 @@
               ],
               "signalSelections": [],
               "thermalView": "",
-              "imageNote": ""
+              "imageNote": "",
+              "efficiencyMode": ""
             }
           ],
           "trash": [
@@ -2359,7 +3273,8 @@
               "trashedAt": "2026-09-12T18:41:54.363Z",
               "fileMissing": false,
               "hadAnnotations": false,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q1",
@@ -2376,7 +3291,8 @@
               "trashedAt": "2026-09-12T18:48:29.052Z",
               "fileMissing": false,
               "hadAnnotations": false,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Chave Q2",
@@ -2393,7 +3309,8 @@
               "trashedAt": "2026-09-12T19:30:54.878Z",
               "fileMissing": false,
               "hadAnnotations": false,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             },
             {
               "subject": "Entrada",
@@ -2410,9 +3327,208 @@
               "trashedAt": "2026-09-14T12:37:28.210Z",
               "fileMissing": false,
               "hadAnnotations": true,
-              "thermalView": ""
+              "thermalView": "",
+              "efficiencyMode": ""
             }
           ],
+          "efficiencyCurve": {
+            "chartMode": "efficiency_vs_power",
+            "points": [
+              {
+                "id": "10",
+                "percent": 10,
+                "theoreticalPower": 75,
+                "targetResistance": 33.3,
+                "targetResistanceLabel": "33,3",
+                "bankConfig": "3 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "25",
+                "percent": 25,
+                "theoreticalPower": 187.5,
+                "targetResistance": 13.3,
+                "targetResistanceLabel": "13,3",
+                "bankConfig": "7 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "50",
+                "percent": 50,
+                "theoreticalPower": 375,
+                "targetResistance": 6.67,
+                "targetResistanceLabel": "6,67",
+                "bankConfig": "15 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "75",
+                "percent": 75,
+                "theoreticalPower": 562.5,
+                "targetResistance": 4.44,
+                "targetResistanceLabel": "4,44",
+                "bankConfig": "2 × 9,9 Ω em paralelo + 1 × 100 Ω em paralelo + 2 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "90",
+                "percent": 90,
+                "theoreticalPower": 675,
+                "targetResistance": 3.7,
+                "targetResistanceLabel": "3,70",
+                "bankConfig": "2 × 9,9 Ω em paralelo + 5 × 100 Ω em paralelo + 2 × 150 Ω em paralelo + 1 × 220 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "100",
+                "percent": 100,
+                "theoreticalPower": 750,
+                "targetResistance": 3.33,
+                "targetResistanceLabel": "3,33",
+                "bankConfig": "3 × 9,9 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              }
+            ]
+          },
+          "buckEfficiencyCurve": {
+            "chartMode": "efficiency_vs_power",
+            "points": [
+              {
+                "id": "10",
+                "percent": 10,
+                "targetPower": 75,
+                "targetResistance": 17.28,
+                "targetResistanceLabel": "17,28",
+                "equivalentResistance": 16.67,
+                "equivalentResistanceLabel": "16,67",
+                "theoreticalPower": 77.8,
+                "bankConfig": "6 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "25",
+                "percent": 25,
+                "targetPower": 187.5,
+                "targetResistance": 6.91,
+                "targetResistanceLabel": "6,91",
+                "equivalentResistance": 6.87,
+                "equivalentResistanceLabel": "6,87",
+                "theoreticalPower": 188.6,
+                "bankConfig": "1 × 9,9 Ω em paralelo + 4 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "50",
+                "percent": 50,
+                "targetPower": 375,
+                "targetResistance": 3.46,
+                "targetResistanceLabel": "3,46",
+                "equivalentResistance": 3.46,
+                "equivalentResistanceLabel": "3,46",
+                "theoreticalPower": 374.1,
+                "bankConfig": "2 × 9,9 Ω em paralelo + 8 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "75",
+                "percent": 75,
+                "targetPower": 562.5,
+                "targetResistance": 2.3,
+                "targetResistanceLabel": "2,30",
+                "equivalentResistance": 2.3,
+                "equivalentResistanceLabel": "2,30",
+                "theoreticalPower": 562.5,
+                "bankConfig": "4 × 9,9 Ω em paralelo + 3 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "90",
+                "percent": 90,
+                "targetPower": 675,
+                "targetResistance": 1.92,
+                "targetResistanceLabel": "1,92",
+                "equivalentResistance": 1.92,
+                "equivalentResistanceLabel": "1,92",
+                "theoreticalPower": 674.8,
+                "bankConfig": "4 × 9,9 Ω em paralelo + 11 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "100",
+                "percent": 100,
+                "targetPower": 750,
+                "targetResistance": 1.73,
+                "targetResistanceLabel": "1,73",
+                "equivalentResistance": 1.72,
+                "equivalentResistanceLabel": "1,72",
+                "theoreticalPower": 752.6,
+                "bankConfig": "4 × 9,9 Ω em paralelo + 15 × 100 Ω em paralelo + 4 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              }
+            ]
+          },
+          "activeEfficiencyMode": "boost",
+          "efficiencyComparisonEnabled": false,
           "executionDone": true,
           "captureChecklist": {
             "vds": true,
@@ -2436,6 +3552,204 @@
           "simulationImages": [],
           "evidence": [],
           "trash": [],
+          "efficiencyCurve": {
+            "chartMode": "efficiency_vs_power",
+            "points": [
+              {
+                "id": "10",
+                "percent": 10,
+                "theoreticalPower": 75,
+                "targetResistance": 33.3,
+                "targetResistanceLabel": "33,3",
+                "bankConfig": "3 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "25",
+                "percent": 25,
+                "theoreticalPower": 187.5,
+                "targetResistance": 13.3,
+                "targetResistanceLabel": "13,3",
+                "bankConfig": "7 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "50",
+                "percent": 50,
+                "theoreticalPower": 375,
+                "targetResistance": 6.67,
+                "targetResistanceLabel": "6,67",
+                "bankConfig": "15 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "75",
+                "percent": 75,
+                "theoreticalPower": 562.5,
+                "targetResistance": 4.44,
+                "targetResistanceLabel": "4,44",
+                "bankConfig": "2 × 9,9 Ω em paralelo + 1 × 100 Ω em paralelo + 2 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "90",
+                "percent": 90,
+                "theoreticalPower": 675,
+                "targetResistance": 3.7,
+                "targetResistanceLabel": "3,70",
+                "bankConfig": "2 × 9,9 Ω em paralelo + 5 × 100 Ω em paralelo + 2 × 150 Ω em paralelo + 1 × 220 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "100",
+                "percent": 100,
+                "theoreticalPower": 750,
+                "targetResistance": 3.33,
+                "targetResistanceLabel": "3,33",
+                "bankConfig": "3 × 9,9 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              }
+            ]
+          },
+          "buckEfficiencyCurve": {
+            "chartMode": "efficiency_vs_power",
+            "points": [
+              {
+                "id": "10",
+                "percent": 10,
+                "targetPower": 75,
+                "targetResistance": 17.28,
+                "targetResistanceLabel": "17,28",
+                "equivalentResistance": 16.67,
+                "equivalentResistanceLabel": "16,67",
+                "theoreticalPower": 77.8,
+                "bankConfig": "6 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "25",
+                "percent": 25,
+                "targetPower": 187.5,
+                "targetResistance": 6.91,
+                "targetResistanceLabel": "6,91",
+                "equivalentResistance": 6.87,
+                "equivalentResistanceLabel": "6,87",
+                "theoreticalPower": 188.6,
+                "bankConfig": "1 × 9,9 Ω em paralelo + 4 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "50",
+                "percent": 50,
+                "targetPower": 375,
+                "targetResistance": 3.46,
+                "targetResistanceLabel": "3,46",
+                "equivalentResistance": 3.46,
+                "equivalentResistanceLabel": "3,46",
+                "theoreticalPower": 374.1,
+                "bankConfig": "2 × 9,9 Ω em paralelo + 8 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "75",
+                "percent": 75,
+                "targetPower": 562.5,
+                "targetResistance": 2.3,
+                "targetResistanceLabel": "2,30",
+                "equivalentResistance": 2.3,
+                "equivalentResistanceLabel": "2,30",
+                "theoreticalPower": 562.5,
+                "bankConfig": "4 × 9,9 Ω em paralelo + 3 × 100 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "90",
+                "percent": 90,
+                "targetPower": 675,
+                "targetResistance": 1.92,
+                "targetResistanceLabel": "1,92",
+                "equivalentResistance": 1.92,
+                "equivalentResistanceLabel": "1,92",
+                "theoreticalPower": 674.8,
+                "bankConfig": "4 × 9,9 Ω em paralelo + 11 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              },
+              {
+                "id": "100",
+                "percent": 100,
+                "targetPower": 750,
+                "targetResistance": 1.73,
+                "targetResistanceLabel": "1,73",
+                "equivalentResistance": 1.72,
+                "equivalentResistanceLabel": "1,72",
+                "theoreticalPower": 752.6,
+                "bankConfig": "4 × 9,9 Ω em paralelo + 15 × 100 Ω em paralelo + 4 × 150 Ω em paralelo",
+                "selected": false,
+                "measuredResistance": "",
+                "p1": "",
+                "p3": "",
+                "efficiency": null,
+                "notes": ""
+              }
+            ]
+          },
+          "activeEfficiencyMode": "boost",
+          "efficiencyComparisonEnabled": false,
           "executionDone": false,
           "captureChecklist": {
             "vds": false,
@@ -2519,7 +3833,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -2537,7 +3852,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -2555,7 +3871,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -2573,7 +3890,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -2591,7 +3909,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -2610,7 +3929,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -2629,7 +3949,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -2648,7 +3969,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q2",
@@ -2666,7 +3988,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q2",
@@ -2684,7 +4007,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q2",
@@ -2702,7 +4026,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q2",
@@ -2720,7 +4045,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q2",
@@ -2738,7 +4064,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Indutor L1",
@@ -2756,7 +4083,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Indutor L1",
@@ -2805,7 +4133,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Indutor L1",
@@ -2823,7 +4152,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Indutor L1",
@@ -2841,7 +4171,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Indutor L1",
@@ -2859,7 +4190,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Indutor L2",
@@ -2877,7 +4209,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Indutor L2",
@@ -2895,7 +4228,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Indutor L2",
@@ -2913,7 +4247,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Indutor L2",
@@ -2931,7 +4266,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Indutor L2",
@@ -2949,7 +4285,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Entrada",
@@ -2967,7 +4304,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     },
     {
       "subject": "Chave Q1",
@@ -2985,7 +4323,8 @@
       ],
       "signalSelections": [],
       "thermalView": "",
-      "imageNote": ""
+      "imageNote": "",
+      "efficiencyMode": ""
     }
   ],
   "setupName": "Conversor Ćuk",
@@ -2993,5 +4332,203 @@
   "displayGoal": "Operação nominal dissipativa em 300 W.",
   "displayId": "TC-01",
   "folderName": "TC-04_Hard-switching_300_W_SiC",
-  "updatedAt": "2026-10-01T18:02:04.224Z"
+  "updatedAt": "2026-10-27T18:30:38.085Z",
+  "efficiencyCurve": {
+    "chartMode": "efficiency_vs_power",
+    "points": [
+      {
+        "id": "10",
+        "percent": 10,
+        "theoreticalPower": 75,
+        "targetResistance": 33.3,
+        "targetResistanceLabel": "33,3",
+        "bankConfig": "3 × 100 Ω em paralelo",
+        "selected": false,
+        "measuredResistance": "",
+        "p1": "",
+        "p3": "",
+        "efficiency": null,
+        "notes": ""
+      },
+      {
+        "id": "25",
+        "percent": 25,
+        "theoreticalPower": 187.5,
+        "targetResistance": 13.3,
+        "targetResistanceLabel": "13,3",
+        "bankConfig": "7 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+        "selected": false,
+        "measuredResistance": "",
+        "p1": "",
+        "p3": "",
+        "efficiency": null,
+        "notes": ""
+      },
+      {
+        "id": "50",
+        "percent": 50,
+        "theoreticalPower": 375,
+        "targetResistance": 6.67,
+        "targetResistanceLabel": "6,67",
+        "bankConfig": "15 × 100 Ω em paralelo",
+        "selected": false,
+        "measuredResistance": "",
+        "p1": "",
+        "p3": "",
+        "efficiency": null,
+        "notes": ""
+      },
+      {
+        "id": "75",
+        "percent": 75,
+        "theoreticalPower": 562.5,
+        "targetResistance": 4.44,
+        "targetResistanceLabel": "4,44",
+        "bankConfig": "2 × 9,9 Ω em paralelo + 1 × 100 Ω em paralelo + 2 × 150 Ω em paralelo",
+        "selected": false,
+        "measuredResistance": "",
+        "p1": "",
+        "p3": "",
+        "efficiency": null,
+        "notes": ""
+      },
+      {
+        "id": "90",
+        "percent": 90,
+        "theoreticalPower": 675,
+        "targetResistance": 3.7,
+        "targetResistanceLabel": "3,70",
+        "bankConfig": "2 × 9,9 Ω em paralelo + 5 × 100 Ω em paralelo + 2 × 150 Ω em paralelo + 1 × 220 Ω em paralelo",
+        "selected": false,
+        "measuredResistance": "",
+        "p1": "",
+        "p3": "",
+        "efficiency": null,
+        "notes": ""
+      },
+      {
+        "id": "100",
+        "percent": 100,
+        "theoreticalPower": 750,
+        "targetResistance": 3.33,
+        "targetResistanceLabel": "3,33",
+        "bankConfig": "3 × 9,9 Ω em paralelo",
+        "selected": false,
+        "measuredResistance": "",
+        "p1": "",
+        "p3": "",
+        "efficiency": null,
+        "notes": ""
+      }
+    ]
+  },
+  "buckEfficiencyCurve": {
+    "chartMode": "efficiency_vs_power",
+    "points": [
+      {
+        "id": "10",
+        "percent": 10,
+        "targetPower": 75,
+        "targetResistance": 17.28,
+        "targetResistanceLabel": "17,28",
+        "equivalentResistance": 16.67,
+        "equivalentResistanceLabel": "16,67",
+        "theoreticalPower": 77.8,
+        "bankConfig": "6 × 100 Ω em paralelo",
+        "selected": false,
+        "measuredResistance": "",
+        "p1": "",
+        "p3": "",
+        "efficiency": null,
+        "notes": ""
+      },
+      {
+        "id": "25",
+        "percent": 25,
+        "targetPower": 187.5,
+        "targetResistance": 6.91,
+        "targetResistanceLabel": "6,91",
+        "equivalentResistance": 6.87,
+        "equivalentResistanceLabel": "6,87",
+        "theoreticalPower": 188.6,
+        "bankConfig": "1 × 9,9 Ω em paralelo + 4 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
+        "selected": false,
+        "measuredResistance": "",
+        "p1": "",
+        "p3": "",
+        "efficiency": null,
+        "notes": ""
+      },
+      {
+        "id": "50",
+        "percent": 50,
+        "targetPower": 375,
+        "targetResistance": 3.46,
+        "targetResistanceLabel": "3,46",
+        "equivalentResistance": 3.46,
+        "equivalentResistanceLabel": "3,46",
+        "theoreticalPower": 374.1,
+        "bankConfig": "2 × 9,9 Ω em paralelo + 8 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+        "selected": false,
+        "measuredResistance": "",
+        "p1": "",
+        "p3": "",
+        "efficiency": null,
+        "notes": ""
+      },
+      {
+        "id": "75",
+        "percent": 75,
+        "targetPower": 562.5,
+        "targetResistance": 2.3,
+        "targetResistanceLabel": "2,30",
+        "equivalentResistance": 2.3,
+        "equivalentResistanceLabel": "2,30",
+        "theoreticalPower": 562.5,
+        "bankConfig": "4 × 9,9 Ω em paralelo + 3 × 100 Ω em paralelo",
+        "selected": false,
+        "measuredResistance": "",
+        "p1": "",
+        "p3": "",
+        "efficiency": null,
+        "notes": ""
+      },
+      {
+        "id": "90",
+        "percent": 90,
+        "targetPower": 675,
+        "targetResistance": 1.92,
+        "targetResistanceLabel": "1,92",
+        "equivalentResistance": 1.92,
+        "equivalentResistanceLabel": "1,92",
+        "theoreticalPower": 674.8,
+        "bankConfig": "4 × 9,9 Ω em paralelo + 11 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
+        "selected": false,
+        "measuredResistance": "",
+        "p1": "",
+        "p3": "",
+        "efficiency": null,
+        "notes": ""
+      },
+      {
+        "id": "100",
+        "percent": 100,
+        "targetPower": 750,
+        "targetResistance": 1.73,
+        "targetResistanceLabel": "1,73",
+        "equivalentResistance": 1.72,
+        "equivalentResistanceLabel": "1,72",
+        "theoreticalPower": 752.6,
+        "bankConfig": "4 × 9,9 Ω em paralelo + 15 × 100 Ω em paralelo + 4 × 150 Ω em paralelo",
+        "selected": false,
+        "measuredResistance": "",
+        "p1": "",
+        "p3": "",
+        "efficiency": null,
+        "notes": ""
+      }
+    ]
+  },
+  "activeEfficiencyMode": "boost",
+  "efficiencyComparisonEnabled": false
 }

@@ -1,0 +1,4690 @@
+{
+  "input": "C:\\Users\\muril\\OneDrive\\Área de Trabalho\\2026-10-26 09-31-38.mkv",
+  "language": "pt",
+  "duration": 1437.2266875,
+  "speakers": [
+    "Murilo",
+    "Érica",
+    "Igor",
+    "Rafa"
+  ],
+  "method": "offline ASR plus seeded acoustic and contextual speaker attribution",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.68,
+      "speaker": "Érica",
+      "text": "como um bug fix, tipo, pra 2.27.2,",
+      "speaker_confidence": 0.5334652430710388
+    },
+    {
+      "start": 2.76,
+      "end": 4.28,
+      "speaker": "Érica",
+      "text": "mas não necessariamente",
+      "speaker_confidence": 0.33609406109338463
+    },
+    {
+      "start": 4.28,
+      "end": 5.9,
+      "speaker": "Érica",
+      "text": "do jeito que foi escrito aqui.",
+      "speaker_confidence": 0.6011595994809953
+    },
+    {
+      "start": 6.22,
+      "end": 8.22,
+      "speaker": "Érica",
+      "text": "Então, agora a gente tem que tomar a decisão de",
+      "speaker_confidence": 0.5402442659028622
+    },
+    {
+      "start": 8.22,
+      "end": 10.52,
+      "speaker": "Érica",
+      "text": "vamos mergear, não vamos mergear,",
+      "speaker_confidence": 0.5004544893532262
+    },
+    {
+      "start": 10.54,
+      "end": 12.42,
+      "speaker": "Érica",
+      "text": "ele vai gerar um novo teste,",
+      "speaker_confidence": 0.5198923613282658
+    },
+    {
+      "start": 12.56,
+      "end": 13.78,
+      "speaker": "Érica",
+      "text": "como que vai ficar, sabe?",
+      "speaker_confidence": 0.3383213329829347
+    },
+    {
+      "start": 15.25,
+      "end": 16.47,
+      "speaker": "Érica",
+      "text": "Aqui que fica a questão.",
+      "speaker_confidence": 0.2191125320569717
+    },
+    {
+      "start": 17.19,
+      "end": 18.91,
+      "speaker": "Érica",
+      "text": "Fora outros buracos, outras coisas",
+      "speaker_confidence": 0.4348107441798022
+    },
+    {
+      "start": 18.91,
+      "end": 19.81,
+      "speaker": "Érica",
+      "text": "que teve de defining.",
+      "speaker_confidence": 0.01839165602918476
+    },
+    {
+      "start": 20.8,
+      "end": 22.64,
+      "speaker": "Igor",
+      "text": "É, o que eu tinha visto",
+      "speaker_confidence": 0.0076327713355025225
+    },
+    {
+      "start": 22.64,
+      "end": 24.16,
+      "speaker": "Igor",
+      "text": "que daria pra tirar",
+      "speaker_confidence": 0.06045715692910139
+    },
+    {
+      "start": 24.84,
+      "end": 26.66,
+      "speaker": "Igor",
+      "text": "é o 10, 11, 12,",
+      "speaker_confidence": 0.02427046310642976
+    },
+    {
+      "start": 27.5,
+      "end": 28.62,
+      "speaker": "Igor",
+      "text": "já tá coberto",
+      "speaker_confidence": 0.058704122533724055
+    },
+    {
+      "start": 28.62,
+      "end": 30.6,
+      "speaker": "Igor",
+      "text": "pros test cases que o Murilo tinha feito,",
+      "speaker_confidence": 0.03955041094312848
+    },
+    {
+      "start": 31.06,
+      "end": 32.46,
+      "speaker": "Igor",
+      "text": "daí o resto,",
+      "speaker_confidence": 0.0030558439153032507
+    },
+    {
+      "start": 32.5,
+      "end": 34.16,
+      "speaker": "Igor",
+      "text": "eu acho que teria que deixar tudo, né?",
+      "speaker_confidence": 0.0900099537716322
+    },
+    {
+      "start": 34.22,
+      "end": 36.88,
+      "speaker": "Igor",
+      "text": "Só o que eu tava falando de adaptar",
+      "speaker_confidence": 0.06604367816434853
+    },
+    {
+      "start": 36.88,
+      "end": 38.46,
+      "speaker": "Igor",
+      "text": "lá as variáveis",
+      "speaker_confidence": 0.23833185247452846
+    },
+    {
+      "start": 38.46,
+      "end": 40.64,
+      "speaker": "Igor",
+      "text": "é ver no detalhe as variáveis",
+      "speaker_confidence": 0.11635735370356041
+    },
+    {
+      "start": 40.64,
+      "end": 41.54,
+      "speaker": "Igor",
+      "text": "novas que",
+      "speaker_confidence": 0.004932486856263834
+    },
+    {
+      "start": 42.66,
+      "end": 44.14,
+      "speaker": "Igor",
+      "text": "existem, né, no...",
+      "speaker_confidence": 0.023707784753777966
+    },
+    {
+      "start": 44.8,
+      "end": 47.14,
+      "speaker": "Igor",
+      "text": "agora na implementação",
+      "speaker_confidence": 0.07674124497378211
+    },
+    {
+      "start": 47.14,
+      "end": 48.82,
+      "speaker": "Igor",
+      "text": "que eu vi lá que tinha algumas variáveis",
+      "speaker_confidence": 0.08940730034776088
+    },
+    {
+      "start": 48.82,
+      "end": 49.78,
+      "speaker": "Igor",
+      "text": "de flag state,",
+      "speaker_confidence": 0.14572041047075857
+    },
+    {
+      "start": 50.16,
+      "end": 51.26,
+      "speaker": "Igor",
+      "text": "c flag state,",
+      "speaker_confidence": 0.10009800369303837
+    },
+    {
+      "start": 52.46,
+      "end": 53.38,
+      "speaker": "Igor",
+      "text": "state flag,",
+      "speaker_confidence": 0.20704291695002147
+    },
+    {
+      "start": 53.82,
+      "end": 55.72,
+      "speaker": "Igor",
+      "text": "essas variáveis novas, né, se faz sentido",
+      "speaker_confidence": 0.049815586358585996
+    },
+    {
+      "start": 55.72,
+      "end": 58.04,
+      "speaker": "Igor",
+      "text": "também colocar nisso, mas daí você comentou",
+      "speaker_confidence": 0.042077553940621536
+    },
+    {
+      "start": 58.04,
+      "end": 59.62,
+      "speaker": "Igor",
+      "text": "da questão",
+      "speaker_confidence": 0.07142912771262004
+    },
+    {
+      "start": 59.62,
+      "end": 61.22,
+      "speaker": "Igor",
+      "text": "que, tipo,",
+      "speaker_confidence": 0.104415234750351
+    },
+    {
+      "start": 61.28,
+      "end": 62.94,
+      "speaker": "Igor",
+      "text": "da compatibilidade das versões, né,",
+      "speaker_confidence": 0.07258002295693075
+    },
+    {
+      "start": 62.96,
+      "end": 64.92,
+      "speaker": "Igor",
+      "text": "que daí faria sentido deixar os dois",
+      "speaker_confidence": 0.14744599068934414
+    },
+    {
+      "start": 65.56,
+      "end": 67.18,
+      "speaker": "Igor",
+      "text": "como sendo independentes.",
+      "speaker_confidence": 0.012423098049864169
+    },
+    {
+      "start": 67.64,
+      "end": 71.5,
+      "speaker": "Érica",
+      "text": "Sim. Deixa eu pensar.",
+      "speaker_confidence": 0.38051635272079953
+    },
+    {
+      "start": 75.09,
+      "end": 76.25,
+      "speaker": "Murilo",
+      "text": "Ah, nada que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 76.25,
+      "end": 78.03,
+      "speaker": "Murilo",
+      "text": "também eu não... porque ali eu criei",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 78.03,
+      "end": 79.35,
+      "speaker": "Murilo",
+      "text": "pra 2.27, realmente,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 79.69,
+      "end": 81.37,
+      "speaker": "Murilo",
+      "text": "a não ser que eu crie teste case pra",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 83.3,
+      "end": 85.38,
+      "speaker": "Murilo",
+      "text": "2.30, que então, pelo que ele disse,",
+      "speaker_confidence": 0.22994125781691888
+    },
+    {
+      "start": 85.42,
+      "end": 87.8,
+      "speaker": "Murilo",
+      "text": "seria parecido",
+      "speaker_confidence": 0.2064089809304372
+    },
+    {
+      "start": 87.8,
+      "end": 89.74,
+      "speaker": "Murilo",
+      "text": "a partir da 2.30, então eu ia fazer um merge,",
+      "speaker_confidence": 0.004434516027192088
+    },
+    {
+      "start": 90.22,
+      "end": 91.04,
+      "speaker": "Murilo",
+      "text": "juntava os dois.",
+      "speaker_confidence": 0.10422575397669565
+    },
+    {
+      "start": 93.51,
+      "end": 95.01,
+      "speaker": "Érica",
+      "text": "Então, mas é que isso daqui,",
+      "speaker_confidence": 0.45120047435965605
+    },
+    {
+      "start": 95.17,
+      "end": 97.47,
+      "speaker": "Érica",
+      "text": "na verdade, foi criado em cima da 2.31,",
+      "speaker_confidence": 0.412046731896617
+    },
+    {
+      "start": 97.73,
+      "end": 98.71,
+      "speaker": "Érica",
+      "text": "é exatamente isso,",
+      "speaker_confidence": 0.4541382248770346
+    },
+    {
+      "start": 98.71,
+      "end": 100.93,
+      "speaker": "Érica",
+      "text": "que eu tô tentando evitar, no sentido de",
+      "speaker_confidence": 0.43100534546478625
+    },
+    {
+      "start": 100.93,
+      "end": 102.87,
+      "speaker": "Érica",
+      "text": "eu não sei se isso 100%",
+      "speaker_confidence": 0.5258290907202819
+    },
+    {
+      "start": 102.87,
+      "end": 104.59,
+      "speaker": "Érica",
+      "text": "vai tá 1 pra 1 aplicado",
+      "speaker_confidence": 0.4259641737507277
+    },
+    {
+      "start": 104.59,
+      "end": 106.81,
+      "speaker": "Érica",
+      "text": "pra 2.27.2 e pra",
+      "speaker_confidence": 0.5175519460627815
+    },
+    {
+      "start": 106.81,
+      "end": 107.89,
+      "speaker": "Érica",
+      "text": "2.30.1",
+      "speaker_confidence": 0.45809964125796393
+    },
+    {
+      "start": 108.51,
+      "end": 110.41,
+      "speaker": "Érica",
+      "text": "pelo conteúdo do que você mexeu.",
+      "speaker_confidence": 0.4423207486892928
+    },
+    {
+      "start": 110.49,
+      "end": 112.43,
+      "speaker": "Érica",
+      "text": "Eu não tenho 100% de certeza, sabe?",
+      "speaker_confidence": 0.497090998703539
+    },
+    {
+      "start": 112.93,
+      "end": 114.57,
+      "speaker": "Érica",
+      "text": "Teoricamente tinha que eu entrar,",
+      "speaker_confidence": 0.475166497187352
+    },
+    {
+      "start": 114.71,
+      "end": 116.67,
+      "speaker": "Érica",
+      "text": "olhar e ver, não, isso daqui ainda faz sentido,",
+      "speaker_confidence": 0.4275402112277574
+    },
+    {
+      "start": 116.95,
+      "end": 117.87,
+      "speaker": "Érica",
+      "text": "isso daqui ainda faz sentido,",
+      "speaker_confidence": 0.4090886430096363
+    },
+    {
+      "start": 118.43,
+      "end": 120.67,
+      "speaker": "Érica",
+      "text": "pra validar. Eu acho que sim.",
+      "speaker_confidence": 0.4723469065773937
+    },
+    {
+      "start": 120.81,
+      "end": 122.47,
+      "speaker": "Érica",
+      "text": "Minha impressão de bate-pronto",
+      "speaker_confidence": 0.3886392505248089
+    },
+    {
+      "start": 122.47,
+      "end": 124.73,
+      "speaker": "Érica",
+      "text": "é sim, mas tem que dar",
+      "speaker_confidence": 0.5220424413999155
+    },
+    {
+      "start": 124.73,
+      "end": 125.95,
+      "speaker": "Érica",
+      "text": "uma olhada no detalhe.",
+      "speaker_confidence": 0.40326093655602974
+    },
+    {
+      "start": 126.11,
+      "end": 128.53,
+      "speaker": "Érica",
+      "text": "Isso você diz sim pras outras versões,",
+      "speaker_confidence": 0.3263000406089079
+    },
+    {
+      "start": 128.53,
+      "end": 131.42,
+      "speaker": "Érica",
+      "text": "né? Sim, pra 2.27.2",
+      "speaker_confidence": 0.17137369678465827
+    },
+    {
+      "start": 131.42,
+      "end": 132.68,
+      "speaker": "Érica",
+      "text": "e pra 2.30.1",
+      "speaker_confidence": 0.4310996786656875
+    },
+    {
+      "start": 132.68,
+      "end": 134.48,
+      "speaker": "Érica",
+      "text": "por causa do que você implementou agora",
+      "speaker_confidence": 0.45468740728947404
+    },
+    {
+      "start": 134.48,
+      "end": 135.96,
+      "speaker": "Érica",
+      "text": "pro bug fix. Porque se",
+      "speaker_confidence": 0.45496558122646
+    },
+    {
+      "start": 136.5,
+      "end": 138.5,
+      "speaker": "Érica",
+      "text": "olhar antes, não necessariamente,",
+      "speaker_confidence": 0.33883743564432356
+    },
+    {
+      "start": 138.64,
+      "end": 140.78,
+      "speaker": "Érica",
+      "text": "principalmente esses casos que tá replicado",
+      "speaker_confidence": 0.5878465742742623
+    },
+    {
+      "start": 140.78,
+      "end": 142.24,
+      "speaker": "Érica",
+      "text": "que nem o Igor falou.",
+      "speaker_confidence": 0.3839967335796703
+    },
+    {
+      "start": 142.58,
+      "end": 144.5,
+      "speaker": "Murilo",
+      "text": "Tá. É porque eu tô comentando que",
+      "speaker_confidence": 0.007435058042735938
+    },
+    {
+      "start": 144.5,
+      "end": 146.4,
+      "speaker": "Murilo",
+      "text": "ali, basicamente, eu criei",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 146.4,
+      "end": 148.68,
+      "speaker": "Murilo",
+      "text": "2.27, mas aí eu não pensei.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 148.7,
+      "end": 149.44,
+      "speaker": "Murilo",
+      "text": "Então teria que criar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 150.46,
+      "end": 152.84,
+      "speaker": "Murilo",
+      "text": "nos test case ali, né? Não, não tem problema.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 153.08,
+      "end": 153.6,
+      "speaker": "Érica",
+      "text": "Não tem problema.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 154.32,
+      "end": 156.98,
+      "speaker": "Érica",
+      "text": "Isso daqui é só, tipo, ele inicialmente",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 156.98,
+      "end": 159.06,
+      "speaker": "Érica",
+      "text": "tá aplicado pra 2.27.2,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 159.08,
+      "end": 160.88,
+      "speaker": "Érica",
+      "text": "e na hora que a gente for gerar uma run,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 161.06,
+      "end": 163.28,
+      "speaker": "Érica",
+      "text": "você coloca uma run 2.27.2,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 163.38,
+      "end": 164.7,
+      "speaker": "Érica",
+      "text": "uma run 2.30.1,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 164.74,
+      "end": 166.88,
+      "speaker": "Érica",
+      "text": "e com o customer specific, tipo,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 167.6,
+      "end": 169.16,
+      "speaker": "Érica",
+      "text": "não é pra ficar copiando",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 169.16,
+      "end": 170.92,
+      "speaker": "Érica",
+      "text": "e colando test case de coisas que estão",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 170.92,
+      "end": 172.56,
+      "speaker": "Érica",
+      "text": "escritas iguais. Eu tô falando que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 172.56,
+      "end": 174.86,
+      "speaker": "Érica",
+      "text": "isso daqui, o conteúdo disso daqui, não é",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 174.86,
+      "end": 176.32,
+      "speaker": "Érica",
+      "text": "um pra um com o conteúdo disso daqui.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 177.22,
+      "end": 178.96,
+      "speaker": "Érica",
+      "text": "Isso é algo que a gente fez, que a gente",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 178.96,
+      "end": 181.0,
+      "speaker": "Érica",
+      "text": "listou pra 2.30.1,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 181.62,
+      "end": 183.56,
+      "speaker": "Érica",
+      "text": "olhando pro software da 2.30.1.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 183.62,
+      "end": 184.94,
+      "speaker": "Érica",
+      "text": "Mas isso daqui, não,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 186.48,
+      "end": 187.36,
+      "speaker": "Érica",
+      "text": "o conteúdo",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 187.36,
+      "end": 189.04,
+      "speaker": "Érica",
+      "text": "completo não tá sendo coberto",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 189.08,
+      "end": 191.0,
+      "speaker": "Érica",
+      "text": "pelo que você escreveu. E é isso que a gente tem que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 191.0,
+      "end": 192.54,
+      "speaker": "Érica",
+      "text": "garantir, que o conteúdo completo",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 192.54,
+      "end": 195.08,
+      "speaker": "Érica",
+      "text": "está sendo validado em todas as runs.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 195.4,
+      "end": 197.14,
+      "speaker": "Érica",
+      "text": "Daí agora, o que precisa",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 197.14,
+      "end": 199.0,
+      "speaker": "Érica",
+      "text": "tomar decisão no detalhe é",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 199.0,
+      "end": 201.04,
+      "speaker": "Érica",
+      "text": "como fazer isso, como operacionalizar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 201.04,
+      "end": 205.25,
+      "speaker": "Érica",
+      "text": "isso. Entendeu?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 205.65,
+      "end": 207.95,
+      "speaker": "Érica",
+      "text": "O Igor tinha comentado,",
+      "speaker_confidence": 0.28514196559782545
+    },
+    {
+      "start": 207.99,
+      "end": 209.97,
+      "speaker": "Érica",
+      "text": "cadê o Igor? Você falou que já tinha,",
+      "speaker_confidence": 0.2709375244868194
+    },
+    {
+      "start": 209.99,
+      "end": 212.13,
+      "speaker": "Érica",
+      "text": "tinha que fazer um resumo das mudanças.",
+      "speaker_confidence": 0.23914931123019822
+    },
+    {
+      "start": 213.19,
+      "end": 213.95,
+      "speaker": "Igor",
+      "text": "É, na verdade",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 213.95,
+      "end": 214.83,
+      "speaker": "Igor",
+      "text": "eu tava meio que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 217.17,
+      "end": 217.65,
+      "speaker": "Igor",
+      "text": "mapeando",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 217.65,
+      "end": 219.33,
+      "speaker": "Igor",
+      "text": "o que que faltava de",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 219.87,
+      "end": 221.37,
+      "speaker": "Igor",
+      "text": "variáveis que seria útil,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 221.89,
+      "end": 223.65,
+      "speaker": "Igor",
+      "text": "tipo, útil que você",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 223.65,
+      "end": 225.81,
+      "speaker": "Igor",
+      "text": "coloca no outro test case lá,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 225.85,
+      "end": 227.27,
+      "speaker": "Igor",
+      "text": "que é aquelas variáveis novas, né?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 227.71,
+      "end": 230.01,
+      "speaker": "Igor",
+      "text": "Só que ainda eu tava vendo no detalhe,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 230.07,
+      "end": 231.63,
+      "speaker": "Igor",
+      "text": "ainda não tinha finalizado, pra gente ver",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 231.63,
+      "end": 233.51,
+      "speaker": "Igor",
+      "text": "o que faria sentido colocar nesse",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 234.09,
+      "end": 235.77,
+      "speaker": "Igor",
+      "text": "nesse test case também,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 236.01,
+      "end": 237.59,
+      "speaker": "Igor",
+      "text": "né? Daí eu acho que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 238.81,
+      "end": 240.03,
+      "speaker": "Igor",
+      "text": "pensando que a Erika",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 240.03,
+      "end": 241.87,
+      "speaker": "Igor",
+      "text": "falou, se fizer sentido,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 242.07,
+      "end": 243.77,
+      "speaker": "Igor",
+      "text": "acho que vale, né? Porque daí",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 243.77,
+      "end": 245.77,
+      "speaker": "Igor",
+      "text": "essas variáveis novas valem pra qualquer versão.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 246.83,
+      "end": 248.11,
+      "speaker": "Érica",
+      "text": "Sim, eu acho que sim.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 248.29,
+      "end": 250.03,
+      "speaker": "Érica",
+      "text": "2.27, 2.30,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 250.31,
+      "end": 251.37,
+      "speaker": "Érica",
+      "text": "2.31.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 252.21,
+      "end": 253.59,
+      "speaker": "Érica",
+      "text": "E eu acho que pra não ficar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 253.59,
+      "end": 255.43,
+      "speaker": "Érica",
+      "text": "confuso, faz sentido",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 255.43,
+      "end": 256.81,
+      "speaker": "Érica",
+      "text": "deixar mergeado também.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 257.05,
+      "end": 259.93,
+      "speaker": "Érica",
+      "text": "Pra ficar tudo agregado num lugar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 259.93,
+      "end": 261.73,
+      "speaker": "Érica",
+      "text": "só e não correr",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 261.73,
+      "end": 262.79,
+      "speaker": "Érica",
+      "text": "risco de...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 263.73,
+      "end": 265.73,
+      "speaker": "Érica",
+      "text": "Performar uma coisa e deixar de outra pro lado.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 267.07,
+      "end": 267.51,
+      "speaker": "Érica",
+      "text": "Exato.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 267.89,
+      "end": 269.81,
+      "speaker": "Igor",
+      "text": "É, o que não tinha pensado era isso que a Erika",
+      "speaker_confidence": 0.1303656368546493
+    },
+    {
+      "start": 269.81,
+      "end": 271.27,
+      "speaker": "Igor",
+      "text": "falou, né? Se faria sentido essas",
+      "speaker_confidence": 0.014410124695370579
+    },
+    {
+      "start": 272.03,
+      "end": 273.27,
+      "speaker": "Igor",
+      "text": "transições de estados pra",
+      "speaker_confidence": 0.050972848580859785
+    },
+    {
+      "start": 274.19,
+      "end": 276.29,
+      "speaker": "Igor",
+      "text": "atrás da 2.31, mas...",
+      "speaker_confidence": 0.0047113048079733206
+    },
+    {
+      "start": 276.29,
+      "end": 277.65,
+      "speaker": "Érica",
+      "text": "Eu acho que sim.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 277.75,
+      "end": 279.89,
+      "speaker": "Érica",
+      "text": "Meu gut feeling que sim, mas tem que olhar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 279.89,
+      "end": 281.79,
+      "speaker": "Érica",
+      "text": "no detalhe. Então o que eu vou",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 281.99,
+      "end": 283.71,
+      "speaker": "Érica",
+      "text": "gerir então é talvez... Então deixa",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 283.71,
+      "end": 285.57,
+      "speaker": "Érica",
+      "text": "isso daqui marcado como 2.31",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 285.57,
+      "end": 287.61,
+      "speaker": "Érica",
+      "text": "do jeito que tá, tipo, não altera nada",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 287.61,
+      "end": 289.97,
+      "speaker": "Érica",
+      "text": "porque isso daqui foi performado, foi executado",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 289.97,
+      "end": 291.73,
+      "speaker": "Érica",
+      "text": "na 2.31 e a gente precisa",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 291.73,
+      "end": 292.85,
+      "speaker": "Érica",
+      "text": "deixar como",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 293.73,
+      "end": 294.25,
+      "speaker": "Érica",
+      "text": "histórico.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 295.59,
+      "end": 297.57,
+      "speaker": "Érica",
+      "text": "E daí copia esses",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 297.57,
+      "end": 299.79,
+      "speaker": "Érica",
+      "text": "casos que não estão sendo repetidos",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 299.79,
+      "end": 301.31,
+      "speaker": "Érica",
+      "text": "pra o",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 301.31,
+      "end": 303.57,
+      "speaker": "Érica",
+      "text": "test case novo, pra ser",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 303.57,
+      "end": 304.29,
+      "speaker": "Érica",
+      "text": "executado junto.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 305.07,
+      "end": 307.83,
+      "speaker": "Érica",
+      "text": "O que tiver duplicado, o que tiver",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 307.83,
+      "end": 309.67,
+      "speaker": "Érica",
+      "text": "de conteúdo, que já existe um caso aqui",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 309.67,
+      "end": 311.83,
+      "speaker": "Érica",
+      "text": "dentro que já valida, não precisa copiar.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 311.99,
+      "end": 313.05,
+      "speaker": "Érica",
+      "text": "Os outros daí copia.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 313.43,
+      "end": 315.69,
+      "speaker": "Érica",
+      "text": "Daí vê o nome, você tem que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 315.69,
+      "end": 318.01,
+      "speaker": "Érica",
+      "text": "ajustar alguma coisa e copia.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 318.03,
+      "end": 319.75,
+      "speaker": "Érica",
+      "text": "Daí isso daqui fica travado no",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 319.75,
+      "end": 321.57,
+      "speaker": "Érica",
+      "text": "tempo como obsoleto e o novo",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 321.57,
+      "end": 323.89,
+      "speaker": "Érica",
+      "text": "que a gente vai executar vai ser tudo a partir",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 323.89,
+      "end": 325.69,
+      "speaker": "Érica",
+      "text": "desse. Não tem problema, ele tá",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 325.69,
+      "end": 328.25,
+      "speaker": "Érica",
+      "text": "marcado como 2.27.2",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 328.25,
+      "end": 329.47,
+      "speaker": "Érica",
+      "text": "porque só significa que é",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 329.47,
+      "end": 331.71,
+      "speaker": "Érica",
+      "text": "dessa versão pra frente. Mas a gente",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 331.71,
+      "end": 332.97,
+      "speaker": "Érica",
+      "text": "deixa um test case único.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 333.31,
+      "end": 335.57,
+      "speaker": "Érica",
+      "text": "A única coisa que vai diferenciar entre as",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 335.57,
+      "end": 337.71,
+      "speaker": "Érica",
+      "text": "versões de bug fixes é o run.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 338.05,
+      "end": 339.75,
+      "speaker": "Érica",
+      "text": "Se no run tiver um",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 339.75,
+      "end": 341.83,
+      "speaker": "Érica",
+      "text": "desses casos que não faz sentido aplicar,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 341.99,
+      "end": 343.61,
+      "speaker": "Érica",
+      "text": "a gente não bota no conteúdo da run.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 343.77,
+      "end": 345.49,
+      "speaker": "Érica",
+      "text": "Mas se a gente ficar copiando e colando",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 345.49,
+      "end": 347.85,
+      "speaker": "Érica",
+      "text": "vários textos iguais, vai ser horrível",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 347.85,
+      "end": 349.35,
+      "speaker": "Érica",
+      "text": "de fazer manutenção desses test cases.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 349.49,
+      "end": 350.45,
+      "speaker": "Érica",
+      "text": "Tem que evitar isso.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 351.15,
+      "end": 352.03,
+      "speaker": "Érica",
+      "text": "Faz sentido.",
+      "speaker_confidence": 0.06640105143422029
+    },
+    {
+      "start": 354.2,
+      "end": 356.0,
+      "speaker": "Érica",
+      "text": "É o que faz sentido, então,",
+      "speaker_confidence": 0.2933744946423497
+    },
+    {
+      "start": 356.66,
+      "end": 358.06,
+      "speaker": "Érica",
+      "text": "Muri. É olhar",
+      "speaker_confidence": 0.3826437470432374
+    },
+    {
+      "start": 358.06,
+      "end": 360.04,
+      "speaker": "Érica",
+      "text": "no detalhe, pega o que o Igor já",
+      "speaker_confidence": 0.4544146092053088
+    },
+    {
+      "start": 360.04,
+      "end": 362.08,
+      "speaker": "Érica",
+      "text": "tinha avaliado, olha no",
+      "speaker_confidence": 0.5435049816167652
+    },
+    {
+      "start": 362.08,
+      "end": 364.1,
+      "speaker": "Érica",
+      "text": "detalhe e tenta mergear em cima",
+      "speaker_confidence": 0.40574469730617646
+    },
+    {
+      "start": 364.1,
+      "end": 365.38,
+      "speaker": "Érica",
+      "text": "desse daqui pra gente ter um",
+      "speaker_confidence": 0.5062226354040814
+    },
+    {
+      "start": 365.38,
+      "end": 366.7,
+      "speaker": "Érica",
+      "text": "test case único.",
+      "speaker_confidence": 0.36720233607615665
+    },
+    {
+      "start": 367.8,
+      "end": 368.68,
+      "speaker": "Murilo",
+      "text": "Beleza, perfeito.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 369.39,
+      "end": 370.83,
+      "speaker": "Murilo",
+      "text": "É o passo 1 da história.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 372.31,
+      "end": 374.45,
+      "speaker": "Murilo",
+      "text": "Será que, só uma duvidazinha, muda ali o título",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 374.45,
+      "end": 377.73,
+      "speaker": "Murilo",
+      "text": "do 2.31",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 377.73,
+      "end": 379.01,
+      "speaker": "Murilo",
+      "text": "pra alguma coisa de tipo...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 380.5,
+      "end": 382.74,
+      "speaker": "Murilo",
+      "text": "Porque o meu medo também é depois, na hora de performar,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 382.8,
+      "end": 384.44,
+      "speaker": "Murilo",
+      "text": "mudar e fazer aquilo lá também.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 385.16,
+      "end": 386.46,
+      "speaker": "Murilo",
+      "text": "Em vez de fazer o que...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 386.46,
+      "end": 388.52,
+      "speaker": "Érica",
+      "text": "Eu acho que não, porque isso daqui",
+      "speaker_confidence": 0.19519402375431075
+    },
+    {
+      "start": 388.52,
+      "end": 390.5,
+      "speaker": "Érica",
+      "text": "já foi executado no passado,",
+      "speaker_confidence": 0.34369059976133637
+    },
+    {
+      "start": 390.7,
+      "end": 392.68,
+      "speaker": "Érica",
+      "text": "então é bom deixar...",
+      "speaker_confidence": 0.3517624309742652
+    },
+    {
+      "start": 392.68,
+      "end": 394.44,
+      "speaker": "Érica",
+      "text": "Ele é 2.31.0 mesmo.",
+      "speaker_confidence": 0.3183784324501312
+    },
+    {
+      "start": 394.52,
+      "end": 396.38,
+      "speaker": "Érica",
+      "text": "Ele foi executado pra 2.31.0.",
+      "speaker_confidence": 0.56701374607398
+    },
+    {
+      "start": 396.5,
+      "end": 398.4,
+      "speaker": "Érica",
+      "text": "Ele foi executado aqui, ele tem o histórico",
+      "speaker_confidence": 0.48946061753215653
+    },
+    {
+      "start": 398.4,
+      "end": 399.96,
+      "speaker": "Érica",
+      "text": "da execução, então",
+      "speaker_confidence": 0.3901326834905361
+    },
+    {
+      "start": 399.96,
+      "end": 402.08,
+      "speaker": "Érica",
+      "text": "é importante deixar do jeito que tá.",
+      "speaker_confidence": 0.4459134585467673
+    },
+    {
+      "start": 402.38,
+      "end": 404.04,
+      "speaker": "Murilo",
+      "text": "Eu digo que seria",
+      "speaker_confidence": 0.016185584120466005
+    },
+    {
+      "start": 404.04,
+      "end": 405.92,
+      "speaker": "Murilo",
+      "text": "colocar tipo um parênteses antes de tudo ali",
+      "speaker_confidence": 0.19241953193809025
+    },
+    {
+      "start": 405.92,
+      "end": 407.88,
+      "speaker": "Murilo",
+      "text": "de update, só colocar... Ah, esqueci a palavra.",
+      "speaker_confidence": 0.26553630704982734
+    },
+    {
+      "start": 408.3,
+      "end": 409.64,
+      "speaker": "Murilo",
+      "text": "Tanto em português quanto em inglês.",
+      "speaker_confidence": 0.20287670745045647
+    },
+    {
+      "start": 410.64,
+      "end": 411.44,
+      "speaker": "Murilo",
+      "text": "Como antigo.",
+      "speaker_confidence": 0.040200271345421194
+    },
+    {
+      "start": 413.38,
+      "end": 414.8,
+      "speaker": "Érica",
+      "text": "Eu acho que não precisa.",
+      "speaker_confidence": 0.04471605216171375
+    },
+    {
+      "start": 415.12,
+      "end": 417.1,
+      "speaker": "Érica",
+      "text": "Porque na hora que a gente for executar agora,",
+      "speaker_confidence": 0.4119487201919001
+    },
+    {
+      "start": 417.22,
+      "end": 419.28,
+      "speaker": "Érica",
+      "text": "a gente vai apontar pra esse cara novo.",
+      "speaker_confidence": 0.37622118561361556
+    },
+    {
+      "start": 419.4,
+      "end": 420.54,
+      "speaker": "Murilo",
+      "text": "É verdade, né? Vai tá tudo...",
+      "speaker_confidence": 0.004346338518416195
+    },
+    {
+      "start": 420.54,
+      "end": 422.5,
+      "speaker": "Murilo",
+      "text": "O mundo vai executar o 1.2.0.4, é.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 423.32,
+      "end": 425.3,
+      "speaker": "Murilo",
+      "text": "É verdade. Tô esquecendo que tem isso.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 425.36,
+      "end": 425.72,
+      "speaker": "Murilo",
+      "text": "Tudo bem.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 428.28,
+      "end": 430.6,
+      "speaker": "Murilo",
+      "text": "Beleza, tá bom. Então eu pego",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 430.6,
+      "end": 432.5,
+      "speaker": "Murilo",
+      "text": "as coisinhas que o Igor mandar e eu já faço",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 432.5,
+      "end": 433.92,
+      "speaker": "Murilo",
+      "text": "comparação e já vou mudando",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 433.92,
+      "end": 435.74,
+      "speaker": "Murilo",
+      "text": "o que tiver...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 436.76,
+      "end": 438.64,
+      "speaker": "Murilo",
+      "text": "Várias vezes diferentinho e faço merge.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 439.75,
+      "end": 441.09,
+      "speaker": "Érica",
+      "text": "Teve mais algum finding",
+      "speaker_confidence": 0.3262798118959453
+    },
+    {
+      "start": 441.09,
+      "end": 442.95,
+      "speaker": "Érica",
+      "text": "de conteúdo desse daqui",
+      "speaker_confidence": 0.39233186171861206
+    },
+    {
+      "start": 442.95,
+      "end": 445.35,
+      "speaker": "Érica",
+      "text": "que você teve, Igor?",
+      "speaker_confidence": 0.5209535147246884
+    },
+    {
+      "start": 445.87,
+      "end": 447.27,
+      "speaker": "Érica",
+      "text": "Ou você já passou",
+      "speaker_confidence": 0.05520573325402694
+    },
+    {
+      "start": 447.27,
+      "end": 448.53,
+      "speaker": "Érica",
+      "text": "e já foi corrigido?",
+      "speaker_confidence": 0.5564025551047709
+    },
+    {
+      "start": 448.79,
+      "end": 450.79,
+      "speaker": "Igor",
+      "text": "O Murilo... Eu passei pro Murilo",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 450.79,
+      "end": 452.45,
+      "speaker": "Igor",
+      "text": "ele corrigiu agora",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 452.45,
+      "end": 454.61,
+      "speaker": "Igor",
+      "text": "ele falou agora pra mim pela manhã, eu não vi",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 454.61,
+      "end": 456.31,
+      "speaker": "Igor",
+      "text": "ainda no detalhe. Nem cheguei a abrir.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 456.37,
+      "end": 458.31,
+      "speaker": "Igor",
+      "text": "Eu vou abrir daí só pra dar o",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 459.26,
+      "end": 459.94,
+      "speaker": "Igor",
+      "text": "final, né?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 459.94,
+      "end": 462.6,
+      "speaker": "Igor",
+      "text": "Eu li bem por cima, eu ainda",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 462.6,
+      "end": 464.88,
+      "speaker": "Igor",
+      "text": "tenho que dar mais uma olhada com carinho.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 465.04,
+      "end": 466.54,
+      "speaker": "Igor",
+      "text": "Uma coisa que eu achei estranha foi",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 466.54,
+      "end": 468.4,
+      "speaker": "Igor",
+      "text": "esse segundo caso aqui, que parece",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 468.4,
+      "end": 469.66,
+      "speaker": "Igor",
+      "text": "que você tá misturando",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 470.28,
+      "end": 472.18,
+      "speaker": "Igor",
+      "text": "StartRoutine pra SCU e",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 472.18,
+      "end": 474.52,
+      "speaker": "Igor",
+      "text": "MCU Control interno.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 474.58,
+      "end": 475.66,
+      "speaker": "Igor",
+      "text": "É isso aqui mesmo?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 479.15,
+      "end": 479.57,
+      "speaker": "Murilo",
+      "text": "É...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 481.92,
+      "end": 483.52,
+      "speaker": "Murilo",
+      "text": "Deixa eu lembrar qual que é esse.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 483.96,
+      "end": 484.82,
+      "speaker": "Murilo",
+      "text": "Interface address.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 487.08,
+      "end": 487.6,
+      "speaker": "Murilo",
+      "text": "Não.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 488.24,
+      "end": 490.72,
+      "speaker": "Murilo",
+      "text": "Não era pra ser isso. Era simplesmente só testar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 490.72,
+      "end": 491.5,
+      "speaker": "Murilo",
+      "text": "realmente o...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 492.88,
+      "end": 495.04,
+      "speaker": "Murilo",
+      "text": "Se entra certinho a UpdateState a SCU,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 495.06,
+      "end": 496.42,
+      "speaker": "Murilo",
+      "text": "cada SCU separadinha.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 497.7,
+      "end": 498.82,
+      "speaker": "Murilo",
+      "text": "Então eu vou melhorar.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 500.38,
+      "end": 502.1,
+      "speaker": "Érica",
+      "text": "O que eu ia falar é que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 502.1,
+      "end": 504.0,
+      "speaker": "Érica",
+      "text": "existem duas frentes que precisam",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 504.0,
+      "end": 505.9,
+      "speaker": "Érica",
+      "text": "ser validadas em paralelo, que é",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 505.9,
+      "end": 507.52,
+      "speaker": "Érica",
+      "text": "um pouco o que acontece aqui.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 507.74,
+      "end": 509.52,
+      "speaker": "Érica",
+      "text": "Daí tem que dar uma olhada se faz sentido",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 509.52,
+      "end": 512.06,
+      "speaker": "Érica",
+      "text": "o jeito que você escreveu, ou só de você",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 512.06,
+      "end": 513.6,
+      "speaker": "Érica",
+      "text": "mergear ele já vai estar corrigido.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 513.88,
+      "end": 515.2,
+      "speaker": "Érica",
+      "text": "Mas é o sentido de",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 516.38,
+      "end": 518.1,
+      "speaker": "Érica",
+      "text": "a gente estabelecer",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 518.1,
+      "end": 519.66,
+      "speaker": "Érica",
+      "text": "o UpdateState através do",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 519.66,
+      "end": 522.02,
+      "speaker": "Érica",
+      "text": "multi-flashing, então tudo que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 522.02,
+      "end": 523.86,
+      "speaker": "Érica",
+      "text": "é relacionado com as SCUs",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 523.86,
+      "end": 525.82,
+      "speaker": "Érica",
+      "text": "é só mensagens internas",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 525.82,
+      "end": 527.72,
+      "speaker": "Érica",
+      "text": "e estabelecer o UpdateState",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 527.72,
+      "end": 529.82,
+      "speaker": "Érica",
+      "text": "através do DS como single",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 529.82,
+      "end": 532.0,
+      "speaker": "Érica",
+      "text": "flashing de uma SCU. Então existe um",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 532.0,
+      "end": 533.72,
+      "speaker": "Érica",
+      "text": "cenário, que é normalmente",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 533.72,
+      "end": 535.5,
+      "speaker": "Érica",
+      "text": "um cenário atípico, um cenário só de",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 535.5,
+      "end": 537.78,
+      "speaker": "Érica",
+      "text": "que quando as coisas deram",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 537.78,
+      "end": 540.12,
+      "speaker": "Érica",
+      "text": "errado, mas a gente tem que suportar,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 540.12,
+      "end": 542.18,
+      "speaker": "Érica",
+      "text": "é fazer um single flashing numa SCU.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 542.24,
+      "end": 543.68,
+      "speaker": "Érica",
+      "text": "Daí a gente valida, start, stop,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 543.76,
+      "end": 545.42,
+      "speaker": "Érica",
+      "text": "routine direto pra aquela SCU.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 545.56,
+      "end": 547.68,
+      "speaker": "Érica",
+      "text": "Mas o normal padrão multi-flashing",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 547.68,
+      "end": 549.68,
+      "speaker": "Érica",
+      "text": "é MCU control. Mas ambas as frentes",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 549.68,
+      "end": 551.28,
+      "speaker": "Érica",
+      "text": "precisam ser validadas no teste QA.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 551.66,
+      "end": 552.62,
+      "speaker": "Érica",
+      "text": "Pode falar, Rafa.",
+      "speaker_confidence": 0.27825285964148555
+    },
+    {
+      "start": 556.02,
+      "end": 557.36,
+      "speaker": "Rafa",
+      "text": "Até quando a gente faz multi-flashing",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 557.36,
+      "end": 559.38,
+      "speaker": "Rafa",
+      "text": "de SCU, a comunicação passa primeiro",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 559.38,
+      "end": 561.38,
+      "speaker": "Rafa",
+      "text": "pela MCU, ela testa",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 561.38,
+      "end": 563.24,
+      "speaker": "Rafa",
+      "text": "a comunicação em MCU que manda o control",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 563.24,
+      "end": 564.92,
+      "speaker": "Rafa",
+      "text": "routine. Tipo, o DS funciona?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 565.28,
+      "end": 567.18,
+      "speaker": "Érica",
+      "text": "Não, não, não. Mas a gente",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 567.18,
+      "end": 569.1,
+      "speaker": "Érica",
+      "text": "tem que validar start, stop, routine",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 569.1,
+      "end": 571.38,
+      "speaker": "Érica",
+      "text": "pra SCU também. É isso que eu tô falando.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 571.7,
+      "end": 573.46,
+      "speaker": "Érica",
+      "text": "Tipo, existe o cenário",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 573.46,
+      "end": 575.34,
+      "speaker": "Érica",
+      "text": "multi-flashing. O cenário multi-flashing que a gente",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 575.34,
+      "end": 577.36,
+      "speaker": "Érica",
+      "text": "tem MCU e SCUs, isso que a gente valida",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 577.36,
+      "end": 579.12,
+      "speaker": "Érica",
+      "text": "o MCU control e o UpdateState control.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 579.42,
+      "end": 581.36,
+      "speaker": "Érica",
+      "text": "Mas existe um cenário atípico",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 581.36,
+      "end": 583.48,
+      "speaker": "Érica",
+      "text": "que a gente também tem que validar e é por isso",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 583.48,
+      "end": 585.24,
+      "speaker": "Érica",
+      "text": "que tá implementado o processamento",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 585.24,
+      "end": 587.6,
+      "speaker": "Érica",
+      "text": "da StartRoutine e da StopRoutine direto",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 587.6,
+      "end": 589.14,
+      "speaker": "Érica",
+      "text": "numa SCU. Ambas as coisas",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 589.14,
+      "end": 591.3,
+      "speaker": "Érica",
+      "text": "tem que estar distintas e mapeadas no teste case.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 591.56,
+      "end": 593.1,
+      "speaker": "Érica",
+      "text": "Perfeito. E pra mim isso daqui tá meio",
+      "speaker_confidence": 0.1742526013703688
+    },
+    {
+      "start": 593.1,
+      "end": 594.78,
+      "speaker": "Érica",
+      "text": "misturado. Tipo, não tá muito claro.",
+      "speaker_confidence": 0.3668559950551256
+    },
+    {
+      "start": 595.44,
+      "end": 596.68,
+      "speaker": "Murilo",
+      "text": "Beleza. Perfeito.",
+      "speaker_confidence": 0.10698821034246148
+    },
+    {
+      "start": 597.06,
+      "end": 598.88,
+      "speaker": "Érica",
+      "text": "Deu pra entender. E daí é distinto.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 598.98,
+      "end": 601.1,
+      "speaker": "Érica",
+      "text": "Não pode misturar as coisas. Você não pode mandar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 601.1,
+      "end": 603.1,
+      "speaker": "Érica",
+      "text": "uma StartRoutine pra uma SCU e",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 603.1,
+      "end": 605.24,
+      "speaker": "Érica",
+      "text": "depois validar coisas no meio através",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 605.24,
+      "end": 607.36,
+      "speaker": "Érica",
+      "text": "do MCU control. Porque muito provavelmente",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 607.36,
+      "end": 609.16,
+      "speaker": "Érica",
+      "text": "esse cenário vai ser o cenário que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 609.16,
+      "end": 611.08,
+      "speaker": "Érica",
+      "text": "a SCU vai estar num chicotinho",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 611.64,
+      "end": 613.16,
+      "speaker": "Érica",
+      "text": "isolado sem estar conectado com o resto",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 613.16,
+      "end": 614.2,
+      "speaker": "Érica",
+      "text": "do subsistema, entendeu?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 614.46,
+      "end": 616.66,
+      "speaker": "Murilo",
+      "text": "Perfeito. Ok. Faz sentido.",
+      "speaker_confidence": 0.038777862247102744
+    },
+    {
+      "start": 618.74,
+      "end": 620.58,
+      "speaker": "Érica",
+      "text": "É. Deixa eu ver.",
+      "speaker_confidence": 0.2705449523614858
+    },
+    {
+      "start": 620.62,
+      "end": 622.32,
+      "speaker": "Érica",
+      "text": "Tinha mais alguma coisa. Aqui que eu ia falar",
+      "speaker_confidence": 0.3466936277549443
+    },
+    {
+      "start": 622.32,
+      "end": 624.2,
+      "speaker": "Érica",
+      "text": "aqui você tá validando só com",
+      "speaker_confidence": 0.4332072073458844
+    },
+    {
+      "start": 624.54,
+      "end": 626.3,
+      "speaker": "Érica",
+      "text": "vários valores",
+      "speaker_confidence": 0.38401005739477767
+    },
+    {
+      "start": 626.3,
+      "end": 628.26,
+      "speaker": "Érica",
+      "text": "de delay entre um processo",
+      "speaker_confidence": 0.463178516039871
+    },
+    {
+      "start": 628.26,
+      "end": 630.16,
+      "speaker": "Érica",
+      "text": "de flashing e uma parametrização, né?",
+      "speaker_confidence": 0.47539934909389236
+    },
+    {
+      "start": 630.34,
+      "end": 633.14,
+      "speaker": "Érica",
+      "text": "Uhum. Será que faz sentido",
+      "speaker_confidence": 0.006839170475002413
+    },
+    {
+      "start": 633.14,
+      "end": 634.92,
+      "speaker": "Érica",
+      "text": "ter quatro distintos pra isso daqui?",
+      "speaker_confidence": 0.36336897256957995
+    },
+    {
+      "start": 635.04,
+      "end": 637.14,
+      "speaker": "Érica",
+      "text": "Isso aqui tá validando tudo mais ou menos a mesma coisa, né?",
+      "speaker_confidence": 0.3544659364526409
+    },
+    {
+      "start": 637.3,
+      "end": 638.58,
+      "speaker": "Érica",
+      "text": "De 10 pra 25",
+      "speaker_confidence": 0.4135370715345485
+    },
+    {
+      "start": 639.48,
+      "end": 641.32,
+      "speaker": "Érica",
+      "text": "acho que isso aqui tá muito repetido.",
+      "speaker_confidence": 0.29050620659755844
+    },
+    {
+      "start": 641.68,
+      "end": 642.26,
+      "speaker": "Érica",
+      "text": "Tá bom.",
+      "speaker_confidence": 0.1406789272343837
+    },
+    {
+      "start": 642.8,
+      "end": 644.68,
+      "speaker": "Murilo",
+      "text": "É o que eu tava pensando é porque...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 646.42,
+      "end": 648.96,
+      "speaker": "Murilo",
+      "text": "Reproduza 5 segundos a mais, 5 segundos a mais",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 648.96,
+      "end": 649.64,
+      "speaker": "Murilo",
+      "text": "e 5 segundos a mais.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 649.78,
+      "end": 652.74,
+      "speaker": "Murilo",
+      "text": "O que é que você tá validando de distinto",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 652.74,
+      "end": 654.18,
+      "speaker": "Murilo",
+      "text": "entre 10, 15, 20, 25?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 655.24,
+      "end": 656.82,
+      "speaker": "Murilo",
+      "text": "O meu medo era de... Porque o que a gente",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 656.82,
+      "end": 658.78,
+      "speaker": "Murilo",
+      "text": "passou do processo lá foi de 10 a 20",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 658.78,
+      "end": 661.06,
+      "speaker": "Murilo",
+      "text": "segundos, né? Foi mais um receio",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 661.06,
+      "end": 662.6,
+      "speaker": "Murilo",
+      "text": "de... E se quebrasse com",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 662.6,
+      "end": 664.76,
+      "speaker": "Murilo",
+      "text": "15 segundos? Aí... Por isso que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 664.76,
+      "end": 666.66,
+      "speaker": "Murilo",
+      "text": "eu... E o 25 eu coloquei só de bola",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 666.66,
+      "end": 668.28,
+      "speaker": "Murilo",
+      "text": "mesmo. 25 daria",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 668.28,
+      "end": 670.9,
+      "speaker": "Murilo",
+      "text": "bem tranquilo pra tirar. Meu receio é mais de...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 671.96,
+      "end": 672.96,
+      "speaker": "Érica",
+      "text": "Então, mas eu só tô pensando",
+      "speaker_confidence": 0.2484979063499805
+    },
+    {
+      "start": 672.96,
+      "end": 674.94,
+      "speaker": "Érica",
+      "text": "o que da estrutura da",
+      "speaker_confidence": 0.200066572110943
+    },
+    {
+      "start": 674.94,
+      "end": 676.86,
+      "speaker": "Érica",
+      "text": "arquitetura do software que quebraria",
+      "speaker_confidence": 0.3591924170965405
+    },
+    {
+      "start": 676.86,
+      "end": 678.98,
+      "speaker": "Érica",
+      "text": "entre 10 e 20? Porque ele é um...",
+      "speaker_confidence": 0.48261068645277677
+    },
+    {
+      "start": 678.98,
+      "end": 681.68,
+      "speaker": "Érica",
+      "text": "É, nada. Que é entre uma stop e um start, né?",
+      "speaker_confidence": 0.20511193342892714
+    },
+    {
+      "start": 681.76,
+      "end": 683.52,
+      "speaker": "Érica",
+      "text": "Uhum. Tipo, é só pra...",
+      "speaker_confidence": 0.24790147003140459
+    },
+    {
+      "start": 683.52,
+      "end": 685.32,
+      "speaker": "Érica",
+      "text": "É que isso daqui vai... Isso que",
+      "speaker_confidence": 0.34311565057352383
+    },
+    {
+      "start": 685.32,
+      "end": 687.12,
+      "speaker": "Érica",
+      "text": "gasta tempo, né? Só pra gente não",
+      "speaker_confidence": 0.4482935702712116
+    },
+    {
+      "start": 687.12,
+      "end": 688.36,
+      "speaker": "Érica",
+      "text": "ficar executando coisas",
+      "speaker_confidence": 0.38633606410297777
+    },
+    {
+      "start": 689.36,
+      "end": 691.08,
+      "speaker": "Érica",
+      "text": "que não... Você não tá comparando",
+      "speaker_confidence": 0.4868753336093273
+    },
+    {
+      "start": 691.08,
+      "end": 693.1,
+      "speaker": "Érica",
+      "text": "comportamentos distintos. Talvez",
+      "speaker_confidence": 0.542270427739083
+    },
+    {
+      "start": 693.1,
+      "end": 695.04,
+      "speaker": "Érica",
+      "text": "o mínimo e o máximo... É, eu tava pensando nisso.",
+      "speaker_confidence": 0.2460640648895721
+    },
+    {
+      "start": 695.18,
+      "end": 697.18,
+      "speaker": "Érica",
+      "text": "O mínimo que a gente passou e o máximo.",
+      "speaker_confidence": 0.3469450149768871
+    },
+    {
+      "start": 697.34,
+      "end": 699.26,
+      "speaker": "Érica",
+      "text": "Daí, beleza. Pode ser. Pode ser.",
+      "speaker_confidence": 0.3414209541972183
+    },
+    {
+      "start": 699.32,
+      "end": 703.15,
+      "speaker": "Érica",
+      "text": "Perfeito. E daí fora",
+      "speaker_confidence": 0.1200055970995726
+    },
+    {
+      "start": 703.15,
+      "end": 704.95,
+      "speaker": "Érica",
+      "text": "é isso adicionar o caso",
+      "speaker_confidence": 0.4797364703052839
+    },
+    {
+      "start": 704.95,
+      "end": 706.53,
+      "speaker": "Érica",
+      "text": "lá do skipar o refresh",
+      "speaker_confidence": 0.46903020600210227
+    },
+    {
+      "start": 707.37,
+      "end": 708.91,
+      "speaker": "Érica",
+      "text": "com... Toda vez que identificar",
+      "speaker_confidence": 0.36462440962143755
+    },
+    {
+      "start": 708.91,
+      "end": 710.93,
+      "speaker": "Érica",
+      "text": "um EDS reset, que é a última coisa que a gente",
+      "speaker_confidence": 0.5989207943751637
+    },
+    {
+      "start": 710.93,
+      "end": 712.81,
+      "speaker": "Érica",
+      "text": "colocou. Isso daí não tá mapeado.",
+      "speaker_confidence": 0.460670005871596
+    },
+    {
+      "start": 712.83,
+      "end": 714.43,
+      "speaker": "Érica",
+      "text": "Tem que tá como um teste separado.",
+      "speaker_confidence": 0.4265066641335557
+    },
+    {
+      "start": 714.65,
+      "end": 716.57,
+      "speaker": "Érica",
+      "text": "Sim. Beleza.",
+      "speaker_confidence": 0.11129927202026338
+    },
+    {
+      "start": 725.08,
+      "end": 726.08,
+      "speaker": "Érica",
+      "text": "Beleza. Querem",
+      "speaker_confidence": 0.13047293494379492
+    },
+    {
+      "start": 726.08,
+      "end": 727.94,
+      "speaker": "Érica",
+      "text": "já emendar num... Já que tá todo mundo",
+      "speaker_confidence": 0.2999528950941946
+    },
+    {
+      "start": 727.94,
+      "end": 730.16,
+      "speaker": "Érica",
+      "text": "na chamada, já emendar o stand-up?",
+      "speaker_confidence": 0.3914956903599911
+    },
+    {
+      "start": 730.94,
+      "end": 732.06,
+      "speaker": "Érica",
+      "text": "Pode ser. Pra gente não",
+      "speaker_confidence": 0.17854980355134545
+    },
+    {
+      "start": 732.06,
+      "end": 733.64,
+      "speaker": "Érica",
+      "text": "parar de volta. Uhum.",
+      "speaker_confidence": 0.295908582215782
+    },
+    {
+      "start": 734.22,
+      "end": 735.68,
+      "speaker": "Érica",
+      "text": "Vai falar, mas o cu...",
+      "speaker_confidence": 0.114598737169056
+    },
+    {
+      "start": 735.68,
+      "end": 738.26,
+      "speaker": "Érica",
+      "text": "Aí eu vi ele tá... Não, o Kupka. O Kupka tá no médico.",
+      "speaker_confidence": 0.0290028825974384
+    },
+    {
+      "start": 738.26,
+      "end": 739.02,
+      "speaker": "Murilo",
+      "text": "É, ele tá no médico.",
+      "speaker_confidence": 0.26010341592059916
+    },
+    {
+      "start": 741.16,
+      "end": 743.58,
+      "speaker": "Érica",
+      "text": "E daí agora a gente só tem que fazer a dança das cadeiras",
+      "speaker_confidence": 0.4290204854640406
+    },
+    {
+      "start": 743.58,
+      "end": 745.54,
+      "speaker": "Érica",
+      "text": "porque o Muri tá sobrecarregado",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 745.54,
+      "end": 746.82,
+      "speaker": "Érica",
+      "text": "de tarefas por causa do",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 747.36,
+      "end": 749.22,
+      "speaker": "Érica",
+      "text": "do finding que a gente teve na quinta.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 751.78,
+      "end": 752.52,
+      "speaker": "Érica",
+      "text": "Então, vamos lá.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 757.77,
+      "end": 759.15,
+      "speaker": "Érica",
+      "text": "Então, eu vou deixar...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 759.61,
+      "end": 761.21,
+      "speaker": "Érica",
+      "text": "Na sexta-feira eu dei uma olhada",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 761.21,
+      "end": 761.49,
+      "speaker": "Érica",
+      "text": "na...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 762.61,
+      "end": 764.11,
+      "speaker": "Érica",
+      "text": "nos branches que o",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 764.79,
+      "end": 766.09,
+      "speaker": "Érica",
+      "text": "Muri tinha atualizado.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 766.29,
+      "end": 768.09,
+      "speaker": "Érica",
+      "text": "Eu vou deixar só com um pontinho",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 772.8,
+      "end": 773.4,
+      "speaker": "Érica",
+      "text": "simbólico aqui,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 773.54,
+      "end": 775.62,
+      "speaker": "Érica",
+      "text": "mas eu já olhei e já vai tá liberado",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 775.62,
+      "end": 776.36,
+      "speaker": "Érica",
+      "text": "pra performar.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 777.1,
+      "end": 778.92,
+      "speaker": "Érica",
+      "text": "Só deixar o simbólico pra depois,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 779.36,
+      "end": 781.08,
+      "speaker": "Érica",
+      "text": "no final de todos os test cases,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 781.82,
+      "end": 783.36,
+      "speaker": "Érica",
+      "text": "eu aprová-la pra branch",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 783.36,
+      "end": 785.44,
+      "speaker": "Érica",
+      "text": "do bug fix.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 785.58,
+      "end": 787.92,
+      "speaker": "Érica",
+      "text": "E caso a gente tenha um slide no test case",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 787.92,
+      "end": 789.44,
+      "speaker": "Érica",
+      "text": "do Batch 3, mas na madeira,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 789.54,
+      "end": 790.94,
+      "speaker": "Érica",
+      "text": "a gente vai ter que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 790.94,
+      "end": 792.56,
+      "speaker": "Érica",
+      "text": "colocar com o mundo pra mexer.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 793.87,
+      "end": 794.55,
+      "speaker": "Érica",
+      "text": "Mas tá.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 795.63,
+      "end": 797.59,
+      "speaker": "Érica",
+      "text": "O tópico do dissecation, eu não consegui",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 797.59,
+      "end": 799.83,
+      "speaker": "Érica",
+      "text": "arrumar aquele treco em aberto",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 799.83,
+      "end": 802.07,
+      "speaker": "Érica",
+      "text": "lá que eu falei pra vocês, então vou deixar em aberto.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 802.41,
+      "end": 804.27,
+      "speaker": "Érica",
+      "text": "Function design não olhei.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 804.61,
+      "end": 805.83,
+      "speaker": "Érica",
+      "text": "Reworking da implementação desse",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 805.83,
+      "end": 806.73,
+      "speaker": "Érica",
+      "text": "não precisou ainda.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 807.51,
+      "end": 808.99,
+      "speaker": "Érica",
+      "text": "Daí eu olhei o",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 808.99,
+      "end": 811.07,
+      "speaker": "Érica",
+      "text": "review do plan",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 811.73,
+      "end": 812.97,
+      "speaker": "Érica",
+      "text": "do test case",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 812.97,
+      "end": 815.45,
+      "speaker": "Érica",
+      "text": "do override. Eu ainda preciso",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 815.45,
+      "end": 817.53,
+      "speaker": "Érica",
+      "text": "desses pontos porque eu ainda preciso olhar no detalhe",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 817.53,
+      "end": 819.71,
+      "speaker": "Érica",
+      "text": "o que o Kupka me passou cedo.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 821.46,
+      "end": 822.92,
+      "speaker": "Érica",
+      "text": "E agora o plan,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 823.14,
+      "end": 824.34,
+      "speaker": "Érica",
+      "text": "eu vou, sei lá, vou baixar...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 824.36,
+      "end": 826.34,
+      "speaker": "Érica",
+      "text": "uns dois daqui, que é o que eu olhei",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 826.34,
+      "end": 828.2,
+      "speaker": "Érica",
+      "text": "hoje cedo, e eu vou",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 828.9,
+      "end": 830.4,
+      "speaker": "Érica",
+      "text": "acompanhar o que vocês forem mexendo",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 830.4,
+      "end": 831.66,
+      "speaker": "Érica",
+      "text": "até liberar.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 835.32,
+      "end": 835.86,
+      "speaker": "Murilo",
+      "text": "Perfeito.",
+      "speaker_confidence": 0.06002211117804662
+    },
+    {
+      "start": 837.35,
+      "end": 840.05,
+      "speaker": "Murilo",
+      "text": "Tá. Eu fiquei fazendo",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 840.05,
+      "end": 842.01,
+      "speaker": "Murilo",
+      "text": "as edições ali do test case",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 842.01,
+      "end": 843.95,
+      "speaker": "Murilo",
+      "text": "que o Igor tinha mandado,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 843.97,
+      "end": 846.17,
+      "speaker": "Murilo",
+      "text": "inclusive não abaixei os pontos,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 846.45,
+      "end": 847.93,
+      "speaker": "Murilo",
+      "text": "mas eu acho que foi...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 849.98,
+      "end": 851.18,
+      "speaker": "Murilo",
+      "text": "Perdão, até esqueci de colocar.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 851.78,
+      "end": 853.16,
+      "speaker": "Murilo",
+      "text": "Mas foi uns...",
+      "speaker_confidence": 0.040594886491002756
+    },
+    {
+      "start": 854.68,
+      "end": 856.5,
+      "speaker": "Érica",
+      "text": "Ainda precisa de um 5, né?",
+      "speaker_confidence": 0.4895613894155072
+    },
+    {
+      "start": 856.64,
+      "end": 857.08,
+      "speaker": "Murilo",
+      "text": "Aham.",
+      "speaker_confidence": 0.032153261407815575
+    },
+    {
+      "start": 857.78,
+      "end": 859.24,
+      "speaker": "Érica",
+      "text": "E esse daqui,",
+      "speaker_confidence": 0.011881449137544804
+    },
+    {
+      "start": 859.42,
+      "end": 861.08,
+      "speaker": "Érica",
+      "text": "também vamos deixar como committed",
+      "speaker_confidence": 0.5744083445046605
+    },
+    {
+      "start": 861.08,
+      "end": 863.64,
+      "speaker": "Érica",
+      "text": "e vou abaixar pra um ponto, né?",
+      "speaker_confidence": 0.4179370969797233
+    },
+    {
+      "start": 863.66,
+      "end": 865.12,
+      "speaker": "Érica",
+      "text": "Que é o que você gastou na sexta, né?",
+      "speaker_confidence": 0.4883661119881467
+    },
+    {
+      "start": 866.44,
+      "end": 866.88,
+      "speaker": "Murilo",
+      "text": "Perfeito.",
+      "speaker_confidence": 0.04577372789010774
+    },
+    {
+      "start": 867.04,
+      "end": 868.08,
+      "speaker": "Érica",
+      "text": "Da implementação, né?",
+      "speaker_confidence": 0.41980558885772623
+    },
+    {
+      "start": 868.26,
+      "end": 870.26,
+      "speaker": "Murilo",
+      "text": "É, que é pra fazer duas outras",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 872.22,
+      "end": 873.1,
+      "speaker": "Murilo",
+      "text": "sprints. Pequeno",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 873.1,
+      "end": 875.08,
+      "speaker": "Murilo",
+      "text": "aparentes, amiga, eu esqueci de novo,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 875.18,
+      "end": 877.28,
+      "speaker": "Murilo",
+      "text": "perdão, do relatório",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 877.28,
+      "end": 879.14,
+      "speaker": "Murilo",
+      "text": "da Yael, aí tem até",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 879.14,
+      "end": 880.0,
+      "speaker": "Murilo",
+      "text": "sexta que vem.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 881.23,
+      "end": 883.37,
+      "speaker": "Murilo",
+      "text": "Quer dizer, essa sexta, que é até dia 30.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 883.65,
+      "end": 885.71,
+      "speaker": "Murilo",
+      "text": "Aí, qualquer tempinho que tiver,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 885.77,
+      "end": 887.67,
+      "speaker": "Murilo",
+      "text": "eu acho que já vou adiantando pra talvez já",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 887.67,
+      "end": 888.79,
+      "speaker": "Murilo",
+      "text": "na próxima sprint já",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 889.41,
+      "end": 889.85,
+      "speaker": "Murilo",
+      "text": "tentar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 889.85,
+      "end": 890.01,
+      "speaker": "Murilo",
+      "text": "tentar...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 890.03,
+      "end": 891.47,
+      "speaker": "Murilo",
+      "text": "Já liberar pra ti também.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 891.61,
+      "end": 892.21,
+      "speaker": "Murilo",
+      "text": "Pode ser?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 892.35,
+      "end": 892.61,
+      "speaker": "Érica",
+      "text": "Tá bom.",
+      "speaker_confidence": 0.2994084720713892
+    },
+    {
+      "start": 893.38,
+      "end": 893.82,
+      "speaker": "Érica",
+      "text": "Aham.",
+      "speaker_confidence": 0.26747957797652433
+    },
+    {
+      "start": 894.32,
+      "end": 895.08,
+      "speaker": "Érica",
+      "text": "Pode ser sim.",
+      "speaker_confidence": 0.21258489042374445
+    },
+    {
+      "start": 895.34,
+      "end": 897.44,
+      "speaker": "Érica",
+      "text": "Se eu só consegui fazer isso só depois de destravar",
+      "speaker_confidence": 0.3996765609987421
+    },
+    {
+      "start": 897.44,
+      "end": 899.4,
+      "speaker": "Érica",
+      "text": "o test case, seria o meio ideal.",
+      "speaker_confidence": 0.48943161874170565
+    },
+    {
+      "start": 899.6,
+      "end": 901.92,
+      "speaker": "Érica",
+      "text": "Porque daí os meninos não ficam travados",
+      "speaker_confidence": 0.24958588078168287
+    },
+    {
+      "start": 901.92,
+      "end": 903.54,
+      "speaker": "Érica",
+      "text": "e a gente volta",
+      "speaker_confidence": 0.47370102313408147
+    },
+    {
+      "start": 903.54,
+      "end": 904.84,
+      "speaker": "Érica",
+      "text": "pras coisas de documentação.",
+      "speaker_confidence": 0.5597178073161936
+    },
+    {
+      "start": 905.14,
+      "end": 906.38,
+      "speaker": "Murilo",
+      "text": "Sim. Beleza.",
+      "speaker_confidence": 0.21537162515188202
+    },
+    {
+      "start": 908.84,
+      "end": 909.28,
+      "speaker": "Érica",
+      "text": "Beleza.",
+      "speaker_confidence": 0.27257016041233495
+    },
+    {
+      "start": 909.94,
+      "end": 912.44,
+      "speaker": "Érica",
+      "text": "Daí, o que eu vou sugerir,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 912.44,
+      "end": 915.26,
+      "speaker": "Érica",
+      "text": "que agora, tanto o Igor quanto o Rafa",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 915.26,
+      "end": 916.38,
+      "speaker": "Érica",
+      "text": "vão estar travados,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 917.34,
+      "end": 918.82,
+      "speaker": "Érica",
+      "text": "não conseguem começar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 918.82,
+      "end": 921.36,
+      "speaker": "Érica",
+      "text": "a executar os testes, que é o que está mapeado",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 921.36,
+      "end": 923.04,
+      "speaker": "Érica",
+      "text": "de grosso do sprint",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 923.04,
+      "end": 925.12,
+      "speaker": "Érica",
+      "text": "deles. Então, essa, escrever",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 925.12,
+      "end": 927.28,
+      "speaker": "Érica",
+      "text": "o release, atualizar o conteúdo",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 927.28,
+      "end": 929.08,
+      "speaker": "Érica",
+      "text": "do release checklist, eu vou sugerir de passar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 929.08,
+      "end": 931.1,
+      "speaker": "Érica",
+      "text": "pra um dos dois. A gente já define",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 931.1,
+      "end": 935.07,
+      "speaker": "Érica",
+      "text": "quem. Daí, o Kupka",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 940.62,
+      "end": 941.82,
+      "speaker": "Érica",
+      "text": "ele escreveu, eu não sei,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 941.94,
+      "end": 943.9,
+      "speaker": "Érica",
+      "text": "ele devia ter baixado,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 943.92,
+      "end": 945.7,
+      "speaker": "Érica",
+      "text": "eu não sei se ele não... Acho que ele não baixou.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 950.46,
+      "end": 952.32,
+      "speaker": "Érica",
+      "text": "Não, ele não baixou. Vou pedir pra ele",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 952.32,
+      "end": 954.06,
+      "speaker": "Érica",
+      "text": "baixar depois o quanto que ele gastou.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 954.4,
+      "end": 956.2,
+      "speaker": "Érica",
+      "text": "Na verdade, provavelmente é tudo, porque",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 956.2,
+      "end": 958.5,
+      "speaker": "Érica",
+      "text": "daí, depois que ele",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 958.5,
+      "end": 960.16,
+      "speaker": "Érica",
+      "text": "voltar do médico, depois que a gente...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 960.48,
+      "end": 961.64,
+      "speaker": "Érica",
+      "text": "revisar, ele vai",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 961.64,
+      "end": 964.06,
+      "speaker": "Érica",
+      "text": "shiftar pro rework desses test cases.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 964.26,
+      "end": 966.34,
+      "speaker": "Érica",
+      "text": "Então, o objetivo é o Kupka",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 966.34,
+      "end": 968.0,
+      "speaker": "Érica",
+      "text": "tentar matar isso",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 968.0,
+      "end": 970.06,
+      "speaker": "Érica",
+      "text": "hoje, pra ele, caso",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 970.06,
+      "end": 972.1,
+      "speaker": "Érica",
+      "text": "libere pra performar os test cases",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 972.1,
+      "end": 974.2,
+      "speaker": "Érica",
+      "text": "amanhã, ele já consiga shiftar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 974.2,
+      "end": 976.08,
+      "speaker": "Érica",
+      "text": "pros testes de volta. Se não, daí ele...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 976.7,
+      "end": 978.24,
+      "speaker": "Érica",
+      "text": "Se não liberar, daí ele vai ter que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 978.24,
+      "end": 980.66,
+      "speaker": "Érica",
+      "text": "ainda trabalhar nisso amanhã, pra convergir",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 980.66,
+      "end": 982.14,
+      "speaker": "Érica",
+      "text": "ou do override. Mas ele",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 982.14,
+      "end": 984.2,
+      "speaker": "Érica",
+      "text": "terminou de escrever, ele me passou hoje cedo, antes",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 984.2,
+      "end": 985.58,
+      "speaker": "Érica",
+      "text": "de ir pro médico.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 987.5,
+      "end": 989.1,
+      "speaker": "Érica",
+      "text": "Daí, já vamos pro Rafa,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 989.3,
+      "end": 990.84,
+      "speaker": "Érica",
+      "text": "vamos shiftar pro Igor primeiro.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 990.84,
+      "end": 993.24,
+      "speaker": "Igor",
+      "text": "Tá, deixa eu relembrar se deixei",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 993.24,
+      "end": 994.54,
+      "speaker": "Igor",
+      "text": "alguma coisa aberta, que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 994.54,
+      "end": 995.96,
+      "speaker": "Igor",
+      "text": "deveria estar fechado.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 996.42,
+      "end": 998.36,
+      "speaker": "Igor",
+      "text": "Ah, eu revi o test case, então",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 998.84,
+      "end": 1000.68,
+      "speaker": "Igor",
+      "text": "eu só preciso ver no detalhe aqui",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1000.68,
+      "end": 1002.06,
+      "speaker": "Igor",
+      "text": "as mudanças do brilho lá,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1002.78,
+      "end": 1004.74,
+      "speaker": "Igor",
+      "text": "mas é possível, já tá fechado, já.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1005.76,
+      "end": 1007.0,
+      "speaker": "Igor",
+      "text": "Daí, eu já fecho",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1007.0,
+      "end": 1008.88,
+      "speaker": "Igor",
+      "text": "ele, e acho que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1008.88,
+      "end": 1009.76,
+      "speaker": "Igor",
+      "text": "era isso, né?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1009.96,
+      "end": 1013.1,
+      "speaker": "Igor",
+      "text": "E daí, performar os test cases",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1013.1,
+      "end": 1014.24,
+      "speaker": "Igor",
+      "text": "em tempo de recuperar.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1014.94,
+      "end": 1015.76,
+      "speaker": "Igor",
+      "text": "É isso.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1016.6,
+      "end": 1019.34,
+      "speaker": "Igor",
+      "text": "E o administrativo que eu fechei...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1019.34,
+      "end": 1020.76,
+      "speaker": "Igor",
+      "text": "Ah, tá, do adicionar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1021.46,
+      "end": 1023.07,
+      "speaker": "Igor",
+      "text": "o... Só que isso, né?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1023.09,
+      "end": 1025.07,
+      "speaker": "Igor",
+      "text": "Na verdade, daí, acho que a gente vai ter que criar depois um",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1025.07,
+      "end": 1027.13,
+      "speaker": "Igor",
+      "text": "pra comitar, né?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1027.93,
+      "end": 1028.89,
+      "speaker": "Igor",
+      "text": "Aham, arrumar a branch.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1029.27,
+      "end": 1030.49,
+      "speaker": "Érica",
+      "text": "É. Beleza.",
+      "speaker_confidence": 0.11391920548792912
+    },
+    {
+      "start": 1032.01,
+      "end": 1032.37,
+      "speaker": "Murilo",
+      "text": "Perguntinha,",
+      "speaker_confidence": 0.05290718280218426
+    },
+    {
+      "start": 1033.59,
+      "end": 1034.87,
+      "speaker": "Murilo",
+      "text": "qual que é a tua prioridade?",
+      "speaker_confidence": 0.18424385226885961
+    },
+    {
+      "start": 1035.05,
+      "end": 1036.31,
+      "speaker": "Murilo",
+      "text": "A revisão ou",
+      "speaker_confidence": 0.09317085032069866
+    },
+    {
+      "start": 1037.31,
+      "end": 1038.69,
+      "speaker": "Murilo",
+      "text": "mergear os dois test cases?",
+      "speaker_confidence": 0.2340950755301161
+    },
+    {
+      "start": 1039.03,
+      "end": 1040.09,
+      "speaker": "Murilo",
+      "text": "A revisão do CUP?",
+      "speaker_confidence": 0.04361492350517208
+    },
+    {
+      "start": 1041.53,
+      "end": 1043.19,
+      "speaker": "Érica",
+      "text": "Então, é isso que eu ia sugerir.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1044.39,
+      "end": 1045.41,
+      "speaker": "Érica",
+      "text": "É isso que você",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1045.41,
+      "end": 1047.29,
+      "speaker": "Érica",
+      "text": "tá sobrecarregado. A tua prioridade",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1047.29,
+      "end": 1049.43,
+      "speaker": "Érica",
+      "text": "é arrumar o test case do update state, que você",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1049.43,
+      "end": 1051.53,
+      "speaker": "Érica",
+      "text": "é a pessoa mais capaz de fazer isso.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1051.61,
+      "end": 1053.35,
+      "speaker": "Érica",
+      "text": "Isso no detalhe, porque você que implementou.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1053.71,
+      "end": 1055.39,
+      "speaker": "Érica",
+      "text": "Daí, a revisão",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1056.61,
+      "end": 1057.75,
+      "speaker": "Érica",
+      "text": "do test case",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1057.75,
+      "end": 1059.75,
+      "speaker": "Érica",
+      "text": "do override é uma coisa que tá pra você",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1059.75,
+      "end": 1061.09,
+      "speaker": "Érica",
+      "text": "que precisa shiftar,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1061.17,
+      "end": 1063.49,
+      "speaker": "Érica",
+      "text": "e atualizar o conteúdo do release checklist",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1063.49,
+      "end": 1065.63,
+      "speaker": "Érica",
+      "text": "também tá pra você pra revisar.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1065.77,
+      "end": 1067.83,
+      "speaker": "Érica",
+      "text": "A gente só tem que decidir quem dos dois",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1067.83,
+      "end": 1069.51,
+      "speaker": "Érica",
+      "text": "vai pegar. O Igor ou o Rafa,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1069.61,
+      "end": 1071.11,
+      "speaker": "Érica",
+      "text": "um dos dois vai pegar um desses dois,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1071.31,
+      "end": 1073.69,
+      "speaker": "Érica",
+      "text": "porque eles são travados, porque eles não conseguem executar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1073.69,
+      "end": 1074.71,
+      "speaker": "Érica",
+      "text": "o teste agora, entendeu?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1078.0,
+      "end": 1078.98,
+      "speaker": "Érica",
+      "text": "Rafa, eu tinha",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1078.98,
+      "end": 1080.62,
+      "speaker": "Érica",
+      "text": "criado pra mapear as",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1080.62,
+      "end": 1082.38,
+      "speaker": "Érica",
+      "text": "atividades da viagem,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1083.08,
+      "end": 1083.88,
+      "speaker": "Érica",
+      "text": "do sprint passado,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1085.66,
+      "end": 1087.58,
+      "speaker": "Érica",
+      "text": "na verdade, finalzinho do sprint passado,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1087.58,
+      "end": 1089.38,
+      "speaker": "Érica",
+      "text": "tanto agora. Então, eu vou fechar aqui",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1089.38,
+      "end": 1091.67,
+      "speaker": "Érica",
+      "text": "com o Dan, que foi os dois dias",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1091.67,
+      "end": 1093.59,
+      "speaker": "Érica",
+      "text": "que você ficou quinta e sexta lá.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1093.73,
+      "end": 1094.13,
+      "speaker": "Érica",
+      "text": "Beleza?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1099.55,
+      "end": 1101.97,
+      "speaker": "Érica",
+      "text": "Daí, você tinha ficado com testes",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1101.97,
+      "end": 1103.77,
+      "speaker": "Érica",
+      "text": "performar test cases, mas como",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1103.77,
+      "end": 1105.53,
+      "speaker": "Érica",
+      "text": "você bem ouviu, não tá",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1105.53,
+      "end": 1107.17,
+      "speaker": "Érica",
+      "text": "liberado ainda. Então, agora",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1107.17,
+      "end": 1109.79,
+      "speaker": "Érica",
+      "text": "só preferências. Então, tem",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1109.79,
+      "end": 1110.95,
+      "speaker": "Érica",
+      "text": "uma, atualizar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1110.95,
+      "end": 1113.51,
+      "speaker": "Érica",
+      "text": "o release checklist e",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1113.51,
+      "end": 1114.97,
+      "speaker": "Érica",
+      "text": "revisar o do override.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1115.53,
+      "end": 1116.93,
+      "speaker": "Érica",
+      "text": "A minha sugestão,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1117.31,
+      "end": 1119.29,
+      "speaker": "Érica",
+      "text": "eu acho que o Rafa é melhor revisar o do override",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1119.29,
+      "end": 1120.63,
+      "speaker": "Érica",
+      "text": "e o Igor passar pro",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1120.63,
+      "end": 1122.31,
+      "speaker": "Érica",
+      "text": "do release checklist, porque",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1122.31,
+      "end": 1125.03,
+      "speaker": "Érica",
+      "text": "o Rafa tá mais por dentro do",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1125.03,
+      "end": 1126.21,
+      "speaker": "Érica",
+      "text": "do outro bug fix.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1128.52,
+      "end": 1130.68,
+      "speaker": "Igor",
+      "text": "Só pra relembrar,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1130.86,
+      "end": 1132.54,
+      "speaker": "Igor",
+      "text": "não sei se a gente entrou no detalhe,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1132.56,
+      "end": 1133.92,
+      "speaker": "Igor",
+      "text": "mas lembro, o",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1133.92,
+      "end": 1136.64,
+      "speaker": "Igor",
+      "text": "release checklist pra atualizar é adicionar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1137.58,
+      "end": 1138.84,
+      "speaker": "Igor",
+      "text": "agora as mudanças",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1138.84,
+      "end": 1140.42,
+      "speaker": "Igor",
+      "text": "do update state",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1140.42,
+      "end": 1141.78,
+      "speaker": "Igor",
+      "text": "da FCU também?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1142.22,
+      "end": 1144.62,
+      "speaker": "Érica",
+      "text": "Isso. O conteúdo do que a gente tá liberando",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1144.62,
+      "end": 1146.48,
+      "speaker": "Érica",
+      "text": "nos bug fixes vai ter que entrar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1146.48,
+      "end": 1148.44,
+      "speaker": "Érica",
+      "text": "como itens novos do release checklist.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1149.0,
+      "end": 1150.22,
+      "speaker": "Érica",
+      "text": "Daí, você tem que pensar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1150.22,
+      "end": 1152.86,
+      "speaker": "Érica",
+      "text": "isso é o objetivo do tipo",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1152.86,
+      "end": 1154.34,
+      "speaker": "Érica",
+      "text": "olhar lá o release checklist",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1154.34,
+      "end": 1156.84,
+      "speaker": "Érica",
+      "text": "o que que era o release checklist na época",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1156.84,
+      "end": 1158.84,
+      "speaker": "Érica",
+      "text": "da 2.27, daí tem que olhar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1158.84,
+      "end": 1161.26,
+      "speaker": "Érica",
+      "text": "versão por versão que a gente liberou",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1161.26,
+      "end": 1162.92,
+      "speaker": "Érica",
+      "text": "o que que era o release checklist da",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1162.92,
+      "end": 1165.0,
+      "speaker": "Érica",
+      "text": "2.30 e gerar meio que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1165.0,
+      "end": 1166.66,
+      "speaker": "Érica",
+      "text": "uma run nova de release checklist",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1167.4,
+      "end": 1168.78,
+      "speaker": "Érica",
+      "text": "com o conteúdo",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1168.78,
+      "end": 1170.98,
+      "speaker": "Érica",
+      "text": "que seria 2.27. Então, o que que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1170.98,
+      "end": 1172.42,
+      "speaker": "Érica",
+      "text": "na época da 2.27",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1172.42,
+      "end": 1174.78,
+      "speaker": "Érica",
+      "text": "a gente tava liberando que a gente tem que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1174.78,
+      "end": 1176.44,
+      "speaker": "Érica",
+      "text": "garantir que ainda tá consistente",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1176.44,
+      "end": 1178.76,
+      "speaker": "Érica",
+      "text": "e colocar uma linha nova com",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1178.76,
+      "end": 1180.46,
+      "speaker": "Érica",
+      "text": "relação ao update state e colocar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1180.46,
+      "end": 1182.58,
+      "speaker": "Érica",
+      "text": "uma linha nova com relação ao do",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1182.58,
+      "end": 1185.1,
+      "speaker": "Érica",
+      "text": "override. Pra você se familiarizar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1185.1,
+      "end": 1186.46,
+      "speaker": "Érica",
+      "text": "com o override, você pode ler tanto",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1186.46,
+      "end": 1188.54,
+      "speaker": "Érica",
+      "text": "o function design da Lily quanto o próprio",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1188.54,
+      "end": 1190.68,
+      "speaker": "Érica",
+      "text": "test case em si. Você já meio que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1190.68,
+      "end": 1192.88,
+      "speaker": "Érica",
+      "text": "vai ter que fazer isso porque você que vai executar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1192.88,
+      "end": 1194.7,
+      "speaker": "Érica",
+      "text": "os test cases, porque você que não",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1194.7,
+      "end": 1196.56,
+      "speaker": "Érica",
+      "text": "tá biased pelo bug",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1196.56,
+      "end": 1198.64,
+      "speaker": "Érica",
+      "text": "pra executar. Então, isso já",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1198.64,
+      "end": 1200.66,
+      "speaker": "Érica",
+      "text": "é uma oportunidade pra você se familiarizando",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1200.66,
+      "end": 1202.74,
+      "speaker": "Érica",
+      "text": "com o conteúdo porque vai ser a próxima",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1202.74,
+      "end": 1204.22,
+      "speaker": "Érica",
+      "text": "atividade que você vai executar.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1204.58,
+      "end": 1206.56,
+      "speaker": "Érica",
+      "text": "Mas o atualizar o",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1206.56,
+      "end": 1207.9,
+      "speaker": "Érica",
+      "text": "release checklist é isso.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1209.12,
+      "end": 1210.88,
+      "speaker": "Érica",
+      "text": "Recuperar qual que é a versão do Excel",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1210.88,
+      "end": 1212.6,
+      "speaker": "Érica",
+      "text": "correspondente pra cada uma dessas",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1212.6,
+      "end": 1214.74,
+      "speaker": "Érica",
+      "text": "versões pra gente poder gerar uma run",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1214.74,
+      "end": 1215.86,
+      "speaker": "Érica",
+      "text": "que agora tá no Azure",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1216.8,
+      "end": 1218.72,
+      "speaker": "Érica",
+      "text": "correspondente com aquilo. Se tiver que fazer",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1218.72,
+      "end": 1220.74,
+      "speaker": "Érica",
+      "text": "alguma manutenção, eu não sei exatamente",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1220.74,
+      "end": 1222.84,
+      "speaker": "Érica",
+      "text": "como que vai tá lá. Mas isso é",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1222.84,
+      "end": 1224.32,
+      "speaker": "Érica",
+      "text": "mais ou menos. Então, a gente tem o",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1224.8,
+      "end": 1226.74,
+      "speaker": "Érica",
+      "text": "release checklist da 2.31, tem",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1226.74,
+      "end": 1228.28,
+      "speaker": "Érica",
+      "text": "que pegar os anteriores lá no",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1229.26,
+      "end": 1230.7,
+      "speaker": "Érica",
+      "text": "repositório do bug server",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1230.7,
+      "end": 1232.08,
+      "speaker": "Érica",
+      "text": "lá e... Isso.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1232.36,
+      "end": 1234.76,
+      "speaker": "Érica",
+      "text": "E comparar. Pra poder gerar",
+      "speaker_confidence": 0.3466466570019939
+    },
+    {
+      "start": 1234.76,
+      "end": 1236.76,
+      "speaker": "Érica",
+      "text": "run nova. O que faz sentido executar",
+      "speaker_confidence": 0.05823456545799708
+    },
+    {
+      "start": 1236.76,
+      "end": 1238.26,
+      "speaker": "Érica",
+      "text": "ou não, né? Exatamente.",
+      "speaker_confidence": 0.3590550221927703
+    },
+    {
+      "start": 1238.86,
+      "end": 1240.76,
+      "speaker": "Érica",
+      "text": "No geral, o objetivo é",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1240.76,
+      "end": 1242.78,
+      "speaker": "Érica",
+      "text": "a gente precisa rolar um release checklist pra",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1242.78,
+      "end": 1244.88,
+      "speaker": "Érica",
+      "text": "garantir que o que a gente tá integrando como",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1244.88,
+      "end": 1246.76,
+      "speaker": "Érica",
+      "text": "bug fix tá funcionando",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1246.76,
+      "end": 1248.98,
+      "speaker": "Érica",
+      "text": "do tipo tá consistente na versão",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1248.98,
+      "end": 1250.94,
+      "speaker": "Érica",
+      "text": "final e o que já",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1250.94,
+      "end": 1252.76,
+      "speaker": "Érica",
+      "text": "existia na versão base",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1252.76,
+      "end": 1255.56,
+      "speaker": "Érica",
+      "text": "na 2.27.1, na 2.30.0",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1256.12,
+      "end": 1256.82,
+      "speaker": "Érica",
+      "text": "aqui é",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1256.82,
+      "end": 1257.96,
+      "speaker": "Érica",
+      "text": "2.27.2",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1257.96,
+      "end": 1260.9,
+      "speaker": "Érica",
+      "text": "tá consistente. Então, nada do que",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1260.9,
+      "end": 1262.76,
+      "speaker": "Érica",
+      "text": "foi integrado do bug fix quebrou",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1262.76,
+      "end": 1264.92,
+      "speaker": "Érica",
+      "text": "outras funcionalidades que a gente já",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1264.92,
+      "end": 1266.82,
+      "speaker": "Érica",
+      "text": "tinha validado no release",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1266.82,
+      "end": 1268.84,
+      "speaker": "Érica",
+      "text": "da versão anterior, na 2.27.1.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1268.86,
+      "end": 1271.12,
+      "speaker": "Érica",
+      "text": "Na 2.30.0. Na 2.31.0.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1271.3,
+      "end": 1272.94,
+      "speaker": "Érica",
+      "text": "Entendeu? Entendi.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1275.22,
+      "end": 1276.86,
+      "speaker": "Érica",
+      "text": "Então, eu vou passar isso aqui pra você",
+      "speaker_confidence": 0.5136830510367426
+    },
+    {
+      "start": 1278.8,
+      "end": 1279.86,
+      "speaker": "Érica",
+      "text": "e eu vou passar",
+      "speaker_confidence": 0.42450384797899654
+    },
+    {
+      "start": 1280.58,
+      "end": 1280.98,
+      "speaker": "Érica",
+      "text": "o...",
+      "speaker_confidence": 0.3540381650937829
+    },
+    {
+      "start": 1282.13,
+      "end": 1283.53,
+      "speaker": "Érica",
+      "text": "Revisar o test case pro Rafa.",
+      "speaker_confidence": 0.5217654885391737
+    },
+    {
+      "start": 1290.04,
+      "end": 1295.36,
+      "speaker": "Érica",
+      "text": "Que é isso daqui.",
+      "speaker_confidence": 0.13205769232421305
+    },
+    {
+      "start": 1301.2,
+      "end": 1304.7,
+      "speaker": "Érica",
+      "text": "Beleza? Daí eu te ligo, Rafa,",
+      "speaker_confidence": 0.06897508322967168
+    },
+    {
+      "start": 1304.78,
+      "end": 1306.48,
+      "speaker": "Érica",
+      "text": "pra te mostrar o que o Kupka me passou",
+      "speaker_confidence": 0.37254442072146043
+    },
+    {
+      "start": 1306.48,
+      "end": 1308.42,
+      "speaker": "Érica",
+      "text": "antes dele passar e te atualizar.",
+      "speaker_confidence": 0.25900268098000667
+    },
+    {
+      "start": 1308.42,
+      "end": 1310.42,
+      "speaker": "Rafa",
+      "text": "Só um adendo pra aproveitar que a gente tá no momento de stand-up.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1310.5,
+      "end": 1312.32,
+      "speaker": "Rafa",
+      "text": "Eu acho que é oportuno falar isso... Eu posso",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1312.32,
+      "end": 1314.52,
+      "speaker": "Rafa",
+      "text": "começar isso à tarde? Deixa eu começar...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1314.52,
+      "end": 1315.8,
+      "speaker": "Rafa",
+      "text": "Deixa eu fazer meu acerto, por favor.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1319.6,
+      "end": 1320.36,
+      "speaker": "Rafa",
+      "text": "Tá me escutando?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1320.94,
+      "end": 1321.38,
+      "speaker": "Rafa",
+      "text": "Aham.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1321.74,
+      "end": 1323.8,
+      "speaker": "Rafa",
+      "text": "Eu preciso fazer o acerto porque essa viagem",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1323.8,
+      "end": 1325.2,
+      "speaker": "Rafa",
+      "text": "saiu do meu bolso, né? Então, eu preciso...",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1325.64,
+      "end": 1326.84,
+      "speaker": "Érica",
+      "text": "Ah, tá. Tudo bem.",
+      "speaker_confidence": 0.39171422445122417
+    },
+    {
+      "start": 1329.69,
+      "end": 1331.57,
+      "speaker": "Érica",
+      "text": "Então, quando você quiser",
+      "speaker_confidence": 0.46790053680808563
+    },
+    {
+      "start": 1331.57,
+      "end": 1333.55,
+      "speaker": "Érica",
+      "text": "sentar pra shiftar de tópico, me avisa",
+      "speaker_confidence": 0.5612920610179479
+    },
+    {
+      "start": 1333.55,
+      "end": 1335.41,
+      "speaker": "Érica",
+      "text": "que daí eu te passo o que o Kupka passou.",
+      "speaker_confidence": 0.3899960530923211
+    },
+    {
+      "start": 1335.83,
+      "end": 1338.33,
+      "speaker": "Érica",
+      "text": "Perfeito. Mas, no geral,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1338.33,
+      "end": 1340.49,
+      "speaker": "Érica",
+      "text": "é isso. Então, a gente tá um pouco",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1340.49,
+      "end": 1342.25,
+      "speaker": "Érica",
+      "text": "atrás do planejamento por causa do",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1342.25,
+      "end": 1344.25,
+      "speaker": "Érica",
+      "text": "finding de quinta-feira, que era o risco",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1344.25,
+      "end": 1346.29,
+      "speaker": "Érica",
+      "text": "que a gente já sabia que se tivesse algum finding",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1346.29,
+      "end": 1347.91,
+      "speaker": "Érica",
+      "text": "que tivesse que corrigir,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1348.01,
+      "end": 1349.59,
+      "speaker": "Érica",
+      "text": "o planejamento não ia estar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1349.59,
+      "end": 1351.61,
+      "speaker": "Érica",
+      "text": "um pra um. Então,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1352.37,
+      "end": 1354.33,
+      "speaker": "Érica",
+      "text": "hoje, de expectativas, eu acho",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1354.33,
+      "end": 1356.17,
+      "speaker": "Érica",
+      "text": "que, no melhor dos cenários,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1356.23,
+      "end": 1358.39,
+      "speaker": "Érica",
+      "text": "a gente vai estar terminando de performar os test cases",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1358.39,
+      "end": 1360.49,
+      "speaker": "Érica",
+      "text": "até sexta e a gente ainda vai precisar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1360.49,
+      "end": 1361.71,
+      "speaker": "Érica",
+      "text": "do começo da semana que vem",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1361.71,
+      "end": 1364.51,
+      "speaker": "Érica",
+      "text": "pra rodar a documentação Release Checklist.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1364.91,
+      "end": 1366.23,
+      "speaker": "Érica",
+      "text": "Então, eu já vou pingar o Alberto",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1366.23,
+      "end": 1367.61,
+      "speaker": "Érica",
+      "text": "pra ver se ele teve alguma",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1368.99,
+      "end": 1370.23,
+      "speaker": "Érica",
+      "text": "atualização das conversas",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1370.23,
+      "end": 1372.05,
+      "speaker": "Érica",
+      "text": "lá com a Star ou do planejamento da",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1372.67,
+      "end": 1374.31,
+      "speaker": "Érica",
+      "text": "viagem pra validar esse bug fix",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1374.31,
+      "end": 1376.59,
+      "speaker": "Érica",
+      "text": "porque, no andar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1376.59,
+      "end": 1378.47,
+      "speaker": "Érica",
+      "text": "da carruagem agora, a gente não vai conseguir",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1378.47,
+      "end": 1380.63,
+      "speaker": "Érica",
+      "text": "estar pronto toda sexta-feira com segurança",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1380.63,
+      "end": 1381.75,
+      "speaker": "Érica",
+      "text": "rodando os test cases.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1382.09,
+      "end": 1383.71,
+      "speaker": "Érica",
+      "text": "Então, eu vou ver lá o que eu já tinha",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1384.19,
+      "end": 1386.33,
+      "speaker": "Érica",
+      "text": "conversado com ele, o que eu já tinha levantado a bandeira,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1386.81,
+      "end": 1387.93,
+      "speaker": "Érica",
+      "text": "tá factível",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1387.93,
+      "end": 1390.37,
+      "speaker": "Érica",
+      "text": "ou o que a gente vai ter que fazer.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1392.21,
+      "end": 1393.11,
+      "speaker": "Érica",
+      "text": "Beleza? Então, vão",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1394.49,
+      "end": 1395.51,
+      "speaker": "Érica",
+      "text": "avisando. Qualquer",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1395.51,
+      "end": 1396.79,
+      "speaker": "Érica",
+      "text": "outra dúvida ou",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1398.53,
+      "end": 1399.49,
+      "speaker": "Érica",
+      "text": "coisa que me pacar,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1399.53,
+      "end": 1401.63,
+      "speaker": "Érica",
+      "text": "avisem lá no chat pra gente não se atrasar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1401.63,
+      "end": 1404.03,
+      "speaker": "Érica",
+      "text": "mais ainda. Beleza?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1404.03,
+      "end": 1406.15,
+      "speaker": "Érica",
+      "text": "Se eu tiver, eu vou voltar",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1406.15,
+      "end": 1408.01,
+      "speaker": "Érica",
+      "text": "a olhar o conteúdo de ambos, tanto do",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1408.01,
+      "end": 1410.17,
+      "speaker": "Érica",
+      "text": "update state quanto do override com o que o",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1410.17,
+      "end": 1412.31,
+      "speaker": "Érica",
+      "text": "Kupka me passou hoje, certo? Se eu tiver",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1412.31,
+      "end": 1414.01,
+      "speaker": "Érica",
+      "text": "mais algum finding, daí eu aviso,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1414.11,
+      "end": 1415.81,
+      "speaker": "Érica",
+      "text": "vocês, aí na",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1415.81,
+      "end": 1417.8,
+      "speaker": "Érica",
+      "text": "execução. Beleza?",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1419.45,
+      "end": 1420.86,
+      "speaker": "Érica",
+      "text": "Ok. Tá bom,",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1420.88,
+      "end": 1423.06,
+      "speaker": "Érica",
+      "text": "gente. Boa sorte. Tchau, tchau.",
+      "speaker_confidence": 1.0
+    },
+    {
+      "start": 1423.28,
+      "end": 1423.8,
+      "speaker": "Interlocutor [atribuição incerta]",
+      "text": "Tchau.",
+      "speaker_confidence": 0.23561826237513842
+    }
+  ]
+}

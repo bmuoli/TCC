@@ -1,0 +1,411 @@
+{
+  "id": "TB-06",
+  "title": "Multifásico · até 700 W · indutor acoplado",
+  "goal": "Validar a operação multifásica próxima de 700 W empregando um indutor acoplado nas duas fases de saída.",
+  "switchType": "SiC MOSFET",
+  "status": "planned",
+  "freq": "100",
+  "duty": "72",
+  "vin": "54",
+  "vout": "36,22",
+  "pin": "",
+  "pout": "",
+  "iout": "",
+  "waveform": "",
+  "notes": "Configuração inicial herdada do TB-05 (ensaio multifásico de até 700 W). L1 permanece como indutor de entrada independente de 25 µH. L2 e L3 identificam os dois enrolamentos/fases do mesmo indutor acoplado; fisicamente, o ensaio utiliza dois componentes magnéticos: L1 e o conjunto acoplado L2/L3.",
+  "acceptance": "",
+  "simulationEnabled": false,
+  "simulationFile": null,
+  "simulationImages": [],
+  "trash": [],
+  "enableForward": true,
+  "enableReverse": false,
+  "activeDirection": "forward",
+  "directions": {
+    "forward": {
+      "freq": "100",
+      "duty": "72",
+      "vin": "54",
+      "vout": "36,22",
+      "pin": "",
+      "pout": "",
+      "iout": "",
+      "waveform": "",
+      "notes": "Configuração inicial herdada do TB-05 (ensaio multifásico de até 700 W). L1 permanece como indutor de entrada independente de 25 µH. L2 e L3 identificam os dois enrolamentos/fases do mesmo indutor acoplado; fisicamente, o ensaio utiliza dois componentes magnéticos: L1 e o conjunto acoplado L2/L3.",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [
+        {
+          "subjects": [
+            "Geral"
+          ],
+          "subject": "Geral",
+          "type": "Outro",
+          "signalSelections": [],
+          "signal": "",
+          "originalName": "codex-clipboard-7ee901d2-ef06-4180-98fb-314a4c663487.png",
+          "fileName": "TB-06_SiC_Geral_Rendimento_Fluke_Tela_01.png",
+          "relativePath": "TB-06_Multifasico_indutor_acoplado/Teste_Pratico/Direto/SiC/Evidencias/Geral/Outro/TB-06_SiC_Geral_Rendimento_Fluke_Tela_01.png",
+          "sha256": "39ae87256a2043feceab855ad3a2b25d363b09597aed7b7a5218372d1cf9aeba",
+          "reportInclude": true,
+          "reportCaption": "Rendimento Fluke — tela frontal limpa (ηe = 90,00%; P1 = 748,83 W; P3 = 673,95 W).",
+          "savedAt": "2026-10-26T15:33:54.508Z",
+          "thermalView": "",
+          "imageNote": "Tela retificada e limpa a partir da fotografia original; reflexos removidos e valores do visor preservados."
+        }
+      ],
+      "trash": [],
+      "executionDone": false,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    },
+    "reverse": {
+      "freq": "",
+      "duty": "",
+      "vin": "50",
+      "vout": "30",
+      "pin": "",
+      "pout": "",
+      "iout": "",
+      "waveform": "",
+      "notes": "",
+      "simulationEnabled": false,
+      "simulationFile": null,
+      "simulationImages": [],
+      "evidence": [],
+      "trash": [],
+      "executionDone": false,
+      "captureChecklist": {
+        "vds": false,
+        "vgs": false,
+        "ids": false,
+        "tempCase": false
+      }
+    }
+  },
+  "enableSi": false,
+  "enableSiC": true,
+  "activeSwitchVariant": "SiC",
+  "switchVariants": {
+    "SiC": {
+      "switches": [
+        {
+          "part": "UJ3C065030K3S",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "UJ3C065030K3S",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "UJ3C065030K3S",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "UJ3C065030K3S",
+          "technology": "SiC",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "100",
+          "duty": "72",
+          "vin": "54",
+          "vout": "36,22",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "Configuração inicial herdada do TB-05 (ensaio multifásico de até 700 W). L1 permanece como indutor de entrada independente de 25 µH. L2 e L3 identificam os dois enrolamentos/fases do mesmo indutor acoplado; fisicamente, o ensaio utiliza dois componentes magnéticos: L1 e o conjunto acoplado L2/L3.",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [
+            {
+              "subjects": [
+                "Geral"
+              ],
+              "subject": "Geral",
+              "type": "Outro",
+              "signalSelections": [],
+              "signal": "",
+              "originalName": "codex-clipboard-7ee901d2-ef06-4180-98fb-314a4c663487.png",
+              "fileName": "TB-06_SiC_Geral_Rendimento_Fluke_Tela_01.png",
+              "relativePath": "TB-06_Multifasico_indutor_acoplado/Teste_Pratico/Direto/SiC/Evidencias/Geral/Outro/TB-06_SiC_Geral_Rendimento_Fluke_Tela_01.png",
+              "sha256": "39ae87256a2043feceab855ad3a2b25d363b09597aed7b7a5218372d1cf9aeba",
+              "reportInclude": true,
+              "reportCaption": "Rendimento Fluke — tela frontal limpa (ηe = 90,00%; P1 = 748,83 W; P3 = 673,95 W).",
+              "savedAt": "2026-10-26T15:33:54.508Z",
+              "thermalView": "",
+              "imageNote": "Tela retificada e limpa a partir da fotografia original; reflexos removidos e valores do visor preservados."
+            }
+          ],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    },
+    "Si": {
+      "switches": [
+        {
+          "part": "",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        },
+        {
+          "part": "",
+          "technology": "Si",
+          "notes": "",
+          "collectVDS": true,
+          "collectVGS": true,
+          "collectIDS": false,
+          "collectIGS": false
+        }
+      ],
+      "directions": {
+        "forward": {
+          "freq": "",
+          "duty": "",
+          "vin": "",
+          "vout": "",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        },
+        "reverse": {
+          "freq": "",
+          "duty": "",
+          "vin": "50",
+          "vout": "30",
+          "pin": "",
+          "pout": "",
+          "iout": "",
+          "waveform": "",
+          "notes": "",
+          "simulationEnabled": false,
+          "simulationFile": null,
+          "simulationImages": [],
+          "evidence": [],
+          "trash": [],
+          "executionDone": false,
+          "captureChecklist": {
+            "vds": false,
+            "vgs": false,
+            "ids": false,
+            "tempCase": false
+          }
+        }
+      }
+    }
+  },
+  "inductorCount": 3,
+  "capacitorCount": 4,
+  "switchCount": 4,
+  "inductors": [
+    {
+      "value": "25",
+      "unit": "µH",
+      "notes": "Indutor de entrada independente.",
+      "collectI": true,
+      "collectV": true
+    },
+    {
+      "value": "75",
+      "unit": "µH",
+      "notes": "Primeiro enrolamento/fase do indutor acoplado.",
+      "collectI": true,
+      "collectV": true
+    },
+    {
+      "value": "75",
+      "unit": "µH",
+      "notes": "Segundo enrolamento/fase do indutor acoplado.",
+      "collectI": true,
+      "collectV": true
+    }
+  ],
+  "capacitors": [
+    {
+      "value": "5",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": true
+    },
+    {
+      "value": "4,7",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    },
+    {
+      "value": "5",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": true
+    },
+    {
+      "value": "4,7",
+      "unit": "µF",
+      "notes": "",
+      "collectI": false,
+      "collectV": false
+    }
+  ],
+  "switches": [
+    {
+      "part": "UJ3C065030K3S",
+      "technology": "SiC",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    },
+    {
+      "part": "UJ3C065030K3S",
+      "technology": "SiC",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    },
+    {
+      "part": "UJ3C065030K3S",
+      "technology": "SiC",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    },
+    {
+      "part": "UJ3C065030K3S",
+      "technology": "SiC",
+      "notes": "",
+      "collectVDS": true,
+      "collectVGS": true,
+      "collectIDS": false,
+      "collectIGS": false
+    }
+  ],
+  "evidence": [
+    {
+      "subjects": [
+        "Geral"
+      ],
+      "subject": "Geral",
+      "type": "Outro",
+      "signalSelections": [],
+      "signal": "",
+      "originalName": "codex-clipboard-7ee901d2-ef06-4180-98fb-314a4c663487.png",
+      "fileName": "TB-06_SiC_Geral_Rendimento_Fluke_Tela_01.png",
+      "relativePath": "TB-06_Multifasico_indutor_acoplado/Teste_Pratico/Direto/SiC/Evidencias/Geral/Outro/TB-06_SiC_Geral_Rendimento_Fluke_Tela_01.png",
+      "sha256": "39ae87256a2043feceab855ad3a2b25d363b09597aed7b7a5218372d1cf9aeba",
+      "reportInclude": true,
+      "reportCaption": "Rendimento Fluke — tela frontal limpa (ηe = 90,00%; P1 = 748,83 W; P3 = 673,95 W).",
+      "savedAt": "2026-10-26T15:33:54.508Z",
+      "thermalView": "",
+      "imageNote": "Tela retificada e limpa a partir da fotografia original; reflexos removidos e valores do visor preservados."
+    }
+  ],
+  "setupName": "Conversor CUK - Dissipativo - SIC",
+  "folderName": "TB-06_Multifasico_indutor_acoplado",
+  "displayId": "TB-06",
+  "updatedAt": "2026-10-27T16:08:24.609Z",
+  "displayTitle": "Multifásico · até 700 W · indutor acoplado",
+  "displayGoal": "Validar a operação multifásica próxima de 700 W empregando um indutor acoplado nas duas fases de saída."
+}

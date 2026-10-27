@@ -6,7 +6,8 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$HelperVersion = '1.1.1'
+$HelperVersion = '2.0-local'
+$GitIntegrationDisabled = $true
 $RepositoryRoot = 'C:\Users\muril\OneDrive\Área de Trabalho\01 - Faculdade e Estudos\TCC'
 $NotebookPath = Join-Path $RepositoryRoot 'Lab Notebook - HTML\TCC_Lab_Notebook_v51.html'
 $ExpectedRemoteUrl = 'https://github.com/bmuoli/TCC.git'
@@ -20,6 +21,7 @@ $script:OfflineTestPending = [bool]$TestOfflineOnce
 
 function Invoke-Git {
     param([Parameter(Mandatory)][string[]]$Arguments)
+    if ($GitIntegrationDisabled) { throw 'A integração Git deste Lab Notebook foi desativada.' }
     $previousErrorPreference = $ErrorActionPreference
     $gitEnvironmentNames = @(
         'GIT_DIR',
@@ -295,14 +297,13 @@ function Send-Json {
 }
 
 if (-not (Test-Path -LiteralPath $NotebookPath -PathType Leaf)) { throw "Lab Notebook v51 não encontrado em $NotebookPath" }
-Assert-Repository
 
 $listener = [System.Net.Sockets.TcpListener]::new($ListenAddress, $ListenPort)
 $listener.Start()
-Write-Host "TCC GitHub Sync $HelperVersion"
-Write-Host "Repositório autorizado: $RepositoryRoot"
+Write-Host "TCC Lab Notebook - auxiliar local $HelperVersion"
+Write-Host "Pasta do projeto: $RepositoryRoot"
 Write-Host "Lab Notebook: http://127.0.0.1:$ListenPort/"
-Write-Host 'Mantenha esta janela aberta enquanto usar o botão de sincronização. Pressione Ctrl+C para encerrar.'
+Write-Host 'Este auxiliar apenas abre o HTML e permite ler imagens locais com caminhos longos. Git, commit e push estão desativados. Pressione Ctrl+C para encerrar.'
 
 if (-not $NoBrowser) { Start-Process "http://127.0.0.1:$ListenPort/" }
 
@@ -343,7 +344,7 @@ try {
                 continue
             }
             if ($path -eq '/api/status' -and $method -eq 'GET') {
-                try { Send-Json $stream 200 (Get-LocalStatus) } catch { Send-Json $stream 503 @{ message = $_.Exception.Message; pending = $true; helperVersion = $HelperVersion } }
+                Send-Json $stream 200 @{ message = 'modo local; Git desativado'; pending = $false; helperVersion = $HelperVersion }
                 continue
             }
             if ($path -eq '/api/evidence' -and $method -eq 'GET') {
@@ -362,7 +363,7 @@ try {
                 continue
             }
             if ($path -eq '/api/sync' -and $method -eq 'POST') {
-                try { Send-Json $stream 200 (Invoke-SafeSync) } catch { Send-Json $stream 409 @{ message = $_.Exception.Message; helperVersion = $HelperVersion } }
+                Send-Json $stream 410 @{ message = 'Sincronização Git desativada. Use "Salvar tudo na pasta" no HTML.'; helperVersion = $HelperVersion }
                 continue
             }
             Send-Json $stream 404 @{ message = 'Endpoint não permitido.' }

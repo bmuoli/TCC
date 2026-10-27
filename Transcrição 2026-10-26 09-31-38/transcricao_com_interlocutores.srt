@@ -1,0 +1,2671 @@
+﻿1
+00:00:00,000 --> 00:00:02,680
+Érica: como um bug fix, tipo, pra 2.27.2,
+
+2
+00:00:02,760 --> 00:00:04,280
+Érica: mas não necessariamente
+
+3
+00:00:04,280 --> 00:00:05,900
+Érica: do jeito que foi escrito aqui.
+
+4
+00:00:06,220 --> 00:00:08,220
+Érica: Então, agora a gente tem que tomar a decisão de
+
+5
+00:00:08,220 --> 00:00:10,520
+Érica: vamos mergear, não vamos mergear,
+
+6
+00:00:10,540 --> 00:00:12,420
+Érica: ele vai gerar um novo teste,
+
+7
+00:00:12,560 --> 00:00:13,780
+Érica: como que vai ficar, sabe?
+
+8
+00:00:15,250 --> 00:00:16,470
+Érica: Aqui que fica a questão.
+
+9
+00:00:17,190 --> 00:00:18,910
+Érica: Fora outros buracos, outras coisas
+
+10
+00:00:18,910 --> 00:00:19,810
+Érica: que teve de defining.
+
+11
+00:00:20,800 --> 00:00:22,640
+Igor: É, o que eu tinha visto
+
+12
+00:00:22,640 --> 00:00:24,160
+Igor: que daria pra tirar
+
+13
+00:00:24,840 --> 00:00:26,660
+Igor: é o 10, 11, 12,
+
+14
+00:00:27,500 --> 00:00:28,620
+Igor: já tá coberto
+
+15
+00:00:28,620 --> 00:00:30,600
+Igor: pros test cases que o Murilo tinha feito,
+
+16
+00:00:31,060 --> 00:00:32,460
+Igor: daí o resto,
+
+17
+00:00:32,500 --> 00:00:34,160
+Igor: eu acho que teria que deixar tudo, né?
+
+18
+00:00:34,220 --> 00:00:36,880
+Igor: Só o que eu tava falando de adaptar
+
+19
+00:00:36,880 --> 00:00:38,460
+Igor: lá as variáveis
+
+20
+00:00:38,460 --> 00:00:40,640
+Igor: é ver no detalhe as variáveis
+
+21
+00:00:40,640 --> 00:00:41,540
+Igor: novas que
+
+22
+00:00:42,660 --> 00:00:44,140
+Igor: existem, né, no...
+
+23
+00:00:44,800 --> 00:00:47,140
+Igor: agora na implementação
+
+24
+00:00:47,140 --> 00:00:48,820
+Igor: que eu vi lá que tinha algumas variáveis
+
+25
+00:00:48,820 --> 00:00:49,780
+Igor: de flag state,
+
+26
+00:00:50,160 --> 00:00:51,260
+Igor: c flag state,
+
+27
+00:00:52,460 --> 00:00:53,380
+Igor: state flag,
+
+28
+00:00:53,820 --> 00:00:55,720
+Igor: essas variáveis novas, né, se faz sentido
+
+29
+00:00:55,720 --> 00:00:58,040
+Igor: também colocar nisso, mas daí você comentou
+
+30
+00:00:58,040 --> 00:00:59,620
+Igor: da questão
+
+31
+00:00:59,620 --> 00:01:01,220
+Igor: que, tipo,
+
+32
+00:01:01,280 --> 00:01:02,940
+Igor: da compatibilidade das versões, né,
+
+33
+00:01:02,960 --> 00:01:04,920
+Igor: que daí faria sentido deixar os dois
+
+34
+00:01:05,560 --> 00:01:07,180
+Igor: como sendo independentes.
+
+35
+00:01:07,640 --> 00:01:11,500
+Érica: Sim. Deixa eu pensar.
+
+36
+00:01:15,090 --> 00:01:16,250
+Murilo: Ah, nada que
+
+37
+00:01:16,250 --> 00:01:18,030
+Murilo: também eu não... porque ali eu criei
+
+38
+00:01:18,030 --> 00:01:19,350
+Murilo: pra 2.27, realmente,
+
+39
+00:01:19,690 --> 00:01:21,370
+Murilo: a não ser que eu crie teste case pra
+
+40
+00:01:23,300 --> 00:01:25,380
+Murilo: 2.30, que então, pelo que ele disse,
+
+41
+00:01:25,420 --> 00:01:27,800
+Murilo: seria parecido
+
+42
+00:01:27,800 --> 00:01:29,740
+Murilo: a partir da 2.30, então eu ia fazer um merge,
+
+43
+00:01:30,220 --> 00:01:31,040
+Murilo: juntava os dois.
+
+44
+00:01:33,510 --> 00:01:35,010
+Érica: Então, mas é que isso daqui,
+
+45
+00:01:35,170 --> 00:01:37,470
+Érica: na verdade, foi criado em cima da 2.31,
+
+46
+00:01:37,730 --> 00:01:38,710
+Érica: é exatamente isso,
+
+47
+00:01:38,710 --> 00:01:40,930
+Érica: que eu tô tentando evitar, no sentido de
+
+48
+00:01:40,930 --> 00:01:42,870
+Érica: eu não sei se isso 100%
+
+49
+00:01:42,870 --> 00:01:44,590
+Érica: vai tá 1 pra 1 aplicado
+
+50
+00:01:44,590 --> 00:01:46,810
+Érica: pra 2.27.2 e pra
+
+51
+00:01:46,810 --> 00:01:47,890
+Érica: 2.30.1
+
+52
+00:01:48,510 --> 00:01:50,410
+Érica: pelo conteúdo do que você mexeu.
+
+53
+00:01:50,490 --> 00:01:52,430
+Érica: Eu não tenho 100% de certeza, sabe?
+
+54
+00:01:52,930 --> 00:01:54,570
+Érica: Teoricamente tinha que eu entrar,
+
+55
+00:01:54,710 --> 00:01:56,670
+Érica: olhar e ver, não, isso daqui ainda faz sentido,
+
+56
+00:01:56,950 --> 00:01:57,870
+Érica: isso daqui ainda faz sentido,
+
+57
+00:01:58,430 --> 00:02:00,670
+Érica: pra validar. Eu acho que sim.
+
+58
+00:02:00,810 --> 00:02:02,470
+Érica: Minha impressão de bate-pronto
+
+59
+00:02:02,470 --> 00:02:04,730
+Érica: é sim, mas tem que dar
+
+60
+00:02:04,730 --> 00:02:05,950
+Érica: uma olhada no detalhe.
+
+61
+00:02:06,110 --> 00:02:08,530
+Érica: Isso você diz sim pras outras versões,
+
+62
+00:02:08,530 --> 00:02:11,420
+Érica: né? Sim, pra 2.27.2
+
+63
+00:02:11,420 --> 00:02:12,680
+Érica: e pra 2.30.1
+
+64
+00:02:12,680 --> 00:02:14,480
+Érica: por causa do que você implementou agora
+
+65
+00:02:14,480 --> 00:02:15,960
+Érica: pro bug fix. Porque se
+
+66
+00:02:16,500 --> 00:02:18,500
+Érica: olhar antes, não necessariamente,
+
+67
+00:02:18,640 --> 00:02:20,780
+Érica: principalmente esses casos que tá replicado
+
+68
+00:02:20,780 --> 00:02:22,240
+Érica: que nem o Igor falou.
+
+69
+00:02:22,580 --> 00:02:24,500
+Murilo: Tá. É porque eu tô comentando que
+
+70
+00:02:24,500 --> 00:02:26,400
+Murilo: ali, basicamente, eu criei
+
+71
+00:02:26,400 --> 00:02:28,680
+Murilo: 2.27, mas aí eu não pensei.
+
+72
+00:02:28,700 --> 00:02:29,440
+Murilo: Então teria que criar
+
+73
+00:02:30,460 --> 00:02:32,840
+Murilo: nos test case ali, né? Não, não tem problema.
+
+74
+00:02:33,080 --> 00:02:33,600
+Érica: Não tem problema.
+
+75
+00:02:34,320 --> 00:02:36,980
+Érica: Isso daqui é só, tipo, ele inicialmente
+
+76
+00:02:36,980 --> 00:02:39,060
+Érica: tá aplicado pra 2.27.2,
+
+77
+00:02:39,080 --> 00:02:40,880
+Érica: e na hora que a gente for gerar uma run,
+
+78
+00:02:41,060 --> 00:02:43,280
+Érica: você coloca uma run 2.27.2,
+
+79
+00:02:43,380 --> 00:02:44,700
+Érica: uma run 2.30.1,
+
+80
+00:02:44,740 --> 00:02:46,880
+Érica: e com o customer specific, tipo,
+
+81
+00:02:47,600 --> 00:02:49,160
+Érica: não é pra ficar copiando
+
+82
+00:02:49,160 --> 00:02:50,920
+Érica: e colando test case de coisas que estão
+
+83
+00:02:50,920 --> 00:02:52,560
+Érica: escritas iguais. Eu tô falando que
+
+84
+00:02:52,560 --> 00:02:54,860
+Érica: isso daqui, o conteúdo disso daqui, não é
+
+85
+00:02:54,860 --> 00:02:56,320
+Érica: um pra um com o conteúdo disso daqui.
+
+86
+00:02:57,220 --> 00:02:58,960
+Érica: Isso é algo que a gente fez, que a gente
+
+87
+00:02:58,960 --> 00:03:01,000
+Érica: listou pra 2.30.1,
+
+88
+00:03:01,620 --> 00:03:03,560
+Érica: olhando pro software da 2.30.1.
+
+89
+00:03:03,620 --> 00:03:04,940
+Érica: Mas isso daqui, não,
+
+90
+00:03:06,480 --> 00:03:07,360
+Érica: o conteúdo
+
+91
+00:03:07,360 --> 00:03:09,040
+Érica: completo não tá sendo coberto
+
+92
+00:03:09,080 --> 00:03:11,000
+Érica: pelo que você escreveu. E é isso que a gente tem que
+
+93
+00:03:11,000 --> 00:03:12,540
+Érica: garantir, que o conteúdo completo
+
+94
+00:03:12,540 --> 00:03:15,080
+Érica: está sendo validado em todas as runs.
+
+95
+00:03:15,400 --> 00:03:17,140
+Érica: Daí agora, o que precisa
+
+96
+00:03:17,140 --> 00:03:19,000
+Érica: tomar decisão no detalhe é
+
+97
+00:03:19,000 --> 00:03:21,040
+Érica: como fazer isso, como operacionalizar
+
+98
+00:03:21,040 --> 00:03:25,250
+Érica: isso. Entendeu?
+
+99
+00:03:25,650 --> 00:03:27,950
+Érica: O Igor tinha comentado,
+
+100
+00:03:27,990 --> 00:03:29,970
+Érica: cadê o Igor? Você falou que já tinha,
+
+101
+00:03:29,990 --> 00:03:32,130
+Érica: tinha que fazer um resumo das mudanças.
+
+102
+00:03:33,190 --> 00:03:33,950
+Igor: É, na verdade
+
+103
+00:03:33,950 --> 00:03:34,830
+Igor: eu tava meio que
+
+104
+00:03:37,170 --> 00:03:37,650
+Igor: mapeando
+
+105
+00:03:37,650 --> 00:03:39,330
+Igor: o que que faltava de
+
+106
+00:03:39,870 --> 00:03:41,370
+Igor: variáveis que seria útil,
+
+107
+00:03:41,890 --> 00:03:43,650
+Igor: tipo, útil que você
+
+108
+00:03:43,650 --> 00:03:45,810
+Igor: coloca no outro test case lá,
+
+109
+00:03:45,850 --> 00:03:47,270
+Igor: que é aquelas variáveis novas, né?
+
+110
+00:03:47,710 --> 00:03:50,010
+Igor: Só que ainda eu tava vendo no detalhe,
+
+111
+00:03:50,070 --> 00:03:51,630
+Igor: ainda não tinha finalizado, pra gente ver
+
+112
+00:03:51,630 --> 00:03:53,510
+Igor: o que faria sentido colocar nesse
+
+113
+00:03:54,090 --> 00:03:55,770
+Igor: nesse test case também,
+
+114
+00:03:56,010 --> 00:03:57,590
+Igor: né? Daí eu acho que
+
+115
+00:03:58,810 --> 00:04:00,030
+Igor: pensando que a Erika
+
+116
+00:04:00,030 --> 00:04:01,870
+Igor: falou, se fizer sentido,
+
+117
+00:04:02,070 --> 00:04:03,770
+Igor: acho que vale, né? Porque daí
+
+118
+00:04:03,770 --> 00:04:05,770
+Igor: essas variáveis novas valem pra qualquer versão.
+
+119
+00:04:06,830 --> 00:04:08,110
+Érica: Sim, eu acho que sim.
+
+120
+00:04:08,290 --> 00:04:10,030
+Érica: 2.27, 2.30,
+
+121
+00:04:10,310 --> 00:04:11,370
+Érica: 2.31.
+
+122
+00:04:12,210 --> 00:04:13,590
+Érica: E eu acho que pra não ficar
+
+123
+00:04:13,590 --> 00:04:15,430
+Érica: confuso, faz sentido
+
+124
+00:04:15,430 --> 00:04:16,810
+Érica: deixar mergeado também.
+
+125
+00:04:17,050 --> 00:04:19,930
+Érica: Pra ficar tudo agregado num lugar
+
+126
+00:04:19,930 --> 00:04:21,730
+Érica: só e não correr
+
+127
+00:04:21,730 --> 00:04:22,790
+Érica: risco de...
+
+128
+00:04:23,730 --> 00:04:25,730
+Érica: Performar uma coisa e deixar de outra pro lado.
+
+129
+00:04:27,070 --> 00:04:27,510
+Érica: Exato.
+
+130
+00:04:27,890 --> 00:04:29,810
+Igor: É, o que não tinha pensado era isso que a Erika
+
+131
+00:04:29,810 --> 00:04:31,270
+Igor: falou, né? Se faria sentido essas
+
+132
+00:04:32,030 --> 00:04:33,270
+Igor: transições de estados pra
+
+133
+00:04:34,190 --> 00:04:36,290
+Igor: atrás da 2.31, mas...
+
+134
+00:04:36,290 --> 00:04:37,650
+Érica: Eu acho que sim.
+
+135
+00:04:37,750 --> 00:04:39,890
+Érica: Meu gut feeling que sim, mas tem que olhar
+
+136
+00:04:39,890 --> 00:04:41,790
+Érica: no detalhe. Então o que eu vou
+
+137
+00:04:41,990 --> 00:04:43,710
+Érica: gerir então é talvez... Então deixa
+
+138
+00:04:43,710 --> 00:04:45,570
+Érica: isso daqui marcado como 2.31
+
+139
+00:04:45,570 --> 00:04:47,610
+Érica: do jeito que tá, tipo, não altera nada
+
+140
+00:04:47,610 --> 00:04:49,970
+Érica: porque isso daqui foi performado, foi executado
+
+141
+00:04:49,970 --> 00:04:51,730
+Érica: na 2.31 e a gente precisa
+
+142
+00:04:51,730 --> 00:04:52,850
+Érica: deixar como
+
+143
+00:04:53,730 --> 00:04:54,250
+Érica: histórico.
+
+144
+00:04:55,590 --> 00:04:57,570
+Érica: E daí copia esses
+
+145
+00:04:57,570 --> 00:04:59,790
+Érica: casos que não estão sendo repetidos
+
+146
+00:04:59,790 --> 00:05:01,310
+Érica: pra o
+
+147
+00:05:01,310 --> 00:05:03,570
+Érica: test case novo, pra ser
+
+148
+00:05:03,570 --> 00:05:04,290
+Érica: executado junto.
+
+149
+00:05:05,070 --> 00:05:07,830
+Érica: O que tiver duplicado, o que tiver
+
+150
+00:05:07,830 --> 00:05:09,670
+Érica: de conteúdo, que já existe um caso aqui
+
+151
+00:05:09,670 --> 00:05:11,830
+Érica: dentro que já valida, não precisa copiar.
+
+152
+00:05:11,990 --> 00:05:13,050
+Érica: Os outros daí copia.
+
+153
+00:05:13,430 --> 00:05:15,690
+Érica: Daí vê o nome, você tem que
+
+154
+00:05:15,690 --> 00:05:18,010
+Érica: ajustar alguma coisa e copia.
+
+155
+00:05:18,030 --> 00:05:19,750
+Érica: Daí isso daqui fica travado no
+
+156
+00:05:19,750 --> 00:05:21,570
+Érica: tempo como obsoleto e o novo
+
+157
+00:05:21,570 --> 00:05:23,890
+Érica: que a gente vai executar vai ser tudo a partir
+
+158
+00:05:23,890 --> 00:05:25,690
+Érica: desse. Não tem problema, ele tá
+
+159
+00:05:25,690 --> 00:05:28,250
+Érica: marcado como 2.27.2
+
+160
+00:05:28,250 --> 00:05:29,470
+Érica: porque só significa que é
+
+161
+00:05:29,470 --> 00:05:31,710
+Érica: dessa versão pra frente. Mas a gente
+
+162
+00:05:31,710 --> 00:05:32,970
+Érica: deixa um test case único.
+
+163
+00:05:33,310 --> 00:05:35,570
+Érica: A única coisa que vai diferenciar entre as
+
+164
+00:05:35,570 --> 00:05:37,710
+Érica: versões de bug fixes é o run.
+
+165
+00:05:38,050 --> 00:05:39,750
+Érica: Se no run tiver um
+
+166
+00:05:39,750 --> 00:05:41,830
+Érica: desses casos que não faz sentido aplicar,
+
+167
+00:05:41,990 --> 00:05:43,610
+Érica: a gente não bota no conteúdo da run.
+
+168
+00:05:43,770 --> 00:05:45,490
+Érica: Mas se a gente ficar copiando e colando
+
+169
+00:05:45,490 --> 00:05:47,850
+Érica: vários textos iguais, vai ser horrível
+
+170
+00:05:47,850 --> 00:05:49,350
+Érica: de fazer manutenção desses test cases.
+
+171
+00:05:49,490 --> 00:05:50,450
+Érica: Tem que evitar isso.
+
+172
+00:05:51,150 --> 00:05:52,030
+Érica: Faz sentido.
+
+173
+00:05:54,200 --> 00:05:56,000
+Érica: É o que faz sentido, então,
+
+174
+00:05:56,660 --> 00:05:58,060
+Érica: Muri. É olhar
+
+175
+00:05:58,060 --> 00:06:00,040
+Érica: no detalhe, pega o que o Igor já
+
+176
+00:06:00,040 --> 00:06:02,080
+Érica: tinha avaliado, olha no
+
+177
+00:06:02,080 --> 00:06:04,100
+Érica: detalhe e tenta mergear em cima
+
+178
+00:06:04,100 --> 00:06:05,380
+Érica: desse daqui pra gente ter um
+
+179
+00:06:05,380 --> 00:06:06,700
+Érica: test case único.
+
+180
+00:06:07,800 --> 00:06:08,680
+Murilo: Beleza, perfeito.
+
+181
+00:06:09,390 --> 00:06:10,830
+Murilo: É o passo 1 da história.
+
+182
+00:06:12,310 --> 00:06:14,450
+Murilo: Será que, só uma duvidazinha, muda ali o título
+
+183
+00:06:14,450 --> 00:06:17,730
+Murilo: do 2.31
+
+184
+00:06:17,730 --> 00:06:19,010
+Murilo: pra alguma coisa de tipo...
+
+185
+00:06:20,500 --> 00:06:22,740
+Murilo: Porque o meu medo também é depois, na hora de performar,
+
+186
+00:06:22,800 --> 00:06:24,440
+Murilo: mudar e fazer aquilo lá também.
+
+187
+00:06:25,160 --> 00:06:26,460
+Murilo: Em vez de fazer o que...
+
+188
+00:06:26,460 --> 00:06:28,520
+Érica: Eu acho que não, porque isso daqui
+
+189
+00:06:28,520 --> 00:06:30,500
+Érica: já foi executado no passado,
+
+190
+00:06:30,700 --> 00:06:32,680
+Érica: então é bom deixar...
+
+191
+00:06:32,680 --> 00:06:34,440
+Érica: Ele é 2.31.0 mesmo.
+
+192
+00:06:34,520 --> 00:06:36,380
+Érica: Ele foi executado pra 2.31.0.
+
+193
+00:06:36,500 --> 00:06:38,400
+Érica: Ele foi executado aqui, ele tem o histórico
+
+194
+00:06:38,400 --> 00:06:39,960
+Érica: da execução, então
+
+195
+00:06:39,960 --> 00:06:42,080
+Érica: é importante deixar do jeito que tá.
+
+196
+00:06:42,380 --> 00:06:44,040
+Murilo: Eu digo que seria
+
+197
+00:06:44,040 --> 00:06:45,920
+Murilo: colocar tipo um parênteses antes de tudo ali
+
+198
+00:06:45,920 --> 00:06:47,880
+Murilo: de update, só colocar... Ah, esqueci a palavra.
+
+199
+00:06:48,300 --> 00:06:49,640
+Murilo: Tanto em português quanto em inglês.
+
+200
+00:06:50,640 --> 00:06:51,440
+Murilo: Como antigo.
+
+201
+00:06:53,380 --> 00:06:54,800
+Érica: Eu acho que não precisa.
+
+202
+00:06:55,120 --> 00:06:57,100
+Érica: Porque na hora que a gente for executar agora,
+
+203
+00:06:57,220 --> 00:06:59,280
+Érica: a gente vai apontar pra esse cara novo.
+
+204
+00:06:59,400 --> 00:07:00,540
+Murilo: É verdade, né? Vai tá tudo...
+
+205
+00:07:00,540 --> 00:07:02,500
+Murilo: O mundo vai executar o 1.2.0.4, é.
+
+206
+00:07:03,320 --> 00:07:05,300
+Murilo: É verdade. Tô esquecendo que tem isso.
+
+207
+00:07:05,360 --> 00:07:05,720
+Murilo: Tudo bem.
+
+208
+00:07:08,280 --> 00:07:10,600
+Murilo: Beleza, tá bom. Então eu pego
+
+209
+00:07:10,600 --> 00:07:12,500
+Murilo: as coisinhas que o Igor mandar e eu já faço
+
+210
+00:07:12,500 --> 00:07:13,920
+Murilo: comparação e já vou mudando
+
+211
+00:07:13,920 --> 00:07:15,740
+Murilo: o que tiver...
+
+212
+00:07:16,760 --> 00:07:18,640
+Murilo: Várias vezes diferentinho e faço merge.
+
+213
+00:07:19,750 --> 00:07:21,090
+Érica: Teve mais algum finding
+
+214
+00:07:21,090 --> 00:07:22,950
+Érica: de conteúdo desse daqui
+
+215
+00:07:22,950 --> 00:07:25,350
+Érica: que você teve, Igor?
+
+216
+00:07:25,870 --> 00:07:27,270
+Érica: Ou você já passou
+
+217
+00:07:27,270 --> 00:07:28,530
+Érica: e já foi corrigido?
+
+218
+00:07:28,790 --> 00:07:30,790
+Igor: O Murilo... Eu passei pro Murilo
+
+219
+00:07:30,790 --> 00:07:32,450
+Igor: ele corrigiu agora
+
+220
+00:07:32,450 --> 00:07:34,610
+Igor: ele falou agora pra mim pela manhã, eu não vi
+
+221
+00:07:34,610 --> 00:07:36,310
+Igor: ainda no detalhe. Nem cheguei a abrir.
+
+222
+00:07:36,370 --> 00:07:38,310
+Igor: Eu vou abrir daí só pra dar o
+
+223
+00:07:39,260 --> 00:07:39,940
+Igor: final, né?
+
+224
+00:07:39,940 --> 00:07:42,600
+Igor: Eu li bem por cima, eu ainda
+
+225
+00:07:42,600 --> 00:07:44,880
+Igor: tenho que dar mais uma olhada com carinho.
+
+226
+00:07:45,040 --> 00:07:46,540
+Igor: Uma coisa que eu achei estranha foi
+
+227
+00:07:46,540 --> 00:07:48,400
+Igor: esse segundo caso aqui, que parece
+
+228
+00:07:48,400 --> 00:07:49,660
+Igor: que você tá misturando
+
+229
+00:07:50,280 --> 00:07:52,180
+Igor: StartRoutine pra SCU e
+
+230
+00:07:52,180 --> 00:07:54,520
+Igor: MCU Control interno.
+
+231
+00:07:54,580 --> 00:07:55,660
+Igor: É isso aqui mesmo?
+
+232
+00:07:59,150 --> 00:07:59,570
+Murilo: É...
+
+233
+00:08:01,920 --> 00:08:03,520
+Murilo: Deixa eu lembrar qual que é esse.
+
+234
+00:08:03,960 --> 00:08:04,820
+Murilo: Interface address.
+
+235
+00:08:07,080 --> 00:08:07,600
+Murilo: Não.
+
+236
+00:08:08,240 --> 00:08:10,720
+Murilo: Não era pra ser isso. Era simplesmente só testar
+
+237
+00:08:10,720 --> 00:08:11,500
+Murilo: realmente o...
+
+238
+00:08:12,880 --> 00:08:15,040
+Murilo: Se entra certinho a UpdateState a SCU,
+
+239
+00:08:15,060 --> 00:08:16,420
+Murilo: cada SCU separadinha.
+
+240
+00:08:17,700 --> 00:08:18,820
+Murilo: Então eu vou melhorar.
+
+241
+00:08:20,380 --> 00:08:22,100
+Érica: O que eu ia falar é que
+
+242
+00:08:22,100 --> 00:08:24,000
+Érica: existem duas frentes que precisam
+
+243
+00:08:24,000 --> 00:08:25,900
+Érica: ser validadas em paralelo, que é
+
+244
+00:08:25,900 --> 00:08:27,520
+Érica: um pouco o que acontece aqui.
+
+245
+00:08:27,740 --> 00:08:29,520
+Érica: Daí tem que dar uma olhada se faz sentido
+
+246
+00:08:29,520 --> 00:08:32,060
+Érica: o jeito que você escreveu, ou só de você
+
+247
+00:08:32,060 --> 00:08:33,600
+Érica: mergear ele já vai estar corrigido.
+
+248
+00:08:33,880 --> 00:08:35,200
+Érica: Mas é o sentido de
+
+249
+00:08:36,380 --> 00:08:38,100
+Érica: a gente estabelecer
+
+250
+00:08:38,100 --> 00:08:39,660
+Érica: o UpdateState através do
+
+251
+00:08:39,660 --> 00:08:42,020
+Érica: multi-flashing, então tudo que
+
+252
+00:08:42,020 --> 00:08:43,860
+Érica: é relacionado com as SCUs
+
+253
+00:08:43,860 --> 00:08:45,820
+Érica: é só mensagens internas
+
+254
+00:08:45,820 --> 00:08:47,720
+Érica: e estabelecer o UpdateState
+
+255
+00:08:47,720 --> 00:08:49,820
+Érica: através do DS como single
+
+256
+00:08:49,820 --> 00:08:52,000
+Érica: flashing de uma SCU. Então existe um
+
+257
+00:08:52,000 --> 00:08:53,720
+Érica: cenário, que é normalmente
+
+258
+00:08:53,720 --> 00:08:55,500
+Érica: um cenário atípico, um cenário só de
+
+259
+00:08:55,500 --> 00:08:57,780
+Érica: que quando as coisas deram
+
+260
+00:08:57,780 --> 00:09:00,120
+Érica: errado, mas a gente tem que suportar,
+
+261
+00:09:00,120 --> 00:09:02,180
+Érica: é fazer um single flashing numa SCU.
+
+262
+00:09:02,240 --> 00:09:03,680
+Érica: Daí a gente valida, start, stop,
+
+263
+00:09:03,760 --> 00:09:05,420
+Érica: routine direto pra aquela SCU.
+
+264
+00:09:05,560 --> 00:09:07,680
+Érica: Mas o normal padrão multi-flashing
+
+265
+00:09:07,680 --> 00:09:09,680
+Érica: é MCU control. Mas ambas as frentes
+
+266
+00:09:09,680 --> 00:09:11,280
+Érica: precisam ser validadas no teste QA.
+
+267
+00:09:11,660 --> 00:09:12,620
+Érica: Pode falar, Rafa.
+
+268
+00:09:16,020 --> 00:09:17,360
+Rafa: Até quando a gente faz multi-flashing
+
+269
+00:09:17,360 --> 00:09:19,380
+Rafa: de SCU, a comunicação passa primeiro
+
+270
+00:09:19,380 --> 00:09:21,380
+Rafa: pela MCU, ela testa
+
+271
+00:09:21,380 --> 00:09:23,240
+Rafa: a comunicação em MCU que manda o control
+
+272
+00:09:23,240 --> 00:09:24,920
+Rafa: routine. Tipo, o DS funciona?
+
+273
+00:09:25,280 --> 00:09:27,180
+Érica: Não, não, não. Mas a gente
+
+274
+00:09:27,180 --> 00:09:29,100
+Érica: tem que validar start, stop, routine
+
+275
+00:09:29,100 --> 00:09:31,380
+Érica: pra SCU também. É isso que eu tô falando.
+
+276
+00:09:31,700 --> 00:09:33,460
+Érica: Tipo, existe o cenário
+
+277
+00:09:33,460 --> 00:09:35,340
+Érica: multi-flashing. O cenário multi-flashing que a gente
+
+278
+00:09:35,340 --> 00:09:37,360
+Érica: tem MCU e SCUs, isso que a gente valida
+
+279
+00:09:37,360 --> 00:09:39,120
+Érica: o MCU control e o UpdateState control.
+
+280
+00:09:39,420 --> 00:09:41,360
+Érica: Mas existe um cenário atípico
+
+281
+00:09:41,360 --> 00:09:43,480
+Érica: que a gente também tem que validar e é por isso
+
+282
+00:09:43,480 --> 00:09:45,240
+Érica: que tá implementado o processamento
+
+283
+00:09:45,240 --> 00:09:47,600
+Érica: da StartRoutine e da StopRoutine direto
+
+284
+00:09:47,600 --> 00:09:49,140
+Érica: numa SCU. Ambas as coisas
+
+285
+00:09:49,140 --> 00:09:51,300
+Érica: tem que estar distintas e mapeadas no teste case.
+
+286
+00:09:51,560 --> 00:09:53,100
+Érica: Perfeito. E pra mim isso daqui tá meio
+
+287
+00:09:53,100 --> 00:09:54,780
+Érica: misturado. Tipo, não tá muito claro.
+
+288
+00:09:55,440 --> 00:09:56,680
+Murilo: Beleza. Perfeito.
+
+289
+00:09:57,060 --> 00:09:58,880
+Érica: Deu pra entender. E daí é distinto.
+
+290
+00:09:58,980 --> 00:10:01,100
+Érica: Não pode misturar as coisas. Você não pode mandar
+
+291
+00:10:01,100 --> 00:10:03,100
+Érica: uma StartRoutine pra uma SCU e
+
+292
+00:10:03,100 --> 00:10:05,240
+Érica: depois validar coisas no meio através
+
+293
+00:10:05,240 --> 00:10:07,360
+Érica: do MCU control. Porque muito provavelmente
+
+294
+00:10:07,360 --> 00:10:09,160
+Érica: esse cenário vai ser o cenário que
+
+295
+00:10:09,160 --> 00:10:11,080
+Érica: a SCU vai estar num chicotinho
+
+296
+00:10:11,640 --> 00:10:13,160
+Érica: isolado sem estar conectado com o resto
+
+297
+00:10:13,160 --> 00:10:14,200
+Érica: do subsistema, entendeu?
+
+298
+00:10:14,460 --> 00:10:16,660
+Murilo: Perfeito. Ok. Faz sentido.
+
+299
+00:10:18,740 --> 00:10:20,580
+Érica: É. Deixa eu ver.
+
+300
+00:10:20,620 --> 00:10:22,320
+Érica: Tinha mais alguma coisa. Aqui que eu ia falar
+
+301
+00:10:22,320 --> 00:10:24,200
+Érica: aqui você tá validando só com
+
+302
+00:10:24,540 --> 00:10:26,300
+Érica: vários valores
+
+303
+00:10:26,300 --> 00:10:28,260
+Érica: de delay entre um processo
+
+304
+00:10:28,260 --> 00:10:30,160
+Érica: de flashing e uma parametrização, né?
+
+305
+00:10:30,340 --> 00:10:33,140
+Érica: Uhum. Será que faz sentido
+
+306
+00:10:33,140 --> 00:10:34,920
+Érica: ter quatro distintos pra isso daqui?
+
+307
+00:10:35,040 --> 00:10:37,140
+Érica: Isso aqui tá validando tudo mais ou menos a mesma coisa, né?
+
+308
+00:10:37,300 --> 00:10:38,580
+Érica: De 10 pra 25
+
+309
+00:10:39,480 --> 00:10:41,320
+Érica: acho que isso aqui tá muito repetido.
+
+310
+00:10:41,680 --> 00:10:42,260
+Érica: Tá bom.
+
+311
+00:10:42,800 --> 00:10:44,680
+Murilo: É o que eu tava pensando é porque...
+
+312
+00:10:46,420 --> 00:10:48,960
+Murilo: Reproduza 5 segundos a mais, 5 segundos a mais
+
+313
+00:10:48,960 --> 00:10:49,640
+Murilo: e 5 segundos a mais.
+
+314
+00:10:49,780 --> 00:10:52,740
+Murilo: O que é que você tá validando de distinto
+
+315
+00:10:52,740 --> 00:10:54,180
+Murilo: entre 10, 15, 20, 25?
+
+316
+00:10:55,240 --> 00:10:56,820
+Murilo: O meu medo era de... Porque o que a gente
+
+317
+00:10:56,820 --> 00:10:58,780
+Murilo: passou do processo lá foi de 10 a 20
+
+318
+00:10:58,780 --> 00:11:01,060
+Murilo: segundos, né? Foi mais um receio
+
+319
+00:11:01,060 --> 00:11:02,600
+Murilo: de... E se quebrasse com
+
+320
+00:11:02,600 --> 00:11:04,760
+Murilo: 15 segundos? Aí... Por isso que
+
+321
+00:11:04,760 --> 00:11:06,660
+Murilo: eu... E o 25 eu coloquei só de bola
+
+322
+00:11:06,660 --> 00:11:08,280
+Murilo: mesmo. 25 daria
+
+323
+00:11:08,280 --> 00:11:10,900
+Murilo: bem tranquilo pra tirar. Meu receio é mais de...
+
+324
+00:11:11,960 --> 00:11:12,960
+Érica: Então, mas eu só tô pensando
+
+325
+00:11:12,960 --> 00:11:14,940
+Érica: o que da estrutura da
+
+326
+00:11:14,940 --> 00:11:16,860
+Érica: arquitetura do software que quebraria
+
+327
+00:11:16,860 --> 00:11:18,980
+Érica: entre 10 e 20? Porque ele é um...
+
+328
+00:11:18,980 --> 00:11:21,680
+Érica: É, nada. Que é entre uma stop e um start, né?
+
+329
+00:11:21,760 --> 00:11:23,520
+Érica: Uhum. Tipo, é só pra...
+
+330
+00:11:23,520 --> 00:11:25,320
+Érica: É que isso daqui vai... Isso que
+
+331
+00:11:25,320 --> 00:11:27,120
+Érica: gasta tempo, né? Só pra gente não
+
+332
+00:11:27,120 --> 00:11:28,360
+Érica: ficar executando coisas
+
+333
+00:11:29,360 --> 00:11:31,080
+Érica: que não... Você não tá comparando
+
+334
+00:11:31,080 --> 00:11:33,100
+Érica: comportamentos distintos. Talvez
+
+335
+00:11:33,100 --> 00:11:35,040
+Érica: o mínimo e o máximo... É, eu tava pensando nisso.
+
+336
+00:11:35,180 --> 00:11:37,180
+Érica: O mínimo que a gente passou e o máximo.
+
+337
+00:11:37,340 --> 00:11:39,260
+Érica: Daí, beleza. Pode ser. Pode ser.
+
+338
+00:11:39,320 --> 00:11:43,150
+Érica: Perfeito. E daí fora
+
+339
+00:11:43,150 --> 00:11:44,950
+Érica: é isso adicionar o caso
+
+340
+00:11:44,950 --> 00:11:46,530
+Érica: lá do skipar o refresh
+
+341
+00:11:47,370 --> 00:11:48,910
+Érica: com... Toda vez que identificar
+
+342
+00:11:48,910 --> 00:11:50,930
+Érica: um EDS reset, que é a última coisa que a gente
+
+343
+00:11:50,930 --> 00:11:52,810
+Érica: colocou. Isso daí não tá mapeado.
+
+344
+00:11:52,830 --> 00:11:54,430
+Érica: Tem que tá como um teste separado.
+
+345
+00:11:54,650 --> 00:11:56,570
+Érica: Sim. Beleza.
+
+346
+00:12:05,080 --> 00:12:06,080
+Érica: Beleza. Querem
+
+347
+00:12:06,080 --> 00:12:07,940
+Érica: já emendar num... Já que tá todo mundo
+
+348
+00:12:07,940 --> 00:12:10,160
+Érica: na chamada, já emendar o stand-up?
+
+349
+00:12:10,940 --> 00:12:12,060
+Érica: Pode ser. Pra gente não
+
+350
+00:12:12,060 --> 00:12:13,640
+Érica: parar de volta. Uhum.
+
+351
+00:12:14,220 --> 00:12:15,680
+Érica: Vai falar, mas o cu...
+
+352
+00:12:15,680 --> 00:12:18,260
+Érica: Aí eu vi ele tá... Não, o Kupka. O Kupka tá no médico.
+
+353
+00:12:18,260 --> 00:12:19,020
+Murilo: É, ele tá no médico.
+
+354
+00:12:21,160 --> 00:12:23,580
+Érica: E daí agora a gente só tem que fazer a dança das cadeiras
+
+355
+00:12:23,580 --> 00:12:25,540
+Érica: porque o Muri tá sobrecarregado
+
+356
+00:12:25,540 --> 00:12:26,820
+Érica: de tarefas por causa do
+
+357
+00:12:27,360 --> 00:12:29,220
+Érica: do finding que a gente teve na quinta.
+
+358
+00:12:31,780 --> 00:12:32,520
+Érica: Então, vamos lá.
+
+359
+00:12:37,770 --> 00:12:39,150
+Érica: Então, eu vou deixar...
+
+360
+00:12:39,610 --> 00:12:41,210
+Érica: Na sexta-feira eu dei uma olhada
+
+361
+00:12:41,210 --> 00:12:41,490
+Érica: na...
+
+362
+00:12:42,610 --> 00:12:44,110
+Érica: nos branches que o
+
+363
+00:12:44,790 --> 00:12:46,090
+Érica: Muri tinha atualizado.
+
+364
+00:12:46,290 --> 00:12:48,090
+Érica: Eu vou deixar só com um pontinho
+
+365
+00:12:52,800 --> 00:12:53,400
+Érica: simbólico aqui,
+
+366
+00:12:53,540 --> 00:12:55,620
+Érica: mas eu já olhei e já vai tá liberado
+
+367
+00:12:55,620 --> 00:12:56,360
+Érica: pra performar.
+
+368
+00:12:57,100 --> 00:12:58,920
+Érica: Só deixar o simbólico pra depois,
+
+369
+00:12:59,360 --> 00:13:01,080
+Érica: no final de todos os test cases,
+
+370
+00:13:01,820 --> 00:13:03,360
+Érica: eu aprová-la pra branch
+
+371
+00:13:03,360 --> 00:13:05,440
+Érica: do bug fix.
+
+372
+00:13:05,580 --> 00:13:07,920
+Érica: E caso a gente tenha um slide no test case
+
+373
+00:13:07,920 --> 00:13:09,440
+Érica: do Batch 3, mas na madeira,
+
+374
+00:13:09,540 --> 00:13:10,940
+Érica: a gente vai ter que
+
+375
+00:13:10,940 --> 00:13:12,560
+Érica: colocar com o mundo pra mexer.
+
+376
+00:13:13,870 --> 00:13:14,550
+Érica: Mas tá.
+
+377
+00:13:15,630 --> 00:13:17,590
+Érica: O tópico do dissecation, eu não consegui
+
+378
+00:13:17,590 --> 00:13:19,830
+Érica: arrumar aquele treco em aberto
+
+379
+00:13:19,830 --> 00:13:22,070
+Érica: lá que eu falei pra vocês, então vou deixar em aberto.
+
+380
+00:13:22,410 --> 00:13:24,270
+Érica: Function design não olhei.
+
+381
+00:13:24,610 --> 00:13:25,830
+Érica: Reworking da implementação desse
+
+382
+00:13:25,830 --> 00:13:26,730
+Érica: não precisou ainda.
+
+383
+00:13:27,510 --> 00:13:28,990
+Érica: Daí eu olhei o
+
+384
+00:13:28,990 --> 00:13:31,070
+Érica: review do plan
+
+385
+00:13:31,730 --> 00:13:32,970
+Érica: do test case
+
+386
+00:13:32,970 --> 00:13:35,450
+Érica: do override. Eu ainda preciso
+
+387
+00:13:35,450 --> 00:13:37,530
+Érica: desses pontos porque eu ainda preciso olhar no detalhe
+
+388
+00:13:37,530 --> 00:13:39,710
+Érica: o que o Kupka me passou cedo.
+
+389
+00:13:41,460 --> 00:13:42,920
+Érica: E agora o plan,
+
+390
+00:13:43,140 --> 00:13:44,340
+Érica: eu vou, sei lá, vou baixar...
+
+391
+00:13:44,360 --> 00:13:46,340
+Érica: uns dois daqui, que é o que eu olhei
+
+392
+00:13:46,340 --> 00:13:48,200
+Érica: hoje cedo, e eu vou
+
+393
+00:13:48,900 --> 00:13:50,400
+Érica: acompanhar o que vocês forem mexendo
+
+394
+00:13:50,400 --> 00:13:51,660
+Érica: até liberar.
+
+395
+00:13:55,320 --> 00:13:55,860
+Murilo: Perfeito.
+
+396
+00:13:57,350 --> 00:14:00,050
+Murilo: Tá. Eu fiquei fazendo
+
+397
+00:14:00,050 --> 00:14:02,010
+Murilo: as edições ali do test case
+
+398
+00:14:02,010 --> 00:14:03,950
+Murilo: que o Igor tinha mandado,
+
+399
+00:14:03,970 --> 00:14:06,170
+Murilo: inclusive não abaixei os pontos,
+
+400
+00:14:06,450 --> 00:14:07,930
+Murilo: mas eu acho que foi...
+
+401
+00:14:09,980 --> 00:14:11,180
+Murilo: Perdão, até esqueci de colocar.
+
+402
+00:14:11,780 --> 00:14:13,160
+Murilo: Mas foi uns...
+
+403
+00:14:14,680 --> 00:14:16,500
+Érica: Ainda precisa de um 5, né?
+
+404
+00:14:16,640 --> 00:14:17,080
+Murilo: Aham.
+
+405
+00:14:17,780 --> 00:14:19,240
+Érica: E esse daqui,
+
+406
+00:14:19,420 --> 00:14:21,080
+Érica: também vamos deixar como committed
+
+407
+00:14:21,080 --> 00:14:23,640
+Érica: e vou abaixar pra um ponto, né?
+
+408
+00:14:23,660 --> 00:14:25,120
+Érica: Que é o que você gastou na sexta, né?
+
+409
+00:14:26,440 --> 00:14:26,880
+Murilo: Perfeito.
+
+410
+00:14:27,040 --> 00:14:28,080
+Érica: Da implementação, né?
+
+411
+00:14:28,260 --> 00:14:30,260
+Murilo: É, que é pra fazer duas outras
+
+412
+00:14:32,220 --> 00:14:33,100
+Murilo: sprints. Pequeno
+
+413
+00:14:33,100 --> 00:14:35,080
+Murilo: aparentes, amiga, eu esqueci de novo,
+
+414
+00:14:35,180 --> 00:14:37,280
+Murilo: perdão, do relatório
+
+415
+00:14:37,280 --> 00:14:39,140
+Murilo: da Yael, aí tem até
+
+416
+00:14:39,140 --> 00:14:40,000
+Murilo: sexta que vem.
+
+417
+00:14:41,230 --> 00:14:43,370
+Murilo: Quer dizer, essa sexta, que é até dia 30.
+
+418
+00:14:43,650 --> 00:14:45,710
+Murilo: Aí, qualquer tempinho que tiver,
+
+419
+00:14:45,770 --> 00:14:47,670
+Murilo: eu acho que já vou adiantando pra talvez já
+
+420
+00:14:47,670 --> 00:14:48,790
+Murilo: na próxima sprint já
+
+421
+00:14:49,410 --> 00:14:49,850
+Murilo: tentar
+
+422
+00:14:49,850 --> 00:14:50,010
+Murilo: tentar...
+
+423
+00:14:50,030 --> 00:14:51,470
+Murilo: Já liberar pra ti também.
+
+424
+00:14:51,610 --> 00:14:52,210
+Murilo: Pode ser?
+
+425
+00:14:52,350 --> 00:14:52,610
+Érica: Tá bom.
+
+426
+00:14:53,380 --> 00:14:53,820
+Érica: Aham.
+
+427
+00:14:54,320 --> 00:14:55,080
+Érica: Pode ser sim.
+
+428
+00:14:55,340 --> 00:14:57,440
+Érica: Se eu só consegui fazer isso só depois de destravar
+
+429
+00:14:57,440 --> 00:14:59,400
+Érica: o test case, seria o meio ideal.
+
+430
+00:14:59,600 --> 00:15:01,920
+Érica: Porque daí os meninos não ficam travados
+
+431
+00:15:01,920 --> 00:15:03,540
+Érica: e a gente volta
+
+432
+00:15:03,540 --> 00:15:04,840
+Érica: pras coisas de documentação.
+
+433
+00:15:05,140 --> 00:15:06,380
+Murilo: Sim. Beleza.
+
+434
+00:15:08,840 --> 00:15:09,280
+Érica: Beleza.
+
+435
+00:15:09,940 --> 00:15:12,440
+Érica: Daí, o que eu vou sugerir,
+
+436
+00:15:12,440 --> 00:15:15,260
+Érica: que agora, tanto o Igor quanto o Rafa
+
+437
+00:15:15,260 --> 00:15:16,380
+Érica: vão estar travados,
+
+438
+00:15:17,340 --> 00:15:18,820
+Érica: não conseguem começar
+
+439
+00:15:18,820 --> 00:15:21,360
+Érica: a executar os testes, que é o que está mapeado
+
+440
+00:15:21,360 --> 00:15:23,040
+Érica: de grosso do sprint
+
+441
+00:15:23,040 --> 00:15:25,120
+Érica: deles. Então, essa, escrever
+
+442
+00:15:25,120 --> 00:15:27,280
+Érica: o release, atualizar o conteúdo
+
+443
+00:15:27,280 --> 00:15:29,080
+Érica: do release checklist, eu vou sugerir de passar
+
+444
+00:15:29,080 --> 00:15:31,100
+Érica: pra um dos dois. A gente já define
+
+445
+00:15:31,100 --> 00:15:35,070
+Érica: quem. Daí, o Kupka
+
+446
+00:15:40,620 --> 00:15:41,820
+Érica: ele escreveu, eu não sei,
+
+447
+00:15:41,940 --> 00:15:43,900
+Érica: ele devia ter baixado,
+
+448
+00:15:43,920 --> 00:15:45,700
+Érica: eu não sei se ele não... Acho que ele não baixou.
+
+449
+00:15:50,460 --> 00:15:52,320
+Érica: Não, ele não baixou. Vou pedir pra ele
+
+450
+00:15:52,320 --> 00:15:54,060
+Érica: baixar depois o quanto que ele gastou.
+
+451
+00:15:54,400 --> 00:15:56,200
+Érica: Na verdade, provavelmente é tudo, porque
+
+452
+00:15:56,200 --> 00:15:58,500
+Érica: daí, depois que ele
+
+453
+00:15:58,500 --> 00:16:00,160
+Érica: voltar do médico, depois que a gente...
+
+454
+00:16:00,480 --> 00:16:01,640
+Érica: revisar, ele vai
+
+455
+00:16:01,640 --> 00:16:04,060
+Érica: shiftar pro rework desses test cases.
+
+456
+00:16:04,260 --> 00:16:06,340
+Érica: Então, o objetivo é o Kupka
+
+457
+00:16:06,340 --> 00:16:08,000
+Érica: tentar matar isso
+
+458
+00:16:08,000 --> 00:16:10,060
+Érica: hoje, pra ele, caso
+
+459
+00:16:10,060 --> 00:16:12,100
+Érica: libere pra performar os test cases
+
+460
+00:16:12,100 --> 00:16:14,200
+Érica: amanhã, ele já consiga shiftar
+
+461
+00:16:14,200 --> 00:16:16,080
+Érica: pros testes de volta. Se não, daí ele...
+
+462
+00:16:16,700 --> 00:16:18,240
+Érica: Se não liberar, daí ele vai ter que
+
+463
+00:16:18,240 --> 00:16:20,660
+Érica: ainda trabalhar nisso amanhã, pra convergir
+
+464
+00:16:20,660 --> 00:16:22,140
+Érica: ou do override. Mas ele
+
+465
+00:16:22,140 --> 00:16:24,200
+Érica: terminou de escrever, ele me passou hoje cedo, antes
+
+466
+00:16:24,200 --> 00:16:25,580
+Érica: de ir pro médico.
+
+467
+00:16:27,500 --> 00:16:29,100
+Érica: Daí, já vamos pro Rafa,
+
+468
+00:16:29,300 --> 00:16:30,840
+Érica: vamos shiftar pro Igor primeiro.
+
+469
+00:16:30,840 --> 00:16:33,240
+Igor: Tá, deixa eu relembrar se deixei
+
+470
+00:16:33,240 --> 00:16:34,540
+Igor: alguma coisa aberta, que
+
+471
+00:16:34,540 --> 00:16:35,960
+Igor: deveria estar fechado.
+
+472
+00:16:36,420 --> 00:16:38,360
+Igor: Ah, eu revi o test case, então
+
+473
+00:16:38,840 --> 00:16:40,680
+Igor: eu só preciso ver no detalhe aqui
+
+474
+00:16:40,680 --> 00:16:42,060
+Igor: as mudanças do brilho lá,
+
+475
+00:16:42,780 --> 00:16:44,740
+Igor: mas é possível, já tá fechado, já.
+
+476
+00:16:45,760 --> 00:16:47,000
+Igor: Daí, eu já fecho
+
+477
+00:16:47,000 --> 00:16:48,880
+Igor: ele, e acho que
+
+478
+00:16:48,880 --> 00:16:49,760
+Igor: era isso, né?
+
+479
+00:16:49,960 --> 00:16:53,100
+Igor: E daí, performar os test cases
+
+480
+00:16:53,100 --> 00:16:54,240
+Igor: em tempo de recuperar.
+
+481
+00:16:54,940 --> 00:16:55,760
+Igor: É isso.
+
+482
+00:16:56,600 --> 00:16:59,340
+Igor: E o administrativo que eu fechei...
+
+483
+00:16:59,340 --> 00:17:00,760
+Igor: Ah, tá, do adicionar
+
+484
+00:17:01,460 --> 00:17:03,070
+Igor: o... Só que isso, né?
+
+485
+00:17:03,090 --> 00:17:05,070
+Igor: Na verdade, daí, acho que a gente vai ter que criar depois um
+
+486
+00:17:05,070 --> 00:17:07,130
+Igor: pra comitar, né?
+
+487
+00:17:07,930 --> 00:17:08,890
+Igor: Aham, arrumar a branch.
+
+488
+00:17:09,270 --> 00:17:10,490
+Érica: É. Beleza.
+
+489
+00:17:12,010 --> 00:17:12,370
+Murilo: Perguntinha,
+
+490
+00:17:13,590 --> 00:17:14,870
+Murilo: qual que é a tua prioridade?
+
+491
+00:17:15,050 --> 00:17:16,310
+Murilo: A revisão ou
+
+492
+00:17:17,310 --> 00:17:18,690
+Murilo: mergear os dois test cases?
+
+493
+00:17:19,030 --> 00:17:20,090
+Murilo: A revisão do CUP?
+
+494
+00:17:21,530 --> 00:17:23,190
+Érica: Então, é isso que eu ia sugerir.
+
+495
+00:17:24,390 --> 00:17:25,410
+Érica: É isso que você
+
+496
+00:17:25,410 --> 00:17:27,290
+Érica: tá sobrecarregado. A tua prioridade
+
+497
+00:17:27,290 --> 00:17:29,430
+Érica: é arrumar o test case do update state, que você
+
+498
+00:17:29,430 --> 00:17:31,530
+Érica: é a pessoa mais capaz de fazer isso.
+
+499
+00:17:31,610 --> 00:17:33,350
+Érica: Isso no detalhe, porque você que implementou.
+
+500
+00:17:33,710 --> 00:17:35,390
+Érica: Daí, a revisão
+
+501
+00:17:36,610 --> 00:17:37,750
+Érica: do test case
+
+502
+00:17:37,750 --> 00:17:39,750
+Érica: do override é uma coisa que tá pra você
+
+503
+00:17:39,750 --> 00:17:41,090
+Érica: que precisa shiftar,
+
+504
+00:17:41,170 --> 00:17:43,490
+Érica: e atualizar o conteúdo do release checklist
+
+505
+00:17:43,490 --> 00:17:45,630
+Érica: também tá pra você pra revisar.
+
+506
+00:17:45,770 --> 00:17:47,830
+Érica: A gente só tem que decidir quem dos dois
+
+507
+00:17:47,830 --> 00:17:49,510
+Érica: vai pegar. O Igor ou o Rafa,
+
+508
+00:17:49,610 --> 00:17:51,110
+Érica: um dos dois vai pegar um desses dois,
+
+509
+00:17:51,310 --> 00:17:53,690
+Érica: porque eles são travados, porque eles não conseguem executar
+
+510
+00:17:53,690 --> 00:17:54,710
+Érica: o teste agora, entendeu?
+
+511
+00:17:58,000 --> 00:17:58,980
+Érica: Rafa, eu tinha
+
+512
+00:17:58,980 --> 00:18:00,620
+Érica: criado pra mapear as
+
+513
+00:18:00,620 --> 00:18:02,380
+Érica: atividades da viagem,
+
+514
+00:18:03,080 --> 00:18:03,880
+Érica: do sprint passado,
+
+515
+00:18:05,660 --> 00:18:07,580
+Érica: na verdade, finalzinho do sprint passado,
+
+516
+00:18:07,580 --> 00:18:09,380
+Érica: tanto agora. Então, eu vou fechar aqui
+
+517
+00:18:09,380 --> 00:18:11,670
+Érica: com o Dan, que foi os dois dias
+
+518
+00:18:11,670 --> 00:18:13,590
+Érica: que você ficou quinta e sexta lá.
+
+519
+00:18:13,730 --> 00:18:14,130
+Érica: Beleza?
+
+520
+00:18:19,550 --> 00:18:21,970
+Érica: Daí, você tinha ficado com testes
+
+521
+00:18:21,970 --> 00:18:23,770
+Érica: performar test cases, mas como
+
+522
+00:18:23,770 --> 00:18:25,530
+Érica: você bem ouviu, não tá
+
+523
+00:18:25,530 --> 00:18:27,170
+Érica: liberado ainda. Então, agora
+
+524
+00:18:27,170 --> 00:18:29,790
+Érica: só preferências. Então, tem
+
+525
+00:18:29,790 --> 00:18:30,950
+Érica: uma, atualizar
+
+526
+00:18:30,950 --> 00:18:33,510
+Érica: o release checklist e
+
+527
+00:18:33,510 --> 00:18:34,970
+Érica: revisar o do override.
+
+528
+00:18:35,530 --> 00:18:36,930
+Érica: A minha sugestão,
+
+529
+00:18:37,310 --> 00:18:39,290
+Érica: eu acho que o Rafa é melhor revisar o do override
+
+530
+00:18:39,290 --> 00:18:40,630
+Érica: e o Igor passar pro
+
+531
+00:18:40,630 --> 00:18:42,310
+Érica: do release checklist, porque
+
+532
+00:18:42,310 --> 00:18:45,030
+Érica: o Rafa tá mais por dentro do
+
+533
+00:18:45,030 --> 00:18:46,210
+Érica: do outro bug fix.
+
+534
+00:18:48,520 --> 00:18:50,680
+Igor: Só pra relembrar,
+
+535
+00:18:50,860 --> 00:18:52,540
+Igor: não sei se a gente entrou no detalhe,
+
+536
+00:18:52,560 --> 00:18:53,920
+Igor: mas lembro, o
+
+537
+00:18:53,920 --> 00:18:56,640
+Igor: release checklist pra atualizar é adicionar
+
+538
+00:18:57,580 --> 00:18:58,840
+Igor: agora as mudanças
+
+539
+00:18:58,840 --> 00:19:00,420
+Igor: do update state
+
+540
+00:19:00,420 --> 00:19:01,780
+Igor: da FCU também?
+
+541
+00:19:02,220 --> 00:19:04,620
+Érica: Isso. O conteúdo do que a gente tá liberando
+
+542
+00:19:04,620 --> 00:19:06,480
+Érica: nos bug fixes vai ter que entrar
+
+543
+00:19:06,480 --> 00:19:08,440
+Érica: como itens novos do release checklist.
+
+544
+00:19:09,000 --> 00:19:10,220
+Érica: Daí, você tem que pensar
+
+545
+00:19:10,220 --> 00:19:12,860
+Érica: isso é o objetivo do tipo
+
+546
+00:19:12,860 --> 00:19:14,340
+Érica: olhar lá o release checklist
+
+547
+00:19:14,340 --> 00:19:16,840
+Érica: o que que era o release checklist na época
+
+548
+00:19:16,840 --> 00:19:18,840
+Érica: da 2.27, daí tem que olhar
+
+549
+00:19:18,840 --> 00:19:21,260
+Érica: versão por versão que a gente liberou
+
+550
+00:19:21,260 --> 00:19:22,920
+Érica: o que que era o release checklist da
+
+551
+00:19:22,920 --> 00:19:25,000
+Érica: 2.30 e gerar meio que
+
+552
+00:19:25,000 --> 00:19:26,660
+Érica: uma run nova de release checklist
+
+553
+00:19:27,400 --> 00:19:28,780
+Érica: com o conteúdo
+
+554
+00:19:28,780 --> 00:19:30,980
+Érica: que seria 2.27. Então, o que que
+
+555
+00:19:30,980 --> 00:19:32,420
+Érica: na época da 2.27
+
+556
+00:19:32,420 --> 00:19:34,780
+Érica: a gente tava liberando que a gente tem que
+
+557
+00:19:34,780 --> 00:19:36,440
+Érica: garantir que ainda tá consistente
+
+558
+00:19:36,440 --> 00:19:38,760
+Érica: e colocar uma linha nova com
+
+559
+00:19:38,760 --> 00:19:40,460
+Érica: relação ao update state e colocar
+
+560
+00:19:40,460 --> 00:19:42,580
+Érica: uma linha nova com relação ao do
+
+561
+00:19:42,580 --> 00:19:45,100
+Érica: override. Pra você se familiarizar
+
+562
+00:19:45,100 --> 00:19:46,460
+Érica: com o override, você pode ler tanto
+
+563
+00:19:46,460 --> 00:19:48,540
+Érica: o function design da Lily quanto o próprio
+
+564
+00:19:48,540 --> 00:19:50,680
+Érica: test case em si. Você já meio que
+
+565
+00:19:50,680 --> 00:19:52,880
+Érica: vai ter que fazer isso porque você que vai executar
+
+566
+00:19:52,880 --> 00:19:54,700
+Érica: os test cases, porque você que não
+
+567
+00:19:54,700 --> 00:19:56,560
+Érica: tá biased pelo bug
+
+568
+00:19:56,560 --> 00:19:58,640
+Érica: pra executar. Então, isso já
+
+569
+00:19:58,640 --> 00:20:00,660
+Érica: é uma oportunidade pra você se familiarizando
+
+570
+00:20:00,660 --> 00:20:02,740
+Érica: com o conteúdo porque vai ser a próxima
+
+571
+00:20:02,740 --> 00:20:04,220
+Érica: atividade que você vai executar.
+
+572
+00:20:04,580 --> 00:20:06,560
+Érica: Mas o atualizar o
+
+573
+00:20:06,560 --> 00:20:07,900
+Érica: release checklist é isso.
+
+574
+00:20:09,120 --> 00:20:10,880
+Érica: Recuperar qual que é a versão do Excel
+
+575
+00:20:10,880 --> 00:20:12,600
+Érica: correspondente pra cada uma dessas
+
+576
+00:20:12,600 --> 00:20:14,740
+Érica: versões pra gente poder gerar uma run
+
+577
+00:20:14,740 --> 00:20:15,860
+Érica: que agora tá no Azure
+
+578
+00:20:16,800 --> 00:20:18,720
+Érica: correspondente com aquilo. Se tiver que fazer
+
+579
+00:20:18,720 --> 00:20:20,740
+Érica: alguma manutenção, eu não sei exatamente
+
+580
+00:20:20,740 --> 00:20:22,840
+Érica: como que vai tá lá. Mas isso é
+
+581
+00:20:22,840 --> 00:20:24,320
+Érica: mais ou menos. Então, a gente tem o
+
+582
+00:20:24,800 --> 00:20:26,740
+Érica: release checklist da 2.31, tem
+
+583
+00:20:26,740 --> 00:20:28,280
+Érica: que pegar os anteriores lá no
+
+584
+00:20:29,260 --> 00:20:30,700
+Érica: repositório do bug server
+
+585
+00:20:30,700 --> 00:20:32,080
+Érica: lá e... Isso.
+
+586
+00:20:32,360 --> 00:20:34,760
+Érica: E comparar. Pra poder gerar
+
+587
+00:20:34,760 --> 00:20:36,760
+Érica: run nova. O que faz sentido executar
+
+588
+00:20:36,760 --> 00:20:38,260
+Érica: ou não, né? Exatamente.
+
+589
+00:20:38,860 --> 00:20:40,760
+Érica: No geral, o objetivo é
+
+590
+00:20:40,760 --> 00:20:42,780
+Érica: a gente precisa rolar um release checklist pra
+
+591
+00:20:42,780 --> 00:20:44,880
+Érica: garantir que o que a gente tá integrando como
+
+592
+00:20:44,880 --> 00:20:46,760
+Érica: bug fix tá funcionando
+
+593
+00:20:46,760 --> 00:20:48,980
+Érica: do tipo tá consistente na versão
+
+594
+00:20:48,980 --> 00:20:50,940
+Érica: final e o que já
+
+595
+00:20:50,940 --> 00:20:52,760
+Érica: existia na versão base
+
+596
+00:20:52,760 --> 00:20:55,560
+Érica: na 2.27.1, na 2.30.0
+
+597
+00:20:56,120 --> 00:20:56,820
+Érica: aqui é
+
+598
+00:20:56,820 --> 00:20:57,960
+Érica: 2.27.2
+
+599
+00:20:57,960 --> 00:21:00,900
+Érica: tá consistente. Então, nada do que
+
+600
+00:21:00,900 --> 00:21:02,760
+Érica: foi integrado do bug fix quebrou
+
+601
+00:21:02,760 --> 00:21:04,920
+Érica: outras funcionalidades que a gente já
+
+602
+00:21:04,920 --> 00:21:06,820
+Érica: tinha validado no release
+
+603
+00:21:06,820 --> 00:21:08,840
+Érica: da versão anterior, na 2.27.1.
+
+604
+00:21:08,860 --> 00:21:11,120
+Érica: Na 2.30.0. Na 2.31.0.
+
+605
+00:21:11,300 --> 00:21:12,940
+Érica: Entendeu? Entendi.
+
+606
+00:21:15,220 --> 00:21:16,860
+Érica: Então, eu vou passar isso aqui pra você
+
+607
+00:21:18,800 --> 00:21:19,860
+Érica: e eu vou passar
+
+608
+00:21:20,580 --> 00:21:20,980
+Érica: o...
+
+609
+00:21:22,130 --> 00:21:23,530
+Érica: Revisar o test case pro Rafa.
+
+610
+00:21:30,040 --> 00:21:35,360
+Érica: Que é isso daqui.
+
+611
+00:21:41,200 --> 00:21:44,700
+Érica: Beleza? Daí eu te ligo, Rafa,
+
+612
+00:21:44,780 --> 00:21:46,480
+Érica: pra te mostrar o que o Kupka me passou
+
+613
+00:21:46,480 --> 00:21:48,420
+Érica: antes dele passar e te atualizar.
+
+614
+00:21:48,420 --> 00:21:50,420
+Rafa: Só um adendo pra aproveitar que a gente tá no momento de stand-up.
+
+615
+00:21:50,500 --> 00:21:52,320
+Rafa: Eu acho que é oportuno falar isso... Eu posso
+
+616
+00:21:52,320 --> 00:21:54,520
+Rafa: começar isso à tarde? Deixa eu começar...
+
+617
+00:21:54,520 --> 00:21:55,800
+Rafa: Deixa eu fazer meu acerto, por favor.
+
+618
+00:21:59,600 --> 00:22:00,360
+Rafa: Tá me escutando?
+
+619
+00:22:00,940 --> 00:22:01,380
+Rafa: Aham.
+
+620
+00:22:01,740 --> 00:22:03,800
+Rafa: Eu preciso fazer o acerto porque essa viagem
+
+621
+00:22:03,800 --> 00:22:05,200
+Rafa: saiu do meu bolso, né? Então, eu preciso...
+
+622
+00:22:05,640 --> 00:22:06,840
+Érica: Ah, tá. Tudo bem.
+
+623
+00:22:09,690 --> 00:22:11,570
+Érica: Então, quando você quiser
+
+624
+00:22:11,570 --> 00:22:13,550
+Érica: sentar pra shiftar de tópico, me avisa
+
+625
+00:22:13,550 --> 00:22:15,410
+Érica: que daí eu te passo o que o Kupka passou.
+
+626
+00:22:15,830 --> 00:22:18,330
+Érica: Perfeito. Mas, no geral,
+
+627
+00:22:18,330 --> 00:22:20,490
+Érica: é isso. Então, a gente tá um pouco
+
+628
+00:22:20,490 --> 00:22:22,250
+Érica: atrás do planejamento por causa do
+
+629
+00:22:22,250 --> 00:22:24,250
+Érica: finding de quinta-feira, que era o risco
+
+630
+00:22:24,250 --> 00:22:26,290
+Érica: que a gente já sabia que se tivesse algum finding
+
+631
+00:22:26,290 --> 00:22:27,910
+Érica: que tivesse que corrigir,
+
+632
+00:22:28,010 --> 00:22:29,590
+Érica: o planejamento não ia estar
+
+633
+00:22:29,590 --> 00:22:31,610
+Érica: um pra um. Então,
+
+634
+00:22:32,370 --> 00:22:34,330
+Érica: hoje, de expectativas, eu acho
+
+635
+00:22:34,330 --> 00:22:36,170
+Érica: que, no melhor dos cenários,
+
+636
+00:22:36,230 --> 00:22:38,390
+Érica: a gente vai estar terminando de performar os test cases
+
+637
+00:22:38,390 --> 00:22:40,490
+Érica: até sexta e a gente ainda vai precisar
+
+638
+00:22:40,490 --> 00:22:41,710
+Érica: do começo da semana que vem
+
+639
+00:22:41,710 --> 00:22:44,510
+Érica: pra rodar a documentação Release Checklist.
+
+640
+00:22:44,910 --> 00:22:46,230
+Érica: Então, eu já vou pingar o Alberto
+
+641
+00:22:46,230 --> 00:22:47,610
+Érica: pra ver se ele teve alguma
+
+642
+00:22:48,990 --> 00:22:50,230
+Érica: atualização das conversas
+
+643
+00:22:50,230 --> 00:22:52,050
+Érica: lá com a Star ou do planejamento da
+
+644
+00:22:52,670 --> 00:22:54,310
+Érica: viagem pra validar esse bug fix
+
+645
+00:22:54,310 --> 00:22:56,590
+Érica: porque, no andar
+
+646
+00:22:56,590 --> 00:22:58,470
+Érica: da carruagem agora, a gente não vai conseguir
+
+647
+00:22:58,470 --> 00:23:00,630
+Érica: estar pronto toda sexta-feira com segurança
+
+648
+00:23:00,630 --> 00:23:01,750
+Érica: rodando os test cases.
+
+649
+00:23:02,090 --> 00:23:03,710
+Érica: Então, eu vou ver lá o que eu já tinha
+
+650
+00:23:04,190 --> 00:23:06,330
+Érica: conversado com ele, o que eu já tinha levantado a bandeira,
+
+651
+00:23:06,810 --> 00:23:07,930
+Érica: tá factível
+
+652
+00:23:07,930 --> 00:23:10,370
+Érica: ou o que a gente vai ter que fazer.
+
+653
+00:23:12,210 --> 00:23:13,110
+Érica: Beleza? Então, vão
+
+654
+00:23:14,490 --> 00:23:15,510
+Érica: avisando. Qualquer
+
+655
+00:23:15,510 --> 00:23:16,790
+Érica: outra dúvida ou
+
+656
+00:23:18,530 --> 00:23:19,490
+Érica: coisa que me pacar,
+
+657
+00:23:19,530 --> 00:23:21,630
+Érica: avisem lá no chat pra gente não se atrasar
+
+658
+00:23:21,630 --> 00:23:24,030
+Érica: mais ainda. Beleza?
+
+659
+00:23:24,030 --> 00:23:26,150
+Érica: Se eu tiver, eu vou voltar
+
+660
+00:23:26,150 --> 00:23:28,010
+Érica: a olhar o conteúdo de ambos, tanto do
+
+661
+00:23:28,010 --> 00:23:30,170
+Érica: update state quanto do override com o que o
+
+662
+00:23:30,170 --> 00:23:32,310
+Érica: Kupka me passou hoje, certo? Se eu tiver
+
+663
+00:23:32,310 --> 00:23:34,010
+Érica: mais algum finding, daí eu aviso,
+
+664
+00:23:34,110 --> 00:23:35,810
+Érica: vocês, aí na
+
+665
+00:23:35,810 --> 00:23:37,800
+Érica: execução. Beleza?
+
+666
+00:23:39,450 --> 00:23:40,860
+Érica: Ok. Tá bom,
+
+667
+00:23:40,880 --> 00:23:43,060
+Érica: gente. Boa sorte. Tchau, tchau.
+
+668
+00:23:43,280 --> 00:23:43,800
+Interlocutor [atribuição incerta]: Tchau.

@@ -1,0 +1,1838 @@
+{
+  "input": "G:\\2026-10-22 15-55-55.mkv",
+  "language": "pt",
+  "duration": 609.024,
+  "method": "offline ASR plus two-speaker acoustic/contextual attribution",
+  "segments": [
+    {
+      "start": 0.4,
+      "end": 2.86,
+      "speaker": "Murilo",
+      "text": "A MCU de qualquer forma"
+    },
+    {
+      "start": 2.86,
+      "end": 5.38,
+      "speaker": "Murilo",
+      "text": "Ela não vai receber as mensagens?"
+    },
+    {
+      "start": 6.47,
+      "end": 7.27,
+      "speaker": "Érica",
+      "text": "Não, porque"
+    },
+    {
+      "start": 7.27,
+      "end": 9.73,
+      "speaker": "Érica",
+      "text": "Não tá compilado pra RAVN, né?"
+    },
+    {
+      "start": 9.77,
+      "end": 11.63,
+      "speaker": "Érica",
+      "text": "Se você olhar ali as mensagens"
+    },
+    {
+      "start": 11.63,
+      "end": 13.15,
+      "speaker": "Érica",
+      "text": "Do Gateway"
+    },
+    {
+      "start": 13.15,
+      "end": 14.67,
+      "speaker": "Érica",
+      "text": "Não tá compilado pra RAVN"
+    },
+    {
+      "start": 14.67,
+      "end": 16.05,
+      "speaker": "Érica",
+      "text": "Só tá pros outros customers"
+    },
+    {
+      "start": 16.61,
+      "end": 18.91,
+      "speaker": "Érica",
+      "text": "Tem que tirar a compilação específica"
+    },
+    {
+      "start": 18.91,
+      "end": 21.03,
+      "speaker": "Érica",
+      "text": "Por isso que eu falei que precisa da modificação"
+    },
+    {
+      "start": 21.03,
+      "end": 22.27,
+      "speaker": "Érica",
+      "text": "Porque precisa fazer"
+    },
+    {
+      "start": 22.27,
+      "end": 24.87,
+      "speaker": "Érica",
+      "text": "E daí colocar o if de só"
+    },
+    {
+      "start": 24.87,
+      "end": 26.39,
+      "speaker": "Érica",
+      "text": "Pra RAVN, né?"
+    },
+    {
+      "start": 26.43,
+      "end": 28.75,
+      "speaker": "Érica",
+      "text": "De compilação pra não repassar"
+    },
+    {
+      "start": 28.75,
+      "end": 29.63,
+      "speaker": "Érica",
+      "text": "Não fazer o Gateway"
+    },
+    {
+      "start": 29.63,
+      "end": 32.09,
+      "speaker": "Érica",
+      "text": "Mas fazer a lógica da flag"
+    },
+    {
+      "start": 36.43,
+      "end": 36.95,
+      "speaker": "Érica",
+      "text": "Entendeu?"
+    },
+    {
+      "start": 38.09,
+      "end": 39.67,
+      "speaker": "Érica",
+      "text": "Você tá com o código aberto aí?"
+    },
+    {
+      "start": 39.71,
+      "end": 40.55,
+      "speaker": "Érica",
+      "text": "A gente pode ver juntos"
+    },
+    {
+      "start": 40.55,
+      "end": 42.27,
+      "speaker": "Murilo",
+      "text": "Deixa eu abrir"
+    },
+    {
+      "start": 44.09,
+      "end": 44.61,
+      "speaker": "Murilo",
+      "text": "Entendi"
+    },
+    {
+      "start": 53.21,
+      "end": 53.95,
+      "speaker": "Murilo",
+      "text": "Abre errado"
+    },
+    {
+      "start": 53.95,
+      "end": 54.83,
+      "speaker": "Murilo",
+      "text": "Não é nessa"
+    },
+    {
+      "start": 54.83,
+      "end": 57.38,
+      "speaker": "Murilo",
+      "text": "É nessa aqui"
+    },
+    {
+      "start": 113.89,
+      "end": 114.41,
+      "speaker": "Murilo",
+      "text": "Beleza"
+    },
+    {
+      "start": 119.69,
+      "end": 121.43,
+      "speaker": "Murilo",
+      "text": "Tá, o que vai ter que colocar"
+    },
+    {
+      "start": 121.43,
+      "end": 124.07,
+      "speaker": "Murilo",
+      "text": "É ser um customer específico"
+    },
+    {
+      "start": 126.05,
+      "end": 127.87,
+      "speaker": "Érica",
+      "text": "Isso, vai bem no começo"
+    },
+    {
+      "start": 127.87,
+      "end": 128.93,
+      "speaker": "Érica",
+      "text": "No Gateway"
+    },
+    {
+      "start": 130.81,
+      "end": 131.33,
+      "speaker": "Érica",
+      "text": "Default"
+    },
+    {
+      "start": 131.33,
+      "end": 132.47,
+      "speaker": "Érica",
+      "text": "Só pra ver"
+    },
+    {
+      "start": 132.47,
+      "end": 133.77,
+      "speaker": "Érica",
+      "text": "Que eu acho que ele tá lá"
+    },
+    {
+      "start": 133.77,
+      "end": 136.49,
+      "speaker": "Érica",
+      "text": "O que não tava compilando"
+    },
+    {
+      "start": 137.11,
+      "end": 138.27,
+      "speaker": "Érica",
+      "text": "Ou você já tirou?"
+    },
+    {
+      "start": 139.18,
+      "end": 139.94,
+      "speaker": "Murilo",
+      "text": "Não, não"
+    },
+    {
+      "start": 139.94,
+      "end": 141.44,
+      "speaker": "Érica",
+      "text": "Esse if de compilação"
+    },
+    {
+      "start": 141.44,
+      "end": 142.52,
+      "speaker": "Érica",
+      "text": "O if de compilação"
+    },
+    {
+      "start": 142.52,
+      "end": 144.3,
+      "speaker": "Érica",
+      "text": "Acho que tava logo em cima desse default"
+    },
+    {
+      "start": 144.3,
+      "end": 145.64,
+      "speaker": "Érica",
+      "text": "Vai um pouquinho mais pra cima"
+    },
+    {
+      "start": 145.64,
+      "end": 147.86,
+      "speaker": "Érica",
+      "text": "If de compilação"
+    },
+    {
+      "start": 147.86,
+      "end": 148.34,
+      "speaker": "Murilo",
+      "text": "Não"
+    },
+    {
+      "start": 148.9,
+      "end": 149.42,
+      "speaker": "Murilo",
+      "text": "Tirei"
+    },
+    {
+      "start": 149.42,
+      "end": 149.56,
+      "speaker": "Érica",
+      "text": "Não"
+    },
+    {
+      "start": 149.56,
+      "end": 152.16,
+      "speaker": "Érica",
+      "text": "Tem certeza?"
+    },
+    {
+      "start": 152.78,
+      "end": 153.3,
+      "speaker": "Murilo",
+      "text": "Uhum"
+    },
+    {
+      "start": 153.3,
+      "end": 155.69,
+      "speaker": "Érica",
+      "text": "Deixa eu ver"
+    },
+    {
+      "start": 155.69,
+      "end": 157.37,
+      "speaker": "Érica",
+      "text": "O código que tava aberto aqui"
+    },
+    {
+      "start": 157.37,
+      "end": 169.05,
+      "speaker": "Érica",
+      "text": "Que eu achei que ele não tava compilando"
+    },
+    {
+      "start": 172.0,
+      "end": 173.04,
+      "speaker": "Érica",
+      "text": "Question soft"
+    },
+    {
+      "start": 173.04,
+      "end": 173.34,
+      "speaker": "Érica",
+      "text": "Ok"
+    },
+    {
+      "start": 174.6,
+      "end": 178.36,
+      "speaker": "Érica",
+      "text": "Ah não, ele tá fora mesmo"
+    },
+    {
+      "start": 178.36,
+      "end": 179.82,
+      "speaker": "Érica",
+      "text": "Parece que"
+    },
+    {
+      "start": 182.29,
+      "end": 186.28,
+      "speaker": "Érica",
+      "text": "Não, não, não"
+    },
+    {
+      "start": 186.28,
+      "end": 187.54,
+      "speaker": "Érica",
+      "text": "Tem que ter, não faz sentido"
+    },
+    {
+      "start": 187.54,
+      "end": 194.24,
+      "speaker": "Érica",
+      "text": "Acho que você tirou sim, amigo"
+    },
+    {
+      "start": 196.76,
+      "end": 197.24,
+      "speaker": "Érica",
+      "text": "Ou"
+    },
+    {
+      "start": 198.85,
+      "end": 200.83,
+      "speaker": "Érica",
+      "text": "Pera, você tá na 2.27, né?"
+    },
+    {
+      "start": 200.97,
+      "end": 201.99,
+      "speaker": "Murilo",
+      "text": "Tô na 2.27"
+    },
+    {
+      "start": 202.51,
+      "end": 208.54,
+      "speaker": "Érica",
+      "text": "É que eu tô com a 2.30 aberta aqui"
+    },
+    {
+      "start": 208.54,
+      "end": 210.06,
+      "speaker": "Érica",
+      "text": "Tô pensando se teria diferença"
+    },
+    {
+      "start": 210.06,
+      "end": 212.0,
+      "speaker": "Érica",
+      "text": "2.27 pra 2.30"
+    },
+    {
+      "start": 212.93,
+      "end": 215.25,
+      "speaker": "Érica",
+      "text": "Quando que a gente jogou pro Arquibis?"
+    },
+    {
+      "start": 215.73,
+      "end": 221.35,
+      "speaker": "Érica",
+      "text": "Eu já não lembro"
+    },
+    {
+      "start": 221.35,
+      "end": 223.23,
+      "speaker": "Érica",
+      "text": "Talvez seja da 2.30 pra frente"
+    },
+    {
+      "start": 223.23,
+      "end": 223.91,
+      "speaker": "Érica",
+      "text": "Que tem isso"
+    },
+    {
+      "start": 224.07,
+      "end": 225.05,
+      "speaker": "Murilo",
+      "text": "Hum"
+    },
+    {
+      "start": 225.85,
+      "end": 229.62,
+      "speaker": "Murilo",
+      "text": "É que tá na 2.31"
+    },
+    {
+      "start": 229.62,
+      "end": 230.94,
+      "speaker": "Érica",
+      "text": "Isso"
+    },
+    {
+      "start": 231.9,
+      "end": 234.22,
+      "speaker": "Érica",
+      "text": "Isso é fácil de ser checado depois"
+    },
+    {
+      "start": 234.22,
+      "end": 235.12,
+      "speaker": "Érica",
+      "text": "Mas"
+    },
+    {
+      "start": 235.12,
+      "end": 236.7,
+      "speaker": "Érica",
+      "text": "Na 2"
+    },
+    {
+      "start": 237.76,
+      "end": 239.94,
+      "speaker": "Érica",
+      "text": "Pelo menos a versão que eu tô aberto aqui"
+    },
+    {
+      "start": 239.94,
+      "end": 241.46,
+      "speaker": "Érica",
+      "text": "Na 2.30.1"
+    },
+    {
+      "start": 241.46,
+      "end": 242.46,
+      "speaker": "Érica",
+      "text": "Ele"
+    },
+    {
+      "start": 242.46,
+      "end": 244.64,
+      "speaker": "Érica",
+      "text": "Tem o if condicional"
+    },
+    {
+      "start": 244.64,
+      "end": 246.76,
+      "speaker": "Érica",
+      "text": "Logo antes desse bloco"
+    },
+    {
+      "start": 246.76,
+      "end": 249.18,
+      "speaker": "Érica",
+      "text": "Da callback do gateway default"
+    },
+    {
+      "start": 249.18,
+      "end": 250.34,
+      "speaker": "Murilo",
+      "text": "Aham"
+    },
+    {
+      "start": 250.34,
+      "end": 251.48,
+      "speaker": "Murilo",
+      "text": "Bem aqui"
+    },
+    {
+      "start": 251.48,
+      "end": 253.0,
+      "speaker": "Érica",
+      "text": "Isso, bem aí em cima"
+    },
+    {
+      "start": 253.0,
+      "end": 253.46,
+      "speaker": "Érica",
+      "text": "É"
+    },
+    {
+      "start": 253.46,
+      "end": 255.9,
+      "speaker": "Érica",
+      "text": "Ele tem o condicional"
+    },
+    {
+      "start": 255.9,
+      "end": 257.32,
+      "speaker": "Murilo",
+      "text": "Pra não compilar pra RAVN"
+    },
+    {
+      "start": 257.32,
+      "end": 257.86,
+      "speaker": "Érica",
+      "text": "Aham"
+    },
+    {
+      "start": 257.86,
+      "end": 258.76,
+      "speaker": "Murilo",
+      "text": "Ah, tá"
+    },
+    {
+      "start": 258.76,
+      "end": 259.38,
+      "speaker": "Murilo",
+      "text": "Então, beleza"
+    },
+    {
+      "start": 259.38,
+      "end": 260.06,
+      "speaker": "Érica",
+      "text": "Ok"
+    },
+    {
+      "start": 260.8,
+      "end": 261.36,
+      "speaker": "Érica",
+      "text": "Então"
+    },
+    {
+      "start": 261.36,
+      "end": 262.28,
+      "speaker": "Murilo",
+      "text": "Hum"
+    },
+    {
+      "start": 263.98,
+      "end": 265.2,
+      "speaker": "Érica",
+      "text": "É aqui no caso"
+    },
+    {
+      "start": 265.2,
+      "end": 266.04,
+      "speaker": "Érica",
+      "text": "Nesse caso que ele"
+    },
+    {
+      "start": 266.04,
+      "end": 267.84,
+      "speaker": "Érica",
+      "text": "Que ele tá compilando"
+    },
+    {
+      "start": 267.84,
+      "end": 269.2,
+      "speaker": "Érica",
+      "text": "Daí você só coloca"
+    },
+    {
+      "start": 269.8,
+      "end": 272.18,
+      "speaker": "Érica",
+      "text": "É tipo o que você botou ali embaixo mesmo"
+    },
+    {
+      "start": 272.18,
+      "end": 272.7,
+      "speaker": "Érica",
+      "text": "De só"
+    },
+    {
+      "start": 272.7,
+      "end": 273.82,
+      "speaker": "Érica",
+      "text": "O envio"
+    },
+    {
+      "start": 273.82,
+      "end": 274.9,
+      "speaker": "Érica",
+      "text": "A parte mesmo"
+    },
+    {
+      "start": 274.9,
+      "end": 278.06,
+      "speaker": "Érica",
+      "text": "Se bem que se ele já tava fazendo aí pra RAVN"
+    },
+    {
+      "start": 278.06,
+      "end": 280.52,
+      "speaker": "Érica",
+      "text": "É que não vai fazer diferença"
+    },
+    {
+      "start": 280.52,
+      "end": 281.46,
+      "speaker": "Érica",
+      "text": "Que a gente não vai"
+    },
+    {
+      "start": 281.46,
+      "end": 285.32,
+      "speaker": "Érica",
+      "text": "A gente não vai gerar essa versão pra RAVN"
+    },
+    {
+      "start": 285.32,
+      "end": 287.36,
+      "speaker": "Érica",
+      "text": "Então acho que não vai precisar mexer"
+    },
+    {
+      "start": 287.9,
+      "end": 288.18,
+      "speaker": "Érica",
+      "text": "É"
+    },
+    {
+      "start": 288.18,
+      "end": 289.6,
+      "speaker": "Érica",
+      "text": "Talvez só botar a lógica de que a gente vai fazer isso"
+    },
+    {
+      "start": 289.6,
+      "end": 290.98,
+      "speaker": "Érica",
+      "text": "A lógica de não enviar pra RAVN"
+    },
+    {
+      "start": 290.98,
+      "end": 292.82,
+      "speaker": "Érica",
+      "text": "E começar a compilar de volta"
+    },
+    {
+      "start": 292.82,
+      "end": 294.06,
+      "speaker": "Érica",
+      "text": "Só pra"
+    },
+    {
+      "start": 294.06,
+      "end": 296.18,
+      "speaker": "Érica",
+      "text": "2.31.1"
+    },
+    {
+      "start": 296.18,
+      "end": 298.5,
+      "speaker": "Érica",
+      "text": "Que é o que vai impactar pra CNH, entendeu?"
+    },
+    {
+      "start": 298.72,
+      "end": 299.32,
+      "speaker": "Murilo",
+      "text": "Aham"
+    },
+    {
+      "start": 299.32,
+      "end": 301.7,
+      "speaker": "Érica",
+      "text": "Então pra essa versão aí"
+    },
+    {
+      "start": 301.7,
+      "end": 303.06,
+      "speaker": "Érica",
+      "text": "Pra 2.27.2"
+    },
+    {
+      "start": 303.06,
+      "end": 304.2,
+      "speaker": "Érica",
+      "text": "Pra 2.31"
+    },
+    {
+      "start": 304.2,
+      "end": 305.54,
+      "speaker": "Érica",
+      "text": "Deixa só"
+    },
+    {
+      "start": 305.54,
+      "end": 306.64,
+      "speaker": "Érica",
+      "text": "Só adiciona"
+    },
+    {
+      "start": 306.64,
+      "end": 308.52,
+      "speaker": "Érica",
+      "text": "Então só adiciona na lógica da flag"
+    },
+    {
+      "start": 308.52,
+      "end": 311.04,
+      "speaker": "Érica",
+      "text": "E o fix lá do condicional"
+    },
+    {
+      "start": 311.04,
+      "end": 313.5,
+      "speaker": "Érica",
+      "text": "E daí na 2.31.1"
+    },
+    {
+      "start": 313.5,
+      "end": 314.72,
+      "speaker": "Érica",
+      "text": "A gente coloca o"
+    },
+    {
+      "start": 314.72,
+      "end": 317.64,
+      "speaker": "Érica",
+      "text": "Volta a compilar callback pra RAVN"
+    },
+    {
+      "start": 317.64,
+      "end": 318.46,
+      "speaker": "Érica",
+      "text": "Mas"
+    },
+    {
+      "start": 318.46,
+      "end": 319.62,
+      "speaker": "Érica",
+      "text": "Tira fora"
+    },
+    {
+      "start": 319.62,
+      "end": 321.64,
+      "speaker": "Érica",
+      "text": "A parte do gateway em si"
+    },
+    {
+      "start": 323.72,
+      "end": 324.68,
+      "speaker": "Murilo",
+      "text": "Tá, beleza"
+    },
+    {
+      "start": 325.49,
+      "end": 327.53,
+      "speaker": "Murilo",
+      "text": "Quando você diz tirar fora a parte do gateway"
+    },
+    {
+      "start": 328.07,
+      "end": 328.55,
+      "speaker": "Érica",
+      "text": "É"
+    },
+    {
+      "start": 329.31,
+      "end": 330.97,
+      "speaker": "Érica",
+      "text": "O CAN Send Data só"
+    },
+    {
+      "start": 330.97,
+      "end": 334.07,
+      "speaker": "Érica",
+      "text": "O CAN Send Data não faz pra CNH"
+    },
+    {
+      "start": 334.07,
+      "end": 335.15,
+      "speaker": "Érica",
+      "text": "Que não faz sentido"
+    },
+    {
+      "start": 335.15,
+      "end": 336.35,
+      "speaker": "Murilo",
+      "text": "Ah tá, beleza"
+    },
+    {
+      "start": 337.23,
+      "end": 340.01,
+      "speaker": "Murilo",
+      "text": "Então só deixa a questão do recebimento mesmo"
+    },
+    {
+      "start": 340.01,
+      "end": 340.97,
+      "speaker": "Érica",
+      "text": "Aí sim faz"
+    },
+    {
+      "start": 340.97,
+      "end": 343.59,
+      "speaker": "Érica",
+      "text": "Isso, pra poder setar a flag"
+    },
+    {
+      "start": 344.07,
+      "end": 345.65,
+      "speaker": "Érica",
+      "text": "Mas você entendeu o porquê, né?"
+    },
+    {
+      "start": 346.03,
+      "end": 346.79,
+      "speaker": "Murilo",
+      "text": "Aham, porque"
+    },
+    {
+      "start": 346.79,
+      "end": 348.07,
+      "speaker": "Murilo",
+      "text": "Ah então, é por isso que eu tava"
+    },
+    {
+      "start": 348.07,
+      "end": 350.55,
+      "speaker": "Murilo",
+      "text": "Bati a cabeça que eu fiquei, ué, mas aqui pelo que eu entendi"
+    },
+    {
+      "start": 351.29,
+      "end": 352.29,
+      "speaker": "Murilo",
+      "text": "A RAVN vai receber"
+    },
+    {
+      "start": 353.56,
+      "end": 354.64,
+      "speaker": "Murilo",
+      "text": "É que eu não tenho"
+    },
+    {
+      "start": 354.64,
+      "end": 355.54,
+      "speaker": "Murilo",
+      "text": "Mas ali eu entendi"
+    },
+    {
+      "start": 355.54,
+      "end": 357.06,
+      "speaker": "Murilo",
+      "text": "Lá ela não vai receber o"
+    },
+    {
+      "start": 358.38,
+      "end": 358.82,
+      "speaker": "Murilo",
+      "text": "Callback"
+    },
+    {
+      "start": 358.82,
+      "end": 361.42,
+      "speaker": "Érica",
+      "text": "É que eu tenho que olhar pelas entregas lá"
+    },
+    {
+      "start": 361.42,
+      "end": 363.76,
+      "speaker": "Érica",
+      "text": "Que agora de cabeça eu não vou lembrar"
+    },
+    {
+      "start": 364.28,
+      "end": 364.72,
+      "speaker": "Érica",
+      "text": "Mas"
+    },
+    {
+      "start": 366.1,
+      "end": 368.04,
+      "speaker": "Érica",
+      "text": "Eu acho que foi o que a gente mudou"
+    },
+    {
+      "start": 368.04,
+      "end": 368.72,
+      "speaker": "Érica",
+      "text": "Depois"
+    },
+    {
+      "start": 368.72,
+      "end": 371.1,
+      "speaker": "Érica",
+      "text": "Quando foi confirmado o ST"
+    },
+    {
+      "start": 372.67,
+      "end": 373.11,
+      "speaker": "Érica",
+      "text": "Agora"
+    },
+    {
+      "start": 373.59,
+      "end": 375.37,
+      "speaker": "Érica",
+      "text": "A arquitetura"
+    },
+    {
+      "start": 375.37,
+      "end": 376.85,
+      "speaker": "Érica",
+      "text": "A gente não precisa fazer o gateway"
+    },
+    {
+      "start": 376.85,
+      "end": 379.13,
+      "speaker": "Érica",
+      "text": "Porque o ST tá no mesmo barramento"
+    },
+    {
+      "start": 379.13,
+      "end": 381.53,
+      "speaker": "Érica",
+      "text": "Eu acho que na 2.27 não tava"
+    },
+    {
+      "start": 381.53,
+      "end": 382.65,
+      "speaker": "Érica",
+      "text": "Eu já não vou lembrar"
+    },
+    {
+      "start": 382.65,
+      "end": 382.77,
+      "speaker": "Érica",
+      "text": "Mas"
+    },
+    {
+      "start": 382.79,
+      "end": 383.05,
+      "speaker": "Érica",
+      "text": ", amigo"
+    },
+    {
+      "start": 383.05,
+      "end": 386.52,
+      "speaker": "Érica",
+      "text": "Dá pra checar isso depois, mas"
+    },
+    {
+      "start": 386.52,
+      "end": 388.34,
+      "speaker": "Érica",
+      "text": "Se não tiver, daí"
+    },
+    {
+      "start": 389.06,
+      "end": 390.82,
+      "speaker": "Érica",
+      "text": "Só adiciona a mesma lógica"
+    },
+    {
+      "start": 390.82,
+      "end": 391.34,
+      "speaker": "Érica",
+      "text": "Não precisa"
+    },
+    {
+      "start": 392.46,
+      "end": 394.68,
+      "speaker": "Érica",
+      "text": "Daí não precisa modificar o que já tava"
+    },
+    {
+      "start": 395.5,
+      "end": 396.46,
+      "speaker": "Érica",
+      "text": "Da CNH"
+    },
+    {
+      "start": 396.46,
+      "end": 398.34,
+      "speaker": "Érica",
+      "text": "Tipo, esse if condicional que você botou aí"
+    },
+    {
+      "start": 398.34,
+      "end": 401.24,
+      "speaker": "Érica",
+      "text": "Não precisa, porque daí segue o geral, né?"
+    },
+    {
+      "start": 401.3,
+      "end": 403.04,
+      "speaker": "Érica",
+      "text": "Porque a gente só vai gerar o bug fix"
+    },
+    {
+      "start": 403.04,
+      "end": 404.78,
+      "speaker": "Érica",
+      "text": "Pra Star e pra"
+    },
+    {
+      "start": 406.03,
+      "end": 406.51,
+      "speaker": "Érica",
+      "text": "Kaiman"
+    },
+    {
+      "start": 408.73,
+      "end": 410.01,
+      "speaker": "Érica",
+      "text": "Só pra não ficar código"
+    },
+    {
+      "start": 410.01,
+      "end": 412.75,
+      "speaker": "Érica",
+      "text": "Que não faz sentido, sabe?"
+    },
+    {
+      "start": 413.05,
+      "end": 413.79,
+      "speaker": "Murilo",
+      "text": "Pera, perdão, amiga"
+    },
+    {
+      "start": 413.79,
+      "end": 414.51,
+      "speaker": "Murilo",
+      "text": "Eu tava"
+    },
+    {
+      "start": 415.29,
+      "end": 415.91,
+      "speaker": "Murilo",
+      "text": "Eu devanei"
+    },
+    {
+      "start": 415.91,
+      "end": 418.03,
+      "speaker": "Murilo",
+      "text": "Qual o if que você falou que não ia precisar?"
+    },
+    {
+      "start": 418.6,
+      "end": 420.86,
+      "speaker": "Érica",
+      "text": "Esse if do BDS"
+    },
+    {
+      "start": 421.46,
+      "end": 421.92,
+      "speaker": "Érica",
+      "text": "CAN Send Data"
+    },
+    {
+      "start": 421.92,
+      "end": 424.58,
+      "speaker": "Érica",
+      "text": "Tipo, nessa versão, na 2.27.2"
+    },
+    {
+      "start": 424.58,
+      "end": 426.18,
+      "speaker": "Érica",
+      "text": "A gente não vai gerar nada pra CNH"
+    },
+    {
+      "start": 426.18,
+      "end": 426.66,
+      "speaker": "Murilo",
+      "text": "Ah, tá"
+    },
+    {
+      "start": 426.66,
+      "end": 428.36,
+      "speaker": "Érica",
+      "text": "Não precisa adicionar esse can"
+    },
+    {
+      "start": 428.36,
+      "end": 429.62,
+      "speaker": "Murilo",
+      "text": "Ou ele já tava assim"
+    },
+    {
+      "start": 430.2,
+      "end": 431.26,
+      "speaker": "Érica",
+      "text": "Ele já tava assim?"
+    },
+    {
+      "start": 431.3,
+      "end": 432.52,
+      "speaker": "Érica",
+      "text": "Ele já tava assim"
+    },
+    {
+      "start": 432.52,
+      "end": 433.68,
+      "speaker": "Murilo",
+      "text": "Aham, por isso que eu tô"
+    },
+    {
+      "start": 434.3,
+      "end": 437.28,
+      "speaker": "Érica",
+      "text": "Ah, então talvez seja que a gente só jogou pra fora"
+    },
+    {
+      "start": 437.28,
+      "end": 439.1,
+      "speaker": "Murilo",
+      "text": "É, a gente só jogou pra fora"
+    },
+    {
+      "start": 439.74,
+      "end": 440.8,
+      "speaker": "Murilo",
+      "text": "Só fez o"
+    },
+    {
+      "start": 440.8,
+      "end": 441.42,
+      "speaker": "Murilo",
+      "text": "Tuk"
+    },
+    {
+      "start": 444.12,
+      "end": 444.58,
+      "speaker": "Murilo",
+      "text": "Tá"
+    },
+    {
+      "start": 444.58,
+      "end": 446.54,
+      "speaker": "Murilo",
+      "text": "Tava, tanto que aqui tá do"
+    },
+    {
+      "start": 447.02,
+      "end": 447.48,
+      "speaker": "Érica",
+      "text": "Aham, então talvez seja que a gente só jogou pra fora"
+    },
+    {
+      "start": 447.69,
+      "end": 449.05,
+      "speaker": "Murilo",
+      "text": "Tá, cadê, cadê, cadê, cadê, cadê?"
+    },
+    {
+      "start": 449.05,
+      "end": 449.61,
+      "speaker": "Murilo",
+      "text": "Tanto dois"
+    },
+    {
+      "start": 450.29,
+      "end": 450.83,
+      "speaker": "Érica",
+      "text": "Aqui"
+    },
+    {
+      "start": 450.83,
+      "end": 451.81,
+      "speaker": "Érica",
+      "text": "Então, é"
+    },
+    {
+      "start": 451.81,
+      "end": 453.23,
+      "speaker": "Érica",
+      "text": "Então, segue o"
+    },
+    {
+      "start": 453.23,
+      "end": 454.25,
+      "speaker": "Érica",
+      "text": "Segue o"
+    },
+    {
+      "start": 454.25,
+      "end": 455.43,
+      "speaker": "Érica",
+      "text": "A lógica de"
+    },
+    {
+      "start": 455.43,
+      "end": 456.99,
+      "speaker": "Érica",
+      "text": "Editar o menos possível"
+    },
+    {
+      "start": 456.99,
+      "end": 457.73,
+      "speaker": "Murilo",
+      "text": "Tá bom"
+    },
+    {
+      "start": 457.73,
+      "end": 458.73,
+      "speaker": "Érica",
+      "text": "Perfeito"
+    },
+    {
+      "start": 458.73,
+      "end": 460.23,
+      "speaker": "Érica",
+      "text": "Só adicionar a lógica"
+    },
+    {
+      "start": 460.23,
+      "end": 462.57,
+      "speaker": "Murilo",
+      "text": "Tá, só adicionar aqui por cima, beleza"
+    },
+    {
+      "start": 464.09,
+      "end": 464.63,
+      "speaker": "Érica",
+      "text": "Perfeito"
+    },
+    {
+      "start": 464.63,
+      "end": 466.59,
+      "speaker": "Érica",
+      "text": "Então, vai aí no teu tempo"
+    },
+    {
+      "start": 466.59,
+      "end": 467.79,
+      "speaker": "Érica",
+      "text": "Entre hoje e amanhã"
+    },
+    {
+      "start": 468.3,
+      "end": 468.57,
+      "speaker": "Érica",
+      "text": "É"
+    },
+    {
+      "start": 469.73,
+      "end": 472.13,
+      "speaker": "Érica",
+      "text": "Arruma o que você achar que faz sentido"
+    },
+    {
+      "start": 472.13,
+      "end": 474.01,
+      "speaker": "Érica",
+      "text": "Pensa aí no nome"
+    },
+    {
+      "start": 474.01,
+      "end": 476.77,
+      "speaker": "Érica",
+      "text": "Se deixa a flag desse jeito"
+    },
+    {
+      "start": 476.77,
+      "end": 477.35,
+      "speaker": "Érica",
+      "text": "E daí"
+    },
+    {
+      "start": 478.33,
+      "end": 480.17,
+      "speaker": "Érica",
+      "text": "Tipo, o serviço ali"
+    },
+    {
+      "start": 480.17,
+      "end": 481.13,
+      "speaker": "Érica",
+      "text": "As coisas, tipo"
+    },
+    {
+      "start": 481.13,
+      "end": 482.35,
+      "speaker": "Érica",
+      "text": "Comentar melhor"
+    },
+    {
+      "start": 482.95,
+      "end": 483.73,
+      "speaker": "Érica",
+      "text": "Botem define"
+    },
+    {
+      "start": 483.73,
+      "end": 485.33,
+      "speaker": "Érica",
+      "text": "O que fizer sentido como define"
+    },
+    {
+      "start": 486.21,
+      "end": 488.17,
+      "speaker": "Érica",
+      "text": "Principalmente essa lógica ali do serviço"
+    },
+    {
+      "start": 488.17,
+      "end": 488.41,
+      "speaker": "Érica",
+      "text": "Então"
+    },
+    {
+      "start": 488.41,
+      "end": 489.67,
+      "speaker": "Érica",
+      "text": "O onze"
+    },
+    {
+      "start": 489.67,
+      "end": 491.15,
+      "speaker": "Érica",
+      "text": "Deixar bem explícito"
+    },
+    {
+      "start": 491.15,
+      "end": 492.19,
+      "speaker": "Érica",
+      "text": "Que é o seu reset"
+    },
+    {
+      "start": 492.19,
+      "end": 493.21,
+      "speaker": "Érica",
+      "text": "Ah, tá bonito"
+    },
+    {
+      "start": 493.21,
+      "end": 495.27,
+      "speaker": "Érica",
+      "text": "Comentar ali a lógica do nibble"
+    },
+    {
+      "start": 495.27,
+      "end": 496.85,
+      "speaker": "Érica",
+      "text": "O porquê que é o zero, zero"
+    },
+    {
+      "start": 497.49,
+      "end": 498.65,
+      "speaker": "Érica",
+      "text": "Copia lá o que o"
+    },
+    {
+      "start": 498.65,
+      "end": 500.43,
+      "speaker": "Érica",
+      "text": "O Adri mandou na mensagem"
+    },
+    {
+      "start": 500.43,
+      "end": 501.25,
+      "speaker": "Érica",
+      "text": "Como explicação"
+    },
+    {
+      "start": 501.25,
+      "end": 503.33,
+      "speaker": "Érica",
+      "text": "E tenta deixar as coisas como define"
+    },
+    {
+      "start": 503.33,
+      "end": 505.11,
+      "speaker": "Érica",
+      "text": "Só pra ficar mais bonitinho"
+    },
+    {
+      "start": 505.11,
+      "end": 505.95,
+      "speaker": "Murilo",
+      "text": "Tá bom"
+    },
+    {
+      "start": 505.95,
+      "end": 507.19,
+      "speaker": "Érica",
+      "text": "E daí quando você"
+    },
+    {
+      "start": 507.19,
+      "end": 507.93,
+      "speaker": "Érica",
+      "text": "Convergir"
+    },
+    {
+      "start": 507.93,
+      "end": 509.03,
+      "speaker": "Érica",
+      "text": "Você me avisa"
+    },
+    {
+      "start": 509.03,
+      "end": 510.05,
+      "speaker": "Érica",
+      "text": "Que eu olho de volta"
+    },
+    {
+      "start": 510.05,
+      "end": 510.57,
+      "speaker": "Érica",
+      "text": "Pra"
+    },
+    {
+      "start": 510.57,
+      "end": 513.41,
+      "speaker": "Érica",
+      "text": "Pra revisar"
+    },
+    {
+      "start": 513.96,
+      "end": 515.76,
+      "speaker": "Érica",
+      "text": "Daí a mesma coisa"
+    },
+    {
+      "start": 515.76,
+      "end": 517.96,
+      "speaker": "Érica",
+      "text": "Daí só extrapolar a mesma lógica"
+    },
+    {
+      "start": 517.96,
+      "end": 518.32,
+      "speaker": "Érica",
+      "text": "Lá pro"
+    },
+    {
+      "start": 518.32,
+      "end": 519.04,
+      "speaker": "Érica",
+      "text": "REC"
+    },
+    {
+      "start": 519.04,
+      "end": 520.04,
+      "speaker": "Érica",
+      "text": "E pro"
+    },
+    {
+      "start": 520.04,
+      "end": 520.96,
+      "speaker": "Érica",
+      "text": "Function Design"
+    },
+    {
+      "start": 521.64,
+      "end": 523.12,
+      "speaker": "Érica",
+      "text": "Ficarem atualizados também"
+    },
+    {
+      "start": 524.31,
+      "end": 526.37,
+      "speaker": "Érica",
+      "text": "Daí a lógica é amanhã"
+    },
+    {
+      "start": 526.37,
+      "end": 527.19,
+      "speaker": "Érica",
+      "text": "A gente ficar"
+    },
+    {
+      "start": 527.19,
+      "end": 528.47,
+      "speaker": "Érica",
+      "text": "Andando por isso"
+    },
+    {
+      "start": 528.47,
+      "end": 528.73,
+      "speaker": "Érica",
+      "text": "Então"
+    },
+    {
+      "start": 528.73,
+      "end": 530.67,
+      "speaker": "Érica",
+      "text": "Quando você quiser que eu revise alguma coisa"
+    },
+    {
+      "start": 530.67,
+      "end": 532.01,
+      "speaker": "Érica",
+      "text": "Quando você quiser alinhar alguma coisa"
+    },
+    {
+      "start": 532.01,
+      "end": 532.79,
+      "speaker": "Érica",
+      "text": "Você me avisa"
+    },
+    {
+      "start": 532.79,
+      "end": 534.37,
+      "speaker": "Érica",
+      "text": "E enquanto eu não estiver"
+    },
+    {
+      "start": 534.37,
+      "end": 535.65,
+      "speaker": "Érica",
+      "text": "Fazendo isso"
+    },
+    {
+      "start": 535.65,
+      "end": 536.17,
+      "speaker": "Érica",
+      "text": "Eu vou"
+    },
+    {
+      "start": 536.17,
+      "end": 538.03,
+      "speaker": "Érica",
+      "text": "Voltar a olhar os test cases"
+    },
+    {
+      "start": 538.03,
+      "end": 538.29,
+      "speaker": "Érica",
+      "text": "Com a minha"
+    },
+    {
+      "start": 538.31,
+      "end": 538.79,
+      "speaker": "Érica",
+      "text": "Com os meninos"
+    },
+    {
+      "start": 538.79,
+      "end": 540.33,
+      "speaker": "Érica",
+      "text": "Então os meninos vão fazer a revisão"
+    },
+    {
+      "start": 540.33,
+      "end": 542.01,
+      "speaker": "Érica",
+      "text": "O Kupka vai fazer a escrita"
+    },
+    {
+      "start": 542.01,
+      "end": 544.81,
+      "speaker": "Érica",
+      "text": "O Igor vai fazer a revisão do teu"
+    },
+    {
+      "start": 544.81,
+      "end": 546.43,
+      "speaker": "Érica",
+      "text": "E eu vou olhar o conteúdo dos dois"
+    },
+    {
+      "start": 547.17,
+      "end": 547.65,
+      "speaker": "Érica",
+      "text": "Perfeito"
+    },
+    {
+      "start": 548.69,
+      "end": 549.65,
+      "speaker": "Murilo",
+      "text": "Em paralelo"
+    },
+    {
+      "start": 549.65,
+      "end": 550.15,
+      "speaker": "Murilo",
+      "text": "Enquanto"
+    },
+    {
+      "start": 551.35,
+      "end": 551.83,
+      "speaker": "Murilo",
+      "text": "Tava"
+    },
+    {
+      "start": 553.6,
+      "end": 554.46,
+      "speaker": "Murilo",
+      "text": "Tava na reunião"
+    },
+    {
+      "start": 554.46,
+      "end": 555.3,
+      "speaker": "Murilo",
+      "text": "Eu tinha pedido pro Igor"
+    },
+    {
+      "start": 555.3,
+      "end": 556.54,
+      "speaker": "Murilo",
+      "text": "Só rodar um logzinho"
+    },
+    {
+      "start": 556.54,
+      "end": 556.94,
+      "speaker": "Murilo",
+      "text": "Pra ver"
+    },
+    {
+      "start": 556.94,
+      "end": 557.66,
+      "speaker": "Murilo",
+      "text": "Pra RAVN"
+    },
+    {
+      "start": 557.66,
+      "end": 559.22,
+      "speaker": "Murilo",
+      "text": "Pra ver se dava algum erro"
+    },
+    {
+      "start": 559.22,
+      "end": 560.64,
+      "speaker": "Murilo",
+      "text": "Ele falou que deu boa também lá"
+    },
+    {
+      "start": 560.64,
+      "end": 562.22,
+      "speaker": "Murilo",
+      "text": "Mas nesse na 2.27"
+    },
+    {
+      "start": 563.98,
+      "end": 564.46,
+      "speaker": "Murilo",
+      "text": "Então"
+    },
+    {
+      "start": 564.46,
+      "end": 566.8,
+      "speaker": "Murilo",
+      "text": "Aparentemente não deu realmente problema"
+    },
+    {
+      "start": 566.8,
+      "end": 567.26,
+      "speaker": "Murilo",
+      "text": "Que é"
+    },
+    {
+      "start": 567.26,
+      "end": 568.3,
+      "speaker": "Murilo",
+      "text": "Ele tá recebendo"
+    },
+    {
+      "start": 568.3,
+      "end": 569.2,
+      "speaker": "Érica",
+      "text": "Tá"
+    },
+    {
+      "start": 569.23,
+      "end": 569.75,
+      "speaker": "Murilo",
+      "text": "Então"
+    },
+    {
+      "start": 569.75,
+      "end": 571.03,
+      "speaker": "Murilo",
+      "text": "Aí eu olho na 2.31"
+    },
+    {
+      "start": 571.03,
+      "end": 571.85,
+      "speaker": "Murilo",
+      "text": "Com calma"
+    },
+    {
+      "start": 571.85,
+      "end": 572.73,
+      "speaker": "Murilo",
+      "text": "Também"
+    },
+    {
+      "start": 573.14,
+      "end": 573.34,
+      "speaker": "Murilo",
+      "text": "Tá"
+    },
+    {
+      "start": 573.34,
+      "end": 574.74,
+      "speaker": "Murilo",
+      "text": "Vou fazer as coisas 2.27"
+    },
+    {
+      "start": 574.74,
+      "end": 575.26,
+      "speaker": "Érica",
+      "text": "Aham"
+    },
+    {
+      "start": 576.38,
+      "end": 577.8,
+      "speaker": "Érica",
+      "text": "Daí a gente converge isso"
+    },
+    {
+      "start": 577.8,
+      "end": 578.64,
+      "speaker": "Érica",
+      "text": "Amanhã"
+    },
+    {
+      "start": 578.64,
+      "end": 580.04,
+      "speaker": "Érica",
+      "text": "Eu vou tentar dormir"
+    },
+    {
+      "start": 580.04,
+      "end": 581.44,
+      "speaker": "Érica",
+      "text": "Com a ideia na cabeça"
+    },
+    {
+      "start": 581.44,
+      "end": 583.24,
+      "speaker": "Érica",
+      "text": "Pra ver se eu penso em mais algum gap"
+    },
+    {
+      "start": 583.24,
+      "end": 584.86,
+      "speaker": "Érica",
+      "text": "Que a gente não tá considerando"
+    },
+    {
+      "start": 584.86,
+      "end": 585.42,
+      "speaker": "Murilo",
+      "text": "Tá bom"
+    },
+    {
+      "start": 586.16,
+      "end": 587.26,
+      "speaker": "Érica",
+      "text": "Mas é que esse também"
+    },
+    {
+      "start": 587.26,
+      "end": 587.68,
+      "speaker": "Érica",
+      "text": "Por mim"
+    },
+    {
+      "start": 587.68,
+      "end": 588.5,
+      "speaker": "Érica",
+      "text": "Eu já caduquei"
+    },
+    {
+      "start": 588.5,
+      "end": 588.7,
+      "speaker": "Érica",
+      "text": "Hoje"
+    },
+    {
+      "start": 588.7,
+      "end": 590.36,
+      "speaker": "Érica",
+      "text": "Não vai sair muito mais"
+    },
+    {
+      "start": 590.36,
+      "end": 591.96,
+      "speaker": "Murilo",
+      "text": "Tá bom"
+    },
+    {
+      "start": 593.02,
+      "end": 593.54,
+      "speaker": "Murilo",
+      "text": "Beleza"
+    },
+    {
+      "start": 593.93,
+      "end": 595.27,
+      "speaker": "Érica",
+      "text": "Tá bom"
+    },
+    {
+      "start": 595.27,
+      "end": 595.85,
+      "speaker": "Érica",
+      "text": "De nada, amigo"
+    },
+    {
+      "start": 595.85,
+      "end": 597.33,
+      "speaker": "Érica",
+      "text": "Qualquer coisa avisa"
+    },
+    {
+      "start": 597.33,
+      "end": 597.83,
+      "speaker": "Murilo",
+      "text": "Ok"
+    },
+    {
+      "start": 597.83,
+      "end": 598.79,
+      "speaker": "Érica",
+      "text": "Tchau, tchau"
+    },
+    {
+      "start": 598.79,
+      "end": 599.55,
+      "speaker": "Murilo",
+      "text": "Tchau, tchau"
+    },
+    {
+      "start": 599.55,
+      "end": 600.53,
+      "speaker": "Érica",
+      "text": "Tchau"
+    },
+    {
+      "start": 607.34,
+      "end": 608.14,
+      "speaker": "Érica [atribuição incerta]",
+      "text": "Tchau"
+    }
+  ]
+}
