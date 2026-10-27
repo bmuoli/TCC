@@ -34,8 +34,6 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site
-        with:
-          path: public-lab
 
       - name: Publicar
         id: deployment
