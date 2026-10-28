@@ -73,6 +73,17 @@
     .curve{border:1px solid var(--line);border-radius:14px;padding:14px;background:rgba(7,17,31,.43)}
     .curve h4{margin:0 0 8px;font-size:.9rem}
     .curve svg{display:block;width:100%;height:auto}
+    .curve-note{color:var(--muted);font-size:.83rem;margin:10px 0 14px}
+    .curve-tables{display:grid;gap:16px;margin-top:16px;min-width:0}
+    .curve-table-wrap{max-width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+    .curve-table-wrap:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+    .curve-table{border-collapse:collapse;width:100%;min-width:690px;font-size:.83rem;font-variant-numeric:tabular-nums}
+    .curve-table caption{text-align:left;padding:12px 14px;font-weight:850;color:var(--text);background:rgba(18,34,56,.65)}
+    .curve-table th,.curve-table td{padding:10px 12px;border-top:1px solid var(--line);text-align:right;white-space:nowrap}
+    .curve-table thead th{color:var(--muted);font-size:.75rem;background:rgba(7,17,31,.55)}
+    .curve-table th:first-child{text-align:left}
+    .curve-table tbody tr:nth-child(even){background:rgba(18,34,56,.35)}
+    .curve-table td:last-child{color:var(--green);font-weight:850}
     .evidence-head{display:flex;justify-content:space-between;align-items:center;margin-top:18px;margin-bottom:10px}
     .evidence-head h4{margin:0;font-size:.92rem}
     .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
@@ -169,7 +180,7 @@
     var $=function(id){return document.getElementById(id)};
     var escapeHtml=function(value){return String(value==null?'':value).replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]})};
     var text=function(value){return String(value==null?'':value).trim()};
-    var decimal=function(value){var n=Number(String(value==null?'':value).replace(',','.'));return Number.isFinite(n)?n:null};
+    var decimal=function(value){var raw=String(value==null?'':value).trim();if(!raw)return null;var n=Number(raw.replace(',','.'));return Number.isFinite(n)?n:null};
     var has=function(value){return text(value)!==''};
     var statusLabels={done:'Concluído',running:'Em execução',review:'Dados coletados',planned:'Planejado'};
     var directionLabels={forward:'Direto',reverse:'Reverso / Buck'};
@@ -219,19 +230,32 @@
     }
     function curveSvg(curve,color){
       var pts=curvePoints(curve);if(!pts.length)return '';
-      var w=560,h=230,l=48,r=18,t=18,b=38,pw=w-l-r,ph=h-t-b;
+      var w=560,h=260,l=48,r=32,t=32,b=38,pw=w-l-r,ph=h-t-b;
       var maxP=Math.max.apply(null,pts.map(function(p){return p.p3n}).concat([100]));maxP=Math.ceil(maxP/100)*100;
       var etaAxis=efficiencyAxisRange(pts.map(function(p){return p.eta})),y0=etaAxis.min,y1=etaAxis.max;
       var x=function(n){return l+n/maxP*pw},y=function(n){return t+(y1-n)/(y1-y0)*ph};
       var grid='';for(var i=0;i<5;i++){var pv=i*maxP/4;grid+='<line x1="'+x(pv)+'" y1="'+t+'" x2="'+x(pv)+'" y2="'+(t+ph)+'" stroke="#24364d"/><text x="'+x(pv)+'" y="'+(t+ph+22)+'" fill="#8399b3" text-anchor="middle" font-size="10">'+Math.round(pv)+'</text>'}etaAxis.ticks.forEach(function(ev){grid+='<line x1="'+l+'" y1="'+y(ev)+'" x2="'+(l+pw)+'" y2="'+y(ev)+'" stroke="#24364d"/><text x="'+(l-8)+'" y="'+(y(ev)+3)+'" fill="#8399b3" text-anchor="end" font-size="10">'+fmt(ev,0)+'</text>'});
       var poly=pts.length>1?'<polyline points="'+pts.map(function(p){return x(p.p3n)+','+y(p.eta)}).join(' ')+'" fill="none" stroke="'+color+'" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>':'';
-      var dots=pts.map(function(p){return '<g><circle cx="'+x(p.p3n)+'" cy="'+y(p.eta)+'" r="6" fill="'+color+'" stroke="#0d1a2b" stroke-width="3"><title>'+escapeHtml(p.percent+'% · P3 '+p.p3+' W · η '+fmt(p.eta,2)+'%')+'</title></circle><text x="'+x(p.p3n)+'" y="'+(y(p.eta)-10)+'" fill="#eef6ff" text-anchor="middle" font-size="10" font-weight="700">'+escapeHtml(p.percent)+'%</text></g>'}).join('');
+      var dots=pts.map(function(p){
+        var tooltip=(has(p.percent)?'Carga nominal: '+fmt(p.percent,0)+'% · ':'')+'P1: '+fmt(p.p1n,3)+' W · P3: '+fmt(p.p3n,3)+' W · Rendimento: '+fmt(p.eta,2)+'%';
+        var labelX=Math.max(l+40,Math.min(l+pw-40,x(p.p3n)));
+        return '<g><title>'+escapeHtml(tooltip)+'</title><circle cx="'+x(p.p3n)+'" cy="'+y(p.eta)+'" r="6" fill="'+color+'" stroke="#0d1a2b" stroke-width="3"/><text x="'+labelX+'" y="'+(y(p.eta)-13)+'" fill="#eef6ff" text-anchor="middle" font-size="12" font-weight="700" stroke="#07111f" stroke-width="3" paint-order="stroke">η '+fmt(p.eta,2)+'%</text></g>';
+      }).join('');
       return '<svg viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Curva de rendimento">'+grid+'<line x1="'+l+'" y1="'+(t+ph)+'" x2="'+(l+pw)+'" y2="'+(t+ph)+'" stroke="#9bb0c9"/>'+poly+dots+'<text x="'+(l+pw/2)+'" y="'+(h-5)+'" fill="#9bb0c9" text-anchor="middle" font-size="11">Potência de saída P3 [W]</text><text x="12" y="'+(t+ph/2)+'" fill="#9bb0c9" text-anchor="middle" font-size="11" transform="rotate(-90 12 '+(t+ph/2)+')">Rendimento [%]</text></svg>';
+    }
+    function curveTableHtml(curve,label){
+      var pts=curvePoints(curve).sort(function(a,b){return decimal(a.percent)-decimal(b.percent)});
+      var reference=(curve.points||[]).find(function(p){return decimal(p.percent)===100});
+      var nominal=reference?(has(reference.targetPower)?decimal(reference.targetPower):decimal(reference.theoreticalPower)):null;
+      var note='Carga nominal [%] identifica o ponto de carga em relação à potência nominal de referência';
+      if(nominal!==null&&nominal>0)note+=' de '+fmt(nominal,0)+' W (10% corresponde ao alvo de '+fmt(nominal*0.1,0)+' W)';
+      note+='. P1 e P3 são as potências medidas na entrada e na saída; o rendimento é calculado por η = 100 × P3/P1. A potência medida pode diferir do alvo de carga.';
+      return '<section><div class="curve-table-wrap" tabindex="0" role="region" aria-label="Tabela de medições '+escapeHtml(label)+'"><table class="curve-table"><caption>Medições · '+escapeHtml(label)+' · '+pts.length+' pontos</caption><thead><tr><th scope="col">Ponto</th><th scope="col">Carga nominal [%]</th><th scope="col">Req alvo [Ω]</th><th scope="col">Req medida [Ω]</th><th scope="col">P1 entrada [W]</th><th scope="col">P3 saída [W]</th><th scope="col">Rendimento [%]</th></tr></thead><tbody>'+pts.map(function(p,i){return '<tr><th scope="row">Ponto '+(i+1)+'</th><td>'+fmt(p.percent,0)+'</td><td>'+fmt(p.targetResistance,2)+'</td><td>'+fmt(p.measuredResistance,2)+'</td><td>'+fmt(p.p1n,3)+'</td><td>'+fmt(p.p3n,3)+'</td><td>'+fmt(p.eta,2)+'</td></tr>'}).join('')+'</tbody></table></div><p class="curve-note">'+escapeHtml(note)+'</p></section>';
     }
     function curvesHtml(run){
       var curves=[{label:'Boost',data:run.efficiencyCurve,color:'#34d5ff'},{label:'Buck',data:run.buckEfficiencyCurve,color:'#ffbd59'}].filter(function(c){return curvePoints(c.data).length});
       if(!curves.length)return '';
-      return '<div class="curve-grid">'+curves.map(function(c){return '<div class="curve"><h4>Curva de Rendimento · '+c.label+'</h4>'+curveSvg(c.data,c.color)+'</div>'}).join('')+'</div>';
+      return '<div class="curve-grid">'+curves.map(function(c){return '<div class="curve"><h4>Curva de Rendimento · '+c.label+'</h4>'+curveSvg(c.data,c.color)+'</div>'}).join('')+'</div><p class="curve-note">Os valores junto aos pontos indicam o rendimento η [%]. As porcentagens de carga nominal estão identificadas nas tabelas abaixo.</p><div class="curve-tables">'+curves.map(function(c){return curveTableHtml(c.data,c.label)}).join('')+'</div>';
     }
     function evidenceTitle(item){return text(item.reportCaption)||text(item.fileName)||text(item.originalName)||'Evidência'}
     function evidenceHtml(run,key){
