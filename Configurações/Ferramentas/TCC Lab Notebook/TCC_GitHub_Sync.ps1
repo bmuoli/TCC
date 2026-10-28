@@ -298,6 +298,20 @@ function Send-Json {
 
 if (-not (Test-Path -LiteralPath $NotebookPath -PathType Leaf)) { throw "Lab Notebook v51 não encontrado em $NotebookPath" }
 
+$LocalUrl = "http://127.0.0.1:$ListenPort/"
+try {
+    $existingHelper = Invoke-RestMethod -Uri ($LocalUrl + 'api/status') -Headers @{ 'X-TCC-Sync' = '1' } -TimeoutSec 2
+    if ($existingHelper.helperVersion -eq $HelperVersion) {
+        Write-Host "O auxiliar local do TCC já está ativo em $LocalUrl"
+        Write-Host 'Abrindo a página existente; nenhuma segunda instância será iniciada.'
+        if (-not $NoBrowser) { Start-Process $LocalUrl }
+        return
+    }
+}
+catch {
+    # Nenhum auxiliar compatível está ativo; inicia uma nova instância abaixo.
+}
+
 $listener = [System.Net.Sockets.TcpListener]::new($ListenAddress, $ListenPort)
 $listener.Start()
 Write-Host "TCC Lab Notebook - auxiliar local $HelperVersion"

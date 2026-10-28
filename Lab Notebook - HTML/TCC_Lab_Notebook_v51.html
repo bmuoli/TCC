@@ -842,6 +842,14 @@ details.charDetails summary{cursor:pointer;font-weight:800}
               <option value="power_vs_efficiency">Potência × Rendimento (X: η · Y: P3)</option>
             </select>
           </label>
+          <label class="effChartModeControl">
+            <span class="small muted">Passo do eixo de rendimento [%]</span>
+            <input id="efficiencyAxisStep" class="field" type="number" min="0.1" max="10" step="0.1" value="1" inputmode="decimal">
+          </label>
+          <label class="effChartModeControl">
+            <span class="small muted">Passo do eixo de potência [W]</span>
+            <input id="efficiencyPowerAxisStep" class="field" type="number" min="1" max="1000" step="1" value="100" inputmode="decimal">
+          </label>
         </div>
         <div id="efficiencyChart" class="effChart"></div>
 
@@ -1456,13 +1464,21 @@ function efficiencyPointDefinitionsForMode(mode){
 function efficiencyEvidenceCategoriesForMode(mode){
   return normalizeEfficiencyMode(mode)==='buck'?buckEfficiencyEvidenceCategories:efficiencyEvidenceCategories;
 }
+function normalizeEfficiencyAxisStep(value){
+  const n=strictDecimal(value);
+  return n!==null&&n>=0.1&&n<=10?n:1;
+}
+function normalizeEfficiencyPowerAxisStep(value){
+  const n=strictDecimal(value);
+  return n!==null&&n>=1&&n<=1000?n:100;
+}
 function emptyEfficiencyCurve(mode='boost'){
-  return {chartMode:'efficiency_vs_power',points:efficiencyPointDefinitionsForMode(mode).map(d=>({...d,selected:false,measuredResistance:'',p1:'',p3:'',efficiency:null,notes:''}))};
+  return {chartMode:'efficiency_vs_power',axisStep:1,powerAxisStep:100,points:efficiencyPointDefinitionsForMode(mode).map(d=>({...d,selected:false,measuredResistance:'',p1:'',p3:'',efficiency:null,notes:''}))};
 }
 function normalizeEfficiencyCurve(value,mode='boost'){
   const source=Array.isArray(value?.points)?value.points:[];
   const byId=new Map(source.map(p=>[String(p.id??p.percent),p]));
-  return {chartMode:normalizeEfficiencyChartMode(value?.chartMode),points:efficiencyPointDefinitionsForMode(mode).map(d=>{
+  return {chartMode:normalizeEfficiencyChartMode(value?.chartMode),axisStep:normalizeEfficiencyAxisStep(value?.axisStep),powerAxisStep:normalizeEfficiencyPowerAxisStep(value?.powerAxisStep),points:efficiencyPointDefinitionsForMode(mode).map(d=>{
     const p=byId.get(d.id)||{};
     const p1=String(p.p1??''),p3=String(p.p3??'');
     const a=strictDecimal(p1),b=strictDecimal(p3);
@@ -1651,22 +1667,96 @@ async function renameCurrentPhysicalFolder(){
 async function autoRepairMissingFolderLinks(){
   if(!rootHandle)return;
   let changed=false;
+  const repairedTests=[];
   const warnings=[];
   for(const t of tests){
     const currentName=tcFolderName(t);
-    if(await projectDirExists(currentName))continue;
-    const candidates=await scanFolderCandidates(t);
-    if(candidates.length===1){
-      await relinkTestFolder(t,candidates[0].name,{persist:false});
+    if(!(await projectDirExists(currentName))){
+      const candidates=await scanFolderCandidates(t);
+      if(candidates.length===1){
+        await relinkTestFolder(t,candidates[0].name,{persist:false});
+        changed=true;
+      }else if(candidates.length>1){
+        warnings.push(`${testDisplayId(t)}: ${candidates.length} pastas possíveis`);
+      }
+    }
+    if(await recoverEfficiencyEvidenceFromDisk(t)){
       changed=true;
-    }else if(candidates.length>1){
-      warnings.push(`${testDisplayId(t)}: ${candidates.length} pastas possíveis`);
+      repairedTests.push(t);
     }
   }
-  if(changed)await saveCampaign();
+  if(changed){
+    for(const t of repairedTests)await persistTestObjectFast(t);
+    await saveCampaign();
+  }
   if(warnings.length&&$('saveMessage')){
     $('saveMessage').textContent='Atenção: há vínculos ambíguos em '+warnings.join(' · ')+'. Use "Reconciliar pasta".';
   }
+}
+
+function efficiencyCategoryFromFolder(folder,mode){
+  const buck=normalizeEfficiencyMode(mode)==='buck';
+  return ({
+    Fluke_VI:buck?'Fluke - Tensões':'Fluke - Tensões e Correntes',
+    Fluke_Potencia:'Fluke - Potências / Rendimento',
+    Fonte:buck?'Fonte':'Fonte de tensão',
+    Osciloscopio:'Osciloscópio',
+    Termica:'Térmica',
+    Montagem:'Montagem',
+    Outra:'Outra'
+  })[folder]||'Outra';
+}
+
+async function recoverEfficiencyEvidenceFromDisk(t){
+  if(!rootHandle||!isEfficiencyCurveTest(t))return false;
+  ensureSwitchVariants(t);
+  let changed=false;
+  const imageExtensions=new Set(['png','jpg','jpeg','webp','gif','bmp']);
+  for(const variant of ['Si','SiC']){
+    const variantData=t.switchVariants?.[variant];
+    if(!variantData?.directions)continue;
+    for(const direction of ['forward','reverse']){
+      const run=variantData.directions[direction];
+      if(!run)continue;
+      run.evidence=Array.isArray(run.evidence)?run.evidence:[];
+      const known=new Set(run.evidence.map(item=>String(item.relativePath||'').toLowerCase()));
+      for(const mode of ['boost','buck']){
+        const curve=mode==='buck'?run.buckEfficiencyCurve:run.efficiencyCurve;
+        for(const point of normalizeEfficiencyCurve(curve,mode).points){
+          const base=[tcFolderName(t),'Teste_Pratico',directionFolder(direction),variantFolder(variant),'Evidencias','Rendimento'];
+          if(mode==='buck')base.push('Buck');
+          base.push(`P${point.id}`);
+          let pointDir;
+          try{pointDir=await getDirPath(base,false)}catch(e){if(e.name==='NotFoundError')continue;throw e}
+          for await (const [categoryFolder,categoryEntry] of pointDir.entries()){
+            if(categoryEntry.kind!=='directory')continue;
+            const category=efficiencyCategoryFromFolder(categoryFolder,mode);
+            for await (const [name,entry] of categoryEntry.entries()){
+              if(entry.kind!=='file')continue;
+              const extension=String(name).split('.').pop().toLowerCase();
+              if(!imageExtensions.has(extension))continue;
+              const relativePath=[...base,categoryFolder,name].join('/');
+              const key=relativePath.toLowerCase();
+              if(known.has(key))continue;
+              const file=await entry.getFile();
+              const subject=`Curva de Rendimento - ${efficiencyModeLabel(mode)} · ${point.percent}%`;
+              run.evidence.push({
+                subjects:[subject],subject,type:'Outro',signalSelections:[],signal:'',
+                originalName:name,fileName:name,relativePath,sha256:await sha256Blob(file),
+                reportInclude:true,reportCaption:'',savedAt:new Date(file.lastModified||Date.now()).toISOString(),
+                thermalView:'',imageNote:'',efficiencyPointId:String(point.id),
+                efficiencyCategory:category,efficiencyMode:mode
+              });
+              known.add(key);
+              changed=true;
+            }
+          }
+        }
+      }
+    }
+  }
+  if(changed)loadVariantToTop(t,t.activeSwitchVariant);
+  return changed;
 }
 function testDisplayId(t){
   if(t && t.displayId!=null){
@@ -3627,21 +3717,28 @@ function formatPtNumber(value,digits=2){
 function efficiencyValidPoints(curve){
   return (curve?.points||[]).filter(p=>p.selected&&efficiencyPointValue(p)!==null).map(p=>({...p,efficiency:efficiencyPointValue(p),p1Number:strictDecimal(p.p1),p3Number:strictDecimal(p.p3)})).sort((a,b)=>a.p3Number-b.p3Number);
 }
-function efficiencyAxisRange(values){
+function efficiencyAxisRange(values,requestedStep=1){
+  const step=normalizeEfficiencyAxisStep(requestedStep);
   const finite=(values||[]).map(Number).filter(Number.isFinite);
-  if(!finite.length)return {min:90,max:100,ticks:Array.from({length:11},(_,i)=>90+i)};
+  if(!finite.length)return {min:90,max:100,ticks:Array.from({length:Math.round(10/step)+1},(_,i)=>Number((90+i*step).toFixed(4)))};
   const dataMin=Math.min(...finite),dataMax=Math.max(...finite);
-  let min=Math.floor((dataMin-1)/5)*5;
-  let max=Math.ceil((dataMax+1)/5)*5;
+  const padding=Math.max(step,0.5);
+  let min=Math.floor((dataMin-padding)/step)*step;
+  let max=Math.ceil((dataMax+padding)/step)*step;
   if(dataMin>=90)min=Math.max(90,min);
   if(dataMax<=100)max=Math.min(100,max);
-  if(max<=min){min=Math.max(0,Math.floor(dataMin)-1);max=Math.ceil(dataMax)+1}
-  if(max-min<5){
-    const center=(min+max)/2;
-    min=Math.max(0,Math.floor(center-2.5));
-    max=Math.ceil(center+2.5);
-  }
-  return {min,max,ticks:Array.from({length:Math.round(max-min)+1},(_,i)=>min+i)};
+  if(max<=min){min=Math.floor((dataMin-step)/step)*step;max=Math.ceil((dataMax+step)/step)*step}
+  min=Number(min.toFixed(4));max=Number(max.toFixed(4));
+  const tickCount=Math.max(1,Math.round((max-min)/step));
+  return {min,max,ticks:Array.from({length:tickCount+1},(_,i)=>Number((min+i*step).toFixed(4)))};
+}
+function efficiencyPowerAxisRange(values,requestedStep=100){
+  const step=normalizeEfficiencyPowerAxisStep(requestedStep);
+  const finite=(values||[]).map(Number).filter(Number.isFinite);
+  const dataMax=finite.length?Math.max(...finite):0;
+  const max=Number((Math.max(step,Math.ceil(dataMax/step)*step)).toFixed(4));
+  const tickCount=Math.max(1,Math.round(max/step));
+  return {min:0,max,ticks:Array.from({length:tickCount+1},(_,i)=>Number((i*step).toFixed(4)))};
 }
 function efficiencyChartCaption(curve){
   return normalizeEfficiencyChartMode(curve?.chartMode)==='power_vs_efficiency'
@@ -3653,9 +3750,8 @@ function efficiencyChartSvg(curve,{report=false}={}){
   const pts=efficiencyValidPoints(curve).sort((a,b)=>inverted?a.efficiency-b.efficiency:a.p3Number-b.p3Number);
   if(!pts.length)return '';
   const width=920,height=360,left=74,right=28,top=28,bottom=58,plotW=width-left-right,plotH=height-top-bottom;
-  const maxP=Math.max(...pts.map(p=>p.p3Number),1);
-  const powerMax=Math.max(100,Math.ceil(maxP/100)*100);
-  const etaAxis=efficiencyAxisRange(pts.map(p=>p.efficiency)),etaMin=etaAxis.min,etaMax=etaAxis.max;
+  const powerAxis=efficiencyPowerAxisRange(pts.map(p=>p.p3Number),curve?.powerAxisStep),powerMax=powerAxis.max;
+  const etaAxis=efficiencyAxisRange(pts.map(p=>p.efficiency),curve?.axisStep),etaMin=etaAxis.min,etaMax=etaAxis.max;
   const xMin=inverted?etaMin:0,xMax=inverted?etaMax:powerMax;
   const yMin=inverted?0:etaMin,yMax=inverted?powerMax:etaMax;
   const x=n=>left+((n-xMin)/(xMax-xMin))*plotW;
@@ -3663,8 +3759,8 @@ function efficiencyChartSvg(curve,{report=false}={}){
   const xValue=p=>inverted?p.efficiency:p.p3Number;
   const yValue=p=>inverted?p.p3Number:p.efficiency;
   const fg=report?'#1f2937':'var(--text)',muted=report?'#64748b':'var(--muted)',grid=report?'#d8dee8':'var(--border)',accent=report?'#2563eb':'var(--ok)',fill=report?'#ffffff':'var(--panel)';
-  const xTicks=inverted?etaAxis.ticks:Array.from({length:5},(_,i)=>xMin+i*(xMax-xMin)/4);
-  const yTicks=inverted?Array.from({length:5},(_,i)=>yMin+i*(yMax-yMin)/4):etaAxis.ticks;
+  const xTicks=inverted?etaAxis.ticks:powerAxis.ticks;
+  const yTicks=inverted?powerAxis.ticks:etaAxis.ticks;
   const gridLines=[...xTicks.map(v=>`<line x1="${x(v)}" y1="${top}" x2="${x(v)}" y2="${top+plotH}" stroke="${grid}" stroke-width="1"/><text x="${x(v)}" y="${top+plotH+25}" fill="${muted}" text-anchor="middle" font-size="12">${inverted?formatPtNumber(v,1):Math.round(v)}</text>`),...yTicks.map(v=>`<line x1="${left}" y1="${y(v)}" x2="${left+plotW}" y2="${y(v)}" stroke="${grid}" stroke-width="1"/><text x="${left-12}" y="${y(v)+4}" fill="${muted}" text-anchor="end" font-size="12">${inverted?Math.round(v):formatPtNumber(v,1)}</text>`)].join('');
   const poly=pts.length>1?`<polyline points="${pts.map(p=>`${x(xValue(p))},${y(yValue(p))}`).join(' ')}" fill="none" stroke="${accent}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`:'';
   const circles=pts.map(p=>{
@@ -3685,11 +3781,13 @@ function efficiencyComparisonChartSvg(boostCurve,buckCurve,{report=false}={}){
   const all=series.flatMap(s=>s.points);
   if(!all.length)return '';
   const width=920,height=380,left=74,right=28,top=50,bottom=58,plotW=width-left-right,plotH=height-top-bottom;
-  const maxP=Math.max(...all.map(p=>p.p3Number),1),xMax=Math.max(100,Math.ceil(maxP/100)*100);
-  const etaAxis=efficiencyAxisRange(all.map(p=>p.efficiency)),yMin=etaAxis.min,yMax=etaAxis.max;
+  const comparisonPowerStep=Math.min(normalizeEfficiencyPowerAxisStep(boostCurve?.powerAxisStep),normalizeEfficiencyPowerAxisStep(buckCurve?.powerAxisStep));
+  const powerAxis=efficiencyPowerAxisRange(all.map(p=>p.p3Number),comparisonPowerStep),xMax=powerAxis.max;
+  const comparisonStep=Math.min(normalizeEfficiencyAxisStep(boostCurve?.axisStep),normalizeEfficiencyAxisStep(buckCurve?.axisStep));
+  const etaAxis=efficiencyAxisRange(all.map(p=>p.efficiency),comparisonStep),yMin=etaAxis.min,yMax=etaAxis.max;
   const x=n=>left+(n/xMax)*plotW,y=n=>top+((yMax-n)/(yMax-yMin))*plotH;
   const fg=report?'#1f2937':'var(--text)',muted=report?'#64748b':'var(--muted)',grid=report?'#d8dee8':'var(--border)',fill=report?'#ffffff':'var(--panel)';
-  const xTicks=Array.from({length:5},(_,i)=>i*xMax/4),yTicks=etaAxis.ticks;
+  const xTicks=powerAxis.ticks,yTicks=etaAxis.ticks;
   const gridLines=[...xTicks.map(v=>`<line x1="${x(v)}" y1="${top}" x2="${x(v)}" y2="${top+plotH}" stroke="${grid}" stroke-width="1"/><text x="${x(v)}" y="${top+plotH+25}" fill="${muted}" text-anchor="middle" font-size="12">${Math.round(v)}</text>`),...yTicks.map(v=>`<line x1="${left}" y1="${y(v)}" x2="${left+plotW}" y2="${y(v)}" stroke="${grid}" stroke-width="1"/><text x="${left-12}" y="${y(v)+4}" fill="${muted}" text-anchor="end" font-size="12">${formatPtNumber(v,1)}</text>`)].join('');
   const lines=series.map(s=>s.points.length>1?`<polyline points="${s.points.map(p=>`${x(p.p3Number)},${y(p.efficiency)}`).join(' ')}" fill="none" stroke="${s.color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`:'').join('');
   const dots=series.map(s=>s.points.map(p=>{
@@ -3756,6 +3854,8 @@ function renderEfficiencySummaryAndChart(){
   }
   const svg=efficiencyChartSvg(curve);
   $('efficiencyChartMode').value=normalizeEfficiencyChartMode(curve.chartMode);
+  $('efficiencyAxisStep').value=String(normalizeEfficiencyAxisStep(curve.axisStep));
+  $('efficiencyPowerAxisStep').value=String(normalizeEfficiencyPowerAxisStep(curve.powerAxisStep));
   const orientation=normalizeEfficiencyChartMode(curve.chartMode)==='power_vs_efficiency'?'Potência × Rendimento':'Rendimento × Potência';
   $('efficiencyChartTitle').textContent=`Curva de Rendimento - ${modeLabel} · ${orientation}`;
   $('efficiencyChart').innerHTML=svg||'<div class="effChartEmpty">Preencha P1 e P3 de um ponto selecionado para exibi-lo no gráfico.</div>';
@@ -3783,6 +3883,8 @@ function renderEfficiencyCurve(){
     ?'<strong>Importante:</strong> cada conjunto de 9,9 Ω é formado por 3,3 Ω + 3,3 Ω + 3,3 Ω em série e entra no banco como um único ramo paralelo.'
     :'Cada conjunto de 9,9 Ω é formado por 3 resistores de 3,3 Ω em série.';
   $('efficiencyChartMode').value=normalizeEfficiencyChartMode(curve.chartMode);
+  $('efficiencyAxisStep').value=String(normalizeEfficiencyAxisStep(curve.axisStep));
+  $('efficiencyPowerAxisStep').value=String(normalizeEfficiencyPowerAxisStep(curve.powerAxisStep));
   const orientation=normalizeEfficiencyChartMode(curve.chartMode)==='power_vs_efficiency'?'Potência × Rendimento':'Rendimento × Potência';
   $('efficiencyChartTitle').textContent=`Curva de Rendimento - ${modeLabel} · ${orientation}`;
   $('efficiencyPointSelector').innerHTML=curve.points.map(p=>`<label class="effPointToggle"><input type="checkbox" data-eff-select="${p.id}" ${p.selected?'checked':''}> ${p.percent}%</label>`).join('');
@@ -5578,6 +5680,28 @@ $('efficiencyChartMode').addEventListener('change',()=>{
   if(!isEfficiencyCurveTest(t))return;
   const curve=activeEfficiencyCurve(t);
   curve.chartMode=normalizeEfficiencyChartMode($('efficiencyChartMode').value);
+  saveTopToDirection(t);
+  if(t.switchVariants)saveTopToVariant(t);
+  renderEfficiencySummaryAndChart();
+  scheduleAutosave(150);
+});
+$('efficiencyAxisStep').addEventListener('change',()=>{
+  const t=tests[current];
+  if(!isEfficiencyCurveTest(t))return;
+  const curve=activeEfficiencyCurve(t);
+  curve.axisStep=normalizeEfficiencyAxisStep($('efficiencyAxisStep').value);
+  $('efficiencyAxisStep').value=String(curve.axisStep);
+  saveTopToDirection(t);
+  if(t.switchVariants)saveTopToVariant(t);
+  renderEfficiencySummaryAndChart();
+  scheduleAutosave(150);
+});
+$('efficiencyPowerAxisStep').addEventListener('change',()=>{
+  const t=tests[current];
+  if(!isEfficiencyCurveTest(t))return;
+  const curve=activeEfficiencyCurve(t);
+  curve.powerAxisStep=normalizeEfficiencyPowerAxisStep($('efficiencyPowerAxisStep').value);
+  $('efficiencyPowerAxisStep').value=String(curve.powerAxisStep);
   saveTopToDirection(t);
   if(t.switchVariants)saveTopToVariant(t);
   renderEfficiencySummaryAndChart();

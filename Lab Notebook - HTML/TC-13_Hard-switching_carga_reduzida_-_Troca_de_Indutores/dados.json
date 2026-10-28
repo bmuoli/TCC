@@ -3,7 +3,7 @@
   "title": "Curva de Rendimento",
   "goal": "Levantar a curva de rendimento variando as resistencia de saída do conversor.",
   "switchType": "SiC MOSFET",
-  "status": "done",
+  "status": "review",
   "freq": "",
   "duty": "",
   "vin": "38",
@@ -95,6 +95,8 @@
       "trash": [],
       "efficiencyCurve": {
         "chartMode": "efficiency_vs_power",
+        "axisStep": 1,
+        "powerAxisStep": 100,
         "points": [
           {
             "id": "10",
@@ -184,6 +186,8 @@
       },
       "buckEfficiencyCurve": {
         "chartMode": "efficiency_vs_power",
+        "axisStep": 1,
+        "powerAxisStep": 100,
         "points": [
           {
             "id": "10",
@@ -858,6 +862,132 @@
           "efficiencyPointId": "90",
           "efficiencyCategory": "Fluke - Tensões",
           "efficiencyMode": "buck"
+        },
+        {
+          "subjects": [
+            "Curva de Rendimento - Buck · 90%"
+          ],
+          "subject": "Curva de Rendimento - Buck · 90%",
+          "type": "Outro",
+          "signalSelections": [],
+          "signal": "",
+          "originalName": "clipboard.png",
+          "fileName": "TC-13_SiC_Rend_Buck_90_Flu.png",
+          "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P90/Fluke_Potencia/TC-13_SiC_Rend_Buck_90_Flu.png",
+          "sha256": "da6fe32e37fd7b024e0df8559229a28034f0e14bfd0673b26cd9a8062a7715e1",
+          "reportInclude": true,
+          "reportCaption": "",
+          "savedAt": "2026-10-28T18:50:54.000Z",
+          "thermalView": "",
+          "imageNote": "",
+          "efficiencyPointId": "90",
+          "efficiencyCategory": "Fluke - Potências / Rendimento",
+          "efficiencyMode": "buck"
+        },
+        {
+          "subjects": [
+            "Curva de Rendimento - Buck · 10%"
+          ],
+          "subject": "Curva de Rendimento - Buck · 10%",
+          "type": "Outro",
+          "signalSelections": [],
+          "signal": "",
+          "originalName": "TC-13_SiC_Rend_Buck_10_Potencia.png",
+          "fileName": "TC-13_SiC_Rend_Buck_10_Potencia.png",
+          "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P10/Fluke_Potencia/TC-13_SiC_Rend_Buck_10_Potencia.png",
+          "sha256": "bb547693fdc18e144381c00f04f26d72f8137f19204a5be969a9fb04e924fbfe",
+          "reportInclude": true,
+          "reportCaption": "",
+          "savedAt": "2026-10-28T19:58:48.410Z",
+          "thermalView": "",
+          "imageNote": "",
+          "efficiencyPointId": "10",
+          "efficiencyCategory": "Fluke - Potências / Rendimento",
+          "efficiencyMode": "buck"
+        },
+        {
+          "subjects": [
+            "Curva de Rendimento - Buck · 10%"
+          ],
+          "subject": "Curva de Rendimento - Buck · 10%",
+          "type": "Outro",
+          "signalSelections": [],
+          "signal": "",
+          "originalName": "TC-13_SiC_Rend_Buck_10_Corrente.png",
+          "fileName": "TC-13_SiC_Rend_Buck_10_Corrente.png",
+          "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P10/Fluke_VI/TC-13_SiC_Rend_Buck_10_Corrente.png",
+          "sha256": "e941613a35c8d8ae02cd99a1f9e40c03eb969bd1fd4ce92f318b68c26b9ddae2",
+          "reportInclude": true,
+          "reportCaption": "",
+          "savedAt": "2026-10-28T20:05:50.944Z",
+          "thermalView": "",
+          "imageNote": "",
+          "efficiencyPointId": "10",
+          "efficiencyCategory": "Fluke - Tensões",
+          "efficiencyMode": "buck"
+        },
+        {
+          "subjects": [
+            "Curva de Rendimento - Buck · 25%"
+          ],
+          "subject": "Curva de Rendimento - Buck · 25%",
+          "type": "Outro",
+          "signalSelections": [],
+          "signal": "",
+          "originalName": "TC-13_SiC_Rend_Buck_25_Potencia.png",
+          "fileName": "TC-13_SiC_Rend_Buck_25_Potencia.png",
+          "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P25/Fluke_Potencia/TC-13_SiC_Rend_Buck_25_Potencia.png",
+          "sha256": "647d1e8e5b8e24001316aa1f405deb7c4644e12e107916c96fbd9d08523740b8",
+          "reportInclude": true,
+          "reportCaption": "",
+          "savedAt": "2026-10-28T19:46:40.235Z",
+          "thermalView": "",
+          "imageNote": "",
+          "efficiencyPointId": "25",
+          "efficiencyCategory": "Fluke - Potências / Rendimento",
+          "efficiencyMode": "buck"
+        },
+        {
+          "subjects": [
+            "Curva de Rendimento - Buck · 25%"
+          ],
+          "subject": "Curva de Rendimento - Buck · 25%",
+          "type": "Outro",
+          "signalSelections": [],
+          "signal": "",
+          "originalName": "TC-13_SiC_Rend_Buck_25_Corrente.png",
+          "fileName": "TC-13_SiC_Rend_Buck_25_Corrente.png",
+          "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P25/Fluke_VI/TC-13_SiC_Rend_Buck_25_Corrente.png",
+          "sha256": "aaff72cab0112641dcfee6864f91fbaee3490314b1ac31f8344e098548050dfe",
+          "reportInclude": true,
+          "reportCaption": "",
+          "savedAt": "2026-10-28T19:45:00.909Z",
+          "thermalView": "",
+          "imageNote": "",
+          "efficiencyPointId": "25",
+          "efficiencyCategory": "Fluke - Tensões",
+          "efficiencyMode": "buck"
+        },
+        {
+          "subjects": [
+            "Curva de Rendimento - Buck · 25%"
+          ],
+          "subject": "Curva de Rendimento - Buck · 25%",
+          "type": "Outro",
+          "signalSelections": [],
+          "signal": "",
+          "originalName": "TC-13_SiC_Rend_Buck_25_Tensao.png",
+          "fileName": "TC-13_SiC_Rend_Buck_25_Tensao.png",
+          "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P25/Fluke_VI/TC-13_SiC_Rend_Buck_25_Tensao.png",
+          "sha256": "2274ba2740c0486b90dd716ca7e65dfd8d507d3f97b5c0e4dec4a305034f8cdf",
+          "reportInclude": true,
+          "reportCaption": "",
+          "savedAt": "2026-10-28T19:44:12.024Z",
+          "thermalView": "",
+          "imageNote": "",
+          "efficiencyPointId": "25",
+          "efficiencyCategory": "Fluke - Tensões",
+          "efficiencyMode": "buck"
         }
       ],
       "trash": [
@@ -919,6 +1049,8 @@
       ],
       "efficiencyCurve": {
         "chartMode": "efficiency_vs_power",
+        "axisStep": 1,
+        "powerAxisStep": 100,
         "points": [
           {
             "id": "10",
@@ -927,7 +1059,7 @@
             "targetResistance": 33.3,
             "targetResistanceLabel": "33,3",
             "bankConfig": "3 × 100 Ω em paralelo",
-            "selected": false,
+            "selected": true,
             "measuredResistance": "34",
             "p1": "82,527",
             "p3": "80,217",
@@ -1008,6 +1140,8 @@
       },
       "buckEfficiencyCurve": {
         "chartMode": "efficiency_vs_power",
+        "axisStep": 0.6,
+        "powerAxisStep": 40,
         "points": [
           {
             "id": "10",
@@ -1019,7 +1153,7 @@
             "equivalentResistanceLabel": "16,67",
             "theoreticalPower": 77.8,
             "bankConfig": "6 × 100 Ω em paralelo",
-            "selected": false,
+            "selected": true,
             "measuredResistance": "17,1",
             "p1": "81,482",
             "p3": "79,441",
@@ -1036,7 +1170,7 @@
             "equivalentResistanceLabel": "6,87",
             "theoreticalPower": 188.6,
             "bankConfig": "1 × 9,9 Ω em paralelo + 4 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
-            "selected": false,
+            "selected": true,
             "measuredResistance": "7",
             "p1": "199,51",
             "p3": "193,67",
@@ -1053,7 +1187,7 @@
             "equivalentResistanceLabel": "3,46",
             "theoreticalPower": 374.1,
             "bankConfig": "2 × 9,9 Ω em paralelo + 8 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
-            "selected": false,
+            "selected": true,
             "measuredResistance": "3,5",
             "p1": "388,39",
             "p3": "374,67",
@@ -1070,7 +1204,7 @@
             "equivalentResistanceLabel": "2,30",
             "theoreticalPower": 562.5,
             "bankConfig": "4 × 9,9 Ω em paralelo + 3 × 100 Ω em paralelo",
-            "selected": false,
+            "selected": true,
             "measuredResistance": "2,4",
             "p1": "580,53",
             "p3": "551,32",
@@ -1104,7 +1238,7 @@
             "equivalentResistanceLabel": "1,72",
             "theoreticalPower": 752.6,
             "bankConfig": "4 × 9,9 Ω em paralelo + 15 × 100 Ω em paralelo + 4 × 150 Ω em paralelo",
-            "selected": false,
+            "selected": true,
             "measuredResistance": "1,8",
             "p1": "761,30",
             "p3": "712,63",
@@ -1114,8 +1248,8 @@
         ]
       },
       "activeEfficiencyMode": "buck",
-      "efficiencyComparisonEnabled": false,
-      "executionDone": false,
+      "efficiencyComparisonEnabled": true,
+      "executionDone": true,
       "captureChecklist": {
         "vds": false,
         "vgs": false,
@@ -1185,6 +1319,8 @@
           "trash": [],
           "efficiencyCurve": {
             "chartMode": "efficiency_vs_power",
+            "axisStep": 1,
+            "powerAxisStep": 100,
             "points": [
               {
                 "id": "10",
@@ -1274,6 +1410,8 @@
           },
           "buckEfficiencyCurve": {
             "chartMode": "efficiency_vs_power",
+            "axisStep": 1,
+            "powerAxisStep": 100,
             "points": [
               {
                 "id": "10",
@@ -1406,6 +1544,8 @@
           "trash": [],
           "efficiencyCurve": {
             "chartMode": "efficiency_vs_power",
+            "axisStep": 1,
+            "powerAxisStep": 100,
             "points": [
               {
                 "id": "10",
@@ -1495,6 +1635,8 @@
           },
           "buckEfficiencyCurve": {
             "chartMode": "efficiency_vs_power",
+            "axisStep": 1,
+            "powerAxisStep": 100,
             "points": [
               {
                 "id": "10",
@@ -1669,6 +1811,8 @@
           "trash": [],
           "efficiencyCurve": {
             "chartMode": "efficiency_vs_power",
+            "axisStep": 1,
+            "powerAxisStep": 100,
             "points": [
               {
                 "id": "10",
@@ -1758,6 +1902,8 @@
           },
           "buckEfficiencyCurve": {
             "chartMode": "efficiency_vs_power",
+            "axisStep": 1,
+            "powerAxisStep": 100,
             "points": [
               {
                 "id": "10",
@@ -2432,6 +2578,132 @@
               "efficiencyPointId": "90",
               "efficiencyCategory": "Fluke - Tensões",
               "efficiencyMode": "buck"
+            },
+            {
+              "subjects": [
+                "Curva de Rendimento - Buck · 90%"
+              ],
+              "subject": "Curva de Rendimento - Buck · 90%",
+              "type": "Outro",
+              "signalSelections": [],
+              "signal": "",
+              "originalName": "clipboard.png",
+              "fileName": "TC-13_SiC_Rend_Buck_90_Flu.png",
+              "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P90/Fluke_Potencia/TC-13_SiC_Rend_Buck_90_Flu.png",
+              "sha256": "da6fe32e37fd7b024e0df8559229a28034f0e14bfd0673b26cd9a8062a7715e1",
+              "reportInclude": true,
+              "reportCaption": "",
+              "savedAt": "2026-10-28T18:50:54.000Z",
+              "thermalView": "",
+              "imageNote": "",
+              "efficiencyPointId": "90",
+              "efficiencyCategory": "Fluke - Potências / Rendimento",
+              "efficiencyMode": "buck"
+            },
+            {
+              "subjects": [
+                "Curva de Rendimento - Buck · 10%"
+              ],
+              "subject": "Curva de Rendimento - Buck · 10%",
+              "type": "Outro",
+              "signalSelections": [],
+              "signal": "",
+              "originalName": "TC-13_SiC_Rend_Buck_10_Potencia.png",
+              "fileName": "TC-13_SiC_Rend_Buck_10_Potencia.png",
+              "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P10/Fluke_Potencia/TC-13_SiC_Rend_Buck_10_Potencia.png",
+              "sha256": "bb547693fdc18e144381c00f04f26d72f8137f19204a5be969a9fb04e924fbfe",
+              "reportInclude": true,
+              "reportCaption": "",
+              "savedAt": "2026-10-28T19:58:48.410Z",
+              "thermalView": "",
+              "imageNote": "",
+              "efficiencyPointId": "10",
+              "efficiencyCategory": "Fluke - Potências / Rendimento",
+              "efficiencyMode": "buck"
+            },
+            {
+              "subjects": [
+                "Curva de Rendimento - Buck · 10%"
+              ],
+              "subject": "Curva de Rendimento - Buck · 10%",
+              "type": "Outro",
+              "signalSelections": [],
+              "signal": "",
+              "originalName": "TC-13_SiC_Rend_Buck_10_Corrente.png",
+              "fileName": "TC-13_SiC_Rend_Buck_10_Corrente.png",
+              "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P10/Fluke_VI/TC-13_SiC_Rend_Buck_10_Corrente.png",
+              "sha256": "e941613a35c8d8ae02cd99a1f9e40c03eb969bd1fd4ce92f318b68c26b9ddae2",
+              "reportInclude": true,
+              "reportCaption": "",
+              "savedAt": "2026-10-28T20:05:50.944Z",
+              "thermalView": "",
+              "imageNote": "",
+              "efficiencyPointId": "10",
+              "efficiencyCategory": "Fluke - Tensões",
+              "efficiencyMode": "buck"
+            },
+            {
+              "subjects": [
+                "Curva de Rendimento - Buck · 25%"
+              ],
+              "subject": "Curva de Rendimento - Buck · 25%",
+              "type": "Outro",
+              "signalSelections": [],
+              "signal": "",
+              "originalName": "TC-13_SiC_Rend_Buck_25_Potencia.png",
+              "fileName": "TC-13_SiC_Rend_Buck_25_Potencia.png",
+              "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P25/Fluke_Potencia/TC-13_SiC_Rend_Buck_25_Potencia.png",
+              "sha256": "647d1e8e5b8e24001316aa1f405deb7c4644e12e107916c96fbd9d08523740b8",
+              "reportInclude": true,
+              "reportCaption": "",
+              "savedAt": "2026-10-28T19:46:40.235Z",
+              "thermalView": "",
+              "imageNote": "",
+              "efficiencyPointId": "25",
+              "efficiencyCategory": "Fluke - Potências / Rendimento",
+              "efficiencyMode": "buck"
+            },
+            {
+              "subjects": [
+                "Curva de Rendimento - Buck · 25%"
+              ],
+              "subject": "Curva de Rendimento - Buck · 25%",
+              "type": "Outro",
+              "signalSelections": [],
+              "signal": "",
+              "originalName": "TC-13_SiC_Rend_Buck_25_Corrente.png",
+              "fileName": "TC-13_SiC_Rend_Buck_25_Corrente.png",
+              "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P25/Fluke_VI/TC-13_SiC_Rend_Buck_25_Corrente.png",
+              "sha256": "aaff72cab0112641dcfee6864f91fbaee3490314b1ac31f8344e098548050dfe",
+              "reportInclude": true,
+              "reportCaption": "",
+              "savedAt": "2026-10-28T19:45:00.909Z",
+              "thermalView": "",
+              "imageNote": "",
+              "efficiencyPointId": "25",
+              "efficiencyCategory": "Fluke - Tensões",
+              "efficiencyMode": "buck"
+            },
+            {
+              "subjects": [
+                "Curva de Rendimento - Buck · 25%"
+              ],
+              "subject": "Curva de Rendimento - Buck · 25%",
+              "type": "Outro",
+              "signalSelections": [],
+              "signal": "",
+              "originalName": "TC-13_SiC_Rend_Buck_25_Tensao.png",
+              "fileName": "TC-13_SiC_Rend_Buck_25_Tensao.png",
+              "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P25/Fluke_VI/TC-13_SiC_Rend_Buck_25_Tensao.png",
+              "sha256": "2274ba2740c0486b90dd716ca7e65dfd8d507d3f97b5c0e4dec4a305034f8cdf",
+              "reportInclude": true,
+              "reportCaption": "",
+              "savedAt": "2026-10-28T19:44:12.024Z",
+              "thermalView": "",
+              "imageNote": "",
+              "efficiencyPointId": "25",
+              "efficiencyCategory": "Fluke - Tensões",
+              "efficiencyMode": "buck"
             }
           ],
           "trash": [
@@ -2493,6 +2765,8 @@
           ],
           "efficiencyCurve": {
             "chartMode": "efficiency_vs_power",
+            "axisStep": 1,
+            "powerAxisStep": 100,
             "points": [
               {
                 "id": "10",
@@ -2501,7 +2775,7 @@
                 "targetResistance": 33.3,
                 "targetResistanceLabel": "33,3",
                 "bankConfig": "3 × 100 Ω em paralelo",
-                "selected": false,
+                "selected": true,
                 "measuredResistance": "34",
                 "p1": "82,527",
                 "p3": "80,217",
@@ -2582,6 +2856,8 @@
           },
           "buckEfficiencyCurve": {
             "chartMode": "efficiency_vs_power",
+            "axisStep": 0.6,
+            "powerAxisStep": 40,
             "points": [
               {
                 "id": "10",
@@ -2593,7 +2869,7 @@
                 "equivalentResistanceLabel": "16,67",
                 "theoreticalPower": 77.8,
                 "bankConfig": "6 × 100 Ω em paralelo",
-                "selected": false,
+                "selected": true,
                 "measuredResistance": "17,1",
                 "p1": "81,482",
                 "p3": "79,441",
@@ -2610,7 +2886,7 @@
                 "equivalentResistanceLabel": "6,87",
                 "theoreticalPower": 188.6,
                 "bankConfig": "1 × 9,9 Ω em paralelo + 4 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
-                "selected": false,
+                "selected": true,
                 "measuredResistance": "7",
                 "p1": "199,51",
                 "p3": "193,67",
@@ -2627,7 +2903,7 @@
                 "equivalentResistanceLabel": "3,46",
                 "theoreticalPower": 374.1,
                 "bankConfig": "2 × 9,9 Ω em paralelo + 8 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
-                "selected": false,
+                "selected": true,
                 "measuredResistance": "3,5",
                 "p1": "388,39",
                 "p3": "374,67",
@@ -2644,7 +2920,7 @@
                 "equivalentResistanceLabel": "2,30",
                 "theoreticalPower": 562.5,
                 "bankConfig": "4 × 9,9 Ω em paralelo + 3 × 100 Ω em paralelo",
-                "selected": false,
+                "selected": true,
                 "measuredResistance": "2,4",
                 "p1": "580,53",
                 "p3": "551,32",
@@ -2678,7 +2954,7 @@
                 "equivalentResistanceLabel": "1,72",
                 "theoreticalPower": 752.6,
                 "bankConfig": "4 × 9,9 Ω em paralelo + 15 × 100 Ω em paralelo + 4 × 150 Ω em paralelo",
-                "selected": false,
+                "selected": true,
                 "measuredResistance": "1,8",
                 "p1": "761,30",
                 "p3": "712,63",
@@ -2688,8 +2964,8 @@
             ]
           },
           "activeEfficiencyMode": "buck",
-          "efficiencyComparisonEnabled": false,
-          "executionDone": false,
+          "efficiencyComparisonEnabled": true,
+          "executionDone": true,
           "captureChecklist": {
             "vds": false,
             "vgs": false,
@@ -3343,64 +3619,22 @@
     },
     {
       "subjects": [
-        "Curva de Rendimento - Buck · 25%"
+        "Curva de Rendimento - Buck · 90%"
       ],
-      "subject": "Curva de Rendimento - Buck · 25%",
+      "subject": "Curva de Rendimento - Buck · 90%",
       "type": "Outro",
       "signalSelections": [],
       "signal": "",
-      "originalName": "exec-59c9e591-296b-496e-a8c1-7861975ba0d9.png",
-      "fileName": "TC-13_SiC_Rend_Buck_25_Tensao.png",
-      "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P25/Fluke_VI/TC-13_SiC_Rend_Buck_25_Tensao.png",
-      "sha256": "2274ba2740c0486b90dd716ca7e65dfd8d507d3f97b5c0e4dec4a305034f8cdf",
+      "originalName": "clipboard.png",
+      "fileName": "TC-13_SiC_Rend_Buck_90_Flu.png",
+      "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P90/Fluke_Potencia/TC-13_SiC_Rend_Buck_90_Flu.png",
+      "sha256": "da6fe32e37fd7b024e0df8559229a28034f0e14bfd0673b26cd9a8062a7715e1",
       "reportInclude": true,
       "reportCaption": "",
-      "savedAt": "2026-10-28T20:06:47.675Z",
+      "savedAt": "2026-10-28T18:50:54.000Z",
       "thermalView": "",
       "imageNote": "",
-      "efficiencyPointId": "25",
-      "efficiencyCategory": "Fluke - Tensões",
-      "efficiencyMode": "buck"
-    },
-    {
-      "subjects": [
-        "Curva de Rendimento - Buck · 25%"
-      ],
-      "subject": "Curva de Rendimento - Buck · 25%",
-      "type": "Outro",
-      "signalSelections": [],
-      "signal": "",
-      "originalName": "exec-e9159c6a-6f1c-41c8-9a50-6ee11e08cb0f.png",
-      "fileName": "TC-13_SiC_Rend_Buck_25_Corrente.png",
-      "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P25/Fluke_VI/TC-13_SiC_Rend_Buck_25_Corrente.png",
-      "sha256": "aaff72cab0112641dcfee6864f91fbaee3490314b1ac31f8344e098548050dfe",
-      "reportInclude": true,
-      "reportCaption": "",
-      "savedAt": "2026-10-28T20:06:47.675Z",
-      "thermalView": "",
-      "imageNote": "",
-      "efficiencyPointId": "25",
-      "efficiencyCategory": "Fluke - Tensões",
-      "efficiencyMode": "buck"
-    },
-    {
-      "subjects": [
-        "Curva de Rendimento - Buck · 25%"
-      ],
-      "subject": "Curva de Rendimento - Buck · 25%",
-      "type": "Outro",
-      "signalSelections": [],
-      "signal": "",
-      "originalName": "exec-7519ecbc-acb4-43ca-a291-9e4f5f2cf345.png",
-      "fileName": "TC-13_SiC_Rend_Buck_25_Potencia.png",
-      "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P25/Fluke_Potencia/TC-13_SiC_Rend_Buck_25_Potencia.png",
-      "sha256": "647d1e8e5b8e24001316aa1f405deb7c4644e12e107916c96fbd9d08523740b8",
-      "reportInclude": true,
-      "reportCaption": "",
-      "savedAt": "2026-10-28T20:06:47.675Z",
-      "thermalView": "",
-      "imageNote": "",
-      "efficiencyPointId": "25",
+      "efficiencyPointId": "90",
       "efficiencyCategory": "Fluke - Potências / Rendimento",
       "efficiencyMode": "buck"
     },
@@ -3412,13 +3646,13 @@
       "type": "Outro",
       "signalSelections": [],
       "signal": "",
-      "originalName": "exec-297a110f-b3fb-44f5-9192-f40f02be0902.png",
+      "originalName": "TC-13_SiC_Rend_Buck_10_Potencia.png",
       "fileName": "TC-13_SiC_Rend_Buck_10_Potencia.png",
       "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P10/Fluke_Potencia/TC-13_SiC_Rend_Buck_10_Potencia.png",
       "sha256": "bb547693fdc18e144381c00f04f26d72f8137f19204a5be969a9fb04e924fbfe",
       "reportInclude": true,
       "reportCaption": "",
-      "savedAt": "2026-10-28T20:06:47.675Z",
+      "savedAt": "2026-10-28T19:58:48.410Z",
       "thermalView": "",
       "imageNote": "",
       "efficiencyPointId": "10",
@@ -3433,16 +3667,79 @@
       "type": "Outro",
       "signalSelections": [],
       "signal": "",
-      "originalName": "exec-eebfd47f-0adc-4fbf-bdf7-04124602c3b0.png",
+      "originalName": "TC-13_SiC_Rend_Buck_10_Corrente.png",
       "fileName": "TC-13_SiC_Rend_Buck_10_Corrente.png",
       "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P10/Fluke_VI/TC-13_SiC_Rend_Buck_10_Corrente.png",
       "sha256": "e941613a35c8d8ae02cd99a1f9e40c03eb969bd1fd4ce92f318b68c26b9ddae2",
       "reportInclude": true,
       "reportCaption": "",
-      "savedAt": "2026-10-28T20:06:47.675Z",
+      "savedAt": "2026-10-28T20:05:50.944Z",
       "thermalView": "",
       "imageNote": "",
       "efficiencyPointId": "10",
+      "efficiencyCategory": "Fluke - Tensões",
+      "efficiencyMode": "buck"
+    },
+    {
+      "subjects": [
+        "Curva de Rendimento - Buck · 25%"
+      ],
+      "subject": "Curva de Rendimento - Buck · 25%",
+      "type": "Outro",
+      "signalSelections": [],
+      "signal": "",
+      "originalName": "TC-13_SiC_Rend_Buck_25_Potencia.png",
+      "fileName": "TC-13_SiC_Rend_Buck_25_Potencia.png",
+      "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P25/Fluke_Potencia/TC-13_SiC_Rend_Buck_25_Potencia.png",
+      "sha256": "647d1e8e5b8e24001316aa1f405deb7c4644e12e107916c96fbd9d08523740b8",
+      "reportInclude": true,
+      "reportCaption": "",
+      "savedAt": "2026-10-28T19:46:40.235Z",
+      "thermalView": "",
+      "imageNote": "",
+      "efficiencyPointId": "25",
+      "efficiencyCategory": "Fluke - Potências / Rendimento",
+      "efficiencyMode": "buck"
+    },
+    {
+      "subjects": [
+        "Curva de Rendimento - Buck · 25%"
+      ],
+      "subject": "Curva de Rendimento - Buck · 25%",
+      "type": "Outro",
+      "signalSelections": [],
+      "signal": "",
+      "originalName": "TC-13_SiC_Rend_Buck_25_Corrente.png",
+      "fileName": "TC-13_SiC_Rend_Buck_25_Corrente.png",
+      "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P25/Fluke_VI/TC-13_SiC_Rend_Buck_25_Corrente.png",
+      "sha256": "aaff72cab0112641dcfee6864f91fbaee3490314b1ac31f8344e098548050dfe",
+      "reportInclude": true,
+      "reportCaption": "",
+      "savedAt": "2026-10-28T19:45:00.909Z",
+      "thermalView": "",
+      "imageNote": "",
+      "efficiencyPointId": "25",
+      "efficiencyCategory": "Fluke - Tensões",
+      "efficiencyMode": "buck"
+    },
+    {
+      "subjects": [
+        "Curva de Rendimento - Buck · 25%"
+      ],
+      "subject": "Curva de Rendimento - Buck · 25%",
+      "type": "Outro",
+      "signalSelections": [],
+      "signal": "",
+      "originalName": "TC-13_SiC_Rend_Buck_25_Tensao.png",
+      "fileName": "TC-13_SiC_Rend_Buck_25_Tensao.png",
+      "relativePath": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores/Teste_Pratico/Reverso/SiC/Evidencias/Rendimento/Buck/P25/Fluke_VI/TC-13_SiC_Rend_Buck_25_Tensao.png",
+      "sha256": "2274ba2740c0486b90dd716ca7e65dfd8d507d3f97b5c0e4dec4a305034f8cdf",
+      "reportInclude": true,
+      "reportCaption": "",
+      "savedAt": "2026-10-28T19:44:12.024Z",
+      "thermalView": "",
+      "imageNote": "",
+      "efficiencyPointId": "25",
       "efficiencyCategory": "Fluke - Tensões",
       "efficiencyMode": "buck"
     }
@@ -3451,9 +3748,11 @@
   "folderName": "TC-13_Hard-switching_carga_reduzida_-_Troca_de_Indutores",
   "displayId": "TB-13",
   "displayTitle": "Curva de Rendimento ",
-  "updatedAt": "2026-10-28T20:06:47.675Z",
+  "updatedAt": "2026-10-28T20:56:57.310Z",
   "efficiencyCurve": {
     "chartMode": "efficiency_vs_power",
+    "axisStep": 1,
+    "powerAxisStep": 100,
     "points": [
       {
         "id": "10",
@@ -3462,7 +3761,7 @@
         "targetResistance": 33.3,
         "targetResistanceLabel": "33,3",
         "bankConfig": "3 × 100 Ω em paralelo",
-        "selected": false,
+        "selected": true,
         "measuredResistance": "34",
         "p1": "82,527",
         "p3": "80,217",
@@ -3543,6 +3842,8 @@
   },
   "buckEfficiencyCurve": {
     "chartMode": "efficiency_vs_power",
+    "axisStep": 0.6,
+    "powerAxisStep": 40,
     "points": [
       {
         "id": "10",
@@ -3554,7 +3855,7 @@
         "equivalentResistanceLabel": "16,67",
         "theoreticalPower": 77.8,
         "bankConfig": "6 × 100 Ω em paralelo",
-        "selected": false,
+        "selected": true,
         "measuredResistance": "17,1",
         "p1": "81,482",
         "p3": "79,441",
@@ -3571,7 +3872,7 @@
         "equivalentResistanceLabel": "6,87",
         "theoreticalPower": 188.6,
         "bankConfig": "1 × 9,9 Ω em paralelo + 4 × 100 Ω em paralelo + 1 × 220 Ω em paralelo",
-        "selected": false,
+        "selected": true,
         "measuredResistance": "7",
         "p1": "199,51",
         "p3": "193,67",
@@ -3588,7 +3889,7 @@
         "equivalentResistanceLabel": "3,46",
         "theoreticalPower": 374.1,
         "bankConfig": "2 × 9,9 Ω em paralelo + 8 × 100 Ω em paralelo + 1 × 150 Ω em paralelo",
-        "selected": false,
+        "selected": true,
         "measuredResistance": "3,5",
         "p1": "388,39",
         "p3": "374,67",
@@ -3605,7 +3906,7 @@
         "equivalentResistanceLabel": "2,30",
         "theoreticalPower": 562.5,
         "bankConfig": "4 × 9,9 Ω em paralelo + 3 × 100 Ω em paralelo",
-        "selected": false,
+        "selected": true,
         "measuredResistance": "2,4",
         "p1": "580,53",
         "p3": "551,32",
@@ -3639,7 +3940,7 @@
         "equivalentResistanceLabel": "1,72",
         "theoreticalPower": 752.6,
         "bankConfig": "4 × 9,9 Ω em paralelo + 15 × 100 Ω em paralelo + 4 × 150 Ω em paralelo",
-        "selected": false,
+        "selected": true,
         "measuredResistance": "1,8",
         "p1": "761,30",
         "p3": "712,63",
@@ -3649,5 +3950,5 @@
     ]
   },
   "activeEfficiencyMode": "buck",
-  "efficiencyComparisonEnabled": false
+  "efficiencyComparisonEnabled": true
 }
