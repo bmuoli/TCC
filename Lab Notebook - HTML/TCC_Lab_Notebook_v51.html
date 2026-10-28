@@ -3627,6 +3627,22 @@ function formatPtNumber(value,digits=2){
 function efficiencyValidPoints(curve){
   return (curve?.points||[]).filter(p=>p.selected&&efficiencyPointValue(p)!==null).map(p=>({...p,efficiency:efficiencyPointValue(p),p1Number:strictDecimal(p.p1),p3Number:strictDecimal(p.p3)})).sort((a,b)=>a.p3Number-b.p3Number);
 }
+function efficiencyAxisRange(values){
+  const finite=(values||[]).map(Number).filter(Number.isFinite);
+  if(!finite.length)return {min:90,max:100,ticks:Array.from({length:11},(_,i)=>90+i)};
+  const dataMin=Math.min(...finite),dataMax=Math.max(...finite);
+  let min=Math.floor((dataMin-1)/5)*5;
+  let max=Math.ceil((dataMax+1)/5)*5;
+  if(dataMin>=90)min=Math.max(90,min);
+  if(dataMax<=100)max=Math.min(100,max);
+  if(max<=min){min=Math.max(0,Math.floor(dataMin)-1);max=Math.ceil(dataMax)+1}
+  if(max-min<5){
+    const center=(min+max)/2;
+    min=Math.max(0,Math.floor(center-2.5));
+    max=Math.ceil(center+2.5);
+  }
+  return {min,max,ticks:Array.from({length:Math.round(max-min)+1},(_,i)=>min+i)};
+}
 function efficiencyChartCaption(curve){
   return normalizeEfficiencyChartMode(curve?.chartMode)==='power_vs_efficiency'
     ?'Curva da potência de saída medida P3 em função do rendimento experimental.'
@@ -3639,9 +3655,7 @@ function efficiencyChartSvg(curve,{report=false}={}){
   const width=920,height=360,left=74,right=28,top=28,bottom=58,plotW=width-left-right,plotH=height-top-bottom;
   const maxP=Math.max(...pts.map(p=>p.p3Number),1);
   const powerMax=Math.max(100,Math.ceil(maxP/100)*100);
-  const minEta=Math.min(...pts.map(p=>p.efficiency)),maxEta=Math.max(...pts.map(p=>p.efficiency));
-  let etaMin=Math.max(0,Math.floor((minEta-5)/5)*5),etaMax=Math.ceil((maxEta+5)/5)*5;
-  if(etaMax-etaMin<10){etaMin=Math.max(0,etaMin-5);etaMax+=5}
+  const etaAxis=efficiencyAxisRange(pts.map(p=>p.efficiency)),etaMin=etaAxis.min,etaMax=etaAxis.max;
   const xMin=inverted?etaMin:0,xMax=inverted?etaMax:powerMax;
   const yMin=inverted?0:etaMin,yMax=inverted?powerMax:etaMax;
   const x=n=>left+((n-xMin)/(xMax-xMin))*plotW;
@@ -3649,8 +3663,8 @@ function efficiencyChartSvg(curve,{report=false}={}){
   const xValue=p=>inverted?p.efficiency:p.p3Number;
   const yValue=p=>inverted?p.p3Number:p.efficiency;
   const fg=report?'#1f2937':'var(--text)',muted=report?'#64748b':'var(--muted)',grid=report?'#d8dee8':'var(--border)',accent=report?'#2563eb':'var(--ok)',fill=report?'#ffffff':'var(--panel)';
-  const xTicks=Array.from({length:5},(_,i)=>xMin+i*(xMax-xMin)/4);
-  const yTicks=Array.from({length:5},(_,i)=>yMin+i*(yMax-yMin)/4);
+  const xTicks=inverted?etaAxis.ticks:Array.from({length:5},(_,i)=>xMin+i*(xMax-xMin)/4);
+  const yTicks=inverted?Array.from({length:5},(_,i)=>yMin+i*(yMax-yMin)/4):etaAxis.ticks;
   const gridLines=[...xTicks.map(v=>`<line x1="${x(v)}" y1="${top}" x2="${x(v)}" y2="${top+plotH}" stroke="${grid}" stroke-width="1"/><text x="${x(v)}" y="${top+plotH+25}" fill="${muted}" text-anchor="middle" font-size="12">${inverted?formatPtNumber(v,1):Math.round(v)}</text>`),...yTicks.map(v=>`<line x1="${left}" y1="${y(v)}" x2="${left+plotW}" y2="${y(v)}" stroke="${grid}" stroke-width="1"/><text x="${left-12}" y="${y(v)+4}" fill="${muted}" text-anchor="end" font-size="12">${inverted?Math.round(v):formatPtNumber(v,1)}</text>`)].join('');
   const poly=pts.length>1?`<polyline points="${pts.map(p=>`${x(xValue(p))},${y(yValue(p))}`).join(' ')}" fill="none" stroke="${accent}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`:'';
   const circles=pts.map(p=>{
@@ -3672,12 +3686,10 @@ function efficiencyComparisonChartSvg(boostCurve,buckCurve,{report=false}={}){
   if(!all.length)return '';
   const width=920,height=380,left=74,right=28,top=50,bottom=58,plotW=width-left-right,plotH=height-top-bottom;
   const maxP=Math.max(...all.map(p=>p.p3Number),1),xMax=Math.max(100,Math.ceil(maxP/100)*100);
-  const minEta=Math.min(...all.map(p=>p.efficiency)),maxEta=Math.max(...all.map(p=>p.efficiency));
-  let yMin=Math.max(0,Math.floor((minEta-5)/5)*5),yMax=Math.ceil((maxEta+5)/5)*5;
-  if(yMax-yMin<10){yMin=Math.max(0,yMin-5);yMax+=5}
+  const etaAxis=efficiencyAxisRange(all.map(p=>p.efficiency)),yMin=etaAxis.min,yMax=etaAxis.max;
   const x=n=>left+(n/xMax)*plotW,y=n=>top+((yMax-n)/(yMax-yMin))*plotH;
   const fg=report?'#1f2937':'var(--text)',muted=report?'#64748b':'var(--muted)',grid=report?'#d8dee8':'var(--border)',fill=report?'#ffffff':'var(--panel)';
-  const xTicks=Array.from({length:5},(_,i)=>i*xMax/4),yTicks=Array.from({length:5},(_,i)=>yMin+i*(yMax-yMin)/4);
+  const xTicks=Array.from({length:5},(_,i)=>i*xMax/4),yTicks=etaAxis.ticks;
   const gridLines=[...xTicks.map(v=>`<line x1="${x(v)}" y1="${top}" x2="${x(v)}" y2="${top+plotH}" stroke="${grid}" stroke-width="1"/><text x="${x(v)}" y="${top+plotH+25}" fill="${muted}" text-anchor="middle" font-size="12">${Math.round(v)}</text>`),...yTicks.map(v=>`<line x1="${left}" y1="${y(v)}" x2="${left+plotW}" y2="${y(v)}" stroke="${grid}" stroke-width="1"/><text x="${left-12}" y="${y(v)+4}" fill="${muted}" text-anchor="end" font-size="12">${formatPtNumber(v,1)}</text>`)].join('');
   const lines=series.map(s=>s.points.length>1?`<polyline points="${s.points.map(p=>`${x(p.p3Number)},${y(p.efficiency)}`).join(' ')}" fill="none" stroke="${s.color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`:'').join('');
   const dots=series.map(s=>s.points.map(p=>{

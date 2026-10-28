@@ -206,14 +206,24 @@
       var eta=efficiency(run);
       return [metric('Frequência',run.freq,'kHz',1),metric('Duty cycle',run.duty,'%',1),metric('Vin',run.vin,'V',2),metric('Vout',run.vout,'V',2),metric('Pin',run.pin,'W',2),metric('Pout',run.pout,'W',2),metric('Iout',run.iout,'A',2),eta===null?'':'<div class="metric"><span>Rendimento</span><strong>'+fmt(eta,2)+' %</strong></div>'].filter(Boolean).join('');
     }
+    function efficiencyAxisRange(values){
+      var finite=(values||[]).map(Number).filter(Number.isFinite);
+      if(!finite.length)return {min:90,max:100,ticks:Array.from({length:11},function(_,i){return 90+i})};
+      var dataMin=Math.min.apply(null,finite),dataMax=Math.max.apply(null,finite);
+      var min=Math.floor((dataMin-1)/5)*5,max=Math.ceil((dataMax+1)/5)*5;
+      if(dataMin>=90)min=Math.max(90,min);
+      if(dataMax<=100)max=Math.min(100,max);
+      if(max<=min){min=Math.max(0,Math.floor(dataMin)-1);max=Math.ceil(dataMax)+1}
+      if(max-min<5){var center=(min+max)/2;min=Math.max(0,Math.floor(center-2.5));max=Math.ceil(center+2.5)}
+      return {min:min,max:max,ticks:Array.from({length:Math.round(max-min)+1},function(_,i){return min+i})};
+    }
     function curveSvg(curve,color){
       var pts=curvePoints(curve);if(!pts.length)return '';
       var w=560,h=230,l=48,r=18,t=18,b=38,pw=w-l-r,ph=h-t-b;
       var maxP=Math.max.apply(null,pts.map(function(p){return p.p3n}).concat([100]));maxP=Math.ceil(maxP/100)*100;
-      var minE=Math.min.apply(null,pts.map(function(p){return p.eta})),maxE=Math.max.apply(null,pts.map(function(p){return p.eta}));
-      var y0=Math.max(0,Math.floor((minE-5)/5)*5),y1=Math.ceil((maxE+5)/5)*5;if(y1-y0<10){y0=Math.max(0,y0-5);y1+=5}
+      var etaAxis=efficiencyAxisRange(pts.map(function(p){return p.eta})),y0=etaAxis.min,y1=etaAxis.max;
       var x=function(n){return l+n/maxP*pw},y=function(n){return t+(y1-n)/(y1-y0)*ph};
-      var grid='';for(var i=0;i<5;i++){var pv=i*maxP/4,ev=y0+i*(y1-y0)/4;grid+='<line x1="'+x(pv)+'" y1="'+t+'" x2="'+x(pv)+'" y2="'+(t+ph)+'" stroke="#24364d"/><text x="'+x(pv)+'" y="'+(t+ph+22)+'" fill="#8399b3" text-anchor="middle" font-size="10">'+Math.round(pv)+'</text><line x1="'+l+'" y1="'+y(ev)+'" x2="'+(l+pw)+'" y2="'+y(ev)+'" stroke="#24364d"/><text x="'+(l-8)+'" y="'+(y(ev)+3)+'" fill="#8399b3" text-anchor="end" font-size="10">'+fmt(ev,1)+'</text>'}
+      var grid='';for(var i=0;i<5;i++){var pv=i*maxP/4;grid+='<line x1="'+x(pv)+'" y1="'+t+'" x2="'+x(pv)+'" y2="'+(t+ph)+'" stroke="#24364d"/><text x="'+x(pv)+'" y="'+(t+ph+22)+'" fill="#8399b3" text-anchor="middle" font-size="10">'+Math.round(pv)+'</text>'}etaAxis.ticks.forEach(function(ev){grid+='<line x1="'+l+'" y1="'+y(ev)+'" x2="'+(l+pw)+'" y2="'+y(ev)+'" stroke="#24364d"/><text x="'+(l-8)+'" y="'+(y(ev)+3)+'" fill="#8399b3" text-anchor="end" font-size="10">'+fmt(ev,0)+'</text>'});
       var poly=pts.length>1?'<polyline points="'+pts.map(function(p){return x(p.p3n)+','+y(p.eta)}).join(' ')+'" fill="none" stroke="'+color+'" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>':'';
       var dots=pts.map(function(p){return '<g><circle cx="'+x(p.p3n)+'" cy="'+y(p.eta)+'" r="6" fill="'+color+'" stroke="#0d1a2b" stroke-width="3"><title>'+escapeHtml(p.percent+'% · P3 '+p.p3+' W · η '+fmt(p.eta,2)+'%')+'</title></circle><text x="'+x(p.p3n)+'" y="'+(y(p.eta)-10)+'" fill="#eef6ff" text-anchor="middle" font-size="10" font-weight="700">'+escapeHtml(p.percent)+'%</text></g>'}).join('');
       return '<svg viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Curva de rendimento">'+grid+'<line x1="'+l+'" y1="'+(t+ph)+'" x2="'+(l+pw)+'" y2="'+(t+ph)+'" stroke="#9bb0c9"/>'+poly+dots+'<text x="'+(l+pw/2)+'" y="'+(h-5)+'" fill="#9bb0c9" text-anchor="middle" font-size="11">Potência de saída P3 [W]</text><text x="12" y="'+(t+ph/2)+'" fill="#9bb0c9" text-anchor="middle" font-size="11" transform="rotate(-90 12 '+(t+ph/2)+')">Rendimento [%]</text></svg>';
