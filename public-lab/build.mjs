@@ -14,6 +14,21 @@ await mkdir(path.join(outputRoot, 'data'), { recursive: true });
 await copyFile(path.join(publicRoot, 'index.html'), path.join(outputRoot, 'index.html'));
 await copyFile(campaignPath, path.join(outputRoot, 'data', 'campanha.json'));
 
+// Materiais de simulação e cálculo: somente os arquivos explicitamente publicados no catálogo.
+const materialsPath = path.join(publicRoot, 'materiais.json');
+const materials = JSON.parse(await readFile(materialsPath, 'utf8'));
+const materialFiles = new Set((materials.mathcad || []).map(item => item.arquivo));
+for (const group of materials.simulacoes || []) {
+  if (group.psim) materialFiles.add(group.psim);
+  for (const image of group.imagens || []) materialFiles.add(image.arquivo);
+}
+await copyFile(materialsPath, path.join(outputRoot, 'materiais.json'));
+for (const file of materialFiles) {
+  if (typeof file !== 'string' || path.basename(file) !== file) throw new Error('Nome de material inválido');
+  await copyFile(path.join(publicRoot, file), path.join(outputRoot, file));
+}
+
+
 const paths = new Set();
 
 for (const test of campaign.tests || []) {

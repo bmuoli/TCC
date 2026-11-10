@@ -1,0 +1,161 @@
+{
+  "mathcad": [
+    {
+      "titulo": "Ćuk — memória de cálculo",
+      "arquivo": "Cuk_CCM_Graph_Revisado.xmcd",
+      "bytes": 636572
+    },
+    {
+      "titulo": "Buck — memória de cálculo e controle",
+      "arquivo": "Buck_CCM_Ganho_e_Ondas_Revisado_Bode.xmcd",
+      "bytes": 498928
+    }
+  ],
+  "simulacoes": [
+    {
+      "id": "cuk",
+      "titulo": "Ćuk de referência",
+      "imagens": [
+        {
+          "arquivo": "sim_cuk_nao_ideal_circuito.png",
+          "legenda": "Circuito do Ćuk com não idealidades"
+        },
+        {
+          "arquivo": "sim_cuk_nao_ideal_entrada_saida.png",
+          "legenda": "Grandezas de entrada e saída do Ćuk"
+        }
+      ],
+      "psim": "Cuk_Parametros_CHAVE_REAl.psimsch"
+    },
+    {
+      "id": "cuk-arcp",
+      "titulo": "Ćuk com célula auxiliar ARCP",
+      "imagens": [
+        {
+          "arquivo": "sim_cuk_auxiliar_circuito_nao_ideal.png",
+          "legenda": "Circuito do Ćuk com célula auxiliar"
+        },
+        {
+          "arquivo": "sim_cuk_auxiliar_entrada_saida.png",
+          "legenda": "Grandezas de entrada e saída com célula auxiliar"
+        },
+        {
+          "arquivo": "sim_cuk_corrente_auxiliar.png",
+          "legenda": "Registro da corrente no indutor auxiliar"
+        }
+      ],
+      "psim": "Cuk_Parametros_CHAVE_REAL_ARCP.psimsch"
+    },
+    {
+      "id": "cuk-arcp-sequencia",
+      "titulo": "Ćuk ARCP — sequência de comutação",
+      "imagens": [
+        {
+          "arquivo": "sim_cuk_auxiliar_modelo_100V.png",
+          "legenda": "Modelo com duas fontes de 100 V"
+        },
+        {
+          "arquivo": "sim_cuk_auxiliar_pwm.png",
+          "legenda": "Sinais PWM da sequência de comutação"
+        },
+        {
+          "arquivo": "sim_cuk_auxiliar_chaves_principais.png",
+          "legenda": "Tensões e correntes dos interruptores principais"
+        },
+        {
+          "arquivo": "sim_cuk_auxiliar_chaves_auxiliares.png",
+          "legenda": "Tensões e correntes dos interruptores auxiliares"
+        }
+      ],
+      "nota": "Registros do modelo com duas fontes de 100 V e indutores principais de 1 mH. As condições diferem das do modelo anterior."
+    },
+    {
+      "id": "cuk-zvrt",
+      "titulo": "Ćuk com ZVRT",
+      "imagens": [
+        {
+          "arquivo": "sim_cuk_zvrt_circuito_nao_ideal.png",
+          "legenda": "Circuito do Ćuk com ZVRT"
+        },
+        {
+          "arquivo": "sim_cuk_zvrt_entrada_saida.png",
+          "legenda": "Grandezas de entrada e saída com ZVRT"
+        },
+        {
+          "arquivo": "sim_cuk_zvrt_comutacao_legivel.png",
+          "legenda": "Tensão e correntes do interruptor, com ampliação da transição"
+        }
+      ],
+      "psim": "Cuk_Parametros_CHAVE_REAl_ZVRT.psimsch"
+    },
+    {
+      "id": "buck-mono",
+      "titulo": "Buck monofásico — sentido abaixador",
+      "imagens": [
+        {
+          "arquivo": "sim_buck_circuito_nao_ideal.png",
+          "legenda": "Circuito do Buck monofásico"
+        },
+        {
+          "arquivo": "sim_buck_entrada_saida.png",
+          "legenda": "Grandezas de entrada e saída do Buck"
+        }
+      ],
+      "psim": "Buck_Mono_Phase_Parametros_CHAVE_REAL.psimsch"
+    },
+    {
+      "id": "boost-mono",
+      "titulo": "Buck monofásico — sentido elevador (Boost)",
+      "imagens": [
+        {
+          "arquivo": "sim_boost_circuito_nao_ideal.png",
+          "legenda": "Circuito monofásico no sentido elevador"
+        },
+        {
+          "arquivo": "sim_boost_entrada_saida.png",
+          "legenda": "Grandezas de entrada e saída no sentido elevador"
+        }
+      ],
+      "psim": "boost_Mono_Phase_Parametros_CHAVE_REAL.psimsch"
+    },
+    {
+      "id": "buck-duas-fases",
+      "titulo": "Buck de duas fases — sentido abaixador",
+      "imagens": [
+        {
+          "arquivo": "sim_buck_interleaved_entrada_saida.png",
+          "legenda": "Entrada e saída do Buck de duas fases"
+        },
+        {
+          "arquivo": "sim_buck_interleaved_correntes_fases.png",
+          "legenda": "Correntes dos indutores das duas fases"
+        }
+      ]
+    },
+    {
+      "id": "boost-duas-fases",
+      "titulo": "Buck de duas fases — sentido elevador (Boost)",
+      "imagens": [
+        {
+          "arquivo": "sim_boost_duas_fases_circuito.png",
+          "legenda": "Circuito de duas fases no sentido elevador"
+        }
+      ]
+    },
+    {
+      "id": "buck-controle",
+      "titulo": "Buck com controle em cascata",
+      "imagens": [
+        {
+          "arquivo": "sim_buck_controle_circuito.png",
+          "legenda": "Modelo com controle de corrente e potência"
+        },
+        {
+          "arquivo": "sim_buck_controle_resposta.png",
+          "legenda": "Tensão e corrente de saída sob variação de carga"
+        }
+      ],
+      "nota": "Resposta de uma avaliação intermediária do controle, com ganhos ainda sujeitos a ajuste."
+    }
+  ]
+}

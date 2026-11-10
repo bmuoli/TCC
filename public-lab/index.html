@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Painel público dos ensaios experimentais dos conversores Ćuk e Buck, incluindo a operação do Buck em sentido inverso como Boost.">
+  <meta name="description" content="Simulações, modelos PSIM, memórias de cálculo Mathcad e ensaios dos conversores Ćuk e Buck, incluindo a operação inversa como Boost.">
   <meta name="theme-color" content="#07111f">
   <title>Lab Notebook · Conversores Ćuk & Buck</title>
   <style>
@@ -124,6 +124,26 @@
       .curve-table td::before{content:attr(data-label);font-size:.7rem;font-weight:500;line-height:1.35;color:var(--muted)}
       .curve-table td:last-child{background:rgba(67,214,163,.08)}
     }
+
+    .nav-links{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+    .materials{padding:30px 0 32px;border-bottom:1px solid var(--line);scroll-margin-top:20px}
+    .materials h2{margin:0 0 8px;font-size:1.5rem;letter-spacing:-.02em}
+    .materials-intro{margin:0 0 20px;color:var(--muted);max-width:850px}
+    .mathcad-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:24px;scroll-margin-top:20px}
+    .file-card{display:flex;justify-content:space-between;gap:16px;align-items:center;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:18px;text-decoration:none;min-width:0}
+    .file-card:hover,.file-card:focus-visible{border-color:var(--cyan)}
+    .file-card strong{display:block;font-size:1rem}.file-card small{display:block;color:var(--muted);overflow-wrap:anywhere;margin-top:4px}
+    .file-card .file-kind{color:var(--cyan);font-size:.8rem;font-weight:800;flex-shrink:0}
+    .simulation-list{display:grid;gap:12px}.simulation-group{border:1px solid var(--line);background:var(--panel);border-radius:14px;overflow:hidden}
+    .simulation-group>summary{display:flex;justify-content:space-between;gap:16px;align-items:center;cursor:pointer;list-style:none;padding:18px;font-weight:800}
+    .simulation-group>summary::-webkit-details-marker{display:none}.simulation-group>summary:after{content:'+';color:var(--cyan);font-size:1.3rem}.simulation-group[open]>summary:after{content:'−'}
+    .simulation-body{border-top:1px solid var(--line);padding:18px}.simulation-note{color:var(--muted);margin:0 0 16px;font-size:.9rem}
+    .model-link{display:inline-block;border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin-bottom:16px;text-decoration:none;color:var(--cyan);overflow-wrap:anywhere}
+    .model-link:hover{border-color:var(--cyan)}.simulation-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+    .material-image{display:flex;flex-direction:column;text-align:left;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--panel2);color:var(--text);overflow:hidden;cursor:zoom-in;min-width:0}
+    .material-image:hover,.material-image:focus-visible{border-color:var(--cyan)}.material-image img{display:block;width:100%;height:200px;object-fit:contain;background:white}
+    .material-image span{display:block;padding:12px;font-size:.85rem}.materials-count{color:var(--muted);font-size:.85rem;font-weight:500;margin-left:auto}
+    @media(max-width:620px){.nav{align-items:flex-start}.nav-links{gap:6px}.nav-links .github{padding:7px 9px}.mathcad-grid{grid-template-columns:1fr}.file-card{padding:14px}.simulation-gallery{grid-template-columns:1fr}.simulation-group>summary,.simulation-body{padding:14px}.materials-count{font-size:.75rem}}
   </style>
 </head>
 <body>
@@ -131,13 +151,13 @@
     <div class="shell">
       <nav class="nav">
         <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>LAB NOTEBOOK · TCC</span></div>
-        <a class="github" href="https://github.com/bmuoli/TCC" target="_blank" rel="noreferrer">Repositório no GitHub ↗</a>
+        <div class="nav-links"><a class="github" href="#simulacoes">Simulações</a><a class="github" href="#mathcad">Mathcad</a><a class="github" href="https://github.com/bmuoli/TCC" target="_blank" rel="noreferrer">Repositório no GitHub ↗</a></div>
       </nav>
       <div class="hero-grid">
         <div>
-          <div class="eyebrow">Resultados experimentais</div>
+          <div class="eyebrow">Simulações e ensaios</div>
           <h1>Conversores<br>Ćuk &amp; Buck</h1>
-          <p class="lede">Painel público dos ensaios, medições, curvas de rendimento e evidências dos conversores Ćuk e Buck. No sentido inverso, o Buck opera como Boost.</p>
+          <p class="lede">Simulações, arquivos de projeto, medições, curvas de rendimento e evidências dos conversores Ćuk e Buck. No sentido inverso, o Buck opera como Boost.</p>
         </div>
         <aside class="live-card">
           <div class="live-row"><span class="pulse"></span> Sincronizado com o Git</div>
@@ -148,6 +168,14 @@
   </header>
 
   <main class="shell">
+
+    <section id="simulacoes" class="materials" aria-labelledby="materialsTitle">
+      <h2 id="materialsTitle">Simulações e arquivos de projeto</h2>
+      <p class="materials-intro">Imagens das simulações numéricas, modelos para abrir no PSIM e memórias de cálculo em Mathcad. Clique nas imagens para ampliá-las; as condições de operação constam nas respectivas capturas.</p>
+      <div id="mathcad" class="mathcad-grid" aria-label="Arquivos Mathcad"></div>
+      <div id="simulationMaterials" class="simulation-list" aria-live="polite">Carregando materiais…</div>
+    </section>
+
     <section class="stats" id="stats" aria-label="Resumo do projeto">
       <div class="stat"><span>Ensaios publicados</span><strong>—</strong></div>
       <div class="stat"><span>Execuções com dados</span><strong>—</strong></div>
@@ -171,14 +199,14 @@
       </select>
     </section>
 
-    <div class="section-head">
+    <div class="section-head" id="ensaios">
       <div><h2>Ensaios com resultados</h2><p>Testes e execuções vazios são ocultados automaticamente.</p></div>
       <p id="resultCount"></p>
     </div>
     <section id="content" class="tests"><div class="loading"><div><div class="spinner"></div>Buscando dados do GitHub…</div></div></section>
   </main>
 
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização da evidência">
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização da imagem">
     <button class="close" id="closeLightbox" aria-label="Fechar">×</button>
     <figure><img id="lightboxImage" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
   </div>
@@ -316,6 +344,17 @@
     $('search').addEventListener('input',function(e){state.search=e.target.value.trim().toLowerCase();render()});
     $('statusFilter').addEventListener('change',function(e){state.status=e.target.value;render()});
     $('techFilter').addEventListener('change',function(e){state.tech=e.target.value;render()});
+
+
+    function renderMaterials(materials){
+      $('mathcad').innerHTML=(materials.mathcad||[]).map(function(item){return '<a class="file-card" href="'+encodeURIComponent(item.arquivo)+'" download><span><strong>'+escapeHtml(item.titulo)+'</strong><small>'+escapeHtml(item.arquivo)+'</small></span><span class="file-kind">Mathcad ↓</span></a>'}).join('');
+      $('simulationMaterials').innerHTML=(materials.simulacoes||[]).map(function(group){
+        var images=group.imagens||[];
+        return '<details class="simulation-group" id="material-'+escapeHtml(group.id)+'"><summary><span>'+escapeHtml(group.titulo)+'</span><span class="materials-count">'+images.length+' imagem(ns)</span></summary><div class="simulation-body">'+(group.nota?'<p class="simulation-note">'+escapeHtml(group.nota)+'</p>':'')+(group.psim?'<a class="model-link" href="'+encodeURIComponent(group.psim)+'" download>Baixar modelo PSIM · .psimsch ↓</a>':'')+'<div class="simulation-gallery">'+images.map(function(item){return '<button class="material-image" type="button" data-simulation-image="'+escapeHtml(encodeURIComponent(item.arquivo))+'" data-caption="'+escapeHtml(item.legenda)+'"><img loading="lazy" src="'+escapeHtml(encodeURIComponent(item.arquivo))+'" alt="'+escapeHtml(item.legenda)+'"><span>'+escapeHtml(item.legenda)+'</span></button>'}).join('')+'</div></div></details>';
+      }).join('');
+    }
+    $('simulationMaterials').addEventListener('click',function(event){var image=event.target.closest('[data-simulation-image]');if(image)openLightbox(image.dataset.simulationImage,image.dataset.caption)});
+    fetch('materiais.json').then(function(response){if(!response.ok)throw new Error('Materiais indisponíveis');return response.json()}).then(renderMaterials).catch(function(){$('simulationMaterials').textContent='Não foi possível carregar os materiais. Atualize a página para tentar novamente.'});
 
     function fetchCampaign(index){
       if(index>=CAMPAIGN_URLS.length)return Promise.reject(new Error('Nenhuma fonte de dados respondeu.'));
